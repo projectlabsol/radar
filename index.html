@@ -2645,16 +2645,363 @@ const THEME_IDEAS = {
   ]
 };
 
+function normalizeThemeText(value = "") {
+  return String(value)
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function detectAnimalSubtheme(items) {
+  const animalRules = [
+    {
+      name: "Gatos",
+      singular: "Gato",
+      ticker: "CAT",
+      keywords: [
+        "cat",
+        "cats",
+        "catcoin",
+        "kitty",
+        "kitten",
+        "meow",
+        "nyan",
+        "gato",
+        "gatito",
+        "felino"
+      ]
+    },
+    {
+      name: "Perros",
+      singular: "Perro",
+      ticker: "DOG",
+      keywords: [
+        "dog",
+        "dogs",
+        "doge",
+        "dogecoin",
+        "puppy",
+        "shib",
+        "shiba",
+        "perro",
+        "perrito",
+        "canino"
+      ]
+    },
+    {
+      name: "Ranas",
+      singular: "Rana",
+      ticker: "FROG",
+      keywords: [
+        "frog",
+        "frogs",
+        "pepe",
+        "toad",
+        "rana",
+        "ranita",
+        "sapo"
+      ]
+    },
+    {
+      name: "Osos",
+      singular: "Oso",
+      ticker: "BEAR",
+      keywords: [
+        "bear",
+        "bears",
+        "panda",
+        "polar",
+        "oso",
+        "osito"
+      ]
+    },
+    {
+      name: "Pingüinos",
+      singular: "Pingüino",
+      ticker: "PENG",
+      keywords: [
+        "penguin",
+        "penguins",
+        "pinguino",
+        "pinguinos",
+        "pengu",
+        "peng"
+      ]
+    },
+    {
+      name: "Monos",
+      singular: "Mono",
+      ticker: "APE",
+      keywords: [
+        "monkey",
+        "monkeys",
+        "ape",
+        "apes",
+        "gorilla",
+        "chimp",
+        "mono",
+        "simio"
+      ]
+    },
+    {
+      name: "Capibaras",
+      singular: "Capibara",
+      ticker: "CAPY",
+      keywords: [
+        "capybara",
+        "capy",
+        "capibara",
+        "carpincho"
+      ]
+    },
+    {
+      name: "Zorros",
+      singular: "Zorro",
+      ticker: "FOX",
+      keywords: [
+        "fox",
+        "foxes",
+        "zorro",
+        "zorrito"
+      ]
+    },
+    {
+      name: "Conejos",
+      singular: "Conejo",
+      ticker: "BUN",
+      keywords: [
+        "rabbit",
+        "rabbits",
+        "bunny",
+        "hare",
+        "conejo",
+        "conejito"
+      ]
+    },
+    {
+      name: "Tiburones",
+      singular: "Tiburón",
+      ticker: "SHRK",
+      keywords: [
+        "shark",
+        "sharks",
+        "tiburon",
+        "tiburones"
+      ]
+    },
+    {
+      name: "Patos",
+      singular: "Pato",
+      ticker: "DUCK",
+      keywords: [
+        "duck",
+        "ducks",
+        "ducky",
+        "pato",
+        "patito"
+      ]
+    },
+    {
+      name: "Hamsters",
+      singular: "Hamster",
+      ticker: "HAM",
+      keywords: [
+        "hamster",
+        "hamsters",
+        "hammy"
+      ]
+    },
+    {
+      name: "Lobos",
+      singular: "Lobo",
+      ticker: "WOLF",
+      keywords: [
+        "wolf",
+        "wolves",
+        "lobo",
+        "lobito"
+      ]
+    },
+    {
+      name: "Leones",
+      singular: "León",
+      ticker: "LION",
+      keywords: [
+        "lion",
+        "lions",
+        "leon",
+        "leones"
+      ]
+    }
+  ];
+
+  const results = animalRules.map((animal) => ({
+    ...animal,
+    mentions: 0,
+    volume: 0,
+    liquidity: 0,
+    buys: 0,
+    sells: 0,
+    score: 0
+  }));
+
+  items.forEach((item) => {
+    const pair = item.pair || {};
+
+    const text = normalizeThemeText(
+      `${pair.baseToken?.name || ""} ` +
+      `${pair.baseToken?.symbol || ""} ` +
+      `${item.description || ""}`
+    );
+
+    if (!text) {
+      return;
+    }
+
+    const words = text.split(/\s+/);
+
+    const volume = Number(
+      pair.volume?.h24 || 0
+    );
+
+    const liquidity = Number(
+      pair.liquidity?.usd || 0
+    );
+
+    const buys = Number(
+      pair.txns?.h24?.buys || 0
+    );
+
+    const sells = Number(
+      pair.txns?.h24?.sells || 0
+    );
+
+    results.forEach((animal) => {
+      const matches = animal.keywords.some(
+        (keyword) =>
+          words.some(
+            (word) =>
+              word === keyword ||
+              (
+                keyword.length >= 4 &&
+                (
+                  word.startsWith(keyword) ||
+                  word.endsWith(keyword)
+                )
+              )
+          )
+      );
+
+      if (!matches) {
+        return;
+      }
+
+      animal.mentions += 1;
+      animal.volume += volume;
+      animal.liquidity += liquidity;
+      animal.buys += buys;
+      animal.sells += sells;
+
+      animal.score +=
+        14 +
+        Math.log10(volume + 1) * 5 +
+        Math.log10(liquidity + 1) * 2 +
+        Math.log10(buys + 1) * 2;
+    });
+  });
+
+  const ranked = results
+    .filter((animal) => animal.mentions > 0)
+    .sort(
+      (first, second) =>
+        second.score - first.score
+    );
+
+  if (!ranked.length) {
+    return null;
+  }
+
+  const totalScore = ranked.reduce(
+    (total, animal) =>
+      total + animal.score,
+    0
+  );
+
+  return {
+    ...ranked[0],
+
+    confidenceShare:
+      totalScore > 0
+        ? ranked[0].score / totalScore
+        : 0,
+
+    runnerUp:
+      ranked[1] || null
+  };
+}
+
+function buildSpecificThemeIdeas(
+  themeName,
+  animal
+) {
+  if (
+    themeName !== "Animales" ||
+    !animal
+  ) {
+    return (
+      THEME_IDEAS[themeName] ||
+      THEME_IDEAS[
+        "Otros / sin clasificar"
+      ]
+    );
+  }
+
+  const animalName = animal.singular;
+  const ticker = animal.ticker;
+
+  return [
+    {
+      name: `${animalName} Charlie`,
+      ticker: `C${ticker}`.slice(0, 8),
+      description:
+        `${animalName} con personalidad propia, ` +
+        `historia comunitaria y contenido diario.`
+    },
+    {
+      name: `Cyber ${animalName}`,
+      ticker: `X${ticker}`.slice(0, 8),
+      description:
+        `${animalName} tecnológico que combina memes, ` +
+        `inteligencia artificial y misiones comunitarias.`
+    },
+    {
+      name: `${animalName} Club`,
+      ticker: `${ticker}C`.slice(0, 8),
+      description:
+        `Comunidad basada en un ${animalName.toLowerCase()}, ` +
+        `con retos, votaciones y contenido viral.`
+    }
+  ];
+}
+
 function renderThemeRecommendation() {
   const candidates = state.narratives
     .filter(
       (item) =>
-        item.name !== "Otros / sin clasificar" ||
+        item.name !==
+          "Otros / sin clasificar" ||
         state.narratives.length === 1
     )
     .map((item) => {
-      const volume = Number(item.volume || 0);
-      const tokens = Number(item.tokens || 0);
+      const volume = Number(
+        item.volume || 0
+      );
+
+      const tokens = Number(
+        item.tokens || 0
+      );
 
       const volumePerToken =
         tokens > 0
@@ -2662,7 +3009,8 @@ function renderThemeRecommendation() {
           : 0;
 
       const attentionScore = clamp(
-        (Math.log10(volume + 1) / 7) * 58 +
+        (Math.log10(volume + 1) / 7) *
+          58 +
           Math.min(tokens, 10) * 4.2,
         0,
         100
@@ -2670,12 +3018,17 @@ function renderThemeRecommendation() {
 
       const saturationPenalty =
         tokens > 8
-          ? clamp((tokens - 8) * 3, 0, 27)
+          ? clamp(
+              (tokens - 8) * 3,
+              0,
+              27
+            )
           : 0;
 
       const opportunity = Math.round(
         clamp(
-          attentionScore - saturationPenalty,
+          attentionScore -
+            saturationPenalty,
           0,
           100
         )
@@ -2697,7 +3050,16 @@ function renderThemeRecommendation() {
 
   const theme = candidates[0];
 
-  const bestNetwork = [...state.networks]
+  const animal =
+    theme?.name === "Animales"
+      ? detectAnimalSubtheme(
+          state.marketItems
+        )
+      : null;
+
+  const bestNetwork = [
+    ...state.networks
+  ]
     .filter((network) =>
       Number.isFinite(network.score)
     )
@@ -2714,7 +3076,7 @@ function renderThemeRecommendation() {
       "Sin temática confirmada";
 
     $("#themeReason").textContent =
-      "La muestra actual no contiene suficientes tokens clasificados para recomendar una narrativa.";
+      "La muestra actual no contiene suficientes tokens clasificados para recomendar una temática.";
 
     $("#themeStatus").textContent =
       "ESPERAR";
@@ -2740,31 +3102,83 @@ function renderThemeRecommendation() {
     $("#themeVolume").textContent =
       "Sin datos";
 
+    $("#themeIdeas").innerHTML = `
+      <article class="idea-card">
+        <strong>Esperar datos</strong>
+        <span class="idea-ticker">—</span>
+        <p>
+          Todavía no existe una temática con señal suficiente.
+        </p>
+      </article>
+    `;
+
     return;
   }
+
+  const displayedName =
+    theme.name === "Animales"
+      ? animal
+        ? animal.name
+        : "Animales sin especie dominante"
+      : theme.name;
+
+  const displayedTokens =
+    animal?.mentions || theme.tokens;
+
+  const displayedVolume =
+    animal?.volume || theme.volume;
+
+  const displayedLiquidity =
+    animal?.liquidity || 0;
+
+  const displayedAverage =
+    displayedTokens > 0
+      ? displayedVolume /
+        displayedTokens
+      : 0;
 
   let statusText = "SEÑAL DÉBIL";
   let statusClass = "avoid";
 
   const looksSaturated =
-    theme.tokens >= 10 &&
-    theme.volumePerToken < 75000;
+    displayedTokens >= 10 &&
+    displayedAverage < 75000;
 
-  if (looksSaturated) {
-    statusText = "POSIBLE SATURACIÓN";
+  if (
+    theme.name === "Animales" &&
+    !animal
+  ) {
+    statusText =
+      "ESPECIE NO CONFIRMADA";
+
     statusClass = "wait";
-  } else if (theme.opportunity >= 70) {
-    statusText = "PRIORIDAD ALTA";
+  } else if (looksSaturated) {
+    statusText =
+      "POSIBLE SATURACIÓN";
+
+    statusClass = "wait";
+  } else if (
+    theme.opportunity >= 70
+  ) {
+    statusText =
+      "PRIORIDAD ALTA";
+
     statusClass = "go";
-  } else if (theme.opportunity >= 50) {
+  } else if (
+    theme.opportunity >= 50
+  ) {
     statusText = "VALIDAR";
     statusClass = "wait";
   }
 
-  const confidence = clamp(
+  let confidence = clamp(
     Math.round(
       theme.opportunity * 0.68 +
-        Math.min(theme.tokens, 8) * 2 +
+        Math.min(
+          displayedTokens,
+          8
+        ) *
+          2 +
         (
           state.marketItems.length >= 8
             ? 8
@@ -2776,8 +3190,20 @@ function renderThemeRecommendation() {
     84
   );
 
+  if (animal) {
+    confidence = clamp(
+      Math.round(
+        confidence * 0.75 +
+          animal.confidenceShare *
+            25
+      ),
+      5,
+      88
+    );
+  }
+
   $("#themeNarrative").textContent =
-    theme.name;
+    displayedName;
 
   $("#themeStatus").textContent =
     statusText;
@@ -2800,27 +3226,57 @@ function renderThemeRecommendation() {
     "Sin plataforma confirmada";
 
   $("#themeTokenCount").textContent =
-    `${theme.tokens} observados`;
+    `${displayedTokens} observados`;
 
   $("#themeVolume").textContent =
-    formatUsd(theme.volume);
+    formatUsd(displayedVolume);
 
-  $("#themeReason").textContent =
-    `${theme.name} es la narrativa con mejor señal relativa en la muestra. ` +
-    `Registra ${formatUsd(theme.volume)} de volumen entre ` +
-    `${theme.tokens} tokens, con un promedio de ` +
-    `${formatUsd(theme.volumePerToken)} por token observado. ` +
-    `${
-      looksSaturated
-        ? "La cantidad de tokens puede indicar saturación; conviene buscar un enfoque diferente dentro del mismo tema."
-        : "Conviene confirmar que el volumen se mantenga y que exista conversación orgánica antes de lanzar."
-    }`;
+  if (
+    theme.name === "Animales" &&
+    animal
+  ) {
+    const runnerUpText =
+      animal.runnerUp
+        ? ` La segunda especie observada es ${animal.runnerUp.name}.`
+        : "";
+
+    $("#themeReason").textContent =
+      `Dentro de la narrativa de animales, ${animal.name} ` +
+      `es la especie con mayor señal en la muestra. ` +
+      `Se encontraron ${animal.mentions} tokens relacionados, ` +
+      `${formatUsd(animal.volume)} de volumen y ` +
+      `${formatUsd(displayedLiquidity)} de liquidez.` +
+      runnerUpText +
+      ` ${
+        looksSaturated
+          ? "Existe posible saturación; conviene crear un personaje e historia diferentes."
+          : "Confirma que mantenga el liderazgo durante dos actualizaciones antes de lanzar."
+      }`;
+  } else if (
+    theme.name === "Animales" &&
+    !animal
+  ) {
+    $("#themeReason").textContent =
+      "La categoría Animales tiene actividad, pero todavía no existe suficiente evidencia para elegir entre gato, perro, rana, oso u otra especie. El radar continuará analizando los nombres y símbolos.";
+
+  } else {
+    $("#themeReason").textContent =
+      `${theme.name} es la narrativa con mejor señal relativa. ` +
+      `Registra ${formatUsd(theme.volume)} de volumen entre ` +
+      `${theme.tokens} tokens, con un promedio de ` +
+      `${formatUsd(theme.volumePerToken)} por token observado. ` +
+      `${
+        looksSaturated
+          ? "La cantidad de tokens puede indicar saturación."
+          : "Conviene confirmar conversación orgánica antes de lanzar."
+      }`;
+  }
 
   const ideas =
-    THEME_IDEAS[theme.name] ||
-    THEME_IDEAS[
-      "Otros / sin clasificar"
-    ];
+    buildSpecificThemeIdeas(
+      theme.name,
+      animal
+    );
 
   $("#themeIdeas").innerHTML =
     ideas
@@ -2836,7 +3292,9 @@ function renderThemeRecommendation() {
             </span>
 
             <p>
-              ${escapeHtml(idea.description)}
+              ${escapeHtml(
+                idea.description
+              )}
             </p>
           </article>
         `
