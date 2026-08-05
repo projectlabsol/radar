@@ -1,0 +1,3080 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Radar en español para analizar redes, liquidez, launchpads y narrativas antes de lanzar una memecoin."
+  />
+  <title>Memecoin Launch Radar of Charlie</title>
+
+  <style>
+    :root {
+      --bg: #07100e;
+      --panel: #0c1714;
+      --panel-2: #101e1a;
+      --line: #20342e;
+      --text: #eef8f4;
+      --muted: #91a69f;
+      --green: #34e79b;
+      --green-2: #16b978;
+      --yellow: #ffd166;
+      --red: #ff6b76;
+      --blue: #68a7ff;
+      --shadow: 0 18px 60px rgba(0, 0, 0, 0.32);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(
+          circle at 85% 0%,
+          rgba(52, 231, 155, 0.1),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 0% 100%,
+          rgba(104, 167, 255, 0.07),
+          transparent 30%
+        ),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .app {
+      display: grid;
+      grid-template-columns: 250px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      padding: 22px 16px;
+      border-right: 1px solid var(--line);
+      background: rgba(7, 16, 14, 0.88);
+      backdrop-filter: blur(16px);
+      z-index: 10;
+    }
+
+    .brand {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      padding: 4px 8px 22px;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      color: #062016;
+      background: linear-gradient(145deg, var(--green), #a6ffd7);
+      font-weight: 900;
+      box-shadow: 0 10px 32px rgba(52, 231, 155, 0.22);
+    }
+
+    .brand strong {
+      display: block;
+      font-size: 15px;
+      letter-spacing: 0.02em;
+    }
+
+    .brand small {
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    .nav {
+      display: grid;
+      gap: 6px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--muted);
+      padding: 11px 12px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: 0.18s ease;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: var(--text);
+      background: var(--panel-2);
+    }
+
+    .nav a.active {
+      box-shadow: inset 3px 0 0 var(--green);
+    }
+
+    .side-note {
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 18px;
+      padding: 13px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel);
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .side-note b {
+      color: var(--text);
+    }
+
+    main {
+      min-width: 0;
+      padding: 22px clamp(16px, 3vw, 38px) 50px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    .topbar h1 {
+      margin: 0;
+      font-size: clamp(24px, 3vw, 38px);
+      line-height: 1.05;
+    }
+
+    .topbar p {
+      margin: 7px 0 0;
+      color: var(--muted);
+    }
+
+    .top-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .status-pill,
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 11px;
+      background: var(--panel);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .status-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--yellow);
+      box-shadow: 0 0 0 4px rgba(255, 209, 102, 0.1);
+    }
+
+    .status-dot.live {
+      background: var(--green);
+      box-shadow: 0 0 0 4px rgba(52, 231, 155, 0.1);
+    }
+
+    .status-dot.error {
+      background: var(--red);
+      box-shadow: 0 0 0 4px rgba(255, 107, 118, 0.1);
+    }
+
+    .btn {
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-weight: 750;
+      transition:
+        transform 0.16s ease,
+        border-color 0.16s ease,
+        background 0.16s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: #38584f;
+    }
+
+    .btn.primary {
+      background: var(--green);
+      color: #052017;
+      border-color: transparent;
+    }
+
+    .btn:disabled {
+      opacity: 0.55;
+      cursor: wait;
+      transform: none;
+    }
+
+    .hero {
+      border: 1px solid rgba(52, 231, 155, 0.25);
+      background: linear-gradient(
+        135deg,
+        rgba(52, 231, 155, 0.1),
+        rgba(12, 23, 20, 0.96) 42%,
+        rgba(104, 167, 255, 0.05)
+      );
+      border-radius: 24px;
+      padding: clamp(18px, 3vw, 30px);
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      right: -110px;
+      top: -125px;
+      background: rgba(52, 231, 155, 0.08);
+      border: 1px solid rgba(52, 231, 155, 0.12);
+    }
+
+    .eyebrow {
+      color: var(--green);
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
+      gap: 26px;
+      align-items: end;
+    }
+
+    .decision {
+      font-size: clamp(34px, 6vw, 66px);
+      line-height: 0.95;
+      font-weight: 950;
+      letter-spacing: -0.055em;
+      margin: 12px 0;
+    }
+
+    .decision.wait {
+      color: var(--yellow);
+    }
+
+    .decision.go {
+      color: var(--green);
+    }
+
+    .decision.avoid {
+      color: var(--red);
+    }
+
+    .hero-copy {
+      color: #bfd0ca;
+      max-width: 720px;
+      line-height: 1.55;
+    }
+
+    .confidence-wrap {
+      margin-top: 18px;
+      max-width: 560px;
+    }
+
+    .confidence-head {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .bar {
+      height: 10px;
+      background: #172821;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--green-2), var(--green));
+      transition: width 0.6s ease;
+      border-radius: inherit;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .metric {
+      padding: 15px;
+      background: rgba(7, 16, 14, 0.62);
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      min-height: 94px;
+    }
+
+    .metric small {
+      display: block;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .metric strong {
+      font-size: 19px;
+      line-height: 1.2;
+    }
+
+    .metric em {
+      display: block;
+      margin-top: 7px;
+      color: var(--green);
+      font-style: normal;
+      font-size: 12px;
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 18px 0;
+    }
+
+    .search {
+      flex: 1 1 280px;
+      min-width: 0;
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 11px 13px;
+      outline: none;
+    }
+
+    .search:focus {
+      border-color: var(--green-2);
+      box-shadow: 0 0 0 3px rgba(52, 231, 155, 0.08);
+    }
+
+    select {
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      outline: none;
+    }
+
+    section {
+      scroll-margin-top: 16px;
+      margin-top: 26px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 13px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: 21px;
+    }
+
+    .section-head p {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .section-head .source {
+      color: var(--muted);
+      font-size: 12px;
+      text-align: right;
+    }
+
+    .panel {
+      background: rgba(12, 23, 20, 0.84);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .panel-pad {
+      padding: 17px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 860px;
+    }
+
+    th,
+    td {
+      padding: 14px 15px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    th {
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: rgba(16, 30, 26, 0.7);
+    }
+
+    td {
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    tbody tr:hover {
+      background: rgba(255, 255, 255, 0.018);
+    }
+
+    .rank {
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 9px;
+      background: var(--panel-2);
+      color: var(--muted);
+      font-weight: 800;
+    }
+
+    .network {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .network-logo {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      background: #172821;
+      font-weight: 900;
+      color: var(--green);
+    }
+
+    .network b {
+      display: block;
+    }
+
+    .network small {
+      color: var(--muted);
+    }
+
+    .positive {
+      color: var(--green);
+    }
+
+    .negative {
+      color: var(--red);
+    }
+
+    .neutral {
+      color: var(--muted);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 6px 9px;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.03em;
+      border: 1px solid transparent;
+    }
+
+    .badge.go {
+      color: var(--green);
+      background: rgba(52, 231, 155, 0.09);
+      border-color: rgba(52, 231, 155, 0.18);
+    }
+
+    .badge.wait {
+      color: var(--yellow);
+      background: rgba(255, 209, 102, 0.09);
+      border-color: rgba(255, 209, 102, 0.18);
+    }
+
+    .badge.avoid {
+      color: var(--red);
+      background: rgba(255, 107, 118, 0.09);
+      border-color: rgba(255, 107, 118, 0.18);
+    }
+
+    .badge.info {
+      color: var(--blue);
+      background: rgba(104, 167, 255, 0.09);
+      border-color: rgba(104, 167, 255, 0.18);
+    }
+
+    .score {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .score-line {
+      width: 78px;
+      height: 7px;
+      border-radius: 999px;
+      background: #172821;
+      overflow: hidden;
+    }
+
+    .score-line span {
+      display: block;
+      height: 100%;
+      background: var(--green);
+      border-radius: inherit;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 13px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 13px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--panel);
+      padding: 16px;
+    }
+
+    .card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 12px;
+    }
+
+    .card h3 {
+      margin: 0 0 5px;
+      font-size: 16px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .card-metrics {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .mini {
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+    }
+
+    .mini span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .mini strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 14px;
+    }
+
+    .token-list {
+      display: grid;
+      gap: 0;
+    }
+
+    .token-row {
+      display: grid;
+      grid-template-columns:
+        minmax(180px, 1.4fr) 0.7fr 0.8fr 0.8fr
+        0.8fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 13px 15px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .token-row:last-child {
+      border-bottom: 0;
+    }
+
+    .token-main {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      min-width: 0;
+    }
+
+    .token-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
+      object-fit: cover;
+      background: #172821;
+    }
+
+    .token-placeholder {
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
+      background: #172821;
+      display: grid;
+      place-items: center;
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    .token-name {
+      min-width: 0;
+    }
+
+    .token-name b,
+    .token-name small {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: block;
+    }
+
+    .token-name small {
+      color: var(--muted);
+      margin-top: 3px;
+    }
+
+    .cell-label {
+      display: none;
+      color: var(--muted);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .external {
+      text-decoration: none;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .narratives {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .narrative {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--panel);
+    }
+
+    .narrative strong {
+      font-size: 13px;
+    }
+
+    .narrative span {
+      color: var(--green);
+      font-size: 12px;
+    }
+
+    .coverage {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .coverage .card {
+      min-height: 145px;
+    }
+
+    .coverage-icon {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .notice {
+      border: 1px solid rgba(255, 209, 102, 0.18);
+      background: rgba(255, 209, 102, 0.055);
+      color: #eadfb8;
+      border-radius: 15px;
+      padding: 14px 16px;
+      line-height: 1.55;
+      font-size: 13px;
+    }
+
+    .empty {
+      padding: 28px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .spinning {
+      display: inline-block;
+      animation: spin 0.8s linear infinite;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    #toast {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 40;
+      max-width: 360px;
+      padding: 13px 15px;
+      border-radius: 13px;
+      border: 1px solid var(--line);
+      background: #11221d;
+      color: var(--text);
+      box-shadow: var(--shadow);
+      transform: translateY(120px);
+      opacity: 0;
+      transition: 0.25s ease;
+    }
+
+    #toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    @media (max-width: 1050px) {
+      .app {
+        grid-template-columns: 78px minmax(0, 1fr);
+      }
+
+      .sidebar {
+        padding-inline: 10px;
+      }
+
+      .brand {
+        justify-content: center;
+        padding-inline: 0;
+      }
+
+      .brand-text,
+      .nav-label,
+      .side-note {
+        display: none;
+      }
+
+      .nav a {
+        justify-content: center;
+        font-size: 18px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .coverage {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .app {
+        display: block;
+      }
+
+      .sidebar {
+        position: static;
+        height: auto;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        padding: 12px 14px;
+      }
+
+      .brand {
+        justify-content: flex-start;
+        padding: 0;
+      }
+
+      .brand-text {
+        display: block;
+      }
+
+      .nav,
+      .side-note {
+        display: none;
+      }
+
+      main {
+        padding: 18px 14px 40px;
+      }
+
+      .topbar {
+        align-items: flex-start;
+      }
+
+      .top-actions .status-pill {
+        display: none;
+      }
+
+      .hero-stats,
+      .grid-2,
+      .grid-3,
+      .coverage {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head {
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .section-head .source {
+        text-align: left;
+      }
+
+      .token-row {
+        grid-template-columns: 1fr 1fr;
+        padding: 15px;
+      }
+
+      .token-main {
+        grid-column: 1 / -1;
+      }
+
+      .cell-label {
+        display: block;
+        margin-bottom: 3px;
+      }
+
+      .token-row .external {
+        justify-self: end;
+        align-self: end;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">C</div>
+
+        <div class="brand-text">
+          <strong>Launch Radar</strong>
+          <small>of Charlie</small>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#resumen" class="active">
+          <span>◉</span>
+          <span class="nav-label">Resumen</span>
+        </a>
+
+        <a href="#redes">
+          <span>◆</span>
+          <span class="nav-label">Redes</span>
+        </a>
+
+        <a href="#nuevas">
+          <span>✦</span>
+          <span class="nav-label">Nuevas chains</span>
+        </a>
+
+        <a href="#launchpads">
+          <span>⌁</span>
+          <span class="nav-label">Launchpads / DEX</span>
+        </a>
+
+        <a href="#atencion">
+          <span>↗</span>
+          <span class="nav-label">Atención del mercado</span>
+        </a>
+
+        <a href="#narrativas">
+          <span>◎</span>
+          <span class="nav-label">Narrativas</span>
+        </a>
+
+        <a href="#fuentes">
+          <span>◫</span>
+          <span class="nav-label">Fuentes</span>
+        </a>
+      </nav>
+
+      <div class="side-note">
+        <b>Objetivo:</b> decidir dónde y cuándo preparar un lanzamiento.
+        No ejecuta compras ni conecta wallets.
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar" id="resumen">
+        <div>
+          <h1>Radar del mercado memecoin</h1>
+          <p>
+            Redes, liquidez, atención y entornos de lanzamiento en una sola
+            vista.
+          </p>
+        </div>
+
+        <div class="top-actions">
+          <span class="status-pill">
+            <i id="statusDot" class="status-dot"></i>
+            <span id="apiStatus">Conectando fuentes…</span>
+          </span>
+
+          <button id="refreshBtn" class="btn primary" type="button">
+            ↻ Actualizar
+          </button>
+        </div>
+      </header>
+
+      <section class="hero" aria-labelledby="decisionTitle">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Señal calculada con datos públicos</div>
+
+            <div id="decisionTitle" class="decision wait">
+              ANALIZANDO
+            </div>
+
+            <p id="decisionReason" class="hero-copy">
+              Comparando volumen DEX, variación, TVL, actividad promocionada y
+              lanzamientos recientes observados.
+            </p>
+
+            <div class="confidence-wrap">
+              <div class="confidence-head">
+                <span>Confianza de la señal</span>
+                <strong id="confidenceText">—</strong>
+              </div>
+
+              <div class="bar">
+                <span id="confidenceBar"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="metric">
+              <small>Mejor red observada</small>
+              <strong id="bestNetwork">Cargando…</strong>
+              <em id="bestNetworkNote">Esperando datos</em>
+            </div>
+
+            <div class="metric">
+              <small>Red emergente</small>
+              <strong id="emergingNetwork">Buscando…</strong>
+              <em id="emergingNote">Fuera de la lista principal</em>
+            </div>
+
+            <div class="metric">
+              <small>Entorno con actividad</small>
+              <strong id="bestLaunchpad">Cargando…</strong>
+              <em id="launchpadNote">Muestra de pares observados</em>
+            </div>
+
+            <div class="metric">
+              <small>Última actualización</small>
+              <strong id="lastUpdate">—</strong>
+              <em id="nextUpdate">Actualización automática: 60 s</em>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="toolbar">
+        <input
+          id="networkSearch"
+          class="search"
+          type="search"
+          placeholder="Buscar red: Solana, Base, Robinhood Chain…"
+          aria-label="Buscar red"
+        />
+
+        <select id="sortNetworks" aria-label="Ordenar redes">
+          <option value="score">Ordenar por oportunidad</option>
+          <option value="volume">Ordenar por volumen 24 h</option>
+          <option value="growth">Ordenar por crecimiento</option>
+          <option value="tvl">Ordenar por TVL</option>
+        </select>
+      </div>
+
+      <section id="redes">
+        <div class="section-head">
+          <div>
+            <h2>Ranking de redes para preparar un lanzamiento</h2>
+            <p>
+              La puntuación combina tamaño, impulso y atención. No representa
+              una garantía de ganancias.
+            </p>
+          </div>
+
+          <div class="source">
+            Datos: DefiLlama + muestra DEX Screener
+          </div>
+        </div>
+
+        <div class="panel table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Red</th>
+                <th>Estado</th>
+                <th>Puntuación</th>
+                <th>Volumen DEX 24 h</th>
+                <th>Cambio 24 h</th>
+                <th>TVL</th>
+                <th>Atención observada</th>
+              </tr>
+            </thead>
+
+            <tbody id="networkTable">
+              <tr>
+                <td colspan="8">
+                  <div class="empty">
+                    Cargando métricas de las redes…
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="nuevas">
+        <div class="section-head">
+          <div>
+            <h2>Detector de nuevas chains</h2>
+            <p>
+              Busca redes fuera de la lista principal que aparecen en perfiles,
+              boosts y pares recientes.
+            </p>
+          </div>
+
+          <div class="source">
+            Una detección es una alerta para investigar, no una validación
+            automática.
+          </div>
+        </div>
+
+        <div id="newChainsGrid" class="grid-3">
+          <div class="card">
+            <h3>Escaneando nuevas redes…</h3>
+            <p>Analizando actividad reciente.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="launchpads">
+        <div class="section-head">
+          <div>
+            <h2>Launchpads y DEX con actividad observada</h2>
+            <p>
+              Se agrupan los pares de la muestra por plataforma para ver dónde
+              se concentra la atención.
+            </p>
+          </div>
+
+          <div class="source">
+            Volumen y liquidez de una muestra reciente; no es el mercado
+            completo.
+          </div>
+        </div>
+
+        <div id="launchpadGrid" class="grid-3">
+          <div class="card">
+            <h3>Calculando actividad…</h3>
+            <p>Consultando pares recientes.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="atencion">
+        <div class="section-head">
+          <div>
+            <h2>Atención reciente del mercado</h2>
+            <p>
+              Tokens con perfiles o promoción reciente. La promoción pagada se
+              muestra como señal de atención, no de calidad.
+            </p>
+          </div>
+
+          <div class="source">DEX Screener</div>
+        </div>
+
+        <div class="panel">
+          <div id="tokenList" class="token-list">
+            <div class="empty">
+              Cargando la muestra de mercado…
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="narrativas">
+        <div class="section-head">
+          <div>
+            <h2>Narrativas observadas</h2>
+            <p>
+              Clasificación automática por nombres y descripciones de los
+              tokens de la muestra.
+            </p>
+          </div>
+
+          <div class="source">
+            Heurística inicial; el módulo social llegará con backend.
+          </div>
+        </div>
+
+        <div id="narrativeList" class="narratives">
+          <div class="narrative">
+            <strong>Analizando textos…</strong>
+            <span>—</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="fuentes">
+        <div class="section-head">
+          <div>
+            <h2>Cobertura de datos</h2>
+            <p>
+              Qué funciona en esta primera versión y qué requiere una segunda
+              etapa.
+            </p>
+          </div>
+        </div>
+
+        <div class="coverage">
+          <article class="card">
+            <div class="coverage-icon">◈</div>
+            <h3>Volumen y TVL</h3>
+            <p>
+              Conectado a endpoints públicos sin claves. Se actualiza desde el
+              navegador.
+            </p>
+
+            <div style="margin-top: 12px">
+              <span class="badge go">ACTIVO</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="coverage-icon">↗</div>
+            <h3>Perfiles, boosts y pares</h3>
+            <p>
+              Muestra reciente para medir atención, liquidez, volumen y
+              antigüedad.
+            </p>
+
+            <div style="margin-top: 12px">
+              <span class="badge go">ACTIVO</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="coverage-icon">◉</div>
+            <h3>Robinhood Chain</h3>
+            <p>
+              Incluida en el radar. Se intenta comprobar el RPC público;
+              aparecerá sin datos hasta que haya cobertura DEX suficiente.
+            </p>
+
+            <div style="margin-top: 12px">
+              <span id="robinhoodBadge" class="badge info">
+                EN OBSERVACIÓN
+              </span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="coverage-icon">✦</div>
+            <h3>Telegram y Discord</h3>
+            <p>
+              Requiere un servidor seguro y bots autorizados. No se puede
+              ejecutar de forma completa desde GitHub Pages.
+            </p>
+
+            <div style="margin-top: 12px">
+              <span class="badge wait">ETAPA 2</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="notice" style="margin-top: 13px">
+          <b>Lectura correcta del radar:</b> úsalo para comparar condiciones y
+          detectar cambios. Antes de lanzar, valida comunidad, distribución,
+          contrato, presupuesto, cumplimiento legal y riesgo reputacional. Una
+          puntuación alta no asegura que una moneda tenga éxito.
+        </div>
+      </section>
+
+      <footer>
+        Memecoin Launch Radar of Charlie · Panel informativo en español · Sin
+        conexión de wallet ni ejecución automática.
+        <br />
+        Fuentes públicas sujetas a disponibilidad y límites de consulta.
+      </footer>
+    </main>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const CORE_NETWORKS = [
+      {
+        id: "solana",
+        name: "Solana",
+        short: "SOL",
+        llama: ["Solana"]
+      },
+      {
+        id: "base",
+        name: "Base",
+        short: "B",
+        llama: ["Base"]
+      },
+      {
+        id: "bsc",
+        name: "BNB Chain",
+        short: "BNB",
+        llama: ["BSC", "Binance"]
+      },
+      {
+        id: "ethereum",
+        name: "Ethereum",
+        short: "ETH",
+        llama: ["Ethereum"]
+      },
+      {
+        id: "arbitrum",
+        name: "Arbitrum",
+        short: "ARB",
+        llama: ["Arbitrum"]
+      },
+      {
+        id: "robinhood",
+        name: "Robinhood Chain",
+        short: "RH",
+        llama: ["Robinhood Chain", "Robinhood"]
+      },
+      {
+        id: "sui",
+        name: "Sui",
+        short: "SUI",
+        llama: ["Sui"]
+      },
+      {
+        id: "avalanche",
+        name: "Avalanche",
+        short: "AVAX",
+        llama: ["Avalanche"]
+      },
+      {
+        id: "polygon",
+        name: "Polygon",
+        short: "POL",
+        llama: ["Polygon"]
+      },
+      {
+        id: "ton",
+        name: "TON",
+        short: "TON",
+        llama: ["TON"]
+      }
+    ];
+
+    const DISPLAY_CHAIN = {
+      solana: "Solana",
+      ethereum: "Ethereum",
+      base: "Base",
+      bsc: "BNB Chain",
+      arbitrum: "Arbitrum",
+      avalanche: "Avalanche",
+      polygon: "Polygon",
+      sui: "Sui",
+      ton: "TON",
+      robinhood: "Robinhood Chain",
+      robinhoodchain: "Robinhood Chain"
+    };
+
+    const DEX_NAMES = {
+      pumpswap: "PumpSwap",
+      pumpfun: "Pump.fun",
+      raydium: "Raydium",
+      orca: "Orca",
+      meteora: "Meteora",
+      uniswap: "Uniswap",
+      pancakeswap: "PancakeSwap",
+      aerodrome: "Aerodrome",
+      sushiswap: "SushiSwap",
+      traderjoe: "Trader Joe",
+      quickswap: "QuickSwap",
+      cetus: "Cetus",
+      turbos: "Turbos",
+      dedust: "DeDust",
+      stonfi: "STON.fi",
+      camelot: "Camelot",
+      fourmeme: "Four.meme"
+    };
+
+    const state = {
+      networks: [],
+      marketItems: [],
+      launchpads: [],
+      newChains: [],
+      narratives: [],
+      errors: [],
+      loading: false,
+      lastUpdate: null,
+      robinhoodBlock: null
+    };
+
+    const $ = (selector) => document.querySelector(selector);
+
+    const clamp = (number, minimum, maximum) =>
+      Math.min(maximum, Math.max(minimum, number));
+
+    const sleep = (milliseconds) =>
+      new Promise((resolve) => setTimeout(resolve, milliseconds));
+
+    function showToast(message) {
+      const toast = $("#toast");
+
+      toast.textContent = message;
+      toast.classList.add("show");
+
+      clearTimeout(showToast.timer);
+
+      showToast.timer = setTimeout(() => {
+        toast.classList.remove("show");
+      }, 3600);
+    }
+
+    async function fetchJson(url, options = {}, timeout = 12000) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), timeout);
+
+      try {
+        const response = await fetch(url, {
+          ...options,
+          signal: controller.signal
+        });
+
+        if (!response.ok) {
+          throw new Error(
+            `${response.status} ${response.statusText}`
+          );
+        }
+
+        return await response.json();
+      } finally {
+        clearTimeout(timer);
+      }
+    }
+
+    function formatUsd(value) {
+      if (!Number.isFinite(Number(value))) {
+        return "Sin datos";
+      }
+
+      const number = Number(value);
+
+      return new Intl.NumberFormat("es-PE", {
+        style: "currency",
+        currency: "USD",
+        notation: number >= 1000000 ? "compact" : "standard",
+        maximumFractionDigits: number >= 1000 ? 1 : 0
+      }).format(number);
+    }
+
+    function formatNumber(value) {
+      if (!Number.isFinite(Number(value))) {
+        return "—";
+      }
+
+      return new Intl.NumberFormat("es-PE", {
+        notation: "compact",
+        maximumFractionDigits: 1
+      }).format(Number(value));
+    }
+
+    function formatPercent(value) {
+      if (!Number.isFinite(Number(value))) {
+        return "—";
+      }
+
+      const number = Number(value);
+
+      return `${number >= 0 ? "+" : ""}${number.toFixed(1)} %`;
+    }
+
+    function timeAgo(timestamp) {
+      if (!timestamp) {
+        return "—";
+      }
+
+      const difference = Math.max(
+        0,
+        Date.now() - Number(timestamp)
+      );
+
+      const minutes = Math.floor(difference / 60000);
+
+      if (minutes < 60) {
+        return `${minutes} min`;
+      }
+
+      const hours = Math.floor(minutes / 60);
+
+      if (hours < 48) {
+        return `${hours} h`;
+      }
+
+      return `${Math.floor(hours / 24)} d`;
+    }
+
+    function normalizeChain(value = "") {
+      return String(value)
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, "");
+    }
+
+    function networkStatus(score, volume) {
+      if (
+        !Number.isFinite(score) ||
+        !Number.isFinite(volume)
+      ) {
+        return {
+          text: "EN OBSERVACIÓN",
+          cls: "info"
+        };
+      }
+
+      if (score >= 75) {
+        return {
+          text: "PREPARAR",
+          cls: "go"
+        };
+      }
+
+      if (score >= 55) {
+        return {
+          text: "VIGILAR",
+          cls: "wait"
+        };
+      }
+
+      if (score >= 35) {
+        return {
+          text: "ESPERAR",
+          cls: "wait"
+        };
+      }
+
+      return {
+        text: "EVITAR AHORA",
+        cls: "avoid"
+      };
+    }
+
+    function computeNetworkScore({
+      volume24h,
+      change1d,
+      tvl,
+      attention,
+      sampleVolume,
+      sampleNewPairs
+    }) {
+      if (!Number.isFinite(volume24h)) {
+        return null;
+      }
+
+      const volumeScore = clamp(
+        (Math.log10(volume24h + 1) / 10) * 35,
+        0,
+        35
+      );
+
+      const growthScore = Number.isFinite(change1d)
+        ? clamp(((change1d + 30) / 90) * 25, 0, 25)
+        : 7;
+
+      const tvlScore = Number.isFinite(tvl)
+        ? clamp((Math.log10(tvl + 1) / 11) * 15, 0, 15)
+        : 0;
+
+      const attentionScore = clamp(
+        (attention || 0) * 2.3,
+        0,
+        12
+      );
+
+      const sampleScore = clamp(
+        (Math.log10((sampleVolume || 0) + 1) / 8) * 8 +
+          (sampleNewPairs || 0) * 1.2,
+        0,
+        13
+      );
+
+      return Math.round(
+        volumeScore +
+          growthScore +
+          tvlScore +
+          attentionScore +
+          sampleScore
+      );
+    }
+
+    async function getChainDexData(network) {
+      for (const alias of network.llama) {
+        try {
+          const url =
+            `https://api.llama.fi/overview/dexs/` +
+            `${encodeURIComponent(alias)}` +
+            `?excludeTotalDataChart=true` +
+            `&excludeTotalDataChartBreakdown=true`;
+
+          const data = await fetchJson(url);
+
+          if (
+            data &&
+            (
+              Number.isFinite(Number(data.total24h)) ||
+              Array.isArray(data.protocols)
+            )
+          ) {
+            return {
+              total24h: Number(data.total24h),
+              change1d: Number(data.change_1d),
+              total7d: Number(data.total7d),
+              sourceAlias: alias
+            };
+          }
+        } catch (error) {
+          console.warn(
+            `No se encontraron datos para ${alias}`
+          );
+        }
+      }
+
+      return {
+        total24h: NaN,
+        change1d: NaN,
+        total7d: NaN,
+        sourceAlias: null
+      };
+    }
+
+    async function loadDefiLlama() {
+      let chainTvl = [];
+
+      try {
+        chainTvl = await fetchJson(
+          "https://api.llama.fi/v2/chains"
+        );
+      } catch (error) {
+        state.errors.push("TVL de DefiLlama");
+      }
+
+      const results = [];
+
+      for (
+        let index = 0;
+        index < CORE_NETWORKS.length;
+        index += 3
+      ) {
+        const batch = CORE_NETWORKS.slice(
+          index,
+          index + 3
+        );
+
+        const part = await Promise.all(
+          batch.map(async (network) => {
+            const dex = await getChainDexData(network);
+
+            const tvlMatch = chainTvl.find((item) =>
+              network.llama.some(
+                (alias) =>
+                  normalizeChain(alias) ===
+                  normalizeChain(item.name)
+              )
+            );
+
+            return {
+              ...network,
+              volume24h: dex.total24h,
+              change1d: dex.change1d,
+              tvl: tvlMatch
+                ? Number(tvlMatch.tvl)
+                : NaN,
+              attention: 0,
+              sampleVolume: 0,
+              sampleLiquidity: 0,
+              sampleNewPairs: 0,
+              sourceAlias: dex.sourceAlias
+            };
+          })
+        );
+
+        results.push(...part);
+
+        if (index + 3 < CORE_NETWORKS.length) {
+          await sleep(180);
+        }
+      }
+
+      return results;
+    }
+
+    function mergeMarketSources(boosts, profiles) {
+      const map = new Map();
+
+      const add = (item, source) => {
+        if (!item?.chainId || !item?.tokenAddress) {
+          return;
+        }
+
+        const key =
+          `${item.chainId}:${item.tokenAddress}`.toLowerCase();
+
+        const previous = map.get(key) || {
+          chainId: item.chainId,
+          tokenAddress: item.tokenAddress,
+          sources: new Set()
+        };
+
+        previous.sources.add(source);
+        previous.url = item.url || previous.url;
+        previous.icon = item.icon || previous.icon;
+        previous.header = item.header || previous.header;
+        previous.description =
+          item.description || previous.description;
+        previous.amount = Number(
+          item.amount || previous.amount || 0
+        );
+        previous.totalAmount = Number(
+          item.totalAmount || previous.totalAmount || 0
+        );
+        previous.links =
+          item.links || previous.links || [];
+
+        map.set(key, previous);
+      };
+
+      (boosts || []).forEach((item) =>
+        add(item, "boost")
+      );
+
+      (profiles || []).forEach((item) =>
+        add(item, "perfil")
+      );
+
+      return [...map.values()].sort(
+        (first, second) =>
+          second.totalAmount +
+          second.amount -
+          (first.totalAmount + first.amount)
+      );
+    }
+
+    async function getTokenPair(item) {
+      try {
+        const url =
+          `https://api.dexscreener.com/token-pairs/v1/` +
+          `${encodeURIComponent(item.chainId)}/` +
+          `${encodeURIComponent(item.tokenAddress)}`;
+
+        const data = await fetchJson(
+          url,
+          {},
+          10000
+        );
+
+        const pairs = Array.isArray(data)
+          ? data
+          : data?.pairs || [];
+
+        if (!pairs.length) {
+          return null;
+        }
+
+        return pairs.sort(
+          (first, second) =>
+            Number(second?.liquidity?.usd || 0) -
+            Number(first?.liquidity?.usd || 0)
+        )[0];
+      } catch (error) {
+        return null;
+      }
+    }
+
+    async function loadDexScreener() {
+      let boosts = [];
+      let profiles = [];
+
+      try {
+        [boosts, profiles] = await Promise.all([
+          fetchJson(
+            "https://api.dexscreener.com/token-boosts/latest/v1"
+          ),
+          fetchJson(
+            "https://api.dexscreener.com/token-profiles/latest/v1"
+          )
+        ]);
+      } catch (error) {
+        state.errors.push("DEX Screener");
+      }
+
+      const merged = mergeMarketSources(
+        boosts,
+        profiles
+      ).slice(0, 18);
+
+      const completed = [];
+
+      for (
+        let index = 0;
+        index < merged.length;
+        index += 6
+      ) {
+        const batch = merged.slice(
+          index,
+          index + 6
+        );
+
+        const pairs = await Promise.all(
+          batch.map(getTokenPair)
+        );
+
+        batch.forEach((item, pairIndex) => {
+          completed.push({
+            ...item,
+            pair: pairs[pairIndex]
+          });
+        });
+
+        if (index + 6 < merged.length) {
+          await sleep(220);
+        }
+      }
+
+      return completed;
+    }
+
+    async function checkRobinhoodRpc() {
+      try {
+        const data = await fetchJson(
+          "https://rpc.mainnet.chain.robinhood.com",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              jsonrpc: "2.0",
+              id: 1,
+              method: "eth_blockNumber",
+              params: []
+            })
+          },
+          8500
+        );
+
+        if (data?.result) {
+          state.robinhoodBlock = parseInt(
+            data.result,
+            16
+          );
+        }
+      } catch (error) {
+        state.robinhoodBlock = null;
+      }
+    }
+
+    function enrichNetworks(networks, items) {
+      const attentionByChain = new Map();
+
+      items.forEach((item) => {
+        const key = normalizeChain(item.chainId);
+
+        const current =
+          attentionByChain.get(key) || {
+            count: 0,
+            volume: 0,
+            liquidity: 0,
+            newPairs: 0
+          };
+
+        current.count += 1;
+        current.volume += Number(
+          item.pair?.volume?.h24 || 0
+        );
+        current.liquidity += Number(
+          item.pair?.liquidity?.usd || 0
+        );
+
+        const age = item.pair?.pairCreatedAt
+          ? Date.now() -
+            Number(item.pair.pairCreatedAt)
+          : Infinity;
+
+        if (age <= 72 * 60 * 60 * 1000) {
+          current.newPairs += 1;
+        }
+
+        attentionByChain.set(key, current);
+      });
+
+      return networks.map((network) => {
+        const aliases = [
+          network.id,
+          network.name,
+          ...network.llama
+        ].map(normalizeChain);
+
+        let sample = {
+          count: 0,
+          volume: 0,
+          liquidity: 0,
+          newPairs: 0
+        };
+
+        for (const alias of aliases) {
+          if (attentionByChain.has(alias)) {
+            const found =
+              attentionByChain.get(alias);
+
+            sample = {
+              count:
+                sample.count + found.count,
+              volume:
+                sample.volume + found.volume,
+              liquidity:
+                sample.liquidity +
+                found.liquidity,
+              newPairs:
+                sample.newPairs +
+                found.newPairs
+            };
+          }
+        }
+
+        const score = computeNetworkScore({
+          volume24h: network.volume24h,
+          change1d: network.change1d,
+          tvl: network.tvl,
+          attention: sample.count,
+          sampleVolume: sample.volume,
+          sampleNewPairs: sample.newPairs
+        });
+
+        return {
+          ...network,
+          attention: sample.count,
+          sampleVolume: sample.volume,
+          sampleLiquidity: sample.liquidity,
+          sampleNewPairs: sample.newPairs,
+          score
+        };
+      });
+    }
+
+    function buildLaunchpads(items) {
+      const groups = new Map();
+
+      items.forEach((item) => {
+        const pair = item.pair;
+
+        if (!pair?.dexId) {
+          return;
+        }
+
+        const key = String(
+          pair.dexId
+        ).toLowerCase();
+
+        const group =
+          groups.get(key) || {
+            id: key,
+            tokens: 0,
+            volume: 0,
+            liquidity: 0,
+            buys: 0,
+            sells: 0,
+            newPairs: 0
+          };
+
+        group.tokens += 1;
+        group.volume += Number(
+          pair.volume?.h24 || 0
+        );
+        group.liquidity += Number(
+          pair.liquidity?.usd || 0
+        );
+        group.buys += Number(
+          pair.txns?.h24?.buys || 0
+        );
+        group.sells += Number(
+          pair.txns?.h24?.sells || 0
+        );
+
+        if (
+          pair.pairCreatedAt &&
+          Date.now() -
+            Number(pair.pairCreatedAt) <=
+            72 * 60 * 60 * 1000
+        ) {
+          group.newPairs += 1;
+        }
+
+        groups.set(key, group);
+      });
+
+      return [...groups.values()]
+        .map((group) => {
+          const transactions =
+            group.buys + group.sells;
+
+          const buyRatio = transactions
+            ? group.buys / transactions
+            : 0.5;
+
+          const score = Math.round(
+            clamp(
+              (Math.log10(group.volume + 1) /
+                8) *
+                42 +
+                (Math.log10(
+                  group.liquidity + 1
+                ) /
+                  8) *
+                  25 +
+                group.newPairs * 5 +
+                buyRatio * 20,
+              0,
+              100
+            )
+          );
+
+          return {
+            ...group,
+            buyRatio,
+            score,
+            name:
+              DEX_NAMES[group.id] ||
+              group.id
+          };
+        })
+        .sort(
+          (first, second) =>
+            second.score - first.score
+        );
+    }
+
+    function buildNewChains(items) {
+      const coreAliases = new Set();
+
+      CORE_NETWORKS.forEach((network) => {
+        [
+          network.id,
+          network.name,
+          ...network.llama
+        ].forEach((alias) => {
+          coreAliases.add(
+            normalizeChain(alias)
+          );
+        });
+      });
+
+      const groups = new Map();
+
+      items.forEach((item) => {
+        const key = normalizeChain(
+          item.chainId
+        );
+
+        if (!key || coreAliases.has(key)) {
+          return;
+        }
+
+        const group =
+          groups.get(key) || {
+            id: item.chainId,
+            tokens: 0,
+            volume: 0,
+            liquidity: 0,
+            newPairs: 0
+          };
+
+        group.tokens += 1;
+        group.volume += Number(
+          item.pair?.volume?.h24 || 0
+        );
+        group.liquidity += Number(
+          item.pair?.liquidity?.usd || 0
+        );
+
+        if (
+          item.pair?.pairCreatedAt &&
+          Date.now() -
+            Number(
+              item.pair.pairCreatedAt
+            ) <=
+            72 * 60 * 60 * 1000
+        ) {
+          group.newPairs += 1;
+        }
+
+        groups.set(key, group);
+      });
+
+      return [...groups.values()]
+        .map((group) => {
+          let status = "DESCUBIERTA";
+          let cls = "info";
+
+          if (
+            group.volume >= 250000 &&
+            group.liquidity >= 100000 &&
+            group.newPairs >= 2
+          ) {
+            status = "EMERGENTE";
+            cls = "go";
+          } else if (
+            group.volume >= 50000 ||
+            group.tokens >= 2
+          ) {
+            status = "EN OBSERVACIÓN";
+            cls = "wait";
+          }
+
+          return {
+            ...group,
+            status,
+            cls
+          };
+        })
+        .sort(
+          (first, second) =>
+            second.volume +
+            second.liquidity -
+            (first.volume +
+              first.liquidity)
+        );
+    }
+
+    function classifyNarratives(items) {
+      const groups = new Map();
+
+      const rules = [
+        [
+          "IA y agentes",
+          /\b(ai|agent|gpt|robot|neural|intelligence|ia)\b/i
+        ],
+        [
+          "Animales",
+          /\b(dog|doge|cat|kitty|frog|pepe|monkey|ape|bear|bull|penguin|shib|animal)\b/i
+        ],
+        [
+          "Gaming",
+          /\b(game|gaming|play|quest|rpg|pixel|arena)\b/i
+        ],
+        [
+          "Política",
+          /\b(trump|president|election|politic|government|senate)\b/i
+        ],
+        [
+          "RWA y finanzas",
+          /\b(rwa|stock|yield|finance|bank|gold|silver|asset)\b/i
+        ],
+        [
+          "Deportes",
+          /\b(football|soccer|fifa|nba|sport|world cup|team)\b/i
+        ],
+        [
+          "Cultura de internet",
+          /\b(meme|viral|based|chad|wojak|internet|community)\b/i
+        ]
+      ];
+
+      items.forEach((item) => {
+        const pair = item.pair || {};
+
+        const text =
+          `${pair.baseToken?.name || ""} ` +
+          `${pair.baseToken?.symbol || ""} ` +
+          `${item.description || ""}`;
+
+        const found = rules.find(
+          ([, regularExpression]) =>
+            regularExpression.test(text)
+        );
+
+        const name = found
+          ? found[0]
+          : "Otros / sin clasificar";
+
+        const group =
+          groups.get(name) || {
+            name,
+            tokens: 0,
+            volume: 0
+          };
+
+        group.tokens += 1;
+        group.volume += Number(
+          pair.volume?.h24 || 0
+        );
+
+        groups.set(name, group);
+      });
+
+      return [...groups.values()].sort(
+        (first, second) =>
+          second.volume +
+          second.tokens * 1000 -
+          (first.volume +
+            first.tokens * 1000)
+      );
+    }
+
+    function renderNetworks() {
+      const query = $("#networkSearch")
+        .value.trim()
+        .toLowerCase();
+
+      const sort = $("#sortNetworks").value;
+
+      const rows = state.networks
+        .filter((item) =>
+          item.name
+            .toLowerCase()
+            .includes(query)
+        )
+        .sort((first, second) => {
+          if (sort === "volume") {
+            return (
+              (Number(second.volume24h) ||
+                -1) -
+              (Number(first.volume24h) ||
+                -1)
+            );
+          }
+
+          if (sort === "growth") {
+            return (
+              (Number(second.change1d) ||
+                -9999) -
+              (Number(first.change1d) ||
+                -9999)
+            );
+          }
+
+          if (sort === "tvl") {
+            return (
+              (Number(second.tvl) || -1) -
+              (Number(first.tvl) || -1)
+            );
+          }
+
+          return (
+            (Number(second.score) || -1) -
+            (Number(first.score) || -1)
+          );
+        });
+
+      $("#networkTable").innerHTML =
+        rows
+          .map((item, index) => {
+            const status = networkStatus(
+              item.score,
+              item.volume24h
+            );
+
+            const changeClass =
+              !Number.isFinite(item.change1d)
+                ? "neutral"
+                : item.change1d >= 0
+                  ? "positive"
+                  : "negative";
+
+            const score =
+              Number.isFinite(item.score)
+                ? item.score
+                : 0;
+
+            const sub =
+              item.id === "robinhood" &&
+              state.robinhoodBlock
+                ? `RPC activo · bloque ${formatNumber(
+                    state.robinhoodBlock
+                  )}`
+                : item.sourceAlias
+                  ? `DefiLlama: ${item.sourceAlias}`
+                  : "Cobertura DEX pendiente";
+
+            return `
+              <tr>
+                <td>
+                  <span class="rank">
+                    ${index + 1}
+                  </span>
+                </td>
+
+                <td>
+                  <div class="network">
+                    <div class="network-logo">
+                      ${item.short}
+                    </div>
+
+                    <div>
+                      <b>${item.name}</b>
+                      <small>${sub}</small>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <span class="badge ${status.cls}">
+                    ${status.text}
+                  </span>
+                </td>
+
+                <td>
+                  <div class="score">
+                    <b>
+                      ${
+                        Number.isFinite(item.score)
+                          ? item.score
+                          : "—"
+                      }
+                    </b>
+
+                    <div class="score-line">
+                      <span style="width: ${score}%"></span>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  ${formatUsd(item.volume24h)}
+                </td>
+
+                <td class="${changeClass}">
+                  ${formatPercent(item.change1d)}
+                </td>
+
+                <td>
+                  ${formatUsd(item.tvl)}
+                </td>
+
+                <td>
+                  ${item.attention} tokens ·
+                  ${formatUsd(item.sampleVolume)}
+                </td>
+              </tr>
+            `;
+          })
+          .join("") ||
+        `
+          <tr>
+            <td colspan="8">
+              <div class="empty">
+                No se encontraron redes con ese nombre.
+              </div>
+            </td>
+          </tr>
+        `;
+    }
+
+    function renderNewChains() {
+      if (!state.newChains.length) {
+        $("#newChainsGrid").innerHTML = `
+          <div class="card">
+            <div class="card-head">
+              <div>
+                <h3>Sin nueva chain confirmada</h3>
+                <p>
+                  La muestra actual no contiene una red externa con
+                  suficiente actividad para elevar una alerta.
+                </p>
+              </div>
+
+              <span class="badge info">
+                ESCANEANDO
+              </span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-head">
+              <div>
+                <h3>Robinhood Chain</h3>
+                <p>
+                  Permanece en la lista principal y se evalúa por separado.
+                  No se clasificará como oportunidad hasta tener liquidez DEX
+                  medible.
+                </p>
+              </div>
+
+              <span class="badge wait">
+                OBSERVAR
+              </span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-head">
+              <div>
+                <h3>Detección prudente</h3>
+                <p>
+                  No declaramos éxito usando solo publicidad. Exigimos
+                  volumen, liquidez y pares recientes en la muestra.
+                </p>
+              </div>
+
+              <span class="badge info">
+                REGLA
+              </span>
+            </div>
+          </div>
+        `;
+
+        return;
+      }
+
+      $("#newChainsGrid").innerHTML =
+        state.newChains
+          .slice(0, 6)
+          .map(
+            (item) => `
+              <article class="card">
+                <div class="card-head">
+                  <div>
+                    <h3>
+                      ${DISPLAY_CHAIN[item.id] || item.id}
+                    </h3>
+
+                    <p>
+                      Red detectada fuera del grupo principal.
+                    </p>
+                  </div>
+
+                  <span class="badge ${item.cls}">
+                    ${item.status}
+                  </span>
+                </div>
+
+                <div class="card-metrics">
+                  <div class="mini">
+                    <span>Volumen muestra</span>
+                    <strong>
+                      ${formatUsd(item.volume)}
+                    </strong>
+                  </div>
+
+                  <div class="mini">
+                    <span>Liquidez muestra</span>
+                    <strong>
+                      ${formatUsd(item.liquidity)}
+                    </strong>
+                  </div>
+
+                  <div class="mini">
+                    <span>Tokens observados</span>
+                    <strong>${item.tokens}</strong>
+                  </div>
+
+                  <div class="mini">
+                    <span>Pares menores de 72 h</span>
+                    <strong>${item.newPairs}</strong>
+                  </div>
+                </div>
+              </article>
+            `
+          )
+          .join("");
+    }
+
+    function renderLaunchpads() {
+      if (!state.launchpads.length) {
+        $("#launchpadGrid").innerHTML = `
+          <div class="card">
+            <h3>Sin pares suficientes</h3>
+            <p>
+              No fue posible construir el comparador de plataformas en esta
+              actualización.
+            </p>
+          </div>
+        `;
+
+        return;
+      }
+
+      $("#launchpadGrid").innerHTML =
+        state.launchpads
+          .slice(0, 6)
+          .map((item, index) => {
+            const status =
+              item.score >= 70
+                ? ["ACTIVIDAD ALTA", "go"]
+                : item.score >= 45
+                  ? ["EN OBSERVACIÓN", "wait"]
+                  : ["ACTIVIDAD BAJA", "info"];
+
+            return `
+              <article class="card">
+                <div class="card-head">
+                  <div>
+                    <h3>
+                      ${index + 1}. ${item.name}
+                    </h3>
+
+                    <p>
+                      Puntuación observada:
+                      ${item.score}/100
+                    </p>
+                  </div>
+
+                  <span class="badge ${status[1]}">
+                    ${status[0]}
+                  </span>
+                </div>
+
+                <div class="card-metrics">
+                  <div class="mini">
+                    <span>Volumen 24 h</span>
+                    <strong>
+                      ${formatUsd(item.volume)}
+                    </strong>
+                  </div>
+
+                  <div class="mini">
+                    <span>Liquidez</span>
+                    <strong>
+                      ${formatUsd(item.liquidity)}
+                    </strong>
+                  </div>
+
+                  <div class="mini">
+                    <span>Tokens muestra</span>
+                    <strong>
+                      ${item.tokens}
+                    </strong>
+                  </div>
+
+                  <div class="mini">
+                    <span>Compras / transacciones</span>
+                    <strong>
+                      ${Math.round(item.buyRatio * 100)} %
+                    </strong>
+                  </div>
+                </div>
+              </article>
+            `;
+          })
+          .join("");
+    }
+
+    function renderMarketItems() {
+      if (!state.marketItems.length) {
+        $("#tokenList").innerHTML = `
+          <div class="empty">
+            No hay datos disponibles en esta actualización.
+          </div>
+        `;
+
+        return;
+      }
+
+      $("#tokenList").innerHTML =
+        state.marketItems
+          .slice(0, 12)
+          .map((item) => {
+            const pair = item.pair || {};
+
+            const name =
+              pair.baseToken?.name ||
+              pair.baseToken?.symbol ||
+              "Token sin nombre";
+
+            const symbol =
+              pair.baseToken?.symbol ||
+              String(item.tokenAddress).slice(
+                0,
+                8
+              );
+
+            const chain =
+              DISPLAY_CHAIN[
+                normalizeChain(item.chainId)
+              ] || item.chainId;
+
+            const icon = item.icon
+              ? `
+                <img
+                  class="token-icon"
+                  src="${escapeHtml(item.icon)}"
+                  alt="${escapeHtml(symbol)}"
+                />
+              `
+              : `
+                <span class="token-placeholder">
+                  ${escapeHtml(
+                    symbol.slice(0, 2)
+                  )}
+                </span>
+              `;
+
+            const url =
+              item.url || pair.url || "#";
+
+            const sourceText = [
+              ...item.sources
+            ]
+              .map((source) =>
+                source === "boost"
+                  ? "Promoción"
+                  : "Perfil"
+              )
+              .join(" + ");
+
+            const priceChange = Number(
+              pair.priceChange?.h24
+            );
+
+            return `
+              <div class="token-row">
+                <div class="token-main">
+                  ${icon}
+
+                  <div class="token-name">
+                    <b>
+                      ${escapeHtml(name)} ·
+                      ${escapeHtml(symbol)}
+                    </b>
+
+                    <small>
+                      ${escapeHtml(chain)} ·
+                      ${sourceText}
+                    </small>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="cell-label">
+                    Volumen 24 h
+                  </span>
+
+                  <b>
+                    ${formatUsd(
+                      pair.volume?.h24
+                    )}
+                  </b>
+                </div>
+
+                <div>
+                  <span class="cell-label">
+                    Liquidez
+                  </span>
+
+                  <b>
+                    ${formatUsd(
+                      pair.liquidity?.usd
+                    )}
+                  </b>
+                </div>
+
+                <div>
+                  <span class="cell-label">
+                    Cambio 24 h
+                  </span>
+
+                  <b class="${
+                    priceChange >= 0
+                      ? "positive"
+                      : "negative"
+                  }">
+                    ${formatPercent(priceChange)}
+                  </b>
+                </div>
+
+                <div>
+                  <span class="cell-label">
+                    Edad del par
+                  </span>
+
+                  <b>
+                    ${timeAgo(
+                      pair.pairCreatedAt
+                    )}
+                  </b>
+                </div>
+
+                <a
+                  class="external"
+                  href="${escapeHtml(url)}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Abrir ↗
+                </a>
+              </div>
+            `;
+          })
+          .join("");
+    }
+
+    function renderNarratives() {
+      if (!state.narratives.length) {
+        $("#narrativeList").innerHTML = `
+          <div class="narrative">
+            <strong>Sin textos suficientes</strong>
+            <span>0</span>
+          </div>
+        `;
+
+        return;
+      }
+
+      $("#narrativeList").innerHTML =
+        state.narratives
+          .map(
+            (item) => `
+              <div class="narrative">
+                <strong>${item.name}</strong>
+
+                <span>
+                  ${item.tokens} tokens ·
+                  ${formatUsd(item.volume)}
+                </span>
+              </div>
+            `
+          )
+          .join("");
+    }
+
+    function renderDecision() {
+      const ranked = [
+        ...state.networks
+      ]
+        .filter((network) =>
+          Number.isFinite(network.score)
+        )
+        .sort(
+          (first, second) =>
+            second.score - first.score
+        );
+
+      const best = ranked[0];
+      const launchpad =
+        state.launchpads[0];
+      const emerging =
+        state.newChains[0];
+
+      if (!best) {
+        $("#decisionTitle").textContent =
+          "ESPERAR DATOS";
+
+        $("#decisionTitle").className =
+          "decision wait";
+
+        $("#decisionReason").textContent =
+          "No hay suficientes datos públicos para emitir una señal responsable en este momento.";
+
+        $("#confidenceText").textContent =
+          "0/100";
+
+        $("#confidenceBar").style.width =
+          "0%";
+
+        return;
+      }
+
+      let decision = "ESPERAR";
+      let cls = "wait";
+
+      if (best.score >= 75) {
+        decision = "PREPARAR LANZAMIENTO";
+        cls = "go";
+      } else if (best.score >= 55) {
+        decision = "VIGILAR Y PREPARAR";
+        cls = "wait";
+      } else if (best.score < 35) {
+        decision = "NO LANZAR AHORA";
+        cls = "avoid";
+      }
+
+      const confidence = clamp(
+        Math.round(
+          best.score * 0.72 +
+            (
+              state.marketItems.length >= 8
+                ? 12
+                : 4
+            ) -
+            state.errors.length * 8
+        ),
+        5,
+        92
+      );
+
+      $("#decisionTitle").textContent =
+        decision;
+
+      $("#decisionTitle").className =
+        `decision ${cls}`;
+
+      $("#confidenceText").textContent =
+        `${confidence}/100`;
+
+      $("#confidenceBar").style.width =
+        `${confidence}%`;
+
+      $("#bestNetwork").textContent =
+        best.name;
+
+      $("#bestNetworkNote").textContent =
+        `${formatUsd(best.volume24h)} en 24 h · ` +
+        `${formatPercent(best.change1d)}`;
+
+      $("#emergingNetwork").textContent =
+        emerging
+          ? DISPLAY_CHAIN[emerging.id] ||
+            emerging.id
+          : "Ninguna confirmada";
+
+      $("#emergingNote").textContent =
+        emerging
+          ? `${emerging.status} · ${formatUsd(
+              emerging.volume
+            )}`
+          : "Continuar observando";
+
+      $("#bestLaunchpad").textContent =
+        launchpad?.name ||
+        "Sin muestra suficiente";
+
+      $("#launchpadNote").textContent =
+        launchpad
+          ? `${launchpad.tokens} tokens · puntuación ${launchpad.score}`
+          : "Esperando pares";
+
+      const growthText =
+        Number.isFinite(best.change1d)
+          ? best.change1d >= 0
+            ? `su volumen crece ${Math.abs(
+                best.change1d
+              ).toFixed(1)} %`
+            : `su volumen cae ${Math.abs(
+                best.change1d
+              ).toFixed(1)} %`
+          : "su variación todavía no está disponible";
+
+      $("#decisionReason").textContent =
+        `${best.name} lidera la puntuación calculada: ` +
+        `${growthText}, registra ` +
+        `${formatUsd(best.volume24h)} de volumen DEX ` +
+        `en 24 horas y ${best.attention} tokens en la muestra ` +
+        `reciente. Revisa saturación, comunidad y presupuesto antes de ejecutar.`;
+    }
+
+    function renderStatus() {
+      const dot = $("#statusDot");
+
+      if (state.loading) {
+        dot.className = "status-dot";
+        $("#apiStatus").textContent =
+          "Actualizando fuentes…";
+      } else if (state.errors.length >= 2) {
+        dot.className =
+          "status-dot error";
+
+        $("#apiStatus").textContent =
+          "Datos parciales";
+      } else {
+        dot.className =
+          "status-dot live";
+
+        $("#apiStatus").textContent =
+          state.errors.length
+            ? "Activo con una fuente parcial"
+            : "Datos públicos activos";
+      }
+
+      const badge =
+        $("#robinhoodBadge");
+
+      if (state.robinhoodBlock) {
+        badge.textContent =
+          `RPC ACTIVO · BLOQUE ` +
+          `${formatNumber(
+            state.robinhoodBlock
+          )}`;
+
+        badge.className = "badge go";
+      } else {
+        badge.textContent =
+          "RPC NO VERIFICADO EN NAVEGADOR";
+
+        badge.className = "badge wait";
+      }
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    async function refreshAll(
+      manual = false
+    ) {
+      if (state.loading) {
+        return;
+      }
+
+      state.loading = true;
+      state.errors = [];
+
+      $("#refreshBtn").disabled = true;
+
+      $("#refreshBtn").innerHTML =
+        '<span class="spinning">↻</span> Actualizando';
+
+      renderStatus();
+
+      try {
+        const [
+          networks,
+          marketItems
+        ] = await Promise.all([
+          loadDefiLlama(),
+          loadDexScreener(),
+          checkRobinhoodRpc()
+        ]);
+
+        state.marketItems =
+          marketItems;
+
+        state.networks =
+          enrichNetworks(
+            networks,
+            marketItems
+          );
+
+        state.launchpads =
+          buildLaunchpads(
+            marketItems
+          );
+
+        state.newChains =
+          buildNewChains(
+            marketItems
+          );
+
+        state.narratives =
+          classifyNarratives(
+            marketItems
+          );
+
+        state.lastUpdate =
+          new Date();
+
+        renderNetworks();
+        renderNewChains();
+        renderLaunchpads();
+        renderMarketItems();
+        renderNarratives();
+        renderDecision();
+
+        $("#lastUpdate").textContent =
+          state.lastUpdate.toLocaleTimeString(
+            "es-PE",
+            {
+              hour: "2-digit",
+              minute: "2-digit",
+              second: "2-digit"
+            }
+          );
+
+        if (manual) {
+          showToast(
+            state.errors.length
+              ? "Actualización completada con datos parciales."
+              : "Radar actualizado correctamente."
+          );
+        }
+      } catch (error) {
+        console.error(error);
+
+        state.errors.push(
+          "Error general"
+        );
+
+        showToast(
+          "No se pudieron completar todas las consultas. Se muestran los datos disponibles."
+        );
+      } finally {
+        state.loading = false;
+
+        $("#refreshBtn").disabled =
+          false;
+
+        $("#refreshBtn").textContent =
+          "↻ Actualizar";
+
+        renderStatus();
+      }
+    }
+
+    $("#refreshBtn").addEventListener(
+      "click",
+      () => refreshAll(true)
+    );
+
+    $("#networkSearch").addEventListener(
+      "input",
+      renderNetworks
+    );
+
+    $("#sortNetworks").addEventListener(
+      "change",
+      renderNetworks
+    );
+
+    document
+      .querySelectorAll(".nav a")
+      .forEach((link) => {
+        link.addEventListener(
+          "click",
+          () => {
+            document
+              .querySelectorAll(".nav a")
+              .forEach((item) => {
+                item.classList.remove(
+                  "active"
+                );
+              });
+
+            link.classList.add(
+              "active"
+            );
+          }
+        );
+      });
+
+    refreshAll();
+
+    setInterval(
+      () => refreshAll(false),
+      60000
+    );
+  </script>
+</body>
+</html>
