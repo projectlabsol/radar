@@ -794,7 +794,139 @@
       text-align: center;
       color: var(--muted);
     }
+.theme-recommendation {
+  margin-top: 18px;
+}
 
+.theme-panel {
+  display: grid;
+  grid-template-columns:
+    minmax(280px, 0.9fr)
+    minmax(360px, 1.1fr);
+  gap: 16px;
+  border: 1px solid rgba(52, 231, 155, 0.23);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(52, 231, 155, 0.08),
+      rgba(12, 23, 20, 0.94)
+    );
+  overflow: hidden;
+}
+
+.theme-main,
+.theme-side {
+  padding: 20px;
+}
+
+.theme-main {
+  border-right: 1px solid var(--line);
+}
+
+.theme-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.theme-title-row h2 {
+  margin: 0 0 9px;
+  font-size: clamp(27px, 4vw, 45px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--green);
+}
+
+.theme-title-row p {
+  margin: 0;
+  color: #bfd0ca;
+  line-height: 1.55;
+}
+
+.theme-facts {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ideas-title {
+  margin-top: 20px;
+  margin-bottom: 11px;
+}
+
+.ideas-title h3 {
+  margin: 0 0 5px;
+}
+
+.ideas-title p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.idea-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.idea-card {
+  padding: 13px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(7, 16, 14, 0.65);
+}
+
+.idea-card strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.idea-card .idea-ticker {
+  display: inline-block;
+  color: var(--green);
+  font-weight: 900;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.idea-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.theme-warning {
+  margin-top: 12px;
+}
+
+@media (max-width: 1000px) {
+  .theme-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .theme-main {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 720px) {
+  .theme-title-row {
+    flex-direction: column;
+  }
+
+  .theme-facts,
+  .idea-grid {
+    grid-template-columns: 1fr;
+  }
+}
     @keyframes spin {
       to {
         transform: rotate(360deg);
@@ -968,7 +1100,10 @@
           <span>◉</span>
           <span class="nav-label">Resumen</span>
         </a>
-
+<a href="#tema-recomendado">
+  <span>★</span>
+  <span class="nav-label">Tema recomendado</span>
+</a>
         <a href="#redes">
           <span>◆</span>
           <span class="nav-label">Redes</span>
@@ -1081,7 +1216,108 @@
           </div>
         </div>
       </section>
+<section id="tema-recomendado" class="theme-recommendation">
+  <div class="section-head">
+    <div>
+      <h2>Qué temática lanzar</h2>
+      <p>
+        Recomendación basada en la atención, volumen y saturación
+        de las narrativas encontradas.
+      </p>
+    </div>
 
+    <div class="source">
+      Resultado calculado con la muestra actual
+    </div>
+  </div>
+
+  <div class="theme-panel">
+    <div class="theme-main">
+      <div class="eyebrow">
+        Tema con mejor señal relativa
+      </div>
+
+      <div class="theme-title-row">
+        <div>
+          <h2 id="themeNarrative">
+            Analizando temática…
+          </h2>
+
+          <p id="themeReason">
+            Comparando narrativas, volumen por token y nivel de saturación.
+          </p>
+        </div>
+
+        <span id="themeStatus" class="badge info">
+          ANALIZANDO
+        </span>
+      </div>
+
+      <div class="confidence-wrap">
+        <div class="confidence-head">
+          <span>Confianza de la temática</span>
+          <strong id="themeConfidenceText">—</strong>
+        </div>
+
+        <div class="bar">
+          <span id="themeConfidenceBar"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="theme-side">
+      <div class="theme-facts">
+        <div class="mini">
+          <span>Red recomendada</span>
+          <strong id="themeNetwork">
+            Analizando…
+          </strong>
+        </div>
+
+        <div class="mini">
+          <span>Plataforma observada</span>
+          <strong id="themePlatform">
+            Analizando…
+          </strong>
+        </div>
+
+        <div class="mini">
+          <span>Tokens de la narrativa</span>
+          <strong id="themeTokenCount">
+            —
+          </strong>
+        </div>
+
+        <div class="mini">
+          <span>Volumen observado</span>
+          <strong id="themeVolume">
+            —
+          </strong>
+        </div>
+      </div>
+
+      <div class="ideas-title">
+        <h3>Ideas conceptuales</h3>
+        <p>
+          Nombres de inspiración generados para la narrativa detectada.
+        </p>
+      </div>
+
+      <div id="themeIdeas" class="idea-grid">
+        <article class="idea-card">
+          <strong>Analizando ideas…</strong>
+          <span>—</span>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="notice theme-warning">
+    <b>Importante:</b> estas ideas no garantizan éxito. Antes de lanzar,
+    revisa que el nombre, imagen y personaje no infrinjan marcas,
+    derechos de autor ni suplanten a una persona o empresa.
+  </div>
+</section>
       <div class="toolbar">
         <input
           id="networkSearch"
@@ -2239,7 +2475,374 @@
             first.tokens * 1000)
       );
     }
+const THEME_IDEAS = {
+  "IA y agentes": [
+    {
+      name: "Charlie Agent",
+      ticker: "CHAI",
+      description:
+        "Personaje meme que analiza el caos del mercado usando inteligencia artificial."
+    },
+    {
+      name: "PawBot",
+      ticker: "PAWBOT",
+      description:
+        "Mascota robot que aprende de la comunidad y publica misiones."
+    },
+    {
+      name: "MemeMind",
+      ticker: "MIND",
+      description:
+        "Una mente colectiva creada por holders y contenido generado por IA."
+    }
+  ],
 
+  "Animales": [
+    {
+      name: "CapyCharlie",
+      ticker: "CAPY",
+      description:
+        "Capibara relajada que sobrevive a toda la volatilidad del mercado."
+    },
+    {
+      name: "Rocket Gecko",
+      ticker: "GECKO",
+      description:
+        "Gecko veloz que salta entre chains buscando nuevas oportunidades."
+    },
+    {
+      name: "Pixel Penguin",
+      ticker: "PENG",
+      description:
+        "Pingüino digital con comunidad, desafíos y contenido viral."
+    }
+  ],
+
+  "Gaming": [
+    {
+      name: "Quest Charlie",
+      ticker: "QUEST",
+      description:
+        "Personaje que completa misiones conforme crece la comunidad."
+    },
+    {
+      name: "Meme Arena",
+      ticker: "MARENA",
+      description:
+        "Comunidades y personajes compiten en una arena de memes."
+    },
+    {
+      name: "Loot Goblin",
+      ticker: "LOOT",
+      description:
+        "Duende que colecciona puntos, logros y recompensas comunitarias."
+    }
+  ],
+
+  "Política": [
+    {
+      name: "Vote Meme",
+      ticker: "VOTE",
+      description:
+        "Parodia política genérica basada en votaciones comunitarias."
+    },
+    {
+      name: "Campaign Cat",
+      ticker: "CAMP",
+      description:
+        "Gato candidato que propone ideas absurdas elegidas por la comunidad."
+    },
+    {
+      name: "Meme Republic",
+      ticker: "MREP",
+      description:
+        "República digital administrada mediante encuestas y contenido meme."
+    }
+  ],
+
+  "RWA y finanzas": [
+    {
+      name: "Meme Treasury",
+      ticker: "MTRS",
+      description:
+        "Tesorería ficticia de memes y estadísticas transparentes."
+    },
+    {
+      name: "Onchain Charlie",
+      ticker: "OCHAR",
+      description:
+        "Personaje que explica movimientos y datos de la blockchain."
+    },
+    {
+      name: "Gold Paw",
+      ticker: "GPAW",
+      description:
+        "Mascota financiera inspirada en la búsqueda de valor digital."
+    }
+  ],
+
+  "Deportes": [
+    {
+      name: "Goal Charlie",
+      ticker: "GOAL",
+      description:
+        "Mascota futbolera con predicciones, retos y competiciones comunitarias."
+    },
+    {
+      name: "Turbo Fan",
+      ticker: "FAN",
+      description:
+        "Personaje dedicado a eventos deportivos y momentos virales."
+    },
+    {
+      name: "Meme League",
+      ticker: "MLEAG",
+      description:
+        "Liga de personajes meme elegidos y enfrentados por la comunidad."
+    }
+  ],
+
+  "Cultura de internet": [
+    {
+      name: "Charlie Core",
+      ticker: "CORE",
+      description:
+        "Personaje central que reúne tendencias y memes de internet."
+    },
+    {
+      name: "Internet Gremlin",
+      ticker: "IGRM",
+      description:
+        "Criatura digital que aparece en cada nueva tendencia viral."
+    },
+    {
+      name: "Based Charlie",
+      ticker: "BCHAR",
+      description:
+        "Comunidad centrada en contenido humorístico y participación diaria."
+    }
+  ],
+
+  "Otros / sin clasificar": [
+    {
+      name: "Charlie Network",
+      ticker: "CHAR",
+      description:
+        "Comunidad adaptable a diferentes tendencias del mercado."
+    },
+    {
+      name: "Meme Signal",
+      ticker: "SIGNAL",
+      description:
+        "Personaje que detecta y comenta nuevos movimientos memecoin."
+    },
+    {
+      name: "Next Charlie",
+      ticker: "NEXT",
+      description:
+        "Proyecto enfocado en encontrar la siguiente narrativa viral."
+    }
+  ]
+};
+
+function renderThemeRecommendation() {
+  const candidates = state.narratives
+    .filter(
+      (item) =>
+        item.name !== "Otros / sin clasificar" ||
+        state.narratives.length === 1
+    )
+    .map((item) => {
+      const volume = Number(item.volume || 0);
+      const tokens = Number(item.tokens || 0);
+
+      const volumePerToken =
+        tokens > 0
+          ? volume / tokens
+          : 0;
+
+      const attentionScore = clamp(
+        (Math.log10(volume + 1) / 7) * 58 +
+          Math.min(tokens, 10) * 4.2,
+        0,
+        100
+      );
+
+      const saturationPenalty =
+        tokens > 8
+          ? clamp((tokens - 8) * 3, 0, 27)
+          : 0;
+
+      const opportunity = Math.round(
+        clamp(
+          attentionScore - saturationPenalty,
+          0,
+          100
+        )
+      );
+
+      return {
+        ...item,
+        volume,
+        tokens,
+        volumePerToken,
+        opportunity
+      };
+    })
+    .sort(
+      (first, second) =>
+        second.opportunity -
+        first.opportunity
+    );
+
+  const theme = candidates[0];
+
+  const bestNetwork = [...state.networks]
+    .filter((network) =>
+      Number.isFinite(network.score)
+    )
+    .sort(
+      (first, second) =>
+        second.score - first.score
+    )[0];
+
+  const bestPlatform =
+    state.launchpads[0];
+
+  if (!theme) {
+    $("#themeNarrative").textContent =
+      "Sin temática confirmada";
+
+    $("#themeReason").textContent =
+      "La muestra actual no contiene suficientes tokens clasificados para recomendar una narrativa.";
+
+    $("#themeStatus").textContent =
+      "ESPERAR";
+
+    $("#themeStatus").className =
+      "badge wait";
+
+    $("#themeConfidenceText").textContent =
+      "0/100";
+
+    $("#themeConfidenceBar").style.width =
+      "0%";
+
+    $("#themeNetwork").textContent =
+      bestNetwork?.name || "Sin datos";
+
+    $("#themePlatform").textContent =
+      bestPlatform?.name || "Sin datos";
+
+    $("#themeTokenCount").textContent =
+      "0";
+
+    $("#themeVolume").textContent =
+      "Sin datos";
+
+    return;
+  }
+
+  let statusText = "SEÑAL DÉBIL";
+  let statusClass = "avoid";
+
+  const looksSaturated =
+    theme.tokens >= 10 &&
+    theme.volumePerToken < 75000;
+
+  if (looksSaturated) {
+    statusText = "POSIBLE SATURACIÓN";
+    statusClass = "wait";
+  } else if (theme.opportunity >= 70) {
+    statusText = "PRIORIDAD ALTA";
+    statusClass = "go";
+  } else if (theme.opportunity >= 50) {
+    statusText = "VALIDAR";
+    statusClass = "wait";
+  }
+
+  const confidence = clamp(
+    Math.round(
+      theme.opportunity * 0.68 +
+        Math.min(theme.tokens, 8) * 2 +
+        (
+          state.marketItems.length >= 8
+            ? 8
+            : 3
+        ) -
+        state.errors.length * 6
+    ),
+    5,
+    84
+  );
+
+  $("#themeNarrative").textContent =
+    theme.name;
+
+  $("#themeStatus").textContent =
+    statusText;
+
+  $("#themeStatus").className =
+    `badge ${statusClass}`;
+
+  $("#themeConfidenceText").textContent =
+    `${confidence}/100`;
+
+  $("#themeConfidenceBar").style.width =
+    `${confidence}%`;
+
+  $("#themeNetwork").textContent =
+    bestNetwork?.name ||
+    "Sin red confirmada";
+
+  $("#themePlatform").textContent =
+    bestPlatform?.name ||
+    "Sin plataforma confirmada";
+
+  $("#themeTokenCount").textContent =
+    `${theme.tokens} observados`;
+
+  $("#themeVolume").textContent =
+    formatUsd(theme.volume);
+
+  $("#themeReason").textContent =
+    `${theme.name} es la narrativa con mejor señal relativa en la muestra. ` +
+    `Registra ${formatUsd(theme.volume)} de volumen entre ` +
+    `${theme.tokens} tokens, con un promedio de ` +
+    `${formatUsd(theme.volumePerToken)} por token observado. ` +
+    `${
+      looksSaturated
+        ? "La cantidad de tokens puede indicar saturación; conviene buscar un enfoque diferente dentro del mismo tema."
+        : "Conviene confirmar que el volumen se mantenga y que exista conversación orgánica antes de lanzar."
+    }`;
+
+  const ideas =
+    THEME_IDEAS[theme.name] ||
+    THEME_IDEAS[
+      "Otros / sin clasificar"
+    ];
+
+  $("#themeIdeas").innerHTML =
+    ideas
+      .map(
+        (idea) => `
+          <article class="idea-card">
+            <strong>
+              ${escapeHtml(idea.name)}
+            </strong>
+
+            <span class="idea-ticker">
+              $${escapeHtml(idea.ticker)}
+            </span>
+
+            <p>
+              ${escapeHtml(idea.description)}
+            </p>
+          </article>
+        `
+      )
+      .join("");
+}
     function renderNetworks() {
       const query = $("#networkSearch")
         .value.trim()
@@ -2991,6 +3594,7 @@
         renderLaunchpads();
         renderMarketItems();
         renderNarratives();
+        renderThemeRecommendation();
         renderDecision();
 
         $("#lastUpdate").textContent =
