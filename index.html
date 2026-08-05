@@ -4138,5 +4138,302 @@ function renderThemeRecommendation() {
       60000
     );
   </script>
+  <!-- =========================================================
+     POOLS.TRADE — NEW LAUNCHPAD
+     Paste this block immediately before </body>
+========================================================= -->
+
+<style>
+  .pools-radar-section {
+    width: min(1180px, calc(100% - 32px));
+    margin: 50px auto;
+  }
+
+  .pools-radar-heading {
+    margin-bottom: 18px;
+  }
+
+  .pools-radar-heading span {
+    display: inline-block;
+    padding: 6px 11px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 82, 170, 0.55);
+    border-radius: 999px;
+    background: rgba(255, 82, 170, 0.12);
+    color: #ff75bd;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  .pools-radar-heading h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(28px, 5vw, 44px);
+  }
+
+  .pools-trade-radar-card {
+    position: relative;
+    overflow: hidden;
+    padding: 25px;
+    border: 1px solid rgba(255, 82, 170, 0.35);
+    border-radius: 22px;
+    background:
+      radial-gradient(
+        circle at top right,
+        rgba(255, 82, 170, 0.24),
+        transparent 42%
+      ),
+      rgba(17, 17, 25, 0.92);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+    color: #ffffff;
+  }
+
+  .pools-trade-radar-card::before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: -85px;
+    right: -65px;
+    border-radius: 50%;
+    background: #ff4fa3;
+    filter: blur(55px);
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  .pools-radar-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .pools-radar-logo {
+    display: grid;
+    place-items: center;
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 17px;
+    background: linear-gradient(135deg, #ff4fa3, #7b61ff);
+    font-size: 27px;
+    box-shadow: 0 10px 30px rgba(255, 79, 163, 0.3);
+  }
+
+  .pools-radar-title {
+    flex: 1;
+  }
+
+  .pools-radar-title h3 {
+    margin: 0 0 5px;
+    color: #ffffff;
+    font-size: 25px;
+  }
+
+  .pools-radar-title p {
+    margin: 0;
+    color: #aaaabd;
+    line-height: 1.55;
+  }
+
+  .pools-radar-new {
+    padding: 7px 10px;
+    border-radius: 999px;
+    background: #ff4fa3;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    animation: poolsPulse 1.8s infinite;
+  }
+
+  .pools-radar-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 22px 0;
+  }
+
+  .pools-radar-tags span {
+    padding: 7px 10px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 999px;
+    background: rgba(255,255,255,0.06);
+    color: #dddded;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .pools-radar-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+
+  .pools-radar-detail {
+    padding: 13px;
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 14px;
+    background: rgba(255,255,255,0.04);
+  }
+
+  .pools-radar-detail small {
+    display: block;
+    margin-bottom: 5px;
+    color: #89899d;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+
+  .pools-radar-detail strong {
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  .pools-radar-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 45px;
+    padding: 0 18px;
+    border-radius: 13px;
+    background: linear-gradient(135deg, #ff4fa3, #8b5cff);
+    color: #ffffff !important;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .pools-radar-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(255, 79, 163, 0.28);
+  }
+
+  @keyframes poolsPulse {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgba(255, 79, 163, 0.5);
+    }
+
+    50% {
+      box-shadow: 0 0 0 8px rgba(255, 79, 163, 0);
+    }
+  }
+
+  @media (max-width: 650px) {
+    .pools-radar-top {
+      flex-wrap: wrap;
+    }
+
+    .pools-radar-details {
+      grid-template-columns: 1fr;
+    }
+
+    .pools-radar-new {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+    }
+  }
+</style>
+
+<script>
+  (() => {
+    if (document.querySelector('[data-radar-item="pools-trade"]')) {
+      return;
+    }
+
+    const card = document.createElement("article");
+
+    card.className = "pools-trade-radar-card";
+    card.setAttribute("data-radar-item", "pools-trade");
+
+    card.innerHTML = `
+      <div class="pools-radar-top">
+        <div class="pools-radar-logo">🦄</div>
+
+        <div class="pools-radar-title">
+          <h3>Pools.trade</h3>
+          <p>
+            New token launchpad by Uniswap Labs for creating,
+            discovering and trading community tokens.
+          </p>
+        </div>
+
+        <span class="pools-radar-new">NEW</span>
+      </div>
+
+      <div class="pools-radar-tags">
+        <span>Robinhood Chain</span>
+        <span>Uniswap Labs</span>
+        <span>Crowd Launch</span>
+        <span>Instant Launch</span>
+        <span>EVM</span>
+      </div>
+
+      <div class="pools-radar-details">
+        <div class="pools-radar-detail">
+          <small>Category</small>
+          <strong>Memecoin Launchpad</strong>
+        </div>
+
+        <div class="pools-radar-detail">
+          <small>Launch modes</small>
+          <strong>Crowd + Instant</strong>
+        </div>
+
+        <div class="pools-radar-detail">
+          <small>Radar status</small>
+          <strong>New Opportunity</strong>
+        </div>
+      </div>
+
+      <a
+        class="pools-radar-button"
+        href="https://pools.trade/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open Pools.trade ↗
+      </a>
+    `;
+
+    const launchpadsTarget =
+      document.querySelector("#launchpads .launchpad-grid") ||
+      document.querySelector("#launchpads .cards-grid") ||
+      document.querySelector("#launchpads .grid") ||
+      document.querySelector("#launchpads .cards");
+
+    if (launchpadsTarget) {
+      launchpadsTarget.prepend(card);
+      return;
+    }
+
+    const section = document.createElement("section");
+    section.id = "pools-trade-launchpad";
+    section.className = "pools-radar-section";
+
+    section.innerHTML = `
+      <div class="pools-radar-heading">
+        <span>NEW LAUNCHPAD DETECTED</span>
+        <h2>New opportunity on the radar</h2>
+      </div>
+    `;
+
+    section.appendChild(card);
+
+    const footer = document.querySelector("footer");
+
+    if (footer) {
+      footer.before(section);
+    } else {
+      document.body.appendChild(section);
+    }
+  })();
+</script>
 </body>
 </html>
