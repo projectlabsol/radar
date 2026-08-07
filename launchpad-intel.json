@@ -1,19 +1,89 @@
 {
-  "updatedAt": "2026-08-07",
+  "updatedAt": "2026-08-07T16:00:59Z",
   "launchpads": [
+    {
+      "name": "HOKANEWS.COM",
+      "status": "ANNOUNCED",
+      "chain": "",
+      "firstSeen": "2026-08-07",
+      "confidence": 67,
+      "detectedBy": "News",
+      "description": "Uniswap Introduces Pools Launchpad as Robinhood Chain Eyes DeFi Growth - HOKANEWS.COM",
+      "website": "https://www.hokanews.com/",
+      "x": "https://x.com/#",
+      "discord": "",
+      "github": "",
+      "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUjIyVkFQd1prMUFZZjdTNkMzSW9qMWdJdExmcklqSk5JTjJnZlUzWjZfTzR3T3F2MTdhSWVGY3Z3SDJqN0l5OGFSY1BxYi16VVFNRi0tcjJUdnJMSUtFQWtwbFJPZnVVQk5ybHRXc1dxdVotQ3BnTEFmbXBZOTFCbw?oc=5"
+    },
+    {
+      "name": "Pools",
+      "status": "NEW",
+      "chain": "",
+      "firstSeen": "2026-08-06",
+      "confidence": 48,
+      "detectedBy": "News",
+      "description": "Uniswap launches Pools token launchpad for Robinhood Chain - Crypto Briefing",
+      "website": "",
+      "x": "",
+      "discord": "",
+      "github": "",
+      "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNckszWlVheEtvcVRqX1BTRmthTVZpVU0wdzFhVHEzazJLZ1E0V2lmMVJWZkdWcTRBUGJLOXRIbGJhMm9iVGRDTkxOMUhDM0pBVFd2YkJNMW05U0hPaUFyQXV2QnlHd2ZtWkZBV0tyck96WkhKcjVIaWg3dVVWcktiZk9MX2h4aXhEWF80aWZTZw?oc=5"
+    },
+    {
+      "name": "Pump.fun",
+      "status": "RUMOR",
+      "chain": "",
+      "firstSeen": "2026-08-04",
+      "confidence": 59,
+      "detectedBy": "News",
+      "description": "How meme coins are made: bonding curves, Pump.fun, and the math behind rug pulls - Crypto News",
+      "website": "https://cdn.jsdelivr.net",
+      "x": "https://twitter.com/pumpfun",
+      "discord": "",
+      "github": "",
+      "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNTUwVnF3eWlpSTU3cDF2Wm5abFBfSXJoOVRhWFl4VHRwbURaRmpvamJ2cHlpSjhVMERCZmRxZ2dBR0t1QnFfWkk1cUFFdnZaeC1zVDFuNm93eHZKTFlsOGdLZVNhdGhscjJNeUJvV05FLWx3Yk1mUGwtTFZZQnRkTEZ1Ml8?oc=5"
+    },
     {
       "name": "Pools.trade",
       "status": "LIVE",
       "chain": "Robinhood Chain",
       "firstSeen": "Aug 5, 2026",
       "confidence": 100,
-      "detectedBy": "Website + On-chain",
+      "detectedBy": "Website + On-chain + News",
       "description": "Memecoin launchpad for creating, discovering and trading community tokens. Already launched and registered as a known platform.",
       "website": "https://pools.trade/",
       "x": "",
       "discord": "",
       "github": "",
-      "source": ""
+      "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPa05GYWFjaC1MbFlvVkFkcXBraUEzakI5YklXbHl4c0JhY0ZiYnA1RTQ0d3FMb19rLWYyTnBzRThlQmMxSTlhalp4bjktdVkyZ2JYUE4xRHVjSzI5dkdGSkswOWVDVUhRWjNZc2xFTFlhRjRWVWdZVi1WdTQ2bVhnLVhfcDRweG1IaGJhMzlmR2RwOGtaLUY4Wk1pWmxWMFhvb2c?oc=5"
+    },
+    {
+      "name": "Cookout",
+      "status": "LIVE",
+      "chain": "",
+      "firstSeen": "2026-07-14",
+      "confidence": 58,
+      "detectedBy": "GitHub",
+      "description": "The Cookout — live multiplayer trading arena + token launchpad (Phase 1 paper-money MVP)",
+      "website": "https://cookout-web-eight.vercel.app",
+      "x": "https://x.com/hoodcookout",
+      "discord": "",
+      "github": "https://github.com/theyachtsman/cookout",
+      "source": "https://github.com/theyachtsman/cookout"
+    },
+    {
+      "name": "Hermes Launchpad",
+      "status": "LIVE",
+      "chain": "",
+      "firstSeen": "2026-08-02",
+      "confidence": 52,
+      "detectedBy": "GitHub",
+      "description": "AI-native memecoin launchpad — ANTIGRAVITY PUMP. Demo frontend (V0.1), $0 stack.",
+      "website": "https://hermes-launchpad.pages.dev",
+      "x": "",
+      "discord": "",
+      "github": "https://github.com/galaxycoils/hermes-launchpad",
+      "source": "https://github.com/galaxycoils/hermes-launchpad"
     }
   ]
 }
