@@ -5518,16 +5518,19 @@ function renderThemeRecommendation() {
         `;
     }
 }
-// MOVE LAUNCHPAD INTELLIGENCE TO THE VERY TOP
+// MOVE LAUNCHPAD INTELLIGENCE AFTER THE FIRST MAIN BLOCK
 const intelligenceSection = list.closest("section");
+const mainElement = document.querySelector("main");
 
-if (intelligenceSection) {
-    const mainElement = document.querySelector("main");
+if (intelligenceSection && mainElement) {
 
-    if (mainElement) {
-        mainElement.prepend(intelligenceSection);
+    const firstMainBlock = Array.from(mainElement.children)
+        .find(element => element !== intelligenceSection);
+
+    if (firstMainBlock) {
+        firstMainBlock.after(intelligenceSection);
     } else {
-        document.body.prepend(intelligenceSection);
+        mainElement.appendChild(intelligenceSection);
     }
 }
 
