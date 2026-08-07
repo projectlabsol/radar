@@ -26,7 +26,38 @@ TODAY = NOW.date().isoformat()
 USER_AGENT = "ProjectLabSol-Launchpad-Radar/5.0"
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
 
+# =========================================================
+# DISCORD COMMUNITY WATCH
+# Cryptic Crypto = fuente principal
+# =========================================================
 
+DISCORD_WATCH_SOURCES = (
+    {
+        "name": "Cryptic Crypto",
+        "invite": "https://discord.gg/cryptic-crypto",
+        "primary": True,
+    },
+    {
+        "name": "Degen Whales",
+        "invite": "https://discord.gg/degenwhales",
+        "primary": False,
+    },
+    {
+        "name": "",
+        "invite": "https://discord.gg/UXWkB5j8C",
+        "primary": False,
+    },
+    {
+        "name": "",
+        "invite": "https://discord.gg/G3EjhhhbN",
+        "primary": False,
+    },
+    {
+        "name": "",
+        "invite": "https://discord.gg/kvUd7dFV4",
+        "primary": False,
+    },
+)
 # =========================================================
 # KNOWN LAUNCHPADS
 # =========================================================
@@ -1614,6 +1645,302 @@ def scan_news(
 
 
 # =========================================================
+# PUBLIC DISCORD COMMUNITY INTELLIGENCE
+# Cryptic Crypto = PRIORIDAD PRINCIPAL
+# =========================================================
+
+def discord_invite_code(invite):
+    try:
+        parsed = urllib.parse.urlparse(
+            clean(invite)
+        )
+
+        parts = [
+            value
+            for value in parsed.path.split("/")
+            if value
+        ]
+
+        if parts:
+            return parts[-1]
+
+    except Exception:
+        pass
+
+    return ""
+
+
+def discord_source_info(source):
+
+    invite = clean(
+        source.get("invite")
+    )
+
+    code = discord_invite_code(
+        invite
+    )
+
+    result = {
+        "name": clean(
+            source.get("name")
+        ),
+        "invite": invite,
+        "code": code,
+        "primary": bool(
+            source.get("primary")
+        ),
+        "members": 0,
+        "online": 0,
+    }
+
+    if not code:
+        return result
+
+    api_url = (
+        "https://discord.com/api/v10/invites/"
+        + urllib.parse.quote(
+            code,
+            safe=""
+        )
+        + "?with_counts=true"
+    )
+
+    data = safe_json(
+        api_url,
+        15
+    )
+
+    if isinstance(data, dict):
+
+        guild = (
+            data.get("guild")
+            or {}
+        )
+
+        if not result["name"]:
+            result["name"] = clean(
+                guild.get("name")
+            )
+
+        result["members"] = int(
+            data.get(
+                "approximate_member_count",
+                0
+            )
+            or 0
+        )
+
+        result["online"] = int(
+            data.get(
+                "approximate_presence_count",
+                0
+            )
+            or 0
+        )
+
+    if not result["name"]:
+        result["name"] = (
+            "Discord " + code
+        )
+
+    return result
+
+
+def scan_discord_public(
+    pool,
+    state,
+    registry
+):
+
+    log(
+        "Scanning public Discord community signals..."
+    )
+
+    resolved_sources = []
+
+    for configured in DISCORD_WATCH_SOURCES:
+
+        source = discord_source_info(
+            configured
+        )
+
+        resolved_sources.append(
+            source
+        )
+
+        community = clean(
+            source.get("name")
+        )
+
+        primary = bool(
+            source.get("primary")
+        )
+
+        if not community:
+            continue
+
+        if primary:
+            log(
+                "PRIMARY WATCH: "
+                + community
+            )
+        else:
+            log(
+                "Discord watch: "
+                + community
+            )
+
+        queries = [
+            f'"{community}" "launchpad" crypto when:7d',
+            f'"{community}" "token launch" crypto when:7d',
+            f'"{community}" "launching soon" crypto when:7d',
+        ]
+
+        # Cryptic recibe búsquedas extra.
+        if primary:
+            queries.extend(
+                [
+                    f'"{community}" "new launchpad" when:7d',
+                    f'"{community}" "memecoin launch" when:7d',
+                    f'"{community}" "coming soon" crypto when:7d',
+                    f'"{community}" "testnet" crypto when:7d',
+                    f'"{community}" "bonding curve" crypto when:7d',
+                ]
+            )
+
+        for query in queries:
+
+            params = urllib.parse.urlencode(
+                {
+                    "q": query,
+                    "hl": "en-US",
+                    "gl": "US",
+                    "ceid": "US:en",
+                }
+            )
+
+            xml = safe_text(
+                (
+                    "https://news.google.com/"
+                    "rss/search?"
+                    + params
+                ),
+                20
+            )
+
+            if not xml:
+                continue
+
+            try:
+                root = ET.fromstring(
+                    xml
+                )
+
+            except Exception:
+                continue
+
+            for article in root.findall(
+                ".//item"
+            )[:30]:
+
+                title = strip_publisher(
+                    article.findtext(
+                        "title"
+                    )
+                )
+
+                link = clean(
+                    article.findtext(
+                        "link"
+                    )
+                )
+
+                publisher = clean(
+                    article.findtext(
+                        "source"
+                    )
+                )
+
+                published = parse_date(
+                    article.findtext(
+                        "pubDate"
+                    )
+                )
+
+                if (
+                    published
+                    and NOW - published
+                    > timedelta(days=7)
+                ):
+                    continue
+
+                if not has_launch_signal(
+                    title
+                ):
+                    continue
+
+                project_name = guess_news_name(
+                    title
+                )
+
+                if not project_name:
+                    continue
+
+                if is_known_launchpad(
+                    project_name
+                ):
+                    continue
+
+                source_label = (
+                    "Cryptic Public"
+                    if primary
+                    else (
+                        "Discord Watch: "
+                        + community
+                    )
+                )
+
+                candidate = {
+                    "name": project_name,
+                    "status": detect_status(
+                        title,
+                        published
+                    ),
+                    "chain": detect_chain(
+                        title
+                    ),
+                    "firstSeen": (
+                        published.date().isoformat()
+                        if published
+                        else TODAY
+                    ),
+                    "confidence": 0,
+                    "description": title[:320],
+                    "website": "",
+                    "x": "",
+                    "discord": "",
+                    "github": "",
+                    "source": link,
+                    "_sources": [
+                        "News",
+                        source_label,
+                    ],
+                    "_publishers": (
+                        [publisher]
+                        if publisher
+                        else []
+                    ),
+                }
+
+                merge_candidate(
+                    pool,
+                    candidate
+                )
+
+    state[
+        "discord_sources"
+    ] = resolved_sources
+# =========================================================
 # GITHUB
 # =========================================================
 
@@ -2334,7 +2661,16 @@ def confidence(item):
             30,
             len(publishers) * 10
         )
+    # Cryptic Crypto = fuente principal
+    if "Cryptic Public" in sources:
+        score += 20
 
+    # Otros Discord = fuentes secundarias
+    if any(
+        source.startswith("Discord Watch:")
+        for source in sources
+    ):
+        score += 8
     if item.get("x"):
         score += 8
 
@@ -2673,7 +3009,17 @@ def main():
         log(
             f"News error: {error}"
         )
+    try:
+        scan_discord_public(
+            pool,
+            state,
+            registry
+        )
 
+    except Exception as error:
+        log(
+            f"Discord public intelligence error: {error}"
+        )
     try:
         scan_github(
             pool,
