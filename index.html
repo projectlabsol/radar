@@ -4359,12 +4359,12 @@ function renderThemeRecommendation() {
         <div class="pools-radar-title">
           <h3>Pools.trade</h3>
           <p>
-            New token launchpad by Uniswap Labs for creating,
+            Token launchpad by Uniswap Labs for creating, 
             discovering and trading community tokens.
           </p>
         </div>
 
-        <span class="pools-radar-new">NEW</span>
+        <span class="pools-radar-new">LIVE</span>
       </div>
 
       <div class="pools-radar-tags">
@@ -4388,7 +4388,7 @@ function renderThemeRecommendation() {
 
         <div class="pools-radar-detail">
           <small>Radar status</small>
-          <strong>New Opportunity</strong>
+          <strong>LIVE · Launched Aug 5, 2026</strong>
         </div>
       </div>
 
@@ -4434,6 +4434,432 @@ function renderThemeRecommendation() {
       document.body.appendChild(section);
     }
   })();
+</script>
+  <!-- =========================================================
+     EARLY LAUNCHPAD INTELLIGENCE
+========================================================= -->
+
+<style>
+  .early-launchpad-radar {
+    width: min(1180px, calc(100% - 32px));
+    margin: 50px auto;
+    padding: 24px;
+    border: 1px solid rgba(255, 82, 170, 0.35);
+    border-radius: 18px;
+    background:
+      radial-gradient(circle at top right, rgba(255,82,170,.10), transparent 35%),
+      #0b0d12;
+    box-shadow: 0 18px 60px rgba(0,0,0,.32);
+  }
+
+  .early-launchpad-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+  }
+
+  .early-launchpad-label {
+    display: inline-block;
+    padding: 6px 11px;
+    border: 1px solid rgba(255,82,170,.55);
+    border-radius: 999px;
+    color: #ff75bd;
+    background: rgba(255,82,170,.10);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .early-launchpad-radar h2 {
+    color: #fff;
+    margin: 0 0 8px;
+    font-size: clamp(25px, 4vw, 40px);
+  }
+
+  .early-launchpad-radar p {
+    color: #9aa4b2;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .early-scan-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #63ffa5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .8px;
+  }
+
+  .early-scan-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #63ffa5;
+    box-shadow: 0 0 14px #63ffa5;
+    animation: earlyPulse 1.5s infinite;
+  }
+
+  @keyframes earlyPulse {
+    0%,100% { opacity: 1; }
+    50% { opacity: .35; }
+  }
+
+  .early-sources {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 18px 0 24px;
+  }
+
+  .early-sources span {
+    padding: 7px 10px;
+    border-radius: 10px;
+    background: #121722;
+    border: 1px solid #20293a;
+    color: #b7c0cd;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  #earlyLaunchpadList {
+    display: grid;
+    gap: 14px;
+  }
+
+  .early-launch-card {
+    border: 1px solid #202839;
+    background: #0f131b;
+    border-radius: 15px;
+    padding: 18px;
+  }
+
+  .early-launch-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .early-launch-name {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 800;
+  }
+
+  .early-launch-status {
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .8px;
+  }
+
+  .status-coming {
+    background: rgba(255,193,7,.12);
+    border: 1px solid rgba(255,193,7,.45);
+    color: #ffd65c;
+  }
+
+  .status-new {
+    background: rgba(255,82,170,.12);
+    border: 1px solid rgba(255,82,170,.45);
+    color: #ff75bd;
+  }
+
+  .status-live {
+    background: rgba(52,211,153,.12);
+    border: 1px solid rgba(52,211,153,.45);
+    color: #63ffa5;
+  }
+
+  .status-rumor {
+    background: rgba(148,163,184,.12);
+    border: 1px solid rgba(148,163,184,.35);
+    color: #cbd5e1;
+  }
+
+  .early-launch-meta {
+    display: flex;
+    gap: 9px;
+    flex-wrap: wrap;
+    margin-top: 13px;
+  }
+
+  .early-launch-meta span {
+    background: #151b26;
+    border: 1px solid #222c3d;
+    padding: 6px 9px;
+    border-radius: 8px;
+    color: #aeb8c6;
+    font-size: 11px;
+  }
+
+  .early-launch-description {
+    margin-top: 13px !important;
+    color: #b8c0cc !important;
+  }
+
+  .early-launch-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+  }
+
+  .early-launch-links a {
+    color: #fff;
+    text-decoration: none;
+    background: #171d28;
+    border: 1px solid #2a3446;
+    padding: 8px 11px;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: 800;
+  }
+
+  .early-launch-links a:hover {
+    border-color: #ff52aa;
+  }
+
+  .early-empty {
+    padding: 22px;
+    border: 1px dashed #293246;
+    border-radius: 14px;
+    color: #9ca7b7;
+    text-align: center;
+  }
+</style>
+
+
+<section class="early-launchpad-radar" id="early-launchpad-intelligence">
+
+  <div class="early-launchpad-top">
+
+    <div>
+      <span class="early-launchpad-label">
+        🚨 EARLY DETECTION
+      </span>
+
+      <h2>Launchpad Intelligence</h2>
+
+      <p>
+        Detecting launchpads before launch using public signals,
+        social activity, development activity and on-chain evidence.
+      </p>
+    </div>
+
+    <div class="early-scan-status">
+      <span class="early-scan-dot"></span>
+      RADAR ACTIVE
+    </div>
+
+  </div>
+
+  <div class="early-sources">
+    <span>𝕏 X</span>
+    <span>Discord</span>
+    <span>GitHub</span>
+    <span>Web</span>
+    <span>DeFi</span>
+    <span>On-chain</span>
+  </div>
+
+  <div id="earlyLaunchpadList">
+    <div class="early-empty">
+      Loading launchpad intelligence...
+    </div>
+  </div>
+
+</section>
+
+
+<script>
+(() => {
+
+  const list = document.getElementById("earlyLaunchpadList");
+
+  function escapeHTML(value = "") {
+    return String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  function statusClass(status = "") {
+
+    const s = status.toUpperCase();
+
+    if (
+      s.includes("COMING") ||
+      s.includes("ANNOUNCED") ||
+      s.includes("TESTNET") ||
+      s.includes("PRE-LAUNCH")
+    ) {
+      return "status-coming";
+    }
+
+    if (s.includes("NEW")) {
+      return "status-new";
+    }
+
+    if (s.includes("LIVE")) {
+      return "status-live";
+    }
+
+    return "status-rumor";
+  }
+
+  function sourceButton(label, url) {
+
+    if (!url) return "";
+
+    return `
+      <a
+        href="${escapeHTML(url)}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ${escapeHTML(label)} ↗
+      </a>
+    `;
+  }
+
+  function renderLaunchpads(items) {
+
+    if (!Array.isArray(items) || !items.length) {
+
+      list.innerHTML = `
+        <div class="early-empty">
+          No new launchpads detected right now.
+          Radar is waiting for new signals.
+        </div>
+      `;
+
+      return;
+    }
+
+    list.innerHTML = items.map(item => {
+
+      const status = item.status || "RUMOR";
+
+      return `
+        <article class="early-launch-card">
+
+          <div class="early-launch-head">
+
+            <div class="early-launch-name">
+              ${escapeHTML(item.name || "Unknown Launchpad")}
+            </div>
+
+            <span class="early-launch-status ${statusClass(status)}">
+              ${escapeHTML(status)}
+            </span>
+
+          </div>
+
+          <div class="early-launch-meta">
+
+            ${
+              item.chain
+                ? `<span>CHAIN · ${escapeHTML(item.chain)}</span>`
+                : ""
+            }
+
+            ${
+              item.firstSeen
+                ? `<span>FIRST SEEN · ${escapeHTML(item.firstSeen)}</span>`
+                : ""
+            }
+
+            ${
+              item.confidence
+                ? `<span>CONFIDENCE · ${escapeHTML(item.confidence)}%</span>`
+                : ""
+            }
+
+            ${
+              item.detectedBy
+                ? `<span>SIGNAL · ${escapeHTML(item.detectedBy)}</span>`
+                : ""
+            }
+
+          </div>
+
+          ${
+            item.description
+              ? `
+                <p class="early-launch-description">
+                  ${escapeHTML(item.description)}
+                </p>
+              `
+              : ""
+          }
+
+          <div class="early-launch-links">
+
+            ${sourceButton("WEBSITE", item.website)}
+
+            ${sourceButton("VIEW X", item.x)}
+
+            ${sourceButton("DISCORD", item.discord)}
+
+            ${sourceButton("GITHUB", item.github)}
+
+            ${sourceButton("SOURCE", item.source)}
+
+          </div>
+
+        </article>
+      `;
+
+    }).join("");
+  }
+
+
+  async function loadLaunchpadIntelligence() {
+
+    try {
+
+      const response = await fetch(
+        "./launchpad-intel.json?t=" + Date.now(),
+        {
+          cache: "no-store"
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("launchpad-intel.json not created yet");
+      }
+
+      const data = await response.json();
+
+      renderLaunchpads(data.launchpads || []);
+
+    } catch (error) {
+
+      list.innerHTML = `
+        <div class="early-empty">
+          Intelligence engine installed.<br><br>
+          Waiting for the automatic scanner data file.
+        </div>
+      `;
+
+    }
+
+  }
+
+  loadLaunchpadIntelligence();
+
+})();
 </script>
 </body>
 </html>
