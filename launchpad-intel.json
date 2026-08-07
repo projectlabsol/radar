@@ -1,8 +1,25 @@
 {
-  "updatedAt": "2026-08-07T19:16:07Z",
+  "updatedAt": "2026-08-07T20:02:21Z",
   "scannerVersion": 5,
   "verified": [],
   "watchlist": [
+    {
+      "name": "liquidpools.fun",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-07",
+      "confidence": 73,
+      "description": "Launch a coin. Deepen the pool. Trading fees are claimed and added back into the locked liquidity pool every 5 minutes.",
+      "website": "https://liquidpools.fun/",
+      "x": "https://x.com/liquidpoolsfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x2901c3c1972bf920e1b8d596c8eee75eae6624ed",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-07"
+    },
     {
       "name": "stonkfun.xyz",
       "status": "LIVE",
@@ -59,6 +76,23 @@
     }
   ],
   "launchpads": [
+    {
+      "name": "liquidpools.fun",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-07",
+      "confidence": 73,
+      "description": "Launch a coin. Deepen the pool. Trading fees are claimed and added back into the locked liquidity pool every 5 minutes.",
+      "website": "https://liquidpools.fun/",
+      "x": "https://x.com/liquidpoolsfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x2901c3c1972bf920e1b8d596c8eee75eae6624ed",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-07"
+    },
     {
       "name": "stonkfun.xyz",
       "status": "LIVE",
