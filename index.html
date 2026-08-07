@@ -4825,12 +4825,11 @@ function renderThemeRecommendation() {
   }
 
 
- async function loadLaunchpadIntelligence() {
+// =========================================================
+// LAUNCHPAD INTELLIGENCE UI v5 - ESPAÑOL
+// =========================================================
 
-    // =====================================================
-    // LAUNCHPAD RADAR UI v5
-    // VERIFIED / WATCHLIST / KNOWN
-    // =====================================================
+async function loadLaunchpadIntelligence() {
 
     const escapeHTML = (value) => {
         return String(value ?? "")
@@ -4840,6 +4839,7 @@ function renderThemeRecommendation() {
             .replace(/"/g, "&quot;")
             .replace(/'/g, "&#039;");
     };
+
 
     const safeURL = (value) => {
         try {
@@ -4860,27 +4860,177 @@ function renderThemeRecommendation() {
 
 
     // =====================================================
-    // INSTALL VISUAL STYLE
+    // TRADUCCIÓN DE ESTADOS
     // =====================================================
 
-    if (!document.getElementById("launchpad-v5-styles")) {
+    const traducirEstado = (estado) => {
 
-        const style = document.createElement("style");
+        const estados = {
+            "COMING SOON": "PRÓXIMAMENTE",
+            "ANNOUNCED": "ANUNCIADA",
+            "TESTNET": "TESTNET",
+            "NEW": "NUEVA",
+            "LIVE": "ACTIVA",
+            "RUMOR": "RUMOR",
+            "KNOWN": "CONOCIDA",
+            "VERIFIED": "VERIFICADA"
+        };
 
-        style.id = "launchpad-v5-styles";
+        return estados[
+            String(estado || "").toUpperCase()
+        ] || estado || "DESCONOCIDO";
+    };
+
+
+    // =====================================================
+    // TRADUCCIÓN BÁSICA DE DESCRIPCIONES DEL SCANNER
+    // =====================================================
+
+    const traducirDescripcion = (texto) => {
+
+        let value = String(texto || "").trim();
+
+        if (!value) {
+            return "Descripción no disponible.";
+        }
+
+        const traduccionesExactas = {
+            "Known live memecoin launchpad on Robinhood Chain.":
+                "Launchpad de memecoins activa y conocida en Robinhood Chain.",
+
+            "New DefiLlama launchpad.":
+                "Nueva launchpad detectada mediante DefiLlama.",
+
+            "New launchpad indexed by DefiLlama.":
+                "Nueva launchpad indexada por DefiLlama.",
+
+            "Noctis Protocol — three-tier token launchpad on Midnight + Other Chains":
+                "Noctis Protocol — launchpad de tokens de tres niveles en Midnight y otras redes."
+        };
+
+        if (traduccionesExactas[value]) {
+            return traduccionesExactas[value];
+        }
+
+        value = value
+            .replace(
+                /launchpad candidate/gi,
+                "candidato a launchpad"
+            )
+            .replace(
+                /new on-chain candidate/gi,
+                "nuevo candidato on-chain"
+            )
+            .replace(
+                /new launchpad/gi,
+                "nueva launchpad"
+            )
+            .replace(
+                /coming soon/gi,
+                "próximamente"
+            )
+            .replace(
+                /other chains/gi,
+                "otras redes"
+            )
+            .replace(
+                /token launchpad/gi,
+                "launchpad de tokens"
+            )
+            .replace(
+                /memecoin launchpad/gi,
+                "launchpad de memecoins"
+            );
+
+        return value;
+    };
+
+
+    // =====================================================
+    // TRADUCIR CABECERA EXISTENTE
+    // =====================================================
+
+    const intelligenceSection =
+        list.closest("section");
+
+    if (intelligenceSection) {
+
+        intelligenceSection
+            .querySelectorAll("*")
+            .forEach((element) => {
+
+                if (
+                    element.children.length !== 0
+                ) {
+                    return;
+                }
+
+                const text =
+                    element.textContent.trim();
+
+                const translations = {
+
+                    "EARLY DETECTION":
+                        "DETECCIÓN TEMPRANA",
+
+                    "Launchpad Intelligence":
+                        "Inteligencia de Launchpads",
+
+                    "Detecting launchpads before launch using public signals, social activity, development activity and on-chain evidence.":
+                        "Detectando launchpads antes de su lanzamiento mediante señales públicas, actividad social, desarrollo y evidencia on-chain.",
+
+                    "RADAR ACTIVE":
+                        "RADAR ACTIVO",
+
+                    "Web":
+                        "Web",
+
+                    "On-chain":
+                        "On-chain"
+                };
+
+                if (translations[text]) {
+                    element.textContent =
+                        translations[text];
+                }
+            });
+    }
+
+
+    // =====================================================
+    // ESTILOS
+    // =====================================================
+
+    if (
+        !document.getElementById(
+            "launchpad-v5-styles"
+        )
+    ) {
+
+        const style =
+            document.createElement("style");
+
+        style.id =
+            "launchpad-v5-styles";
 
         style.textContent = `
 
             .launchpad-v5-wrap {
                 display: grid;
-                gap: 28px;
+                gap: 26px;
                 width: 100%;
             }
 
             .launchpad-v5-group {
-                border: 1px solid rgba(255,255,255,.09);
+                border:
+                    1px solid
+                    rgba(255,255,255,.09);
+
                 border-radius: 18px;
-                background: rgba(7,10,16,.76);
+
+                background:
+                    rgba(7,10,16,.76);
+
                 overflow: hidden;
             }
 
@@ -4889,47 +5039,75 @@ function renderThemeRecommendation() {
                 align-items: center;
                 justify-content: space-between;
                 gap: 16px;
+
                 padding: 18px 20px;
-                border-bottom: 1px solid rgba(255,255,255,.08);
+
+                border-bottom:
+                    1px solid
+                    rgba(255,255,255,.08);
             }
 
             .launchpad-v5-group-header h3 {
                 margin: 0;
+
                 font-size: 18px;
+
                 color: #fff;
             }
 
             .launchpad-v5-group-header p {
                 margin: 5px 0 0;
+
                 font-size: 12px;
+
                 color: #8f9bad;
             }
 
             .launchpad-v5-count {
                 min-width: 34px;
                 height: 34px;
+
                 display: grid;
                 place-items: center;
+
                 border-radius: 999px;
+
                 font-weight: 900;
                 font-size: 13px;
-                background: rgba(255,255,255,.07);
-                border: 1px solid rgba(255,255,255,.09);
+
+                background:
+                    rgba(255,255,255,.07);
+
+                border:
+                    1px solid
+                    rgba(255,255,255,.09);
             }
 
             .launchpad-v5-grid {
                 padding: 16px;
+
                 display: grid;
+
                 grid-template-columns:
-                    repeat(auto-fit, minmax(280px, 1fr));
+                    repeat(
+                        auto-fit,
+                        minmax(280px, 1fr)
+                    );
+
                 gap: 14px;
             }
 
             .launchpad-v5-card {
                 position: relative;
+
                 padding: 18px;
+
                 border-radius: 16px;
-                border: 1px solid rgba(255,255,255,.08);
+
+                border:
+                    1px solid
+                    rgba(255,255,255,.08);
+
                 background:
                     linear-gradient(
                         145deg,
@@ -4940,121 +5118,190 @@ function renderThemeRecommendation() {
 
             .launchpad-v5-card-top {
                 display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
+
+                justify-content:
+                    space-between;
+
+                align-items:
+                    flex-start;
+
                 gap: 12px;
+
                 margin-bottom: 12px;
             }
 
             .launchpad-v5-name {
                 margin: 0;
+
                 color: #fff;
+
                 font-size: 20px;
+
                 font-weight: 900;
-                word-break: break-word;
+
+                word-break:
+                    break-word;
             }
 
             .launchpad-v5-status {
                 flex-shrink: 0;
+
                 padding: 5px 9px;
+
                 border-radius: 999px;
+
                 font-size: 10px;
+
                 font-weight: 900;
+
                 letter-spacing: .6px;
             }
 
             .launchpad-v5-description {
                 color: #aeb8c8;
+
                 font-size: 13px;
+
                 line-height: 1.6;
-                margin: 0 0 16px;
+
+                margin:
+                    0 0 16px;
             }
 
             .launchpad-v5-meta {
                 display: grid;
+
                 grid-template-columns:
-                    repeat(2, minmax(0,1fr));
+                    repeat(
+                        2,
+                        minmax(0,1fr)
+                    );
+
                 gap: 9px;
+
                 margin-bottom: 15px;
             }
 
             .launchpad-v5-meta-box {
                 padding: 10px;
+
                 border-radius: 11px;
-                background: rgba(255,255,255,.035);
-                border: 1px solid rgba(255,255,255,.055);
+
+                background:
+                    rgba(255,255,255,.035);
+
+                border:
+                    1px solid
+                    rgba(255,255,255,.055);
             }
 
             .launchpad-v5-meta-box small {
                 display: block;
+
                 margin-bottom: 4px;
+
                 color: #758196;
+
                 font-size: 10px;
+
                 text-transform: uppercase;
+
                 letter-spacing: .7px;
             }
 
             .launchpad-v5-meta-box strong {
                 display: block;
+
                 color: #e9eef7;
+
                 font-size: 12px;
-                word-break: break-word;
+
+                word-break:
+                    break-word;
             }
 
             .launchpad-v5-links {
                 display: flex;
+
                 flex-wrap: wrap;
+
                 gap: 8px;
             }
 
             .launchpad-v5-link {
                 display: inline-flex;
+
                 align-items: center;
+
                 justify-content: center;
+
                 min-height: 35px;
+
                 padding: 0 12px;
+
                 text-decoration: none;
+
                 border-radius: 10px;
+
                 color: #fff;
+
                 font-size: 11px;
+
                 font-weight: 800;
-                background: rgba(255,255,255,.07);
-                border: 1px solid rgba(255,255,255,.09);
-                transition: .18s ease;
+
+                background:
+                    rgba(255,255,255,.07);
+
+                border:
+                    1px solid
+                    rgba(255,255,255,.09);
+
+                transition:
+                    .18s ease;
             }
 
             .launchpad-v5-link:hover {
-                transform: translateY(-2px);
-                background: rgba(255,255,255,.12);
-            }
+                transform:
+                    translateY(-2px);
 
-            .launchpad-v5-source {
-                margin-top: 13px;
-                color: #68758b;
-                font-size: 10px;
+                background:
+                    rgba(255,255,255,.12);
             }
 
             .launchpad-v5-empty {
                 margin: 16px;
+
                 padding: 22px;
+
                 text-align: center;
+
                 border-radius: 14px;
-                border: 1px dashed rgba(255,255,255,.1);
+
+                border:
+                    1px dashed
+                    rgba(255,255,255,.10);
+
                 color: #707c8f;
+
                 font-size: 13px;
             }
 
 
-            /* VERIFIED */
+            /* VERIFICADAS */
 
             .launchpad-v5-group.verified {
-                border-color: rgba(25,255,137,.25);
+
+                border-color:
+                    rgba(25,255,137,.25);
+
                 box-shadow:
-                    0 0 35px rgba(25,255,137,.05);
+                    0 0 35px
+                    rgba(25,255,137,.05);
             }
 
             .launchpad-v5-group.verified
             .launchpad-v5-group-header {
+
                 background:
                     linear-gradient(
                         90deg,
@@ -5065,20 +5312,29 @@ function renderThemeRecommendation() {
 
             .launchpad-v5-group.verified
             .launchpad-v5-status {
+
                 color: #48ffa0;
-                background: rgba(22,255,135,.10);
-                border: 1px solid rgba(22,255,135,.25);
+
+                background:
+                    rgba(22,255,135,.10);
+
+                border:
+                    1px solid
+                    rgba(22,255,135,.25);
             }
 
 
-            /* WATCHLIST */
+            /* OBSERVACIÓN */
 
             .launchpad-v5-group.watchlist {
-                border-color: rgba(255,183,56,.20);
+
+                border-color:
+                    rgba(255,183,56,.20);
             }
 
             .launchpad-v5-group.watchlist
             .launchpad-v5-group-header {
+
                 background:
                     linear-gradient(
                         90deg,
@@ -5089,20 +5345,29 @@ function renderThemeRecommendation() {
 
             .launchpad-v5-group.watchlist
             .launchpad-v5-status {
+
                 color: #ffc55c;
-                background: rgba(255,180,50,.09);
-                border: 1px solid rgba(255,180,50,.22);
+
+                background:
+                    rgba(255,180,50,.09);
+
+                border:
+                    1px solid
+                    rgba(255,180,50,.22);
             }
 
 
-            /* KNOWN */
+            /* CONOCIDAS */
 
             .launchpad-v5-group.known {
-                border-color: rgba(86,145,255,.18);
+
+                border-color:
+                    rgba(86,145,255,.18);
             }
 
             .launchpad-v5-group.known
             .launchpad-v5-group-header {
+
                 background:
                     linear-gradient(
                         90deg,
@@ -5113,34 +5378,45 @@ function renderThemeRecommendation() {
 
             .launchpad-v5-group.known
             .launchpad-v5-status {
+
                 color: #8fb4ff;
-                background: rgba(70,125,255,.10);
-                border: 1px solid rgba(70,125,255,.22);
+
+                background:
+                    rgba(70,125,255,.10);
+
+                border:
+                    1px solid
+                    rgba(70,125,255,.22);
             }
 
 
             @media (max-width: 650px) {
 
                 .launchpad-v5-meta {
-                    grid-template-columns: 1fr;
+                    grid-template-columns:
+                        1fr;
                 }
 
                 .launchpad-v5-grid {
-                    grid-template-columns: 1fr;
+                    grid-template-columns:
+                        1fr;
                 }
 
                 .launchpad-v5-group-header {
-                    align-items: flex-start;
+                    align-items:
+                        flex-start;
                 }
             }
         `;
 
-        document.head.appendChild(style);
+        document.head.appendChild(
+            style
+        );
     }
 
 
     // =====================================================
-    // CREATE BUTTON
+    // BOTONES
     // =====================================================
 
     const makeLink = (
@@ -5148,7 +5424,8 @@ function renderThemeRecommendation() {
         value
     ) => {
 
-        const url = safeURL(value);
+        const url =
+            safeURL(value);
 
         if (!url) {
             return "";
@@ -5168,7 +5445,7 @@ function renderThemeRecommendation() {
 
 
     // =====================================================
-    // CREATE CARD
+    // TARJETA
     // =====================================================
 
     const makeCard = (
@@ -5179,37 +5456,59 @@ function renderThemeRecommendation() {
         const name =
             escapeHTML(
                 item.name ||
-                "Unknown Project"
+                "Proyecto desconocido"
             );
+
 
         const status =
             escapeHTML(
-                item.status ||
-                "UNKNOWN"
+                traducirEstado(
+                    item.status
+                )
             );
+
 
         const chain =
             escapeHTML(
                 item.chain ||
-                "Unknown"
+                "Desconocida"
             );
+
 
         const confidence =
             Number(
                 item.confidence || 0
             );
 
+
         const description =
             escapeHTML(
-                item.description ||
-                "No description available."
+                traducirDescripcion(
+                    item.description
+                )
             );
+
 
         const detectedBy =
             escapeHTML(
-                item.detectedBy ||
-                "Radar"
+                String(
+                    item.detectedBy ||
+                    "Radar"
+                )
+                .replace(
+                    /Website/gi,
+                    "Sitio web"
+                )
+                .replace(
+                    /Known platform/gi,
+                    "Plataforma conocida"
+                )
+                .replace(
+                    /publishers/gi,
+                    "fuentes"
+                )
             );
+
 
         const firstSeen =
             escapeHTML(
@@ -5217,9 +5516,11 @@ function renderThemeRecommendation() {
                 "-"
             );
 
+
         const links = [
+
             makeLink(
-                "🌐 Website",
+                "🌐 Sitio web",
                 item.website
             ),
 
@@ -5239,11 +5540,13 @@ function renderThemeRecommendation() {
             ),
 
             makeLink(
-                "🔎 Source",
+                "🔎 Fuente",
                 item.source
             )
 
-        ].filter(Boolean).join("");
+        ]
+        .filter(Boolean)
+        .join("");
 
 
         return `
@@ -5252,44 +5555,85 @@ function renderThemeRecommendation() {
                 data-tier="${escapeHTML(tier)}"
             >
 
-                <div class="launchpad-v5-card-top">
+                <div
+                    class="launchpad-v5-card-top"
+                >
 
-                    <h4 class="launchpad-v5-name">
+                    <h4
+                        class="launchpad-v5-name"
+                    >
                         ${name}
                     </h4>
 
-                    <span class="launchpad-v5-status">
+                    <span
+                        class="launchpad-v5-status"
+                    >
                         ${status}
                     </span>
 
                 </div>
 
 
-                <p class="launchpad-v5-description">
+                <p
+                    class="launchpad-v5-description"
+                >
                     ${description}
                 </p>
 
 
-                <div class="launchpad-v5-meta">
+                <div
+                    class="launchpad-v5-meta"
+                >
 
-                    <div class="launchpad-v5-meta-box">
-                        <small>Network</small>
-                        <strong>${chain}</strong>
+                    <div
+                        class="launchpad-v5-meta-box"
+                    >
+                        <small>
+                            Red
+                        </small>
+
+                        <strong>
+                            ${chain}
+                        </strong>
                     </div>
 
-                    <div class="launchpad-v5-meta-box">
-                        <small>Confidence</small>
-                        <strong>${confidence}%</strong>
+
+                    <div
+                        class="launchpad-v5-meta-box"
+                    >
+                        <small>
+                            Confianza
+                        </small>
+
+                        <strong>
+                            ${confidence}%
+                        </strong>
                     </div>
 
-                    <div class="launchpad-v5-meta-box">
-                        <small>First detected</small>
-                        <strong>${firstSeen}</strong>
+
+                    <div
+                        class="launchpad-v5-meta-box"
+                    >
+                        <small>
+                            Detectada por primera vez
+                        </small>
+
+                        <strong>
+                            ${firstSeen}
+                        </strong>
                     </div>
 
-                    <div class="launchpad-v5-meta-box">
-                        <small>Detected by</small>
-                        <strong>${detectedBy}</strong>
+
+                    <div
+                        class="launchpad-v5-meta-box"
+                    >
+                        <small>
+                            Detectada mediante
+                        </small>
+
+                        <strong>
+                            ${detectedBy}
+                        </strong>
                     </div>
 
                 </div>
@@ -5299,7 +5643,9 @@ function renderThemeRecommendation() {
                     links
                     ?
                     `
-                        <div class="launchpad-v5-links">
+                        <div
+                            class="launchpad-v5-links"
+                        >
                             ${links}
                         </div>
                     `
@@ -5313,7 +5659,7 @@ function renderThemeRecommendation() {
 
 
     // =====================================================
-    // CREATE GROUP
+    // GRUPO
     // =====================================================
 
     const makeGroup = ({
@@ -5324,18 +5670,25 @@ function renderThemeRecommendation() {
         items
     }) => {
 
-        const cards = (
+        const cards =
             Array.isArray(items)
             ? items
-            : []
-        );
+            : [];
+
 
         return `
             <section
-                class="launchpad-v5-group ${className}"
+                class="
+                    launchpad-v5-group
+                    ${className}
+                "
             >
 
-                <div class="launchpad-v5-group-header">
+                <div
+                    class="
+                        launchpad-v5-group-header
+                    "
+                >
 
                     <div>
 
@@ -5350,7 +5703,10 @@ function renderThemeRecommendation() {
 
                     </div>
 
-                    <div class="launchpad-v5-count">
+
+                    <div
+                        class="launchpad-v5-count"
+                    >
                         ${cards.length}
                     </div>
 
@@ -5361,29 +5717,31 @@ function renderThemeRecommendation() {
                     cards.length
                     ?
                     `
-                        <div class="launchpad-v5-grid">
+                        <div
+                            class="launchpad-v5-grid"
+                        >
 
                             ${
                                 cards
-                                    .map(
-                                        item =>
-                                            makeCard(
-                                                item,
-                                                className
-                                            )
-                                    )
-                                    .join("")
+                                .map(
+                                    item =>
+                                        makeCard(
+                                            item,
+                                            className
+                                        )
+                                )
+                                .join("")
                             }
 
                         </div>
                     `
                     :
                     `
-                        <div class="launchpad-v5-empty">
-
-                            No projects detected
-                            in this category right now.
-
+                        <div
+                            class="launchpad-v5-empty"
+                        >
+                            No se detectaron proyectos
+                            en esta categoría por ahora.
                         </div>
                     `
                 }
@@ -5394,24 +5752,25 @@ function renderThemeRecommendation() {
 
 
     // =====================================================
-    // LOAD JSON
+    // CARGAR DATOS DEL SCANNER
     // =====================================================
 
     try {
 
-        const response = await fetch(
-            "./launchpad-intel.json?t="
-            + Date.now(),
-            {
-                cache: "no-store"
-            }
-        );
+        const response =
+            await fetch(
+                "./launchpad-intel.json?t="
+                + Date.now(),
+                {
+                    cache: "no-store"
+                }
+            );
 
 
         if (!response.ok) {
 
             throw new Error(
-                "launchpad-intel.json unavailable"
+                "No se pudo cargar launchpad-intel.json"
             );
         }
 
@@ -5421,25 +5780,33 @@ function renderThemeRecommendation() {
 
 
         const verified =
-            Array.isArray(data.verified)
+            Array.isArray(
+                data.verified
+            )
             ? data.verified
             : [];
 
 
         const watchlist =
-            Array.isArray(data.watchlist)
+            Array.isArray(
+                data.watchlist
+            )
             ? data.watchlist
             : [];
 
 
         const known =
-            Array.isArray(data.known)
+            Array.isArray(
+                data.known
+            )
             ? data.known
             : [];
 
 
         list.innerHTML = `
-            <div class="launchpad-v5-wrap">
+            <div
+                class="launchpad-v5-wrap"
+            >
 
                 ${makeGroup({
 
@@ -5450,10 +5817,10 @@ function renderThemeRecommendation() {
                         "🚨",
 
                     title:
-                        "VERIFIED EARLY LAUNCHPADS",
+                        "LAUNCHPADS VERIFICADAS",
 
                     description:
-                        "Strong independent signals. Highest-priority opportunities.",
+                        "Señales independientes sólidas. Oportunidades de mayor prioridad.",
 
                     items:
                         verified
@@ -5469,10 +5836,10 @@ function renderThemeRecommendation() {
                         "👀",
 
                     title:
-                        "WATCHLIST",
+                        "EN OBSERVACIÓN",
 
                     description:
-                        "Early candidates under observation. Not independently confirmed yet.",
+                        "Candidatos tempranos bajo observación. Aún no confirmados de forma independiente.",
 
                     items:
                         watchlist
@@ -5488,10 +5855,10 @@ function renderThemeRecommendation() {
                         "🟢",
 
                     title:
-                        "KNOWN / LIVE",
+                        "CONOCIDAS / ACTIVAS",
 
                     description:
-                        "Launchpads already launched or already known by the radar.",
+                        "Launchpads que ya fueron lanzadas o que el radar ya conoce.",
 
                     items:
                         known
@@ -5504,45 +5871,89 @@ function renderThemeRecommendation() {
     } catch (error) {
 
         console.error(
-            "Launchpad Intelligence:",
+            "Inteligencia de Launchpads:",
             error
         );
+
 
         list.innerHTML = `
             <div class="early-empty">
 
-                Launchpad Intelligence Radar
-                is waiting for scanner data.
+                El Radar de Inteligencia de
+                Launchpads está esperando
+                los datos del escáner.
 
             </div>
         `;
     }
 }
-// MOVE LAUNCHPAD INTELLIGENCE AFTER THE FIRST MAIN BLOCK
-const intelligenceSection = list.closest("section");
-const mainElement = document.querySelector("main");
 
-if (intelligenceSection && mainElement) {
 
-    const firstMainBlock = Array.from(mainElement.children)
-        .find(element => element !== intelligenceSection);
+// =========================================================
+// POSICIÓN DEL BLOQUE
+// Después del primer bloque principal de la página
+// =========================================================
+
+const intelligenceSection =
+    list.closest("section");
+
+const mainElement =
+    document.querySelector("main");
+
+
+if (
+    intelligenceSection &&
+    mainElement
+) {
+
+    const firstMainBlock =
+        Array.from(
+            mainElement.children
+        )
+        .find(
+            element =>
+                element !==
+                intelligenceSection
+        );
+
 
     if (firstMainBlock) {
-        firstMainBlock.after(intelligenceSection);
+
+        firstMainBlock.after(
+            intelligenceSection
+        );
+
     } else {
-        mainElement.appendChild(intelligenceSection);
+
+        mainElement.appendChild(
+            intelligenceSection
+        );
     }
 }
 
-// REMOVE OLD MANUAL POOLS.TRADE BLOCK
+
+// =========================================================
+// ELIMINAR POOLS.TRADE ANTIGUO
+// Pools.trade seguirá apareciendo en CONOCIDAS / ACTIVAS
+// =========================================================
+
 const oldPoolsTradeSection =
-    document.getElementById("pools-trade-launchpad");
+    document.getElementById(
+        "pools-trade-launchpad"
+    );
+
 
 if (oldPoolsTradeSection) {
     oldPoolsTradeSection.remove();
 }
 
+
+// =========================================================
+// INICIAR RADAR
+// =========================================================
+
 loadLaunchpadIntelligence();
+
 
 })();
 </script>
