@@ -1,0 +1,42 @@
+name: Launchpad Intelligence Radar
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  scan-launchpads:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download radar
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run launchpad scanner
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python launchpad-scanner.py
+
+      - name: Save radar discoveries
+        run: |
+          git config user.name "Launchpad Radar Bot"
+          git config user.email "launchpad-radar@users.noreply.github.com"
+
+          git add launchpad-intel.json launchpad-scanner-state.json
+
+          if git diff --cached --quiet; then
+            echo "No new launchpad intelligence detected."
+          else
+            git commit -m "Radar: update launchpad intelligence"
+            git push
+          fi
