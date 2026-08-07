@@ -1,4 +1,5 @@
 import base64
+import html as html_lib
 import json
 import os
 import re
@@ -11,118 +12,23 @@ from pathlib import Path
 
 
 # =========================================================
-# LAUNCHPAD INTELLIGENCE RADAR v4
+# LAUNCHPAD INTELLIGENCE RADAR v5
 # =========================================================
-#
-# VERIFIED:
-#   Evidencia fuerte e independiente.
-#
-# WATCHLIST:
-#   Proyecto posible, pero todavía sin confirmación suficiente.
-#
-# KNOWN:
-#   Launchpads ya conocidas como Pools.trade.
-#
-# FUENTES:
-#   - Google News
-#   - GitHub
-#   - DefiLlama
-#   - DEX Screener
-#   - Websites oficiales
-#
-# =========================================================
-
 
 DB_FILE = Path("launchpad-intel.json")
 STATE_FILE = Path("launchpad-scanner-state.json")
 
-SCANNER_VERSION = 4
+SCANNER_VERSION = 5
 
 NOW = datetime.now(timezone.utc)
 TODAY = NOW.date().isoformat()
 
-USER_AGENT = "ProjectLabSol-Launchpad-Radar/4.0"
+USER_AGENT = "ProjectLabSol-Launchpad-Radar/5.0"
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
 
 
 # =========================================================
-# SEARCH TERMS
-# =========================================================
-
-LAUNCH_TERMS = (
-    "launchpad",
-    "token launch platform",
-    "memecoin launch",
-    "meme coin launch",
-    "fair launch",
-    "bonding curve",
-    "token launcher",
-    "coin launcher",
-)
-
-CRYPTO_TERMS = (
-    "token",
-    "coin",
-    "memecoin",
-    "meme coin",
-    "crypto",
-    "blockchain",
-    "solana",
-    "ethereum",
-    "base",
-    "bnb",
-    "defi",
-    "on-chain",
-    "onchain",
-)
-
-PRELAUNCH_TERMS = (
-    "coming soon",
-    "launching soon",
-    "pre-launch",
-    "prelaunch",
-    "waitlist",
-    "testnet",
-    "early access",
-    "will launch",
-    "plans to launch",
-    "launch soon",
-)
-
-GENERIC_NAMES = {
-    "new",
-    "crypto",
-    "cryptocurrency",
-    "token",
-    "tokens",
-    "meme",
-    "memecoin",
-    "memecoins",
-    "platform",
-    "launchpad",
-    "launcher",
-    "fair",
-    "launch",
-    "bonding",
-    "curve",
-    "defi",
-    "web3",
-    "solana",
-    "ethereum",
-    "base",
-    "bnb",
-    "chain",
-    "ecosystem",
-    "project",
-    "protocol",
-    "community",
-    "official",
-}
-
-
-# =========================================================
 # KNOWN LAUNCHPADS
-# Estas no pueden aparecer como descubrimientos nuevos.
 # =========================================================
 
 KNOWN_LAUNCHPADS = {
@@ -180,7 +86,7 @@ KNOWN_DOMAINS = {
 
 
 # =========================================================
-# MEDIA / NON PROJECT
+# BLOCKED DOMAINS
 # =========================================================
 
 MEDIA_DOMAINS = {
@@ -202,28 +108,48 @@ MEDIA_DOMAINS = {
     "bitcoin.com",
 }
 
-NON_PROJECT_DOMAINS = {
-    "github.com",
-    "gitlab.com",
-    "medium.com",
-    "substack.com",
-    "mirror.xyz",
-    "notion.site",
-    "notion.so",
-    "docs.google.com",
-    "drive.google.com",
+SOCIAL_DOMAINS = {
+    "instagram.com",
+    "tiktok.com",
+    "pinterest.com",
+    "facebook.com",
+    "threads.net",
+    "reddit.com",
+    "linkedin.com",
+    "youtube.com",
+    "youtu.be",
+    "t.me",
+    "telegram.me",
     "x.com",
     "twitter.com",
     "discord.com",
     "discord.gg",
-    "t.me",
-    "telegram.me",
-    "youtube.com",
-    "youtu.be",
-    "linktr.ee",
 }
 
-BAD_PAGE_PATHS = (
+GENERIC_HOSTS = {
+    "vercel.app",
+    "netlify.app",
+    "pages.dev",
+    "github.io",
+    "onrender.com",
+    "render.com",
+    "railway.app",
+    "replit.app",
+    "herokuapp.com",
+    "web.app",
+    "firebaseapp.com",
+    "wixsite.com",
+    "carrd.co",
+    "notion.site",
+    "notion.so",
+    "medium.com",
+    "substack.com",
+    "mirror.xyz",
+    "linktr.ee",
+    "linktree.com",
+}
+
+BAD_PATHS = (
     "/blog/",
     "/article/",
     "/articles/",
@@ -233,14 +159,65 @@ BAD_PAGE_PATHS = (
     "/tutorial/",
     "/tutorials/",
     "/course/",
+    "/courses/",
     "/docs/",
     "/documentation/",
-    "/2020/",
-    "/2021/",
-    "/2022/",
-    "/2023/",
-    "/2024/",
-    "/2025/",
+)
+
+
+# =========================================================
+# LAUNCH SIGNALS
+# =========================================================
+
+POSITIVE_PATTERNS = (
+    r"\blaunchpad\b",
+    r"\btoken launcher\b",
+    r"\bcoin launcher\b",
+    r"\bmemecoin launcher\b",
+    r"\bmeme coin launcher\b",
+    r"\bfair launch platform\b",
+    r"\btoken launch platform\b",
+    r"\bmemecoin launch platform\b",
+    r"\blaunch your token\b",
+    r"\blaunch a token\b",
+    r"\blaunch tokens\b",
+    r"\blaunch your coin\b",
+    r"\blaunch a coin\b",
+    r"\bcreate your token\b",
+    r"\bcreate a token\b",
+    r"\bdeploy your token\b",
+    r"\bdeploy a token\b",
+    r"\bcreate and launch\b",
+    r"\blaunch and trade tokens\b",
+)
+
+NEGATIVE_PATTERNS = (
+    r"\bnot a bonding curve\b",
+    r"\bnot a launchpad\b",
+    r"\bnot a token launchpad\b",
+    r"\bnot a token launcher\b",
+    r"\bnot a launcher\b",
+    r"\bno bonding curve\b",
+    r"\bno bonding curves\b",
+    r"\bwithout a bonding curve\b",
+    r"\bwithout bonding curves\b",
+    r"\binstead of a bonding curve\b",
+    r"\bwe are not a launchpad\b",
+    r"\bwe're not a launchpad\b",
+)
+
+PRELAUNCH_TERMS = (
+    "coming soon",
+    "launching soon",
+    "launch soon",
+    "pre-launch",
+    "prelaunch",
+    "waitlist",
+    "testnet",
+    "early access",
+    "will launch",
+    "plans to launch",
+    "beta launch",
 )
 
 
@@ -271,10 +248,8 @@ def normalize(value):
 def get_host(url):
     try:
         host = (
-            urllib.parse
-            .urlparse(clean(url))
-            .netloc
-            .lower()
+            urllib.parse.urlparse(clean(url))
+            .netloc.lower()
             .split("@")[-1]
             .split(":")[0]
         )
@@ -290,44 +265,28 @@ def get_host(url):
 
 def domain_matches(host, domains):
     return any(
-        host == domain
-        or host.endswith("." + domain)
-        for domain in domains
+        host == item
+        or host.endswith("." + item)
+        for item in domains
     )
 
 
-def is_media_url(url):
-    host = get_host(url)
+def is_known_launchpad(name="", website=""):
+    if normalize(name) in KNOWN_LAUNCHPADS:
+        return True
+
+    host = get_host(website)
 
     return bool(
         host
         and domain_matches(
             host,
-            MEDIA_DOMAINS
+            KNOWN_DOMAINS
         )
     )
 
 
-def is_known_launchpad(name="", website=""):
-    name_key = normalize(name)
-    host = get_host(website)
-
-    if name_key in KNOWN_LAUNCHPADS:
-        return True
-
-    if (
-        host
-        and domain_matches(
-            host,
-            KNOWN_DOMAINS
-        )
-    ):
-        return True
-
-    return False
-
-
-def is_project_homepage(url):
+def valid_project_domain(url):
     url = clean(url)
 
     if not url.startswith(
@@ -340,32 +299,34 @@ def is_project_homepage(url):
     if not host:
         return False
 
+    blocked = (
+        MEDIA_DOMAINS
+        | SOCIAL_DOMAINS
+        | GENERIC_HOSTS
+    )
+
     if domain_matches(
         host,
-        MEDIA_DOMAINS | NON_PROJECT_DOMAINS
+        blocked
     ):
         return False
 
     parsed = urllib.parse.urlparse(url)
-
-    path = (
-        parsed.path
-        or "/"
-    ).lower()
+    path = (parsed.path or "/").lower()
 
     if any(
         value in path
-        for value in BAD_PAGE_PATHS
+        for value in BAD_PATHS
     ):
         return False
 
-    segments = [
-        part
-        for part in path.split("/")
-        if part
+    parts = [
+        value
+        for value in path.split("/")
+        if value
     ]
 
-    return len(segments) <= 2
+    return len(parts) <= 2
 
 
 # =========================================================
@@ -396,16 +357,15 @@ def request_headers(url):
 
 
 def fetch_text(url, timeout=20):
-    request = urllib.request.Request(
+    req = urllib.request.Request(
         url,
         headers=request_headers(url)
     )
 
     with urllib.request.urlopen(
-        request,
+        req,
         timeout=timeout
     ) as response:
-
         return response.read().decode(
             "utf-8",
             errors="replace"
@@ -423,7 +383,6 @@ def safe_text(url, timeout=20):
         log(
             f"Could not read {url}: {error}"
         )
-
         return ""
 
 
@@ -440,12 +399,11 @@ def safe_json(url, timeout=25):
         log(
             f"Could not read JSON {url}: {error}"
         )
-
         return None
 
 
 # =========================================================
-# JSON
+# FILES
 # =========================================================
 
 def load_json(path, default):
@@ -472,7 +430,7 @@ def save_json(path, data):
 
 
 # =========================================================
-# DATES
+# DATE
 # =========================================================
 
 def parse_date(value):
@@ -508,38 +466,79 @@ def parse_date(value):
         except Exception:
             pass
 
-    try:
-        return datetime.fromisoformat(
-            value.replace(
-                "Z",
-                "+00:00"
-            )
-        ).astimezone(
-            timezone.utc
+    return None
+
+
+# =========================================================
+# HTML TEXT
+# =========================================================
+
+def visible_html_text(raw_html):
+    raw_html = re.sub(
+        r"<script\b[^>]*>.*?</script>",
+        " ",
+        raw_html,
+        flags=re.I | re.S
+    )
+
+    raw_html = re.sub(
+        r"<style\b[^>]*>.*?</style>",
+        " ",
+        raw_html,
+        flags=re.I | re.S
+    )
+
+    raw_html = re.sub(
+        r"<svg\b[^>]*>.*?</svg>",
+        " ",
+        raw_html,
+        flags=re.I | re.S
+    )
+
+    raw_html = re.sub(
+        r"<[^>]+>",
+        " ",
+        raw_html
+    )
+
+    return clean(
+        html_lib.unescape(
+            raw_html
+        )
+    )
+
+
+# =========================================================
+# LAUNCH DETECTION
+# =========================================================
+
+def remove_negative_phrases(text):
+    text = clean(text).lower()
+
+    for pattern in NEGATIVE_PATTERNS:
+        text = re.sub(
+            pattern,
+            " ",
+            text,
+            flags=re.I
         )
 
-    except Exception:
-        return None
+    return clean(text)
 
-
-# =========================================================
-# SIGNALS
-# =========================================================
 
 def has_launch_signal(text):
-    low = clean(text).lower()
-
-    launch = any(
-        value in low
-        for value in LAUNCH_TERMS
+    text = remove_negative_phrases(
+        text
     )
 
-    crypto = any(
-        value in low
-        for value in CRYPTO_TERMS
+    return any(
+        re.search(
+            pattern,
+            text,
+            flags=re.I
+        )
+        for pattern in POSITIVE_PATTERNS
     )
-
-    return launch and crypto
 
 
 def has_prelaunch_signal(text):
@@ -551,6 +550,10 @@ def has_prelaunch_signal(text):
     )
 
 
+# =========================================================
+# CHAIN
+# =========================================================
+
 def detect_chain(text):
     low = (
         " "
@@ -558,7 +561,7 @@ def detect_chain(text):
         + " "
     )
 
-    networks = (
+    chains = (
         (
             "Robinhood Chain",
             ("robinhood chain",)
@@ -566,6 +569,13 @@ def detect_chain(text):
         (
             "Solana",
             ("solana",)
+        ),
+        (
+            "Midnight",
+            (
+                "midnight network",
+                "midnight chain"
+            )
         ),
         (
             "Base",
@@ -579,8 +589,8 @@ def detect_chain(text):
             "BNB Chain",
             (
                 "bnb chain",
-                "binance smart chain",
-                " bsc "
+                " bsc ",
+                "binance smart chain"
             )
         ),
         (
@@ -607,19 +617,62 @@ def detect_chain(text):
             "Optimism",
             ("optimism",)
         ),
+        (
+            "Sui",
+            (" sui ",)
+        ),
+        (
+            "Aptos",
+            ("aptos",)
+        ),
+        (
+            "Monad",
+            ("monad",)
+        ),
+        (
+            "Berachain",
+            ("berachain",)
+        ),
+        (
+            "Sonic",
+            ("sonic chain",)
+        ),
+        (
+            "Sei",
+            (" sei ",)
+        ),
+        (
+            "TON",
+            (
+                " ton ",
+                "the open network"
+            )
+        ),
+        (
+            "Tron",
+            ("tron",)
+        ),
+        (
+            "Abstract",
+            ("abstract chain",)
+        ),
+        (
+            "HyperEVM",
+            ("hyperevm",)
+        ),
     )
 
-    result = []
+    found = []
 
-    for name, aliases in networks:
+    for name, aliases in chains:
         if any(
             alias in low
             for alias in aliases
         ):
-            result.append(name)
+            found.append(name)
 
     return ", ".join(
-        result[:3]
+        found[:3]
     )
 
 
@@ -627,7 +680,10 @@ def detect_chain(text):
 # STATUS
 # =========================================================
 
-def detect_status(text, published=None):
+def detect_status(
+    text,
+    published=None
+):
     low = clean(text).lower()
 
     if "testnet" in low:
@@ -638,9 +694,9 @@ def detect_status(text, published=None):
         for value in (
             "coming soon",
             "launching soon",
+            "launch soon",
             "pre-launch",
             "prelaunch",
-            "launch soon"
         )
     ):
         return "COMING SOON"
@@ -648,15 +704,15 @@ def detect_status(text, published=None):
     if any(
         value in low
         for value in (
-            "announces",
             "announced",
+            "announces",
             "unveils",
             "reveals",
             "introduces",
             "waitlist",
             "early access",
             "will launch",
-            "plans to launch"
+            "plans to launch",
         )
     ):
         return "ANNOUNCED"
@@ -666,10 +722,10 @@ def detect_status(text, published=None):
         for value in (
             "now live",
             "is live",
-            "launches",
             "launched",
+            "launches",
             "goes live",
-            "debuted"
+            "debuted",
         )
     ):
         if (
@@ -702,8 +758,8 @@ def extract_links(text):
         flags=re.I
     )
 
-    for raw_url in urls:
-        url = raw_url.rstrip(
+    for raw in urls:
+        url = raw.rstrip(
             ".,;:"
         )
 
@@ -713,7 +769,6 @@ def extract_links(text):
         if not host:
             continue
 
-        # X
         if host in {
             "x.com",
             "twitter.com"
@@ -724,11 +779,7 @@ def extract_links(text):
                 and "/share" not in low
             ):
                 result["x"] = re.sub(
-                    (
-                        r"^https?://"
-                        r"(?:www\.)?"
-                        r"twitter\.com/"
-                    ),
+                    r"^https?://(?:www\.)?twitter\.com/",
                     "https://x.com/",
                     url,
                     flags=re.I
@@ -736,7 +787,6 @@ def extract_links(text):
 
             continue
 
-        # Discord
         if (
             host == "discord.gg"
             or (
@@ -749,16 +799,14 @@ def extract_links(text):
 
             continue
 
-        # GitHub
         if host == "github.com":
             if not result["github"]:
                 result["github"] = url
 
             continue
 
-        # Website
         if (
-            is_project_homepage(url)
+            valid_project_domain(url)
             and not result["website"]
         ):
             result["website"] = url
@@ -767,7 +815,7 @@ def extract_links(text):
 
 
 # =========================================================
-# WEBSITE VERIFICATION
+# WEBSITE
 # =========================================================
 
 def inspect_website(website):
@@ -782,62 +830,56 @@ def inspect_website(website):
         "text": "",
     }
 
-    if not is_project_homepage(
+    if not valid_project_domain(
         website
     ):
         return result
 
-    html = safe_text(
+    raw_html = safe_text(
         website,
         15
     )
 
-    if not html:
+    if not raw_html:
         return result
 
     result["reachable"] = True
 
-    text = clean(
-        re.sub(
-            r"<[^>]+>",
-            " ",
-            html[:800000]
-        )
-    )[:35000]
-
-    combined = (
-        html[:800000]
-        + "\n"
-        + text
-    )
+    text = visible_html_text(
+        raw_html[:900000]
+    )[:40000]
 
     result["text"] = text
 
     result["launchSignal"] = (
         has_launch_signal(
-            combined
+            text
         )
     )
 
     result["prelaunchSignal"] = (
         has_prelaunch_signal(
-            combined
+            text
         )
     )
 
     result["chain"] = (
         detect_chain(
-            combined
+            text
         )
     )
 
     links = extract_links(
-        combined
+        raw_html[:900000]
     )
 
     result["x"] = links["x"]
-    result["discord"] = links["discord"]
-    result["github"] = links["github"]
+    result["discord"] = links[
+        "discord"
+    ]
+    result["github"] = links[
+        "github"
+    ]
 
     return result
 
@@ -857,7 +899,7 @@ def name_from_website(url):
     if len(parts) < 2:
         return ""
 
-    special_tlds = {
+    special = {
         "trade",
         "fun",
         "xyz",
@@ -867,7 +909,7 @@ def name_from_website(url):
         "zone",
     }
 
-    if parts[-1] in special_tlds:
+    if parts[-1] in special:
         return (
             f"{parts[-2]}.{parts[-1]}"
         )
@@ -880,12 +922,12 @@ def name_from_website(url):
 
 
 # =========================================================
-# DEFILLAMA REGISTRY
+# DEFILLAMA
 # =========================================================
 
 def build_defillama_registry():
     log(
-        "Loading DefiLlama protocol registry..."
+        "Loading DefiLlama registry..."
     )
 
     data = safe_json(
@@ -937,7 +979,9 @@ def build_defillama_registry():
             "category": category,
             "website": website,
             "chains": (
-                protocol.get("chains")
+                protocol.get(
+                    "chains"
+                )
                 or []
             ),
             "twitter": clean(
@@ -951,30 +995,30 @@ def build_defillama_registry():
                 )
             ),
             "slug": str(
-                protocol.get("slug")
+                protocol.get(
+                    "slug"
+                )
                 or name
             ),
         }
 
-        registry["protocols"].append(
-            entry
-        )
+        registry[
+            "protocols"
+        ].append(entry)
 
         name_key = normalize(name)
 
         if name_key:
-            registry["byName"][
-                name_key
-            ] = entry
+            registry[
+                "byName"
+            ][name_key] = entry
 
-        host = get_host(
-            website
-        )
+        host = get_host(website)
 
         if host:
-            registry["byDomain"][
-                host
-            ] = entry
+            registry[
+                "byDomain"
+            ][host] = entry
 
         if "launchpad" in category.lower():
             registry[
@@ -993,11 +1037,9 @@ def find_defillama_protocol(
 ):
     name_key = normalize(name)
 
-    if (
-        name_key
-        and name_key
-        in registry["byName"]
-    ):
+    if name_key in registry[
+        "byName"
+    ]:
         return registry[
             "byName"
         ][name_key]
@@ -1010,7 +1052,9 @@ def find_defillama_protocol(
         return None
 
     for known_host, protocol in (
-        registry["byDomain"].items()
+        registry[
+            "byDomain"
+        ].items()
     ):
         if (
             host == known_host
@@ -1026,15 +1070,17 @@ def find_defillama_protocol(
     return None
 
 
-def is_existing_nonlaunchpad(
+def existing_nonlaunchpad(
     name,
     website,
     registry
 ):
-    protocol = find_defillama_protocol(
-        name,
-        website,
-        registry
+    protocol = (
+        find_defillama_protocol(
+            name,
+            website,
+            registry
+        )
     )
 
     if not protocol:
@@ -1045,26 +1091,15 @@ def is_existing_nonlaunchpad(
         .lower()
     )
 
-    if "launchpad" not in category:
-        log(
-            (
-                "Ignoring existing "
-                f"{protocol['category']} protocol: "
-                f"{protocol['name']}"
-            )
-        )
-
-        return True
-
-    return False
+    return "launchpad" not in category
 
 
 # =========================================================
-# IDENTITY / MERGE
+# MERGE
 # =========================================================
 
-def identity_tokens(item):
-    tokens = set()
+def candidate_tokens(item):
+    result = set()
 
     name = normalize(
         item.get(
@@ -1074,7 +1109,7 @@ def identity_tokens(item):
     )
 
     if name:
-        tokens.add(name)
+        result.add(name)
 
     host = get_host(
         item.get(
@@ -1084,57 +1119,48 @@ def identity_tokens(item):
     )
 
     if host:
-        tokens.add(
+        result.add(
             normalize(host)
         )
 
         stem = host.split(".")[0]
 
         if len(stem) >= 4:
-            tokens.add(
+            result.add(
                 normalize(stem)
             )
 
-    return tokens
+    return result
 
 
 def merge_candidate(
     pool,
     candidate
 ):
-    candidate_tokens = (
-        identity_tokens(
-            candidate
-        )
+    tokens = candidate_tokens(
+        candidate
     )
 
-    if not candidate_tokens:
+    if not tokens:
         return
 
-    matched_key = None
+    found = None
 
     for key, existing in pool.items():
-        if (
-            candidate_tokens
-            & identity_tokens(existing)
+        if tokens & candidate_tokens(
+            existing
         ):
-            matched_key = key
+            found = key
             break
 
-    if matched_key is None:
-        matched_key = sorted(
-            candidate_tokens
-        )[0]
-
-        pool[matched_key] = (
-            candidate
-        )
+    if found is None:
+        pool[
+            sorted(tokens)[0]
+        ] = candidate
 
         return
 
-    current = pool[
-        matched_key
-    ]
+    current = pool[found]
 
     current["_sources"] = list(
         dict.fromkeys(
@@ -1171,29 +1197,25 @@ def merge_candidate(
         "LIVE": 5,
     }
 
-    old_status = current.get(
-        "status",
-        "RUMOR"
-    )
-
-    new_status = candidate.get(
-        "status",
-        "RUMOR"
-    )
-
     if (
         ranking.get(
-            new_status,
+            candidate.get(
+                "status",
+                "RUMOR"
+            ),
             0
         )
         >
         ranking.get(
-            old_status,
+            current.get(
+                "status",
+                "RUMOR"
+            ),
             0
         )
     ):
         current["status"] = (
-            new_status
+            candidate["status"]
         )
 
     for field in (
@@ -1203,7 +1225,7 @@ def merge_candidate(
         "x",
         "discord",
         "github",
-        "source"
+        "source",
     ):
         if (
             not current.get(field)
@@ -1215,7 +1237,7 @@ def merge_candidate(
 
 
 # =========================================================
-# POOLS.TRADE KNOWN
+# POOLS.TRADE
 # =========================================================
 
 def pools_trade_record():
@@ -1234,13 +1256,25 @@ def pools_trade_record():
             "Known live memecoin "
             "launchpad on Robinhood Chain."
         ),
-        "website": "https://pools.trade/",
+        "website": (
+            "https://pools.trade/"
+        ),
         "x": site["x"],
-        "discord": site["discord"],
-        "github": site["github"],
-        "source": "https://pools.trade/",
-        "detectedBy": "Known platform",
-        "scannerVersion": SCANNER_VERSION,
+        "discord": site[
+            "discord"
+        ],
+        "github": site[
+            "github"
+        ],
+        "source": (
+            "https://pools.trade/"
+        ),
+        "detectedBy": (
+            "Known platform"
+        ),
+        "scannerVersion": (
+            SCANNER_VERSION
+        ),
         "pinned": True,
         "_sources": [
             "Known platform"
@@ -1250,23 +1284,23 @@ def pools_trade_record():
 
 
 # =========================================================
-# LOAD V4 HISTORY
-# v1/v2/v3 se eliminan automáticamente.
+# HISTORY
+# v4 and older candidates are removed.
 # =========================================================
 
 def load_history():
-    database = load_json(
-        DB_FILE,
-        {
-            "launchpads": []
-        }
-    )
-
     pool = {}
 
     merge_candidate(
         pool,
         pools_trade_record()
+    )
+
+    database = load_json(
+        DB_FILE,
+        {
+            "launchpads": []
+        }
     )
 
     for item in database.get(
@@ -1290,7 +1324,7 @@ def load_history():
                 0
             )
             or 0
-        ) < SCANNER_VERSION:
+        ) != SCANNER_VERSION:
             continue
 
         if int(
@@ -1302,9 +1336,7 @@ def load_history():
         ) < 65:
             continue
 
-        clone = dict(
-            item
-        )
+        clone = dict(item)
 
         clone["_sources"] = [
             value.strip()
@@ -1317,7 +1349,9 @@ def load_history():
             if value.strip()
         ]
 
-        clone["_publishers"] = []
+        clone[
+            "_publishers"
+        ] = []
 
         merge_candidate(
             pool,
@@ -1331,7 +1365,7 @@ def load_history():
 # NEWS
 # =========================================================
 
-def strip_news_publisher(title):
+def strip_publisher(title):
     return re.sub(
         r"\s+-\s+[^-]{2,100}$",
         "",
@@ -1340,15 +1374,14 @@ def strip_news_publisher(title):
 
 
 def guess_news_name(title):
-    title = strip_news_publisher(
+    title = strip_publisher(
         title
     )
 
     domain_match = re.search(
         (
             r"\b("
-            r"[a-z0-9]"
-            r"[a-z0-9-]{1,35}"
+            r"[a-z0-9][a-z0-9-]{1,35}"
             r"\."
             r"(?:trade|fun|xyz|io|app|fi|gg|zone)"
             r")\b"
@@ -1358,16 +1391,11 @@ def guess_news_name(title):
     )
 
     if domain_match:
-        candidate = domain_match.group(
+        return domain_match.group(
             1
         )
 
-        if not is_media_url(
-            "https://" + candidate
-        ):
-            return candidate
-
-    patterns = (
+    match = re.search(
         (
             r"\b"
             r"([A-Z][A-Za-z0-9._-]{2,40})"
@@ -1375,67 +1403,11 @@ def guess_news_name(title):
             r"(?:memecoin\s+|token\s+)?"
             r"launchpad\b"
         ),
-        (
-            r"\b"
-            r"(?:launches|unveils|introduces|reveals|announces)"
-            r"\s+"
-            r"(?:new\s+|its\s+)*"
-            r"([A-Z][A-Za-z0-9._-]{2,40})"
-        ),
+        title
     )
 
-    generic = {
-        normalize(value)
-        for value in GENERIC_NAMES
-    }
-
-    for pattern in patterns:
-        match = re.search(
-            pattern,
-            title
-        )
-
-        if not match:
-            continue
-
-        candidate = clean(
-            match.group(1)
-        ).strip(
-            ".,:-"
-        )
-
-        if (
-            normalize(candidate)
-            not in generic
-        ):
-            return candidate
-
-    return ""
-
-
-def website_from_name(name):
-    value = clean(
-        name
-    ).lower()
-
-    if re.fullmatch(
-        (
-            r"[a-z0-9]"
-            r"[a-z0-9-]{1,35}"
-            r"\."
-            r"(?:trade|fun|xyz|io|app|fi|gg|zone)"
-        ),
-        value
-    ):
-        url = (
-            "https://"
-            + value
-        )
-
-        if is_project_homepage(
-            url
-        ):
-            return url
+    if match:
+        return match.group(1)
 
     return ""
 
@@ -1450,21 +1422,14 @@ def scan_news(
     )
 
     queries = (
-        '"memecoin launchpad" when:3d',
-        '"new launchpad" crypto when:3d',
-        '"coming soon" launchpad crypto when:7d',
-        '"testnet" launchpad token when:7d',
-        '"token launch platform" when:3d',
+        '"new memecoin launchpad" when:3d',
+        '"new token launchpad" when:3d',
+        '"coming soon" "launchpad" crypto when:7d',
+        '"launching soon" "launchpad" crypto when:7d',
+        '"testnet" "token launchpad" when:7d',
     )
 
     grouped = {}
-
-    seen = set(
-        state.get(
-            "news_seen",
-            []
-        )
-    )
 
     for query in queries:
         params = urllib.parse.urlencode(
@@ -1476,14 +1441,12 @@ def scan_news(
             }
         )
 
-        feed = (
-            "https://news.google.com/"
-            "rss/search?"
-            + params
-        )
-
         xml = safe_text(
-            feed,
+            (
+                "https://news.google.com/"
+                "rss/search?"
+                + params
+            ),
             20
         )
 
@@ -1502,7 +1465,7 @@ def scan_news(
             ".//item"
         )[:40]:
 
-            title = strip_news_publisher(
+            title = strip_publisher(
                 article.findtext(
                     "title"
                 )
@@ -1525,11 +1488,6 @@ def scan_news(
                     "pubDate"
                 )
             )
-
-            if link:
-                seen.add(
-                    link
-                )
 
             if (
                 published
@@ -1555,104 +1513,64 @@ def scan_news(
             ):
                 continue
 
-            website = website_from_name(
-                name
-            )
-
-            if is_existing_nonlaunchpad(
-                name,
-                website,
-                registry
-            ):
-                continue
-
             key = normalize(name)
 
-            if key not in grouped:
-                grouped[key] = {
+            group = grouped.setdefault(
+                key,
+                {
                     "name": name,
-                    "website": website,
                     "titles": [],
-                    "publishers": set(),
                     "links": [],
+                    "publishers": set(),
                     "dates": [],
                 }
-
-            grouped[key][
-                "titles"
-            ].append(
-                title
             )
 
+            group[
+                "titles"
+            ].append(title)
+
+            if link:
+                group[
+                    "links"
+                ].append(link)
+
             if publisher:
-                grouped[key][
+                group[
                     "publishers"
                 ].add(
                     publisher
                 )
 
-            if link:
-                grouped[key][
-                    "links"
-                ].append(
-                    link
-                )
-
             if published:
-                grouped[key][
+                group[
                     "dates"
                 ].append(
                     published
                 )
 
     for group in grouped.values():
+        publishers = sorted(
+            group[
+                "publishers"
+            ]
+        )
+
+        # One article is not enough.
+        if len(publishers) < 2:
+            continue
+
         combined = " ".join(
             group["titles"]
         )
 
         published = (
-            min(group["dates"])
+            min(
+                group["dates"]
+            )
             if group["dates"]
             else None
         )
-
-        website = group[
-            "website"
-        ]
-
-        links = {
-            "x": "",
-            "discord": "",
-            "github": "",
-        }
-
-        sources = [
-            "News"
-        ]
-
-        if website:
-            site = inspect_website(
-                website
-            )
-
-            if (
-                site["reachable"]
-                and site["launchSignal"]
-            ):
-                sources.append(
-                    "Website"
-                )
-
-                links["x"] = site["x"]
-                links["discord"] = (
-                    site["discord"]
-                )
-                links["github"] = (
-                    site["github"]
-                )
-
-            else:
-                website = ""
 
         candidate = {
             "name": group["name"],
@@ -1670,21 +1588,23 @@ def scan_news(
             ),
             "confidence": 0,
             "description": (
-                group["titles"][0][:320]
+                group[
+                    "titles"
+                ][0][:320]
             ),
-            "website": website,
-            "x": links["x"],
-            "discord": links["discord"],
-            "github": links["github"],
+            "website": "",
+            "x": "",
+            "discord": "",
+            "github": "",
             "source": (
                 group["links"][0]
                 if group["links"]
                 else ""
             ),
-            "_sources": sources,
-            "_publishers": sorted(
-                group["publishers"]
-            ),
+            "_sources": [
+                "News"
+            ],
+            "_publishers": publishers,
         }
 
         merge_candidate(
@@ -1692,28 +1612,21 @@ def scan_news(
             candidate
         )
 
-    state["news_seen"] = list(
-        seen
-    )[-3000:]
-
 
 # =========================================================
 # GITHUB
 # =========================================================
 
-def read_github_readme(full_name):
-    endpoint = (
-        "https://api.github.com/"
-        "repos/"
-        + urllib.parse.quote(
-            full_name,
-            safe="/"
-        )
-        + "/readme"
-    )
-
+def github_readme(full_name):
     data = safe_json(
-        endpoint,
+        (
+            "https://api.github.com/repos/"
+            + urllib.parse.quote(
+                full_name,
+                safe="/"
+            )
+            + "/readme"
+        ),
         25
     )
 
@@ -1766,21 +1679,14 @@ def scan_github(
             f'pushed:>={since}'
         ),
         (
-            f'"bonding curve" memecoin '
+            f'"token launcher" '
             f'in:name,description,readme '
             f'pushed:>={since}'
         ),
     )
 
-    seen = set(
-        state.get(
-            "github_seen",
-            []
-        )
-    )
-
     for query in queries:
-        search_url = (
+        url = (
             "https://api.github.com/"
             "search/repositories?"
             + urllib.parse.urlencode(
@@ -1794,7 +1700,7 @@ def scan_github(
         )
 
         data = safe_json(
-            search_url,
+            url,
             25
         )
 
@@ -1808,17 +1714,16 @@ def scan_github(
             "items",
             []
         ):
+            if repo.get("fork"):
+                continue
+
+            if repo.get("archived"):
+                continue
+
             full_name = clean(
                 repo.get(
                     "full_name"
                 )
-            )
-
-            if not full_name:
-                continue
-
-            seen.add(
-                full_name
             )
 
             repo_name = clean(
@@ -1845,6 +1750,12 @@ def scan_github(
                 )
             )
 
+            created = parse_date(
+                repo.get(
+                    "created_at"
+                )
+            )
+
             if any(
                 bad in repo_name.lower()
                 for bad in (
@@ -1855,29 +1766,30 @@ def scan_github(
                     "course",
                     "homework",
                     "scraper",
+                    "bot",
                 )
             ):
                 continue
 
-            if not is_project_homepage(
+            if not valid_project_domain(
                 website
             ):
                 continue
 
-            readme = read_github_readme(
+            readme = github_readme(
                 full_name
             )
 
-            combined = (
+            repo_text = (
                 repo_name
                 + " "
                 + description
-                + "\n"
+                + " "
                 + readme[:250000]
             )
 
             if not has_launch_signal(
-                combined
+                repo_text
             ):
                 continue
 
@@ -1885,10 +1797,21 @@ def scan_github(
                 website
             )
 
-            if not site["reachable"]:
+            if not site[
+                "reachable"
+            ]:
                 continue
 
-            if not site["launchSignal"]:
+            if not site[
+                "launchSignal"
+            ]:
+                continue
+
+            # Require official X or Discord.
+            if not (
+                site["x"]
+                or site["discord"]
+            ):
                 continue
 
             name = name_from_website(
@@ -1904,39 +1827,55 @@ def scan_github(
             ):
                 continue
 
-            if is_existing_nonlaunchpad(
+            if existing_nonlaunchpad(
                 name,
                 website,
                 registry
             ):
                 continue
 
+            if (
+                created
+                and NOW - created
+                > timedelta(days=45)
+                and not site[
+                    "prelaunchSignal"
+                ]
+            ):
+                continue
+
+            combined = (
+                repo_text
+                + " "
+                + site["text"]
+            )
+
             candidate = {
                 "name": name,
                 "status": detect_status(
-                    combined
-                    + " "
-                    + site["text"]
+                    combined,
+                    created
                 ),
                 "chain": (
-                    site["chain"]
-                    or detect_chain(
-                        combined
+                    detect_chain(
+                        repo_text
                     )
+                    or site["chain"]
                 ),
                 "firstSeen": TODAY,
                 "confidence": 0,
                 "description": (
                     description[:320]
                     or (
-                        f"{name} is being "
-                        "tracked as an "
-                        "unverified launchpad candidate."
+                        f"{name} "
+                        "launchpad candidate."
                     )
                 ),
                 "website": website,
                 "x": site["x"],
-                "discord": site["discord"],
+                "discord": (
+                    site["discord"]
+                ),
                 "github": github_url,
                 "source": github_url,
                 "_sources": [
@@ -1951,57 +1890,45 @@ def scan_github(
                 candidate
             )
 
-    state["github_seen"] = list(
-        seen
-    )[-3500:]
-
 
 # =========================================================
 # DEFILLAMA NEW LAUNCHPADS
 # =========================================================
 
-def scan_defillama_new(
+def scan_defillama(
     pool,
     state,
     registry
 ):
-    log(
-        "Checking new DefiLlama launchpads..."
-    )
-
-    current_ids = set(
+    current = set(
         registry[
             "launchpadIds"
         ]
     )
 
-    old_ids = set(
+    old = set(
         state.get(
-            "defillama_launchpad_seen",
+            "defillama_v5_seen",
             []
         )
     )
 
-    if not old_ids:
+    if not old:
         state[
-            "defillama_launchpad_seen"
-        ] = sorted(
-            current_ids
-        )
+            "defillama_v5_seen"
+        ] = sorted(current)
 
         return
 
-    new_ids = (
-        current_ids
-        - old_ids
-    )
+    new_ids = current - old
 
     for protocol in registry[
         "protocols"
     ]:
-        if protocol[
-            "id"
-        ] not in new_ids:
+        if (
+            protocol["id"]
+            not in new_ids
+        ):
             continue
 
         name = protocol[
@@ -2012,7 +1939,7 @@ def scan_defillama_new(
             "website"
         ]
 
-        if not is_project_homepage(
+        if not valid_project_domain(
             website
         ):
             continue
@@ -2027,45 +1954,47 @@ def scan_defillama_new(
             website
         )
 
-        if not site["reachable"]:
+        if not site[
+            "reachable"
+        ]:
             continue
+
+        x_url = site["x"]
 
         twitter = protocol[
             "twitter"
         ]
 
-        x_url = site["x"]
-
         if (
             twitter
             and not x_url
         ):
-            if twitter.startswith(
-                "http"
-            ):
-                x_url = twitter
-
-            else:
-                x_url = (
+            x_url = (
+                twitter
+                if twitter.startswith(
+                    "http"
+                )
+                else (
                     "https://x.com/"
                     + twitter.lstrip("@")
                 )
+            )
 
         chains = protocol[
             "chains"
         ]
 
-        if isinstance(
-            chains,
-            list
-        ):
-            chain = ", ".join(
+        chain = (
+            ", ".join(
                 str(value)
                 for value in chains[:4]
             )
-
-        else:
-            chain = clean(chains)
+            if isinstance(
+                chains,
+                list
+            )
+            else clean(chains)
+        )
 
         candidate = {
             "name": name,
@@ -2081,14 +2010,18 @@ def scan_defillama_new(
                     "description"
                 ][:320]
                 or (
-                    "New launchpad indexed "
-                    "by DefiLlama."
+                    "New DefiLlama "
+                    "launchpad."
                 )
             ),
             "website": website,
             "x": x_url,
-            "discord": site["discord"],
-            "github": site["github"],
+            "discord": (
+                site["discord"]
+            ),
+            "github": (
+                site["github"]
+            ),
             "source": (
                 "https://defillama.com/"
                 "protocol/"
@@ -2098,7 +2031,7 @@ def scan_defillama_new(
             ),
             "_sources": [
                 "DefiLlama",
-                "Website",
+                "Website"
             ],
             "_publishers": [],
         }
@@ -2109,10 +2042,8 @@ def scan_defillama_new(
         )
 
     state[
-        "defillama_launchpad_seen"
-    ] = sorted(
-        current_ids
-    )
+        "defillama_v5_seen"
+    ] = sorted(current)
 
 
 # =========================================================
@@ -2120,39 +2051,39 @@ def scan_defillama_new(
 # =========================================================
 
 def dex_links(profile):
-    text = ""
+    raw = ""
 
-    for item in (
+    for link in (
         profile.get(
             "links"
         )
         or []
     ):
         if isinstance(
-            item,
+            link,
             dict
         ):
-            text += (
+            raw += (
                 "\n"
                 + clean(
-                    item.get(
+                    link.get(
                         "url"
                     )
                 )
             )
 
     return extract_links(
-        text
+        raw
     )
 
 
-def scan_dexscreener(
+def scan_dex(
     pool,
     state,
     registry
 ):
     log(
-        "Scanning DEX Screener..."
+        "Scanning new DEX profiles..."
     )
 
     data = safe_json(
@@ -2169,9 +2100,9 @@ def scan_dexscreener(
     ):
         return
 
-    old_seen = set(
+    old = set(
         state.get(
-            "dex_profiles_seen",
+            "dex_v5_seen",
             []
         )
     )
@@ -2198,18 +2129,14 @@ def scan_dexscreener(
                 + token
             )
 
-    if not old_seen:
+    if not old:
         state[
-            "dex_profiles_seen"
-        ] = sorted(
-            current
-        )
+            "dex_v5_seen"
+        ] = sorted(current)
 
         return
 
-    all_seen = set(
-        old_seen
-    )
+    all_seen = set(old)
 
     for profile in data:
         chain = clean(
@@ -2237,7 +2164,7 @@ def scan_dexscreener(
             identity
         )
 
-        if identity in old_seen:
+        if identity in old:
             continue
 
         links = dex_links(
@@ -2248,7 +2175,7 @@ def scan_dexscreener(
             "website"
         ]
 
-        if not is_project_homepage(
+        if not valid_project_domain(
             website
         ):
             continue
@@ -2257,10 +2184,20 @@ def scan_dexscreener(
             website
         )
 
-        if not site["reachable"]:
+        if not site[
+            "reachable"
+        ]:
             continue
 
-        if not site["launchSignal"]:
+        if not site[
+            "launchSignal"
+        ]:
+            continue
+
+        if not (
+            site["x"]
+            or site["discord"]
+        ):
             continue
 
         name = name_from_website(
@@ -2276,7 +2213,7 @@ def scan_dexscreener(
         ):
             continue
 
-        if is_existing_nonlaunchpad(
+        if existing_nonlaunchpad(
             name,
             website,
             registry
@@ -2289,12 +2226,20 @@ def scan_dexscreener(
             )
         )
 
+        # Reject explicit negative language.
+        if any(
+            re.search(
+                pattern,
+                description.lower()
+            )
+            for pattern in NEGATIVE_PATTERNS
+        ):
+            continue
+
         candidate = {
             "name": name,
             "status": detect_status(
-                description
-                + " "
-                + site["text"]
+                site["text"]
             ),
             "chain": (
                 site["chain"]
@@ -2305,8 +2250,8 @@ def scan_dexscreener(
             "description": (
                 description[:320]
                 or (
-                    f"{name} has new "
-                    "on-chain launchpad signals."
+                    f"{name} new "
+                    "on-chain candidate."
                 )
             ),
             "website": website,
@@ -2340,17 +2285,17 @@ def scan_dexscreener(
         )
 
     state[
-        "dex_profiles_seen"
+        "dex_v5_seen"
     ] = list(
         all_seen
-    )[-4000:]
+    )[-5000:]
 
 
 # =========================================================
 # CONFIDENCE
 # =========================================================
 
-def calculate_confidence(item):
+def confidence(item):
     if item.get(
         "pinned"
     ):
@@ -2379,24 +2324,16 @@ def calculate_confidence(item):
         score += 15
 
     if "DEX Screener" in sources:
-        score += 25
+        score += 30
 
     if "DefiLlama" in sources:
-        score += 45
+        score += 50
 
     if "News" in sources:
-        score += 10
-
         score += min(
-            20,
-            max(
-                0,
-                len(publishers) - 1
-            ) * 10
+            30,
+            len(publishers) * 10
         )
-
-    if item.get("website"):
-        score += 5
 
     if item.get("x"):
         score += 8
@@ -2405,14 +2342,14 @@ def calculate_confidence(item):
         score += 8
 
     if item.get("github"):
-        score += 5
+        score += 4
 
     if item.get("status") in {
         "COMING SOON",
         "TESTNET",
-        "ANNOUNCED"
+        "ANNOUNCED",
     }:
-        score += 7
+        score += 5
 
     return min(
         score,
@@ -2424,7 +2361,7 @@ def calculate_confidence(item):
 # TIER
 # =========================================================
 
-def determine_tier(item):
+def tier(item):
     if item.get(
         "pinned"
     ):
@@ -2444,13 +2381,17 @@ def determine_tier(item):
         )
     )
 
-    score = calculate_confidence(
+    score = confidence(
         item
     )
 
-    news_confirmed = (
+    news2 = (
         "News" in sources
         and len(publishers) >= 2
+    )
+
+    site = (
+        "Website" in sources
     )
 
     github = (
@@ -2458,59 +2399,49 @@ def determine_tier(item):
     )
 
     dex = (
-        "DEX Screener"
-        in sources
+        "DEX Screener" in sources
     )
 
     llama = (
         "DefiLlama" in sources
     )
 
-    website = (
-        "Website" in sources
-    )
-
-    # VERIFIED
-
     if (
         llama
-        and website
+        and site
         and score >= 80
     ):
         return "VERIFIED"
 
     if (
-        website
+        site
         and github
-        and news_confirmed
+        and dex
         and score >= 80
     ):
         return "VERIFIED"
 
     if (
-        website
-        and dex
-        and news_confirmed
-        and score >= 80
-    ):
-        return "VERIFIED"
-
-    if (
-        website
-        and dex
+        site
         and github
+        and news2
         and score >= 80
     ):
         return "VERIFIED"
 
-    # WATCHLIST
+    if (
+        site
+        and dex
+        and news2
+        and score >= 80
+    ):
+        return "VERIFIED"
 
     if (
-        website
+        site
         and (
             github
             or dex
-            or news_confirmed
         )
         and score >= 65
     ):
@@ -2534,28 +2465,23 @@ def finalize(
     for item in pool.values():
         name = clean(
             item.get(
-                "name",
-                ""
+                "name"
             )
         )
 
         website = clean(
             item.get(
-                "website",
-                ""
+                "website"
             )
         )
 
         if not name:
             continue
 
-        if is_media_url(
-            website
-        ):
-            continue
-
         if (
-            not item.get("pinned")
+            not item.get(
+                "pinned"
+            )
             and is_known_launchpad(
                 name,
                 website
@@ -2564,8 +2490,10 @@ def finalize(
             continue
 
         if (
-            not item.get("pinned")
-            and is_existing_nonlaunchpad(
+            not item.get(
+                "pinned"
+            )
+            and existing_nonlaunchpad(
                 name,
                 website,
                 registry
@@ -2573,15 +2501,20 @@ def finalize(
         ):
             continue
 
-        tier = determine_tier(
+        radar_tier = tier(
             item
         )
 
-        if not tier:
+        if not radar_tier:
             continue
 
-        score = calculate_confidence(
-            item
+        publishers = list(
+            dict.fromkeys(
+                item.get(
+                    "_publishers",
+                    []
+                )
+            )
         )
 
         sources = list(
@@ -2593,26 +2526,15 @@ def finalize(
             )
         )
 
-        publishers = list(
-            dict.fromkeys(
-                item.get(
-                    "_publishers",
-                    []
-                )
-            )
-        )
-
         labels = []
 
         for source in sources:
-            if (
-                source == "News"
-                and publishers
-            ):
+            if source == "News":
                 labels.append(
                     (
                         "News "
-                        f"({len(publishers)} publishers)"
+                        f"({len(publishers)} "
+                        "publishers)"
                     )
                 )
 
@@ -2623,11 +2545,13 @@ def finalize(
 
         item[
             "radarTier"
-        ] = tier
+        ] = radar_tier
 
         item[
             "confidence"
-        ] = score
+        ] = confidence(
+            item
+        )
 
         item[
             "detectedBy"
@@ -2653,17 +2577,17 @@ def finalize(
             None
         )
 
-        if tier == "VERIFIED":
+        if radar_tier == "VERIFIED":
             verified.append(
                 item
             )
 
-        elif tier == "WATCHLIST":
+        elif radar_tier == "WATCHLIST":
             watchlist.append(
                 item
             )
 
-        elif tier == "KNOWN":
+        else:
             known.append(
                 item
             )
@@ -2706,7 +2630,7 @@ def finalize(
 
 def main():
     log(
-        "Starting Launchpad Intelligence Radar v4..."
+        "Starting Launchpad Intelligence Radar v5..."
     )
 
     pool = load_history()
@@ -2716,40 +2640,66 @@ def main():
         {}
     )
 
+    previous_version = int(
+        state.get(
+            "scanner_version",
+            0
+        )
+        or 0
+    )
+
+    # Fresh baseline on first v5 execution.
+    if previous_version < SCANNER_VERSION:
+        state[
+            "dex_v5_seen"
+        ] = []
+
+        state[
+            "defillama_v5_seen"
+        ] = []
+
     registry = (
         build_defillama_registry()
     )
 
-    scanners = (
-        (
-            "News",
-            scan_news
-        ),
-        (
-            "GitHub",
-            scan_github
-        ),
-        (
-            "DEX Screener",
-            scan_dexscreener
-        ),
-    )
+    try:
+        scan_news(
+            pool,
+            state,
+            registry
+        )
 
-    for label, scanner in scanners:
-        try:
-            scanner(
-                pool,
-                state,
-                registry
-            )
-
-        except Exception as error:
-            log(
-                f"{label} error: {error}"
-            )
+    except Exception as error:
+        log(
+            f"News error: {error}"
+        )
 
     try:
-        scan_defillama_new(
+        scan_github(
+            pool,
+            state,
+            registry
+        )
+
+    except Exception as error:
+        log(
+            f"GitHub error: {error}"
+        )
+
+    try:
+        scan_dex(
+            pool,
+            state,
+            registry
+        )
+
+    except Exception as error:
+        log(
+            f"DEX Screener error: {error}"
+        )
+
+    try:
+        scan_defillama(
             pool,
             state,
             registry
@@ -2769,17 +2719,14 @@ def main():
         registry
     )
 
-    updated = NOW.isoformat(
-        timespec="seconds"
-    ).replace(
-        "+00:00",
-        "Z"
-    )
-
-    all_items = (
-        verified
-        + watchlist
-        + known
+    updated = (
+        NOW.isoformat(
+            timespec="seconds"
+        )
+        .replace(
+            "+00:00",
+            "Z"
+        )
     )
 
     database = {
@@ -2788,7 +2735,11 @@ def main():
         "verified": verified,
         "watchlist": watchlist,
         "known": known,
-        "launchpads": all_items,
+        "launchpads": (
+            verified
+            + watchlist
+            + known
+        ),
     }
 
     save_json(
