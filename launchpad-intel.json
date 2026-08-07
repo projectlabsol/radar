@@ -1,8 +1,25 @@
 {
-  "updatedAt": "2026-08-07T22:56:00Z",
+  "updatedAt": "2026-08-07T23:48:50Z",
   "scannerVersion": 5,
   "verified": [],
   "watchlist": [
+    {
+      "name": "everpool.app",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-07",
+      "confidence": 73,
+      "description": "Launch tokens where the dev fee burns forever & the pool only grows. Real pools launches on Robinhood Chain.",
+      "website": "https://everpool.app/",
+      "x": "https://x.com/TryEverpool",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xd977f0932fada7fdcb69ccd7e9c7c82ce33e3963",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-07"
+    },
     {
       "name": "liquidpools.fun",
       "status": "RUMOR",
@@ -127,6 +144,23 @@
     }
   ],
   "launchpads": [
+    {
+      "name": "everpool.app",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-07",
+      "confidence": 73,
+      "description": "Launch tokens where the dev fee burns forever & the pool only grows. Real pools launches on Robinhood Chain.",
+      "website": "https://everpool.app/",
+      "x": "https://x.com/TryEverpool",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xd977f0932fada7fdcb69ccd7e9c7c82ce33e3963",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-07"
+    },
     {
       "name": "liquidpools.fun",
       "status": "RUMOR",
