@@ -4138,706 +4138,20 @@ function renderThemeRecommendation() {
       60000
     );
   </script>
-  <!-- =========================================================
-     POOLS.TRADE — NEW LAUNCHPAD
-     Paste this block immediately before </body>
-========================================================= -->
-
-<style>
-  .pools-radar-section {
-    width: min(1180px, calc(100% - 32px));
-    margin: 50px auto;
-  }
-
-  .pools-radar-heading {
-    margin-bottom: 18px;
-  }
-
-  .pools-radar-heading span {
-    display: inline-block;
-    padding: 6px 11px;
-    margin-bottom: 10px;
-    border: 1px solid rgba(255, 82, 170, 0.55);
-    border-radius: 999px;
-    background: rgba(255, 82, 170, 0.12);
-    color: #ff75bd;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 1px;
-  }
-
-  .pools-radar-heading h2 {
-    margin: 0;
-    color: #ffffff;
-    font-size: clamp(28px, 5vw, 44px);
-  }
-
-  .pools-trade-radar-card {
-    position: relative;
-    overflow: hidden;
-    padding: 25px;
-    border: 1px solid rgba(255, 82, 170, 0.35);
-    border-radius: 22px;
-    background:
-      radial-gradient(
-        circle at top right,
-        rgba(255, 82, 170, 0.24),
-        transparent 42%
-      ),
-      rgba(17, 17, 25, 0.92);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
-    color: #ffffff;
-  }
-
-  .pools-trade-radar-card::before {
-    content: "";
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    top: -85px;
-    right: -65px;
-    border-radius: 50%;
-    background: #ff4fa3;
-    filter: blur(55px);
-    opacity: 0.35;
-    pointer-events: none;
-  }
-
-  .pools-radar-top {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 16px;
-  }
-
-  .pools-radar-logo {
-    display: grid;
-    place-items: center;
-    width: 58px;
-    height: 58px;
-    flex-shrink: 0;
-    border-radius: 17px;
-    background: linear-gradient(135deg, #ff4fa3, #7b61ff);
-    font-size: 27px;
-    box-shadow: 0 10px 30px rgba(255, 79, 163, 0.3);
-  }
-
-  .pools-radar-title {
-    flex: 1;
-  }
-
-  .pools-radar-title h3 {
-    margin: 0 0 5px;
-    color: #ffffff;
-    font-size: 25px;
-  }
-
-  .pools-radar-title p {
-    margin: 0;
-    color: #aaaabd;
-    line-height: 1.55;
-  }
-
-  .pools-radar-new {
-    padding: 7px 10px;
-    border-radius: 999px;
-    background: #ff4fa3;
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: 1px;
-    animation: poolsPulse 1.8s infinite;
-  }
-
-  .pools-radar-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 22px 0;
-  }
-
-  .pools-radar-tags span {
-    padding: 7px 10px;
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 999px;
-    background: rgba(255,255,255,0.06);
-    color: #dddded;
-    font-size: 12px;
-    font-weight: 700;
-  }
-
-  .pools-radar-details {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-bottom: 22px;
-  }
-
-  .pools-radar-detail {
-    padding: 13px;
-    border: 1px solid rgba(255,255,255,0.09);
-    border-radius: 14px;
-    background: rgba(255,255,255,0.04);
-  }
-
-  .pools-radar-detail small {
-    display: block;
-    margin-bottom: 5px;
-    color: #89899d;
-    font-size: 11px;
-    text-transform: uppercase;
-  }
-
-  .pools-radar-detail strong {
-    color: #ffffff;
-    font-size: 14px;
-  }
-
-  .pools-radar-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    min-height: 45px;
-    padding: 0 18px;
-    border-radius: 13px;
-    background: linear-gradient(135deg, #ff4fa3, #8b5cff);
-    color: #ffffff !important;
-    font-size: 14px;
-    font-weight: 800;
-    text-decoration: none !important;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  .pools-radar-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 30px rgba(255, 79, 163, 0.28);
-  }
-
-  @keyframes poolsPulse {
-    0%, 100% {
-      box-shadow: 0 0 0 0 rgba(255, 79, 163, 0.5);
-    }
-
-    50% {
-      box-shadow: 0 0 0 8px rgba(255, 79, 163, 0);
-    }
-  }
-
-  @media (max-width: 650px) {
-    .pools-radar-top {
-      flex-wrap: wrap;
-    }
-
-    .pools-radar-details {
-      grid-template-columns: 1fr;
-    }
-
-    .pools-radar-new {
-      position: absolute;
-      top: 18px;
-      right: 18px;
-    }
-  }
-</style>
-
-<script>
-  (() => {
-    if (document.querySelector('[data-radar-item="pools-trade"]')) {
-      return;
-    }
-
-    const card = document.createElement("article");
-
-    card.className = "pools-trade-radar-card";
-    card.setAttribute("data-radar-item", "pools-trade");
-
-    card.innerHTML = `
-      <div class="pools-radar-top">
-        <div class="pools-radar-logo">🦄</div>
-
-        <div class="pools-radar-title">
-          <h3>Pools.trade</h3>
-          <p>
-            Token launchpad by Uniswap Labs for creating, 
-            discovering and trading community tokens.
-          </p>
-        </div>
-
-        <span class="pools-radar-new">LIVE</span>
-      </div>
-
-      <div class="pools-radar-tags">
-        <span>Robinhood Chain</span>
-        <span>Uniswap Labs</span>
-        <span>Crowd Launch</span>
-        <span>Instant Launch</span>
-        <span>EVM</span>
-      </div>
-
-      <div class="pools-radar-details">
-        <div class="pools-radar-detail">
-          <small>Category</small>
-          <strong>Memecoin Launchpad</strong>
-        </div>
-
-        <div class="pools-radar-detail">
-          <small>Launch modes</small>
-          <strong>Crowd + Instant</strong>
-        </div>
-
-        <div class="pools-radar-detail">
-          <small>Radar status</small>
-          <strong>LIVE · Launched Aug 5, 2026</strong>
-        </div>
-      </div>
-
-      <a
-        class="pools-radar-button"
-        href="https://pools.trade/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Open Pools.trade ↗
-      </a>
-    `;
-
-    const launchpadsTarget =
-      document.querySelector("#launchpads .launchpad-grid") ||
-      document.querySelector("#launchpads .cards-grid") ||
-      document.querySelector("#launchpads .grid") ||
-      document.querySelector("#launchpads .cards");
-
-    if (launchpadsTarget) {
-      launchpadsTarget.prepend(card);
-      return;
-    }
-
-    const section = document.createElement("section");
-    section.id = "pools-trade-launchpad";
-    section.className = "pools-radar-section";
-
-    section.innerHTML = `
-      <div class="pools-radar-heading">
-        <span>NEW LAUNCHPAD DETECTED</span>
-        <h2>New opportunity on the radar</h2>
-      </div>
-    `;
-
-    section.appendChild(card);
-
-    const footer = document.querySelector("footer");
-
-    if (footer) {
-      footer.before(section);
-    } else {
-      document.body.appendChild(section);
-    }
-  })();
-</script>
-  <!-- =========================================================
-     EARLY LAUNCHPAD INTELLIGENCE
-========================================================= -->
-
-<style>
-  .early-launchpad-radar {
-    width: min(1180px, calc(100% - 32px));
-    margin: 50px auto;
-    padding: 24px;
-    border: 1px solid rgba(255, 82, 170, 0.35);
-    border-radius: 18px;
-    background:
-      radial-gradient(circle at top right, rgba(255,82,170,.10), transparent 35%),
-      #0b0d12;
-    box-shadow: 0 18px 60px rgba(0,0,0,.32);
-  }
-
-  .early-launchpad-top {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-bottom: 22px;
-  }
-
-  .early-launchpad-label {
-    display: inline-block;
-    padding: 6px 11px;
-    border: 1px solid rgba(255,82,170,.55);
-    border-radius: 999px;
-    color: #ff75bd;
-    background: rgba(255,82,170,.10);
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-  }
-
-  .early-launchpad-radar h2 {
-    color: #fff;
-    margin: 0 0 8px;
-    font-size: clamp(25px, 4vw, 40px);
-  }
-
-  .early-launchpad-radar p {
-    color: #9aa4b2;
-    margin: 0;
-    line-height: 1.6;
-  }
-
-  .early-scan-status {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #63ffa5;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: .8px;
-  }
-
-  .early-scan-dot {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: #63ffa5;
-    box-shadow: 0 0 14px #63ffa5;
-    animation: earlyPulse 1.5s infinite;
-  }
-
-  @keyframes earlyPulse {
-    0%,100% { opacity: 1; }
-    50% { opacity: .35; }
-  }
-
-  .early-sources {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin: 18px 0 24px;
-  }
-
-  .early-sources span {
-    padding: 7px 10px;
-    border-radius: 10px;
-    background: #121722;
-    border: 1px solid #20293a;
-    color: #b7c0cd;
-    font-size: 11px;
-    font-weight: 700;
-  }
-
-  #earlyLaunchpadList {
-    display: grid;
-    gap: 14px;
-  }
-
-  .early-launch-card {
-    border: 1px solid #202839;
-    background: #0f131b;
-    border-radius: 15px;
-    padding: 18px;
-  }
-
-  .early-launch-head {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .early-launch-name {
-    color: #fff;
-    font-size: 19px;
-    font-weight: 800;
-  }
-
-  .early-launch-status {
-    padding: 6px 10px;
-    border-radius: 999px;
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: .8px;
-  }
-
-  .status-coming {
-    background: rgba(255,193,7,.12);
-    border: 1px solid rgba(255,193,7,.45);
-    color: #ffd65c;
-  }
-
-  .status-new {
-    background: rgba(255,82,170,.12);
-    border: 1px solid rgba(255,82,170,.45);
-    color: #ff75bd;
-  }
-
-  .status-live {
-    background: rgba(52,211,153,.12);
-    border: 1px solid rgba(52,211,153,.45);
-    color: #63ffa5;
-  }
-
-  .status-rumor {
-    background: rgba(148,163,184,.12);
-    border: 1px solid rgba(148,163,184,.35);
-    color: #cbd5e1;
-  }
-
-  .early-launch-meta {
-    display: flex;
-    gap: 9px;
-    flex-wrap: wrap;
-    margin-top: 13px;
-  }
-
-  .early-launch-meta span {
-    background: #151b26;
-    border: 1px solid #222c3d;
-    padding: 6px 9px;
-    border-radius: 8px;
-    color: #aeb8c6;
-    font-size: 11px;
-  }
-
-  .early-launch-description {
-    margin-top: 13px !important;
-    color: #b8c0cc !important;
-  }
-
-  .early-launch-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 15px;
-  }
-
-  .early-launch-links a {
-    color: #fff;
-    text-decoration: none;
-    background: #171d28;
-    border: 1px solid #2a3446;
-    padding: 8px 11px;
-    border-radius: 9px;
-    font-size: 11px;
-    font-weight: 800;
-  }
-
-  .early-launch-links a:hover {
-    border-color: #ff52aa;
-  }
-
-  .early-empty {
-    padding: 22px;
-    border: 1px dashed #293246;
-    border-radius: 14px;
-    color: #9ca7b7;
-    text-align: center;
-  }
-</style>
-
-
-<section class="early-launchpad-radar" id="early-launchpad-intelligence">
-
-  <div class="early-launchpad-top">
-
-    <div>
-      <span class="early-launchpad-label">
-        🚨 EARLY DETECTION
-      </span>
-
-      <h2>Launchpad Intelligence</h2>
-
-      <p>
-        Detecting launchpads before launch using public signals,
-        social activity, development activity and on-chain evidence.
-      </p>
-    </div>
-
-    <div class="early-scan-status">
-      <span class="early-scan-dot"></span>
-      RADAR ACTIVE
-    </div>
-
-  </div>
-
-  <div class="early-sources">
-    <span>𝕏 X</span>
-    <span>Discord</span>
-    <span>GitHub</span>
-    <span>Web</span>
-    <span>DeFi</span>
-    <span>On-chain</span>
-  </div>
-
-  <div id="earlyLaunchpadList">
-    <div class="early-empty">
-      Loading launchpad intelligence...
-    </div>
-  </div>
-
-</section>
-
-
-<script>
-(() => {
-
-  const list = document.getElementById("earlyLaunchpadList");
-
-  function escapeHTML(value = "") {
-    return String(value)
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;")
-      .replaceAll('"', "&quot;")
-      .replaceAll("'", "&#039;");
-  }
-
-  function statusClass(status = "") {
-
-    const s = status.toUpperCase();
-
-    if (
-      s.includes("COMING") ||
-      s.includes("ANNOUNCED") ||
-      s.includes("TESTNET") ||
-      s.includes("PRE-LAUNCH")
-    ) {
-      return "status-coming";
-    }
-
-    if (s.includes("NEW")) {
-      return "status-new";
-    }
-
-    if (s.includes("LIVE")) {
-      return "status-live";
-    }
-
-    return "status-rumor";
-  }
-
-  function sourceButton(label, url) {
-
-    if (!url) return "";
-
-    return `
-      <a
-        href="${escapeHTML(url)}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        ${escapeHTML(label)} ↗
-      </a>
-    `;
-  }
-
-  function renderLaunchpads(items) {
-
-    if (!Array.isArray(items) || !items.length) {
-
-      list.innerHTML = `
-        <div class="early-empty">
-          No new launchpads detected right now.
-          Radar is waiting for new signals.
-        </div>
-      `;
-
-      return;
-    }
-
-    list.innerHTML = items.map(item => {
-
-      const status = item.status || "RUMOR";
-
-      return `
-        <article class="early-launch-card">
-
-          <div class="early-launch-head">
-
-            <div class="early-launch-name">
-              ${escapeHTML(item.name || "Unknown Launchpad")}
-            </div>
-
-            <span class="early-launch-status ${statusClass(status)}">
-              ${escapeHTML(status)}
-            </span>
-
-          </div>
-
-          <div class="early-launch-meta">
-
-            ${
-              item.chain
-                ? `<span>CHAIN · ${escapeHTML(item.chain)}</span>`
-                : ""
-            }
-
-            ${
-              item.firstSeen
-                ? `<span>FIRST SEEN · ${escapeHTML(item.firstSeen)}</span>`
-                : ""
-            }
-
-            ${
-              item.confidence
-                ? `<span>CONFIDENCE · ${escapeHTML(item.confidence)}%</span>`
-                : ""
-            }
-
-            ${
-              item.detectedBy
-                ? `<span>SIGNAL · ${escapeHTML(item.detectedBy)}</span>`
-                : ""
-            }
-
-          </div>
-
-          ${
-            item.description
-              ? `
-                <p class="early-launch-description">
-                  ${escapeHTML(item.description)}
-                </p>
-              `
-              : ""
-          }
-
-          <div class="early-launch-links">
-
-            ${sourceButton("WEBSITE", item.website)}
-
-            ${sourceButton("VIEW X", item.x)}
-
-            ${sourceButton("DISCORD", item.discord)}
-
-            ${sourceButton("GITHUB", item.github)}
-
-            ${sourceButton("SOURCE", item.source)}
-
-          </div>
-
-        </article>
-      `;
-
-    }).join("");
-  }
+ // =========================================================
+// RADAR DE NUEVAS LAUNCHPADS
+// INTERFAZ LIMPIA + ESPAÑOL
+// =========================================================
+
+const lpRadarRoot = document.createElement("section");
+lpRadarRoot.id = "lp-radar-nuevas-launchpads";
 
 
 // =========================================================
-// INTELIGENCIA DE LAUNCHPADS v6
-// INTERFAZ LIMPIA EN ESPAÑOL
+// FUNCIONES AUXILIARES
 // =========================================================
 
-const RADAR_JSON = "./launchpad-intel.json";
-
-
-// =========================================================
-// UTILIDADES
-// =========================================================
-
-function radarEscapeHTML(value) {
+function lpRadarEscape(value) {
     return String(value ?? "")
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
@@ -4847,11 +4161,9 @@ function radarEscapeHTML(value) {
 }
 
 
-function radarSafeURL(value) {
+function lpRadarSafeUrl(value) {
     try {
-        const url = new URL(
-            String(value || "")
-        );
+        const url = new URL(String(value || ""));
 
         if (
             url.protocol === "https:" ||
@@ -4859,15 +4171,13 @@ function radarSafeURL(value) {
         ) {
             return url.href;
         }
+    } catch (error) {}
 
-        return "";
-    } catch {
-        return "";
-    }
+    return "";
 }
 
 
-function radarTraducirEstado(value) {
+function lpRadarEstado(value) {
 
     const estados = {
         "COMING SOON": "PRÓXIMAMENTE",
@@ -4880,14 +4190,1127 @@ function radarTraducirEstado(value) {
         "VERIFIED": "VERIFICADA"
     };
 
-    const key =
-        String(value || "")
-            .toUpperCase()
-            .trim();
+    const key = String(value || "")
+        .trim()
+        .toUpperCase();
 
-    return estados[key] || key || "
+    return estados[key] || key || "SIN ESTADO";
+}
 
 
+function lpRadarDescripcion(value) {
+
+    let text = String(value || "").trim();
+
+    if (!text) {
+        return "Descripción no disponible.";
+    }
+
+    const exactas = {
+        "Known live memecoin launchpad on Robinhood Chain.":
+            "Launchpad de memecoins activa en Robinhood Chain.",
+
+        "Noctis Protocol — three-tier token launchpad on Midnight + Other Chains":
+            "Noctis Protocol — launchpad de tokens de tres niveles en Midnight y otras redes."
+    };
+
+    if (exactas[text]) {
+        return exactas[text];
+    }
+
+    return text
+        .replace(
+            /Known live memecoin launchpad/gi,
+            "Launchpad de memecoins activa"
+        )
+        .replace(
+            /token launchpad/gi,
+            "launchpad de tokens"
+        )
+        .replace(
+            /memecoin launchpad/gi,
+            "launchpad de memecoins"
+        )
+        .replace(
+            /Other Chains/gi,
+            "otras redes"
+        )
+        .replace(
+            /Coming Soon/gi,
+            "Próximamente"
+        )
+        .replace(
+            /launchpad candidate/gi,
+            "candidato a launchpad"
+        )
+        .replace(
+            /new on-chain candidate/gi,
+            "nuevo candidato on-chain"
+        );
+}
+
+
+function lpRadarDetectadoPor(value) {
+
+    return String(value || "Radar")
+        .replace(
+            /Website/gi,
+            "Sitio web"
+        )
+        .replace(
+            /Known platform/gi,
+            "Plataforma conocida"
+        )
+        .replace(
+            /publishers/gi,
+            "fuentes"
+        );
+}
+
+
+// =========================================================
+// ESTILOS
+// =========================================================
+
+const lpRadarStyle = document.createElement("style");
+
+lpRadarStyle.textContent = `
+
+#lp-radar-nuevas-launchpads {
+    width: min(1180px, calc(100% - 32px));
+    margin: 34px auto 42px;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.lp-radar-box {
+    width: 100%;
+    padding: 22px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 76, 170, .24);
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255, 70, 166, .09),
+            transparent 35%
+        ),
+        #0b0f12;
+
+    box-shadow:
+        0 18px 50px rgba(0, 0, 0, .20);
+}
+
+.lp-radar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.lp-radar-label {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+    border-radius: 999px;
+    border: 1px solid rgba(255, 76, 170, .35);
+
+    color: #ff70ba;
+    background: rgba(255, 76, 170, .08);
+
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: .7px;
+}
+
+.lp-radar-title {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(24px, 3vw, 34px);
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+.lp-radar-subtitle {
+    max-width: 760px;
+    margin: 8px 0 0;
+
+    color: #95a2b4;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.lp-radar-active {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #43f29a;
+    font-size: 10px;
+    font-weight: 900;
+
+    white-space: nowrap;
+}
+
+.lp-radar-active-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+    background: #43f29a;
+
+    box-shadow:
+        0 0 12px rgba(67, 242, 154, .9);
+}
+
+.lp-radar-sources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 13px;
+}
+
+.lp-radar-source {
+    padding: 5px 9px;
+
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, .07);
+
+    background: rgba(255, 255, 255, .035);
+    color: #aab5c6;
+
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.lp-radar-groups {
+    display: grid;
+    gap: 14px;
+}
+
+.lp-radar-group {
+    overflow: hidden;
+
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    background: rgba(3, 7, 10, .68);
+}
+
+.lp-radar-group.verificadas {
+    border-color: rgba(45, 232, 137, .25);
+}
+
+.lp-radar-group.observacion {
+    border-color: rgba(255, 184, 56, .23);
+}
+
+.lp-radar-group.conocidas {
+    border-color: rgba(74, 132, 255, .22);
+}
+
+.lp-radar-group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    padding: 13px 15px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, .06);
+}
+
+.lp-radar-group-header h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.lp-radar-group-header p {
+    margin: 3px 0 0;
+
+    color: #718097;
+
+    font-size: 10px;
+}
+
+.lp-radar-count {
+    width: 29px;
+    height: 29px;
+
+    display: grid;
+    place-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(255, 255, 255, .07);
+
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.lp-radar-projects {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(330px, 1fr)
+        );
+
+    gap: 10px;
+    padding: 11px;
+}
+
+.lp-radar-card {
+    min-width: 0;
+    padding: 14px;
+
+    border-radius: 12px;
+
+    border:
+        1px solid rgba(255, 255, 255, .065);
+
+    background:
+        rgba(255, 255, 255, .025);
+}
+
+.lp-radar-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.lp-radar-card-name {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 900;
+
+    overflow-wrap: anywhere;
+}
+
+.lp-radar-status {
+    flex-shrink: 0;
+
+    padding: 4px 8px;
+
+    border-radius: 999px;
+
+    border:
+        1px solid rgba(255, 184, 56, .20);
+
+    background:
+        rgba(255, 184, 56, .09);
+
+    color: #ffd06b;
+
+    font-size: 8px;
+    font-weight: 900;
+}
+
+.lp-radar-description {
+    margin: 7px 0 11px;
+
+    color: #99a6b8;
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.lp-radar-meta {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 7px;
+}
+
+.lp-radar-meta-item {
+    min-width: 0;
+
+    padding: 8px 9px;
+
+    border-radius: 8px;
+
+    background:
+        rgba(255, 255, 255, .035);
+
+    border:
+        1px solid rgba(255, 255, 255, .04);
+}
+
+.lp-radar-meta-item small {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #65748a;
+
+    font-size: 7px;
+    letter-spacing: .5px;
+
+    text-transform: uppercase;
+}
+
+.lp-radar-meta-item strong {
+    display: block;
+
+    color: #e8edf6;
+
+    font-size: 10px;
+
+    overflow-wrap: anywhere;
+}
+
+.lp-radar-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    margin-top: 10px;
+}
+
+.lp-radar-link {
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 28px;
+
+    padding: 0 9px;
+
+    border-radius: 7px;
+
+    border:
+        1px solid rgba(255, 255, 255, .07);
+
+    background:
+        rgba(255, 255, 255, .04);
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.lp-radar-link:hover {
+    background:
+        rgba(255, 255, 255, .09);
+}
+
+.lp-radar-empty {
+    margin: 10px;
+    padding: 13px;
+
+    border-radius: 9px;
+
+    border:
+        1px dashed rgba(255, 255, 255, .07);
+
+    color: #66748a;
+
+    text-align: center;
+
+    font-size: 10px;
+}
+
+.lp-radar-loading {
+    padding: 18px;
+
+    text-align: center;
+
+    color: #718096;
+
+    font-size: 11px;
+}
+
+.lp-radar-updated {
+    margin-top: 12px;
+
+    color: #5f6d80;
+
+    font-size: 9px;
+
+    text-align: right;
+}
+
+@media (max-width: 760px) {
+
+    #lp-radar-nuevas-launchpads {
+        width: calc(100% - 20px);
+        margin: 22px auto 30px;
+    }
+
+    .lp-radar-box {
+        padding: 15px;
+    }
+
+    .lp-radar-header {
+        display: block;
+    }
+
+    .lp-radar-active {
+        margin-top: 12px;
+    }
+
+    .lp-radar-projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .lp-radar-meta {
+        grid-template-columns: 1fr;
+    }
+}
+
+`;
+
+document.head.appendChild(
+    lpRadarStyle
+);
+
+
+// =========================================================
+// ESTRUCTURA PRINCIPAL
+// =========================================================
+
+lpRadarRoot.innerHTML = `
+
+    <div class="lp-radar-box">
+
+        <div class="lp-radar-header">
+
+            <div>
+
+                <div class="lp-radar-label">
+                    🔭 DETECCIÓN TEMPRANA
+                </div>
+
+                <h2 class="lp-radar-title">
+                    Inteligencia de Launchpads
+                </h2>
+
+                <p class="lp-radar-subtitle">
+                    Detecta nuevas launchpads y proyectos
+                    próximos a lanzarse mediante señales públicas,
+                    actividad social, desarrollo y datos on-chain.
+                </p>
+
+                <div class="lp-radar-sources">
+
+                    <span class="lp-radar-source">
+                        𝕏
+                    </span>
+
+                    <span class="lp-radar-source">
+                        Discord
+                    </span>
+
+                    <span class="lp-radar-source">
+                        GitHub
+                    </span>
+
+                    <span class="lp-radar-source">
+                        Web
+                    </span>
+
+                    <span class="lp-radar-source">
+                        DeFi
+                    </span>
+
+                    <span class="lp-radar-source">
+                        On-chain
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="lp-radar-active">
+
+                <span
+                    class="lp-radar-active-dot"
+                ></span>
+
+                RADAR ACTIVO
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="lp-radar-contenido"
+            class="lp-radar-groups"
+        >
+
+            <div class="lp-radar-loading">
+                Cargando información del radar...
+            </div>
+
+        </div>
+
+    </div>
+
+`;
+
+
+// =========================================================
+// POSICIÓN DEL RADAR
+// Lo colocamos después de:
+// "Lectura correcta del radar"
+// =========================================================
+
+const lpRadarTextoLectura =
+    Array.from(
+        document.querySelectorAll(
+            "div, p, aside"
+        )
+    ).find((element) => {
+
+        const texto =
+            element.textContent
+                .trim()
+                .toLowerCase();
+
+        return (
+            texto.startsWith(
+                "lectura correcta del radar"
+            ) &&
+            texto.length < 600
+        );
+    });
+
+
+if (lpRadarTextoLectura) {
+
+    const lpRadarAncla =
+        lpRadarTextoLectura.closest(
+            "section"
+        ) ||
+        lpRadarTextoLectura.closest(
+            "aside"
+        ) ||
+        lpRadarTextoLectura.closest(
+            "div"
+        ) ||
+        lpRadarTextoLectura;
+
+    lpRadarAncla.after(
+        lpRadarRoot
+    );
+
+} else {
+
+    const lpRadarTituloMercado =
+        Array.from(
+            document.querySelectorAll(
+                "h1, h2"
+            )
+        ).find((element) =>
+
+            element.textContent
+                .toLowerCase()
+                .includes(
+                    "radar del mercado memecoin"
+                )
+        );
+
+
+    if (lpRadarTituloMercado) {
+
+        let lpRadarAncla =
+            lpRadarTituloMercado;
+
+        while (
+            lpRadarAncla.parentElement &&
+            lpRadarAncla.parentElement !==
+                document.body &&
+            lpRadarAncla.parentElement.tagName !==
+                "MAIN"
+        ) {
+            lpRadarAncla =
+                lpRadarAncla.parentElement;
+        }
+
+        lpRadarAncla.after(
+            lpRadarRoot
+        );
+
+    } else {
+
+        const lpRadarMain =
+            document.querySelector(
+                "main"
+            ) ||
+            document.body;
+
+        lpRadarMain.prepend(
+            lpRadarRoot
+        );
+    }
+}
+
+
+// =========================================================
+// LINKS
+// =========================================================
+
+function lpRadarCrearLink(
+    texto,
+    value
+) {
+
+    const url =
+        lpRadarSafeUrl(value);
+
+    if (!url) {
+        return "";
+    }
+
+    return `
+        <a
+            class="lp-radar-link"
+            href="${lpRadarEscape(url)}"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            ${lpRadarEscape(texto)}
+        </a>
+    `;
+}
+
+
+// =========================================================
+// TARJETA DE PROYECTO
+// =========================================================
+
+function lpRadarCrearTarjeta(item) {
+
+    const links = [
+
+        lpRadarCrearLink(
+            "🌐 Sitio web",
+            item.website
+        ),
+
+        lpRadarCrearLink(
+            "𝕏 X",
+            item.x
+        ),
+
+        lpRadarCrearLink(
+            "💬 Discord",
+            item.discord
+        ),
+
+        lpRadarCrearLink(
+            "⌘ GitHub",
+            item.github
+        ),
+
+        lpRadarCrearLink(
+            "🔎 Fuente",
+            item.source
+        )
+
+    ]
+    .filter(Boolean)
+    .join("");
+
+
+    return `
+
+        <article class="lp-radar-card">
+
+            <div class="lp-radar-card-top">
+
+                <h4 class="lp-radar-card-name">
+
+                    ${lpRadarEscape(
+                        item.name ||
+                        "Proyecto sin nombre"
+                    )}
+
+                </h4>
+
+
+                <span class="lp-radar-status">
+
+                    ${lpRadarEscape(
+                        lpRadarEstado(
+                            item.status
+                        )
+                    )}
+
+                </span>
+
+            </div>
+
+
+            <p class="lp-radar-description">
+
+                ${lpRadarEscape(
+                    lpRadarDescripcion(
+                        item.description
+                    )
+                )}
+
+            </p>
+
+
+            <div class="lp-radar-meta">
+
+                <div class="lp-radar-meta-item">
+
+                    <small>
+                        Red
+                    </small>
+
+                    <strong>
+
+                        ${lpRadarEscape(
+                            item.chain ||
+                            "Desconocida"
+                        )}
+
+                    </strong>
+
+                </div>
+
+
+                <div class="lp-radar-meta-item">
+
+                    <small>
+                        Confianza
+                    </small>
+
+                    <strong>
+                        ${Number(
+                            item.confidence || 0
+                        )}%
+                    </strong>
+
+                </div>
+
+
+                <div class="lp-radar-meta-item">
+
+                    <small>
+                        Primera detección
+                    </small>
+
+                    <strong>
+
+                        ${lpRadarEscape(
+                            item.firstSeen ||
+                            "-"
+                        )}
+
+                    </strong>
+
+                </div>
+
+
+                <div class="lp-radar-meta-item">
+
+                    <small>
+                        Detectada mediante
+                    </small>
+
+                    <strong>
+
+                        ${lpRadarEscape(
+                            lpRadarDetectadoPor(
+                                item.detectedBy
+                            )
+                        )}
+
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            ${
+                links
+                ?
+                `
+                    <div class="lp-radar-links">
+                        ${links}
+                    </div>
+                `
+                :
+                ""
+            }
+
+        </article>
+    `;
+}
+
+
+// =========================================================
+// GRUPOS
+// =========================================================
+
+function lpRadarCrearGrupo(
+    clase,
+    icono,
+    titulo,
+    descripcion,
+    items
+) {
+
+    const lista =
+        Array.isArray(items)
+        ? items
+        : [];
+
+
+    return `
+
+        <section
+            class="
+                lp-radar-group
+                ${clase}
+            "
+        >
+
+            <div
+                class="
+                    lp-radar-group-header
+                "
+            >
+
+                <div>
+
+                    <h3>
+
+                        ${icono}
+                        ${lpRadarEscape(
+                            titulo
+                        )}
+
+                    </h3>
+
+
+                    <p>
+
+                        ${lpRadarEscape(
+                            descripcion
+                        )}
+
+                    </p>
+
+                </div>
+
+
+                <span
+                    class="lp-radar-count"
+                >
+                    ${lista.length}
+                </span>
+
+            </div>
+
+
+            ${
+                lista.length
+                ?
+                `
+                    <div
+                        class="lp-radar-projects"
+                    >
+
+                        ${
+                            lista
+                                .map(
+                                    lpRadarCrearTarjeta
+                                )
+                                .join("")
+                        }
+
+                    </div>
+                `
+                :
+                `
+                    <div
+                        class="lp-radar-empty"
+                    >
+                        No hay proyectos detectados
+                        en esta categoría por ahora.
+                    </div>
+                `
+            }
+
+        </section>
+
+    `;
+}
+
+
+// =========================================================
+// CARGAR launchpad-intel.json
+// =========================================================
+
+async function lpRadarCargarDatos() {
+
+    const contenido =
+        document.getElementById(
+            "lp-radar-contenido"
+        );
+
+
+    if (!contenido) {
+        return;
+    }
+
+
+    try {
+
+        const response =
+            await fetch(
+                "./launchpad-intel.json?t="
+                + Date.now(),
+                {
+                    cache: "no-store"
+                }
+            );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                "No se pudo cargar launchpad-intel.json"
+            );
+        }
+
+
+        const data =
+            await response.json();
+
+
+        const verificadas =
+            Array.isArray(
+                data.verified
+            )
+            ? data.verified
+            : [];
+
+
+        const observacion =
+            Array.isArray(
+                data.watchlist
+            )
+            ? data.watchlist
+            : [];
+
+
+        const conocidas =
+            Array.isArray(
+                data.known
+            )
+            ? data.known
+            : [];
+
+
+        contenido.innerHTML = `
+
+            ${lpRadarCrearGrupo(
+                "verificadas",
+                "🚨",
+                "LAUNCHPADS VERIFICADAS",
+                "Señales sólidas e independientes. Mayor prioridad.",
+                verificadas
+            )}
+
+
+            ${lpRadarCrearGrupo(
+                "observacion",
+                "👀",
+                "EN OBSERVACIÓN",
+                "Candidatos tempranos que todavía están siendo verificados.",
+                observacion
+            )}
+
+
+            ${lpRadarCrearGrupo(
+                "conocidas",
+                "🟢",
+                "CONOCIDAS / ACTIVAS",
+                "Launchpads que ya fueron lanzadas o que el radar ya conoce.",
+                conocidas
+            )}
+
+
+            <div class="lp-radar-updated">
+
+                ${
+                    data.updatedAt
+                    ?
+                    "Última actualización del escáner: "
+                    + lpRadarEscape(
+                        data.updatedAt
+                    )
+                    :
+                    ""
+                }
+
+            </div>
+
+        `;
+
+
+    } catch (error) {
+
+        console.error(
+            "Radar de launchpads:",
+            error
+        );
+
+
+        contenido.innerHTML = `
+
+            <div class="lp-radar-empty">
+
+                No se pudieron cargar los datos
+                del radar en este momento.
+
+            </div>
+
+        `;
+    }
+}
+
+
+// =========================================================
+// INICIAR
+// =========================================================
+
+lpRadarCargarDatos();
 })();
 </script>
 </body>
