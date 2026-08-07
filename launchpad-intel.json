@@ -1,8 +1,25 @@
 {
-  "updatedAt": "2026-08-07T18:03:05Z",
+  "updatedAt": "2026-08-07T19:16:07Z",
   "scannerVersion": 5,
   "verified": [],
   "watchlist": [
+    {
+      "name": "stonkfun.xyz",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-08-07",
+      "confidence": 73,
+      "description": "hold to earn",
+      "website": "https://www.stonkfun.xyz/",
+      "x": "https://x.com/launchonsf",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/ghwm6mretg9zpoqfmeqpyug1roh1bxjn6gqeslvz4jdh",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-07"
+    },
     {
       "name": "noctis.zone",
       "status": "COMING SOON",
@@ -42,6 +59,23 @@
     }
   ],
   "launchpads": [
+    {
+      "name": "stonkfun.xyz",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-08-07",
+      "confidence": 73,
+      "description": "hold to earn",
+      "website": "https://www.stonkfun.xyz/",
+      "x": "https://x.com/launchonsf",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/ghwm6mretg9zpoqfmeqpyug1roh1bxjn6gqeslvz4jdh",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-07"
+    },
     {
       "name": "noctis.zone",
       "status": "COMING SOON",
