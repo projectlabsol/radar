@@ -1,0 +1,19 @@
+{
+  "updatedAt": "2026-08-07",
+  "launchpads": [
+    {
+      "name": "Pools.trade",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "Aug 5, 2026",
+      "confidence": 100,
+      "detectedBy": "Website + On-chain",
+      "description": "Memecoin launchpad for creating, discovering and trading community tokens. Already launched and registered as a known platform.",
+      "website": "https://pools.trade/",
+      "x": "",
+      "discord": "",
+      "github": "",
+      "source": ""
+    }
+  ]
+}
