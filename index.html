@@ -5518,7 +5518,26 @@ function renderThemeRecommendation() {
         `;
     }
 }
+// MOVE LAUNCHPAD INTELLIGENCE TO THE VERY TOP
+const intelligenceSection = list.closest("section");
 
+if (intelligenceSection) {
+    const mainElement = document.querySelector("main");
+
+    if (mainElement) {
+        mainElement.prepend(intelligenceSection);
+    } else {
+        document.body.prepend(intelligenceSection);
+    }
+}
+
+// REMOVE OLD MANUAL POOLS.TRADE BLOCK
+const oldPoolsTradeSection =
+    document.getElementById("pools-trade-launchpad");
+
+if (oldPoolsTradeSection) {
+    oldPoolsTradeSection.remove();
+}
 
 loadLaunchpadIntelligence();
 
