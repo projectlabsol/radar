@@ -5212,7 +5212,159 @@ async function lpRadarCargarDatos() {
 
         const data =
             await response.json();
+                // =============================================
+        // FUENTES DISCORD
+        // =============================================
 
+        let discordHtml = "";
+
+        try {
+
+            const discordResponse = await fetch(
+                "./launchpad-scanner-state.json?t=" + Date.now(),
+                {
+                    cache: "no-store"
+                }
+            );
+
+            if (discordResponse.ok) {
+
+                const discordData =
+                    await discordResponse.json();
+
+                const discordSources =
+                    Array.isArray(discordData.discord_sources)
+                        ? discordData.discord_sources
+                        : [];
+
+                discordSources.sort(
+                    (a, b) =>
+                        Number(Boolean(b.primary))
+                        - Number(Boolean(a.primary))
+                );
+
+                if (discordSources.length) {
+
+                    discordHtml = `
+                        <div class="lp-radar-group">
+
+                            <div style="
+                                padding:14px 14px 4px;
+                            ">
+                                <strong>
+                                    💬 FUENTES DISCORD VIGILADAS
+                                </strong>
+
+                                <div style="
+                                    opacity:.65;
+                                    font-size:12px;
+                                    margin-top:4px;
+                                ">
+                                    Cryptic es la fuente principal.
+                                    Las demás comunidades actúan como
+                                    fuentes secundarias.
+                                </div>
+                            </div>
+
+                            <div class="lp-radar-projects">
+
+                                ${discordSources.map((source) => {
+
+                                    const nombre =
+                                        lpRadarEscape(
+                                            source.name || "Discord"
+                                        );
+
+                                    const miembros =
+                                        Number(
+                                            source.members || 0
+                                        ).toLocaleString("es-PE");
+
+                                    const online =
+                                        Number(
+                                            source.online || 0
+                                        ).toLocaleString("es-PE");
+
+                                    const enlace =
+                                        lpRadarSafeUrl(
+                                            source.invite
+                                        );
+
+                                    const principal =
+                                        Boolean(source.primary);
+
+                                    return `
+                                        <article class="lp-radar-card">
+
+                                            <div style="
+                                                display:flex;
+                                                justify-content:space-between;
+                                                align-items:center;
+                                                gap:10px;
+                                            ">
+
+                                                <strong>
+                                                    ${principal ? "⭐" : "💬"}
+                                                    ${nombre}
+                                                </strong>
+
+                                                <span>
+                                                    ${
+                                                        principal
+                                                            ? "FUENTE PRINCIPAL"
+                                                            : "SECUNDARIA"
+                                                    }
+                                                </span>
+
+                                            </div>
+
+                                            <div style="
+                                                margin-top:10px;
+                                                font-size:12px;
+                                                opacity:.8;
+                                            ">
+                                                👥 ${miembros} miembros
+                                                &nbsp;•&nbsp;
+                                                🟢 ${online} online
+                                            </div>
+
+                                            ${
+                                                enlace
+                                                    ? `
+                                                    <a
+                                                        href="${enlace}"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        style="
+                                                            display:inline-block;
+                                                            margin-top:10px;
+                                                        "
+                                                    >
+                                                        Abrir Discord ↗
+                                                    </a>
+                                                    `
+                                                    : ""
+                                            }
+
+                                        </article>
+                                    `;
+
+                                }).join("")}
+
+                            </div>
+
+                        </div>
+                    `;
+                }
+            }
+
+        } catch (error) {
+
+            console.warn(
+                "Discord sources error:",
+                error
+            );
+        }
 
         const verificadas =
             Array.isArray(
@@ -5239,7 +5391,7 @@ async function lpRadarCargarDatos() {
 
 
         contenido.innerHTML = `
-
+            ${discordHtml}
             ${lpRadarCrearGrupo(
                 "verificadas",
                 "🚨",
