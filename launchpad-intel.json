@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T23:48:50Z",
+  "updatedAt": "2026-08-08T02:22:23Z",
   "scannerVersion": 5,
   "verified": [],
   "watchlist": [
@@ -18,7 +18,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     },
     {
       "name": "liquidpools.fun",
@@ -35,7 +35,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     },
     {
       "name": "stonkfun.xyz",
@@ -52,7 +52,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     },
     {
       "name": "Trydroplet",
@@ -69,7 +69,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     },
     {
       "name": "ubi-sol.xyz",
@@ -86,7 +86,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     },
     {
       "name": "Unicreators",
@@ -103,7 +103,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     },
     {
       "name": "noctis.zone",
@@ -120,7 +120,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     }
   ],
   "known": [
@@ -140,7 +140,7 @@
       "detectedBy": "Known platform",
       "scannerVersion": 5,
       "pinned": true,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     }
   ],
   "launchpads": [
@@ -159,7 +159,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     },
     {
       "name": "liquidpools.fun",
@@ -176,7 +176,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     },
     {
       "name": "stonkfun.xyz",
@@ -193,7 +193,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     },
     {
       "name": "Trydroplet",
@@ -210,7 +210,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     },
     {
       "name": "ubi-sol.xyz",
@@ -227,7 +227,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     },
     {
       "name": "Unicreators",
@@ -244,7 +244,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     },
     {
       "name": "noctis.zone",
@@ -261,7 +261,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     },
     {
       "name": "Pools.trade",
@@ -279,7 +279,7 @@
       "detectedBy": "Known platform",
       "scannerVersion": 5,
       "pinned": true,
-      "lastConfirmed": "2026-08-07"
+      "lastConfirmed": "2026-08-08"
     }
   ]
 }
