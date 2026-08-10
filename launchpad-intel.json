@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T06:43:03Z",
+  "updatedAt": "2026-08-10T08:51:59Z",
   "scannerVersion": 5,
   "verified": [],
   "watchlist": [
@@ -85,6 +85,23 @@
       "source": "https://github.com/lightchain-protocol/lightchain-launchpad",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-10"
+    },
+    {
+      "name": "Apuonrobinhood",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-10",
+      "confidence": 73,
+      "description": "Apu Apustaja on Robinhood. Robinhood <3 Apu.",
+      "website": "https://apuonrobinhood.com/",
+      "x": "https://x.com",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xba996feddd47a80375db84a6bd947f8fa1a64e10",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
       "lastConfirmed": "2026-08-10"
     },
@@ -532,6 +549,23 @@
       "source": "https://github.com/lightchain-protocol/lightchain-launchpad",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-10"
+    },
+    {
+      "name": "Apuonrobinhood",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-10",
+      "confidence": 73,
+      "description": "Apu Apustaja on Robinhood. Robinhood <3 Apu.",
+      "website": "https://apuonrobinhood.com/",
+      "x": "https://x.com",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xba996feddd47a80375db84a6bd947f8fa1a64e10",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
       "lastConfirmed": "2026-08-10"
     },
