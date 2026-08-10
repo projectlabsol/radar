@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-08-10T19:17:47Z",
+  "updatedAt": "2026-08-10T21:02:58Z",
   "scannerVersion": 5,
-  "verified": [],
+  "verified": [
+    {
+      "name": "RaiseHood",
+      "status": "NEW",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-10",
+      "confidence": 93,
+      "description": "Fair-raise token launchpad on Robinhood Chain: fixed-price presales paired with ETH, USDG, or Robinhood stock tokens. Settlement auto-seeds V3 liquidity that is time-locked in the protocol's fee vault, and buyers get mutually exclusive claim-or-refund outcomes",
+      "website": "https://www.raisehood.xyz",
+      "x": "https://x.com/RaiseHood",
+      "discord": "",
+      "github": "",
+      "source": "https://defillama.com/protocol/raisehood",
+      "radarTier": "VERIFIED",
+      "detectedBy": "DefiLlama + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-10"
+    }
+  ],
   "watchlist": [
     {
       "name": "Icefam",
@@ -586,6 +604,23 @@
     }
   ],
   "launchpads": [
+    {
+      "name": "RaiseHood",
+      "status": "NEW",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-10",
+      "confidence": 93,
+      "description": "Fair-raise token launchpad on Robinhood Chain: fixed-price presales paired with ETH, USDG, or Robinhood stock tokens. Settlement auto-seeds V3 liquidity that is time-locked in the protocol's fee vault, and buyers get mutually exclusive claim-or-refund outcomes",
+      "website": "https://www.raisehood.xyz",
+      "x": "https://x.com/RaiseHood",
+      "discord": "",
+      "github": "",
+      "source": "https://defillama.com/protocol/raisehood",
+      "radarTier": "VERIFIED",
+      "detectedBy": "DefiLlama + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-10"
+    },
     {
       "name": "Icefam",
       "status": "COMING SOON",
