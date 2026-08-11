@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11T02:28:32Z",
+  "updatedAt": "2026-08-11T04:40:37Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -579,6 +579,23 @@
       "source": "https://dexscreener.com/solana/4f8p2x9jsq1rtm3dszeqeyzgsmz5uyvndmiycfwtpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-11"
+    },
+    {
+      "name": "urufulabs.xyz",
+      "status": "LIVE",
+      "chain": "Robinhood Chain, Ethereum",
+      "firstSeen": "2026-08-11",
+      "confidence": 70,
+      "description": "urufulabs.xyz launchpad candidate.",
+      "website": "https://www.urufulabs.xyz",
+      "x": "https://x.com/spoobsV1\\",
+      "discord": "https://discord.gg/urufugemu",
+      "github": "https://github.com/urufu-labs/urufu-launchpad",
+      "source": "https://github.com/urufu-labs/urufu-launchpad",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
       "lastConfirmed": "2026-08-11"
     },
@@ -1196,6 +1213,23 @@
       "source": "https://dexscreener.com/solana/4f8p2x9jsq1rtm3dszeqeyzgsmz5uyvndmiycfwtpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-11"
+    },
+    {
+      "name": "urufulabs.xyz",
+      "status": "LIVE",
+      "chain": "Robinhood Chain, Ethereum",
+      "firstSeen": "2026-08-11",
+      "confidence": 70,
+      "description": "urufulabs.xyz launchpad candidate.",
+      "website": "https://www.urufulabs.xyz",
+      "x": "https://x.com/spoobsV1\\",
+      "discord": "https://discord.gg/urufugemu",
+      "github": "https://github.com/urufu-labs/urufu-launchpad",
+      "source": "https://github.com/urufu-labs/urufu-launchpad",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
       "lastConfirmed": "2026-08-11"
     },
