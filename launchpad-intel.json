@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11T16:13:41Z",
+  "updatedAt": "2026-08-11T17:14:28Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -243,6 +243,23 @@
       "lastConfirmed": "2026-08-11"
     },
     {
+      "name": "Fomopad",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-11",
+      "confidence": 73,
+      "description": "The fomo exclusive launchpad on Robinhood Chain.",
+      "website": "https://www.fomopad.family/",
+      "x": "https://x.com/Fomo_Pad",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xfcaaa8ac97804eff23adca195579808b6b959a4e",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-11"
+    },
+    {
       "name": "Goblinstonk",
       "status": "RUMOR",
       "chain": "Solana",
@@ -424,6 +441,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0xa6b5d35f49c8444f37927ef73af21cc8e0a47582",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-11"
+    },
+    {
+      "name": "prsm.fun",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-08-11",
+      "confidence": 73,
+      "description": "Launch against a stock, SOL or a memecoin with zero capital. The LP is locked forever.",
+      "website": "https://prsm.fun/",
+      "x": "https://x.com/PrsmFun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/7lkpysjarxjkqyfid2rbg559hkgtskvr4jpjrnvojwb",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -945,6 +979,23 @@
       "lastConfirmed": "2026-08-11"
     },
     {
+      "name": "Fomopad",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-11",
+      "confidence": 73,
+      "description": "The fomo exclusive launchpad on Robinhood Chain.",
+      "website": "https://www.fomopad.family/",
+      "x": "https://x.com/Fomo_Pad",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xfcaaa8ac97804eff23adca195579808b6b959a4e",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-11"
+    },
+    {
       "name": "Goblinstonk",
       "status": "RUMOR",
       "chain": "Solana",
@@ -1126,6 +1177,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0xa6b5d35f49c8444f37927ef73af21cc8e0a47582",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-11"
+    },
+    {
+      "name": "prsm.fun",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-08-11",
+      "confidence": 73,
+      "description": "Launch against a stock, SOL or a memecoin with zero capital. The LP is locked forever.",
+      "website": "https://prsm.fun/",
+      "x": "https://x.com/PrsmFun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/7lkpysjarxjkqyfid2rbg559hkgtskvr4jpjrnvojwb",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
