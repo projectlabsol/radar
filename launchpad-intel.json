@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T22:03:13Z",
+  "updatedAt": "2026-08-12T23:02:39Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -158,6 +158,23 @@
       "lastConfirmed": "2026-08-12"
     },
     {
+      "name": "uselongshot.xyz",
+      "status": "COMING SOON",
+      "chain": "Robinhood Chain, Ethereum, HyperEVM",
+      "firstSeen": "2026-08-12",
+      "confidence": 78,
+      "description": "uselongshot - pair your launch with a perp",
+      "website": "https://www.uselongshot.xyz/",
+      "x": "https://x.com/uselongshot",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x8701e2c87ade58325601f4f9bf37adf46cb75745",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-12"
+    },
+    {
       "name": "yetitoken.fun",
       "status": "COMING SOON",
       "chain": "Robinhood Chain, Ethereum, Arbitrum",
@@ -295,7 +312,7 @@
     },
     {
       "name": "Fomopad",
-      "status": "RUMOR",
+      "status": "LIVE",
       "chain": "Robinhood Chain",
       "firstSeen": "2026-08-11",
       "confidence": 73,
@@ -1013,6 +1030,23 @@
       "lastConfirmed": "2026-08-12"
     },
     {
+      "name": "uselongshot.xyz",
+      "status": "COMING SOON",
+      "chain": "Robinhood Chain, Ethereum, HyperEVM",
+      "firstSeen": "2026-08-12",
+      "confidence": 78,
+      "description": "uselongshot - pair your launch with a perp",
+      "website": "https://www.uselongshot.xyz/",
+      "x": "https://x.com/uselongshot",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x8701e2c87ade58325601f4f9bf37adf46cb75745",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-12"
+    },
+    {
       "name": "yetitoken.fun",
       "status": "COMING SOON",
       "chain": "Robinhood Chain, Ethereum, Arbitrum",
@@ -1150,7 +1184,7 @@
     },
     {
       "name": "Fomopad",
-      "status": "RUMOR",
+      "status": "LIVE",
       "chain": "Robinhood Chain",
       "firstSeen": "2026-08-11",
       "confidence": 73,
