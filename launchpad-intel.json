@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T19:58:04Z",
+  "updatedAt": "2026-08-14T20:46:28Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -396,6 +396,23 @@
       "lastConfirmed": "2026-08-14"
     },
     {
+      "name": "Cave",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain, Solana, BNB Chain",
+      "firstSeen": "2026-08-14",
+      "confidence": 73,
+      "description": "CaveWatch provides smart money trading intelligence. Track & Copy Trade Elite wallets. Hold at least 100K $CW for revenue share daily stock rewards. Mine $ORIX for passive ETH earnings + hit Motherlode for jackpots. Solana + Robinhood LIVE.",
+      "website": "https://cave.watch",
+      "x": "https://x.com/CaveWatch",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x76715de09dd31e7374309cb3dffb399a237a0102",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-14"
+    },
+    {
       "name": "Croakbullfrog",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -645,6 +662,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x2901c3c1972bf920e1b8d596c8eee75eae6624ed",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-14"
+    },
+    {
+      "name": "Memedatabase",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-08-14",
+      "confidence": 73,
+      "description": "A database for all memecoins. Find the real one.",
+      "website": "https://memedatabase.io/",
+      "x": "https://x.com/memedatabaseio",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/4zjvy6lg9rchf3yxrhyp19gymncbz6xq3e8ynrtxpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -1540,6 +1574,23 @@
       "lastConfirmed": "2026-08-14"
     },
     {
+      "name": "Cave",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain, Solana, BNB Chain",
+      "firstSeen": "2026-08-14",
+      "confidence": 73,
+      "description": "CaveWatch provides smart money trading intelligence. Track & Copy Trade Elite wallets. Hold at least 100K $CW for revenue share daily stock rewards. Mine $ORIX for passive ETH earnings + hit Motherlode for jackpots. Solana + Robinhood LIVE.",
+      "website": "https://cave.watch",
+      "x": "https://x.com/CaveWatch",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x76715de09dd31e7374309cb3dffb399a237a0102",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-14"
+    },
+    {
       "name": "Croakbullfrog",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -1789,6 +1840,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x2901c3c1972bf920e1b8d596c8eee75eae6624ed",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-14"
+    },
+    {
+      "name": "Memedatabase",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-08-14",
+      "confidence": 73,
+      "description": "A database for all memecoins. Find the real one.",
+      "website": "https://memedatabase.io/",
+      "x": "https://x.com/memedatabaseio",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/4zjvy6lg9rchf3yxrhyp19gymncbz6xq3e8ynrtxpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
