@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T14:45:39Z",
+  "updatedAt": "2026-08-17T15:41:24Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -396,6 +396,23 @@
       "lastConfirmed": "2026-08-17"
     },
     {
+      "name": "Bogcoin",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-17",
+      "confidence": 73,
+      "description": "$BOG, The first frog ever created by Matt Furie before Pepe 🐸",
+      "website": "https://www.bogcoin.space/",
+      "x": "https://x.com/bog_coin_rbh",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x40744801213de0ae0e4d9b32fc4bf7b954de7777",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-17"
+    },
+    {
       "name": "calloutpad.fun",
       "status": "LIVE",
       "chain": "solana",
@@ -628,6 +645,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x99725b6a4add2f53f1f1fcc3897b253c709d1cc8",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-17"
+    },
+    {
+      "name": "honeypad.app",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-17",
+      "confidence": 73,
+      "description": "honeypad.app new on-chain candidate.",
+      "website": "https://honeypad.app/",
+      "x": "https://x.com/honeypadrh",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x98d8e3498c7f9a1a177cb8203bd17d785080d68d",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -1676,6 +1710,23 @@
       "lastConfirmed": "2026-08-17"
     },
     {
+      "name": "Bogcoin",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-17",
+      "confidence": 73,
+      "description": "$BOG, The first frog ever created by Matt Furie before Pepe 🐸",
+      "website": "https://www.bogcoin.space/",
+      "x": "https://x.com/bog_coin_rbh",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x40744801213de0ae0e4d9b32fc4bf7b954de7777",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-17"
+    },
+    {
       "name": "calloutpad.fun",
       "status": "LIVE",
       "chain": "solana",
@@ -1908,6 +1959,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x99725b6a4add2f53f1f1fcc3897b253c709d1cc8",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-17"
+    },
+    {
+      "name": "honeypad.app",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-17",
+      "confidence": 73,
+      "description": "honeypad.app new on-chain candidate.",
+      "website": "https://honeypad.app/",
+      "x": "https://x.com/honeypadrh",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x98d8e3498c7f9a1a177cb8203bd17d785080d68d",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
