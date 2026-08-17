@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T19:43:04Z",
+  "updatedAt": "2026-08-17T20:44:47Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -358,6 +358,23 @@
       "source": "https://github.com/lightchain-protocol/lightchain-launchpad",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-17"
+    },
+    {
+      "name": "Anyperps",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-08-17",
+      "confidence": 73,
+      "description": "Launch your own perpetual market for your token through Any Perps.",
+      "website": "https://www.anyperps.site/",
+      "x": "https://x.com/AnyPerps",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/dr2muskng4te5aerxrvmfhnr74pgvewleh5czqs37any",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
       "lastConfirmed": "2026-08-17"
     },
@@ -1689,6 +1706,23 @@
       "source": "https://github.com/lightchain-protocol/lightchain-launchpad",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-17"
+    },
+    {
+      "name": "Anyperps",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-08-17",
+      "confidence": 73,
+      "description": "Launch your own perpetual market for your token through Any Perps.",
+      "website": "https://www.anyperps.site/",
+      "x": "https://x.com/AnyPerps",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/dr2muskng4te5aerxrvmfhnr74pgvewleh5czqs37any",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
       "lastConfirmed": "2026-08-17"
     },
