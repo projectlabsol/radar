@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T20:46:02Z",
+  "updatedAt": "2026-08-19T21:41:54Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -141,6 +141,23 @@
       "lastConfirmed": "2026-08-19"
     },
     {
+      "name": "Launchmynft",
+      "status": "RUMOR",
+      "chain": "Solana",
+      "firstSeen": "2026-08-19",
+      "confidence": 81,
+      "description": "1111 BITBULLS on ansem launchpad. Stake to earn passive $ANSEM.",
+      "website": "https://launchmynft.io/mint/bitbulls",
+      "x": "https://x.com/BitbullsSOL",
+      "discord": "https://discord.gg/lmnft",
+      "github": "",
+      "source": "https://dexscreener.com/solana/fxaxkdeim8gkv4praychb9m9aumrwwemfye33bai12st",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-19"
+    },
+    {
       "name": "bluonbase.fun",
       "status": "ANNOUNCED",
       "chain": "Solana, Base, Ethereum",
@@ -220,6 +237,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/e31mtjg5ffjkzawrb2jiwik8ei5z4qgb7as77kg9pump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-19"
+    },
+    {
+      "name": "Jubako",
+      "status": "COMING SOON",
+      "chain": "Robinhood Chain, Tron",
+      "firstSeen": "2026-08-19",
+      "confidence": 78,
+      "description": "🍱 $JUBAKO – your meme-powered stock token omakase on Robinhood Chain. Every trade feeds the box. Every 4 hours, the chef steps up to the counter, buys the next tokenized stock in the rotation – NVDA · AAPL · GOOGL · TSLA · AMD · SPCX – and rains it straight onto holders, pro-rata by balance. Hold 500k+ Jubako and “Take",
+      "website": "https://jubako.lol/",
+      "x": "https://x.com/JUBAKO_Meme",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x141d1cfa7b93692e2a959185ce845e4e48fa0074",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -1642,6 +1676,23 @@
       "lastConfirmed": "2026-08-19"
     },
     {
+      "name": "Launchmynft",
+      "status": "RUMOR",
+      "chain": "Solana",
+      "firstSeen": "2026-08-19",
+      "confidence": 81,
+      "description": "1111 BITBULLS on ansem launchpad. Stake to earn passive $ANSEM.",
+      "website": "https://launchmynft.io/mint/bitbulls",
+      "x": "https://x.com/BitbullsSOL",
+      "discord": "https://discord.gg/lmnft",
+      "github": "",
+      "source": "https://dexscreener.com/solana/fxaxkdeim8gkv4praychb9m9aumrwwemfye33bai12st",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-19"
+    },
+    {
       "name": "bluonbase.fun",
       "status": "ANNOUNCED",
       "chain": "Solana, Base, Ethereum",
@@ -1721,6 +1772,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/e31mtjg5ffjkzawrb2jiwik8ei5z4qgb7as77kg9pump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-19"
+    },
+    {
+      "name": "Jubako",
+      "status": "COMING SOON",
+      "chain": "Robinhood Chain, Tron",
+      "firstSeen": "2026-08-19",
+      "confidence": 78,
+      "description": "🍱 $JUBAKO – your meme-powered stock token omakase on Robinhood Chain. Every trade feeds the box. Every 4 hours, the chef steps up to the counter, buys the next tokenized stock in the rotation – NVDA · AAPL · GOOGL · TSLA · AMD · SPCX – and rains it straight onto holders, pro-rata by balance. Hold 500k+ Jubako and “Take",
+      "website": "https://jubako.lol/",
+      "x": "https://x.com/JUBAKO_Meme",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x141d1cfa7b93692e2a959185ce845e4e48fa0074",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
