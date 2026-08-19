@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T03:11:25Z",
+  "updatedAt": "2026-08-19T03:59:16Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -447,6 +447,23 @@
       "lastConfirmed": "2026-08-19"
     },
     {
+      "name": "bootstrapped.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-08-19",
+      "confidence": 73,
+      "description": "bootstrapped.fun new on-chain candidate.",
+      "website": "https://bootstrapped.fun",
+      "x": "https://x.com/bootstrapped",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/5llz8ue9izs5dzptwauysjmjfyn5z3sh55cnxzdpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-19"
+    },
+    {
       "name": "calloutpad.fun",
       "status": "LIVE",
       "chain": "solana",
@@ -832,6 +849,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x2901c3c1972bf920e1b8d596c8eee75eae6624ed",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-19"
+    },
+    {
+      "name": "lolcombinator.fun",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-08-19",
+      "confidence": 73,
+      "description": "fund ur ideas. launch a coin and its creator rewards fund whatever the board wants to see exist next.",
+      "website": "https://lolcombinator.fun/",
+      "x": "https://x.com/lolcombinator/status/2089918740523561265\\",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/gcaru1mz3ka3bhnbf6uxvfz3kattxphexdgybdo2pump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -1880,6 +1914,23 @@
       "lastConfirmed": "2026-08-19"
     },
     {
+      "name": "bootstrapped.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-08-19",
+      "confidence": 73,
+      "description": "bootstrapped.fun new on-chain candidate.",
+      "website": "https://bootstrapped.fun",
+      "x": "https://x.com/bootstrapped",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/5llz8ue9izs5dzptwauysjmjfyn5z3sh55cnxzdpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-19"
+    },
+    {
       "name": "calloutpad.fun",
       "status": "LIVE",
       "chain": "solana",
@@ -2265,6 +2316,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x2901c3c1972bf920e1b8d596c8eee75eae6624ed",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-19"
+    },
+    {
+      "name": "lolcombinator.fun",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-08-19",
+      "confidence": 73,
+      "description": "fund ur ideas. launch a coin and its creator rewards fund whatever the board wants to see exist next.",
+      "website": "https://lolcombinator.fun/",
+      "x": "https://x.com/lolcombinator/status/2089918740523561265\\",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/gcaru1mz3ka3bhnbf6uxvfz3kattxphexdgybdo2pump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
