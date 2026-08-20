@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T18:59:49Z",
+  "updatedAt": "2026-08-20T19:46:16Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -481,6 +481,23 @@
       "lastConfirmed": "2026-08-20"
     },
     {
+      "name": "Atmonbase",
+      "status": "LIVE",
+      "chain": "Base",
+      "firstSeen": "2026-08-20",
+      "confidence": 73,
+      "description": "Atmonbase new on-chain candidate.",
+      "website": "https://www.atmonbase.site/",
+      "x": "https://x.com/atmonbase",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/base/0xf2c46fcae0804fbd557425616dca2a6ee621fee1",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-20"
+    },
+    {
       "name": "Battletoadz",
       "status": "LIVE",
       "chain": "Solana",
@@ -645,6 +662,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/8hkqfbm1unb4alcgrxcvp2dblfk2wtcj2atr7grzpcvg",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-20"
+    },
+    {
+      "name": "Deploymines",
+      "status": "RUMOR",
+      "chain": "Solana",
+      "firstSeen": "2026-08-20",
+      "confidence": 73,
+      "description": "Deploymines new on-chain candidate.",
+      "website": "https://www.deploymines.com/",
+      "x": "https://x.com/DeployMines",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/6rjq9rm2eoxzvndk5jucfdsywfkf68fatrynjgdapump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -2135,6 +2169,23 @@
       "lastConfirmed": "2026-08-20"
     },
     {
+      "name": "Atmonbase",
+      "status": "LIVE",
+      "chain": "Base",
+      "firstSeen": "2026-08-20",
+      "confidence": 73,
+      "description": "Atmonbase new on-chain candidate.",
+      "website": "https://www.atmonbase.site/",
+      "x": "https://x.com/atmonbase",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/base/0xf2c46fcae0804fbd557425616dca2a6ee621fee1",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-20"
+    },
+    {
       "name": "Battletoadz",
       "status": "LIVE",
       "chain": "Solana",
@@ -2299,6 +2350,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/8hkqfbm1unb4alcgrxcvp2dblfk2wtcj2atr7grzpcvg",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-20"
+    },
+    {
+      "name": "Deploymines",
+      "status": "RUMOR",
+      "chain": "Solana",
+      "firstSeen": "2026-08-20",
+      "confidence": 73,
+      "description": "Deploymines new on-chain candidate.",
+      "website": "https://www.deploymines.com/",
+      "x": "https://x.com/DeployMines",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/6rjq9rm2eoxzvndk5jucfdsywfkf68fatrynjgdapump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
