@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T16:55:58Z",
+  "updatedAt": "2026-08-24T17:47:41Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -515,6 +515,23 @@
       "lastConfirmed": "2026-08-24"
     },
     {
+      "name": "hypeit.fun",
+      "status": "RUMOR",
+      "chain": "HyperEVM",
+      "firstSeen": "2026-08-24",
+      "confidence": 77,
+      "description": "The house token of hypeit — the launchpad of HyperEVM. Every token here launches straight into a locked HyperSwap pool, no curve, no migration. $HYPEIT went first.",
+      "website": "https://hypeit.fun",
+      "x": "https://x.com",
+      "discord": "",
+      "github": "https://github.com",
+      "source": "https://dexscreener.com/hyperevm/0x7982761763db00e25e2dfe8f3e40b95ee889e2e9",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-24"
+    },
+    {
       "name": "onigiripools.fun",
       "status": "RUMOR",
       "chain": "Robinhood Chain",
@@ -764,6 +781,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/hyperevm/0xa4ba25e58d9b9496f2a0ee22983c6394b95a9eba",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-24"
+    },
+    {
+      "name": "Bull Wallstreet",
+      "status": "LIVE",
+      "chain": "Robinhood Chain, Optimism",
+      "firstSeen": "2026-08-24",
+      "confidence": 73,
+      "description": "The symbol of every bull market since 1989 now on Robinhood chain - $BULL 🐂",
+      "website": "https://bull-wallstreet.com",
+      "x": "https://x.com/BullOfWS",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x224e5054493b9496082d8c4a26954a83fd586135",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -2730,6 +2764,23 @@
       "lastConfirmed": "2026-08-24"
     },
     {
+      "name": "hypeit.fun",
+      "status": "RUMOR",
+      "chain": "HyperEVM",
+      "firstSeen": "2026-08-24",
+      "confidence": 77,
+      "description": "The house token of hypeit — the launchpad of HyperEVM. Every token here launches straight into a locked HyperSwap pool, no curve, no migration. $HYPEIT went first.",
+      "website": "https://hypeit.fun",
+      "x": "https://x.com",
+      "discord": "",
+      "github": "https://github.com",
+      "source": "https://dexscreener.com/hyperevm/0x7982761763db00e25e2dfe8f3e40b95ee889e2e9",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-24"
+    },
+    {
       "name": "onigiripools.fun",
       "status": "RUMOR",
       "chain": "Robinhood Chain",
@@ -2979,6 +3030,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/hyperevm/0xa4ba25e58d9b9496f2a0ee22983c6394b95a9eba",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-24"
+    },
+    {
+      "name": "Bull Wallstreet",
+      "status": "LIVE",
+      "chain": "Robinhood Chain, Optimism",
+      "firstSeen": "2026-08-24",
+      "confidence": 73,
+      "description": "The symbol of every bull market since 1989 now on Robinhood chain - $BULL 🐂",
+      "website": "https://bull-wallstreet.com",
+      "x": "https://x.com/BullOfWS",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x224e5054493b9496082d8c4a26954a83fd586135",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
