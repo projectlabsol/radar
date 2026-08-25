@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T21:44:40Z",
+  "updatedAt": "2026-08-25T22:45:51Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -1535,6 +1535,23 @@
       "lastConfirmed": "2026-08-25"
     },
     {
+      "name": "Marscatpump",
+      "status": "LIVE",
+      "chain": "Solana, Tron",
+      "firstSeen": "2026-08-25",
+      "confidence": 73,
+      "description": "MarsCat is blasting off on Solana—bringing cosmic memes, feline energy, and interstellar vibes to crypto!",
+      "website": "https://www.marscatpump.site",
+      "x": "https://x.com/MarsCat_pump",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/7h3jtpnef7qt36yz68ebrs1pg5pqbfj9xmffbnfqpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-25"
+    },
+    {
       "name": "Memedatabase",
       "status": "RUMOR",
       "chain": "solana",
@@ -1784,6 +1801,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x740ad50fac84db5c1cf50b19eb808aee1b643bee",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-25"
+    },
+    {
+      "name": "poolsperps.trade",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-25",
+      "confidence": 73,
+      "description": "Perps on every coin launched on @TradePools. Long or short with leverage, 24/7, settled in ETH.",
+      "website": "https://poolsperps.trade",
+      "x": "https://x.com/poolsperps",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x7aff39c9deceead9e3eb6bdf2ab9737a292f0c2b",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -4005,6 +4039,23 @@
       "lastConfirmed": "2026-08-25"
     },
     {
+      "name": "Marscatpump",
+      "status": "LIVE",
+      "chain": "Solana, Tron",
+      "firstSeen": "2026-08-25",
+      "confidence": 73,
+      "description": "MarsCat is blasting off on Solana—bringing cosmic memes, feline energy, and interstellar vibes to crypto!",
+      "website": "https://www.marscatpump.site",
+      "x": "https://x.com/MarsCat_pump",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/7h3jtpnef7qt36yz68ebrs1pg5pqbfj9xmffbnfqpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-25"
+    },
+    {
       "name": "Memedatabase",
       "status": "RUMOR",
       "chain": "solana",
@@ -4254,6 +4305,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x740ad50fac84db5c1cf50b19eb808aee1b643bee",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-25"
+    },
+    {
+      "name": "poolsperps.trade",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-25",
+      "confidence": 73,
+      "description": "Perps on every coin launched on @TradePools. Long or short with leverage, 24/7, settled in ETH.",
+      "website": "https://poolsperps.trade",
+      "x": "https://x.com/poolsperps",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x7aff39c9deceead9e3eb6bdf2ab9737a292f0c2b",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
