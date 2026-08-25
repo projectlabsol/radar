@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T11:44:55Z",
+  "updatedAt": "2026-08-25T13:11:58Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -1722,6 +1722,23 @@
       "lastConfirmed": "2026-08-25"
     },
     {
+      "name": "Pork",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-25",
+      "confidence": 73,
+      "description": "AI launchpad on Robinhood Chain.",
+      "website": "https://www.pork.works/",
+      "x": "https://x.com/porkdotworks",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x2e684066d6f9a0ff9082a19a964eeb78bc348155",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-25"
+    },
+    {
       "name": "prsm.fun",
       "status": "LIVE",
       "chain": "solana",
@@ -1954,6 +1971,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/3sdw6gfxana1xzbvazzkuiwwdbixtpgtxii7rhy1pump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-25"
+    },
+    {
+      "name": "stockminers.xyz",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-25",
+      "confidence": 73,
+      "description": "Mining stocks, not blocks.",
+      "website": "https://stockminers.xyz/",
+      "x": "https://x.com/StockMinersRH",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x6547911e5b8f3cfa9e6bca37ddde3009e83faa2d",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -4056,6 +4090,23 @@
       "lastConfirmed": "2026-08-25"
     },
     {
+      "name": "Pork",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-25",
+      "confidence": 73,
+      "description": "AI launchpad on Robinhood Chain.",
+      "website": "https://www.pork.works/",
+      "x": "https://x.com/porkdotworks",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x2e684066d6f9a0ff9082a19a964eeb78bc348155",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-25"
+    },
+    {
       "name": "prsm.fun",
       "status": "LIVE",
       "chain": "solana",
@@ -4288,6 +4339,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/3sdw6gfxana1xzbvazzkuiwwdbixtpgtxii7rhy1pump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-25"
+    },
+    {
+      "name": "stockminers.xyz",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-25",
+      "confidence": 73,
+      "description": "Mining stocks, not blocks.",
+      "website": "https://stockminers.xyz/",
+      "x": "https://x.com/StockMinersRH",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x6547911e5b8f3cfa9e6bca37ddde3009e83faa2d",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
