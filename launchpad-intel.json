@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T21:07:35Z",
+  "updatedAt": "2026-08-30T23:30:45Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -940,6 +940,23 @@
       "lastConfirmed": "2026-08-30"
     },
     {
+      "name": "buwa.gg",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-30",
+      "confidence": 73,
+      "description": "Buwa gives me a sense of detachment, a kind of loneliness. The kind of loneliness where it's only ever been the bull inside, pretending to be okay. Buwa longs for a pump that never comes, for irrational conviction. Buwa wants too much. We all love Buwa.",
+      "website": "https://buwa.gg/",
+      "x": "https://x.com/buwacoin",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x7d257fd34ae569655af1ad940e488c32bf0b4343",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-30"
+    },
+    {
       "name": "calloutpad.fun",
       "status": "LIVE",
       "chain": "solana",
@@ -1835,6 +1852,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0xb1e9b822b81bbbdab375f7f4d86e44fa04d12b07",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-30"
+    },
+    {
+      "name": "ponsfam.xyz",
+      "status": "LIVE",
+      "chain": "Robinhood Chain, Ethereum",
+      "firstSeen": "2026-08-30",
+      "confidence": 73,
+      "description": "$PFAM — the PonsFam token. Mint NFTs, stake for $PONS rewards, and a buyback-and-burn flywheel that runs itself — fully on-chain, fully permissionless, no admin keys.",
+      "website": "https://ponsfam.xyz/",
+      "x": "https://x.com/",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x04577ee9c8f933e599a3c9e4b11323bc9021f2eb",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -3614,6 +3648,23 @@
       "lastConfirmed": "2026-08-30"
     },
     {
+      "name": "buwa.gg",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-08-30",
+      "confidence": 73,
+      "description": "Buwa gives me a sense of detachment, a kind of loneliness. The kind of loneliness where it's only ever been the bull inside, pretending to be okay. Buwa longs for a pump that never comes, for irrational conviction. Buwa wants too much. We all love Buwa.",
+      "website": "https://buwa.gg/",
+      "x": "https://x.com/buwacoin",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x7d257fd34ae569655af1ad940e488c32bf0b4343",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-30"
+    },
+    {
       "name": "calloutpad.fun",
       "status": "LIVE",
       "chain": "solana",
@@ -4509,6 +4560,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0xb1e9b822b81bbbdab375f7f4d86e44fa04d12b07",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-08-30"
+    },
+    {
+      "name": "ponsfam.xyz",
+      "status": "LIVE",
+      "chain": "Robinhood Chain, Ethereum",
+      "firstSeen": "2026-08-30",
+      "confidence": 73,
+      "description": "$PFAM — the PonsFam token. Mint NFTs, stake for $PONS rewards, and a buyback-and-burn flywheel that runs itself — fully on-chain, fully permissionless, no admin keys.",
+      "website": "https://ponsfam.xyz/",
+      "x": "https://x.com/",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x04577ee9c8f933e599a3c9e4b11323bc9021f2eb",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
