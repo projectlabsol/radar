@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T21:47:41Z",
+  "updatedAt": "2026-09-02T00:15:31Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -17,7 +17,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DEX Screener + Website + DefiLlama",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "AgentRanking",
@@ -34,7 +34,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Umia",
@@ -51,7 +51,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Agen.space",
@@ -68,7 +68,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ansem.io",
@@ -85,7 +85,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Junoswap.trade Launchpad",
@@ -102,7 +102,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "RaiseHood",
@@ -119,7 +119,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "token.select",
@@ -136,7 +136,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "user.fun",
@@ -153,7 +153,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "ZNS Launchpad",
@@ -170,7 +170,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     }
   ],
   "watchlist": [
@@ -189,7 +189,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Elopros",
@@ -206,7 +206,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Tracsystems",
@@ -223,7 +223,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Gibiswap",
@@ -240,7 +240,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Psa",
@@ -257,7 +257,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "qan.xyz",
@@ -274,7 +274,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Shippingmvps",
@@ -291,7 +291,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Launchmynft",
@@ -308,7 +308,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Arrowapp",
@@ -325,7 +325,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Artefracts",
@@ -342,7 +342,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "bluonbase.fun",
@@ -359,7 +359,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "cybergnosis.trade",
@@ -376,7 +376,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "elgatotoken.fun",
@@ -393,7 +393,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Federalreservecoin",
@@ -410,7 +410,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "heliustaking.app",
@@ -427,7 +427,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Infinitebackrooms",
@@ -444,7 +444,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Jubako",
@@ -461,7 +461,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "marketshares.fun",
@@ -478,7 +478,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "mikiusdudassius.xyz",
@@ -495,7 +495,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "ophion.trade",
@@ -512,7 +512,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Pons L3",
@@ -529,7 +529,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Smokinfrog",
@@ -546,7 +546,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "uselongshot.xyz",
@@ -563,7 +563,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "xonboard.xyz",
@@ -580,7 +580,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "yetitoken.fun",
@@ -597,7 +597,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "acmecorporation.xyz",
@@ -614,7 +614,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "airlocks.xyz",
@@ -631,7 +631,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Hodl",
@@ -648,7 +648,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "hypeit.fun",
@@ -665,7 +665,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "onigiripools.fun",
@@ -682,7 +682,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "radiosharing.fun",
@@ -699,7 +699,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Rh4Cpu",
@@ -716,7 +716,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Archliquid",
@@ -733,7 +733,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Lichen",
@@ -750,7 +750,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Lightchain",
@@ -767,7 +767,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Anyperps",
@@ -784,7 +784,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Apuonrobinhood",
@@ -801,7 +801,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Atmonbase",
@@ -818,7 +818,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "basestreet.fun",
@@ -835,7 +835,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Battletoadz",
@@ -852,7 +852,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "billionairecat.xyz",
@@ -869,7 +869,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Bitcoinfoudation",
@@ -886,7 +886,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Bogcoin",
@@ -903,7 +903,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "bootstrapped.fun",
@@ -920,7 +920,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "bstockers.fun",
@@ -937,7 +937,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "bul.fun",
@@ -954,7 +954,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Bull Wallstreet",
@@ -971,7 +971,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Bullishcat",
@@ -988,7 +988,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "buwa.gg",
@@ -1005,7 +1005,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "calloutpad.fun",
@@ -1022,7 +1022,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Cave",
@@ -1039,7 +1039,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "centralbank.fun",
@@ -1056,7 +1056,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Coinmarketcap",
@@ -1073,7 +1073,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "commodify.app",
@@ -1090,7 +1090,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Croakbullfrog",
@@ -1107,7 +1107,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Degsonsilver",
@@ -1124,7 +1124,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Deploymines",
@@ -1141,7 +1141,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "equifold.xyz",
@@ -1158,7 +1158,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "everpool.app",
@@ -1175,7 +1175,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Exponentialrh",
@@ -1192,7 +1192,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Eyes",
@@ -1209,7 +1209,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "fairgit.fun",
@@ -1226,7 +1226,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "fefe-hood.fun",
@@ -1243,7 +1243,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Finchcrew",
@@ -1260,7 +1260,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Flap",
@@ -1277,7 +1277,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Fomopad",
@@ -1294,7 +1294,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Forgood",
@@ -1311,7 +1311,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Froth",
@@ -1328,7 +1328,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ghouse",
@@ -1345,7 +1345,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Goblinstonk",
@@ -1362,7 +1362,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "gokartrace.xyz",
@@ -1379,7 +1379,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "gramp.fun",
@@ -1396,7 +1396,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "h00ked.fun",
@@ -1413,7 +1413,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Heed",
@@ -1430,7 +1430,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Higher",
@@ -1447,7 +1447,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "honeypad.app",
@@ -1464,7 +1464,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Hookforge",
@@ -1481,7 +1481,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "hookp.xyz",
@@ -1498,7 +1498,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "hornet.fun",
@@ -1515,7 +1515,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ilonged",
@@ -1532,7 +1532,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "kolmarket.xyz",
@@ -1549,7 +1549,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Launch",
@@ -1566,7 +1566,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "launchipo.fun",
@@ -1583,7 +1583,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "letscash.fun",
@@ -1600,7 +1600,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "likly.xyz",
@@ -1617,7 +1617,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "liquidify.fun",
@@ -1634,7 +1634,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "liquiditypond.fun",
@@ -1651,7 +1651,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "liquidpools.fun",
@@ -1668,7 +1668,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Lo0P",
@@ -1685,7 +1685,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "lolcombinator.fun",
@@ -1702,7 +1702,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Marscatpump",
@@ -1719,7 +1719,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Memedatabase",
@@ -1736,7 +1736,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Mememan",
@@ -1753,7 +1753,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "memeow.fun",
@@ -1770,7 +1770,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Memesly",
@@ -1787,7 +1787,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "mooneth.fun",
@@ -1804,7 +1804,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Moonpad",
@@ -1821,7 +1821,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Mynt",
@@ -1838,7 +1838,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Odinpad",
@@ -1855,7 +1855,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "odys.fun",
@@ -1872,7 +1872,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Otcdesks",
@@ -1889,7 +1889,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "owl1.fun",
@@ -1906,7 +1906,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Padcore",
@@ -1923,7 +1923,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Pepeinhood",
@@ -1940,7 +1940,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "perpme.fun",
@@ -1957,7 +1957,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Podsfamily",
@@ -1974,7 +1974,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ponsbot",
@@ -1991,7 +1991,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "ponsfam.xyz",
@@ -2008,7 +2008,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ponsfees",
@@ -2025,7 +2025,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ponsion",
@@ -2042,7 +2042,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ponsliquid",
@@ -2059,7 +2059,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ponsvault",
@@ -2076,7 +2076,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ponszi",
@@ -2093,7 +2093,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "poolsperps.trade",
@@ -2110,7 +2110,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Poolsstock",
@@ -2127,7 +2127,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "poolsv2.fun",
@@ -2144,7 +2144,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Pork",
@@ -2161,7 +2161,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "prsm.fun",
@@ -2178,7 +2178,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Pumpit",
@@ -2195,7 +2195,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Pumpnuts",
@@ -2212,7 +2212,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "quokkameme.xyz",
@@ -2229,7 +2229,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "rew.fun",
@@ -2246,7 +2246,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "robacha.fun",
@@ -2263,7 +2263,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "robidrop.xyz",
@@ -2280,7 +2280,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Robininfinity",
@@ -2297,7 +2297,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "robinpad.app",
@@ -2314,7 +2314,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "robthedog.xyz",
@@ -2331,7 +2331,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Rubhub",
@@ -2348,7 +2348,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "S500",
@@ -2365,7 +2365,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "sat0shi.fun",
@@ -2382,7 +2382,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Shards",
@@ -2399,7 +2399,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "sigmahound.xyz",
@@ -2416,7 +2416,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "sprk.gg",
@@ -2433,7 +2433,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "stockminers.xyz",
@@ -2450,7 +2450,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Stocky",
@@ -2467,7 +2467,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "stonky.xyz",
@@ -2484,7 +2484,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Striker",
@@ -2501,7 +2501,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Thebasket",
@@ -2518,7 +2518,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Thefloor",
@@ -2535,7 +2535,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "thememechain.fun",
@@ -2552,7 +2552,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Thestonks",
@@ -2569,7 +2569,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "tradework.fun",
@@ -2586,7 +2586,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Trydroplet",
@@ -2603,7 +2603,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "ubi-sol.xyz",
@@ -2620,7 +2620,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Unicreators",
@@ -2637,7 +2637,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Upcatpump",
@@ -2654,7 +2654,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Usebind",
@@ -2671,7 +2671,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Usetwin",
@@ -2688,7 +2688,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Verbo",
@@ -2705,7 +2705,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Vowfi",
@@ -2722,7 +2722,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "wankopad.fun",
@@ -2739,7 +2739,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Wikipedia",
@@ -2756,7 +2756,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "worldisflat.fun",
@@ -2773,7 +2773,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Wzec",
@@ -2790,7 +2790,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Xmoney",
@@ -2807,7 +2807,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "urufulabs.xyz",
@@ -2824,7 +2824,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "adexto.xyz",
@@ -2841,7 +2841,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "anewone.xyz",
@@ -2858,7 +2858,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "noctis.zone",
@@ -2875,7 +2875,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Tsukipad",
@@ -2892,7 +2892,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     }
   ],
   "known": [
@@ -2912,7 +2912,7 @@
       "detectedBy": "Known platform",
       "scannerVersion": 5,
       "pinned": true,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     }
   ],
   "launchpads": [
@@ -2931,7 +2931,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DEX Screener + Website + DefiLlama",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "AgentRanking",
@@ -2948,7 +2948,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Umia",
@@ -2965,7 +2965,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Agen.space",
@@ -2982,7 +2982,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ansem.io",
@@ -2999,7 +2999,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Junoswap.trade Launchpad",
@@ -3016,7 +3016,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "RaiseHood",
@@ -3033,7 +3033,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "token.select",
@@ -3050,7 +3050,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "user.fun",
@@ -3067,7 +3067,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "ZNS Launchpad",
@@ -3084,7 +3084,7 @@
       "radarTier": "VERIFIED",
       "detectedBy": "DefiLlama + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Icefam",
@@ -3101,7 +3101,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Elopros",
@@ -3118,7 +3118,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Tracsystems",
@@ -3135,7 +3135,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Gibiswap",
@@ -3152,7 +3152,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Psa",
@@ -3169,7 +3169,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "qan.xyz",
@@ -3186,7 +3186,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Shippingmvps",
@@ -3203,7 +3203,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Launchmynft",
@@ -3220,7 +3220,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Arrowapp",
@@ -3237,7 +3237,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Artefracts",
@@ -3254,7 +3254,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "bluonbase.fun",
@@ -3271,7 +3271,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "cybergnosis.trade",
@@ -3288,7 +3288,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "elgatotoken.fun",
@@ -3305,7 +3305,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Federalreservecoin",
@@ -3322,7 +3322,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "heliustaking.app",
@@ -3339,7 +3339,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Infinitebackrooms",
@@ -3356,7 +3356,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Jubako",
@@ -3373,7 +3373,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "marketshares.fun",
@@ -3390,7 +3390,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "mikiusdudassius.xyz",
@@ -3407,7 +3407,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "ophion.trade",
@@ -3424,7 +3424,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Pons L3",
@@ -3441,7 +3441,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Smokinfrog",
@@ -3458,7 +3458,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "uselongshot.xyz",
@@ -3475,7 +3475,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "xonboard.xyz",
@@ -3492,7 +3492,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "yetitoken.fun",
@@ -3509,7 +3509,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "acmecorporation.xyz",
@@ -3526,7 +3526,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "airlocks.xyz",
@@ -3543,7 +3543,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Hodl",
@@ -3560,7 +3560,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "hypeit.fun",
@@ -3577,7 +3577,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "onigiripools.fun",
@@ -3594,7 +3594,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "radiosharing.fun",
@@ -3611,7 +3611,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Rh4Cpu",
@@ -3628,7 +3628,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Archliquid",
@@ -3645,7 +3645,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Lichen",
@@ -3662,7 +3662,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Lightchain",
@@ -3679,7 +3679,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Anyperps",
@@ -3696,7 +3696,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Apuonrobinhood",
@@ -3713,7 +3713,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Atmonbase",
@@ -3730,7 +3730,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "basestreet.fun",
@@ -3747,7 +3747,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Battletoadz",
@@ -3764,7 +3764,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "billionairecat.xyz",
@@ -3781,7 +3781,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Bitcoinfoudation",
@@ -3798,7 +3798,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Bogcoin",
@@ -3815,7 +3815,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "bootstrapped.fun",
@@ -3832,7 +3832,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "bstockers.fun",
@@ -3849,7 +3849,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "bul.fun",
@@ -3866,7 +3866,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Bull Wallstreet",
@@ -3883,7 +3883,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Bullishcat",
@@ -3900,7 +3900,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "buwa.gg",
@@ -3917,7 +3917,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "calloutpad.fun",
@@ -3934,7 +3934,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Cave",
@@ -3951,7 +3951,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "centralbank.fun",
@@ -3968,7 +3968,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Coinmarketcap",
@@ -3985,7 +3985,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "commodify.app",
@@ -4002,7 +4002,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Croakbullfrog",
@@ -4019,7 +4019,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Degsonsilver",
@@ -4036,7 +4036,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Deploymines",
@@ -4053,7 +4053,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "equifold.xyz",
@@ -4070,7 +4070,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "everpool.app",
@@ -4087,7 +4087,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Exponentialrh",
@@ -4104,7 +4104,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Eyes",
@@ -4121,7 +4121,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "fairgit.fun",
@@ -4138,7 +4138,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "fefe-hood.fun",
@@ -4155,7 +4155,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Finchcrew",
@@ -4172,7 +4172,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Flap",
@@ -4189,7 +4189,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Fomopad",
@@ -4206,7 +4206,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Forgood",
@@ -4223,7 +4223,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Froth",
@@ -4240,7 +4240,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ghouse",
@@ -4257,7 +4257,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Goblinstonk",
@@ -4274,7 +4274,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "gokartrace.xyz",
@@ -4291,7 +4291,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "gramp.fun",
@@ -4308,7 +4308,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "h00ked.fun",
@@ -4325,7 +4325,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Heed",
@@ -4342,7 +4342,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Higher",
@@ -4359,7 +4359,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "honeypad.app",
@@ -4376,7 +4376,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Hookforge",
@@ -4393,7 +4393,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "hookp.xyz",
@@ -4410,7 +4410,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "hornet.fun",
@@ -4427,7 +4427,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ilonged",
@@ -4444,7 +4444,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "kolmarket.xyz",
@@ -4461,7 +4461,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Launch",
@@ -4478,7 +4478,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "launchipo.fun",
@@ -4495,7 +4495,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "letscash.fun",
@@ -4512,7 +4512,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "likly.xyz",
@@ -4529,7 +4529,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "liquidify.fun",
@@ -4546,7 +4546,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "liquiditypond.fun",
@@ -4563,7 +4563,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "liquidpools.fun",
@@ -4580,7 +4580,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Lo0P",
@@ -4597,7 +4597,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "lolcombinator.fun",
@@ -4614,7 +4614,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Marscatpump",
@@ -4631,7 +4631,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Memedatabase",
@@ -4648,7 +4648,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Mememan",
@@ -4665,7 +4665,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "memeow.fun",
@@ -4682,7 +4682,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Memesly",
@@ -4699,7 +4699,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "mooneth.fun",
@@ -4716,7 +4716,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Moonpad",
@@ -4733,7 +4733,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Mynt",
@@ -4750,7 +4750,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Odinpad",
@@ -4767,7 +4767,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "odys.fun",
@@ -4784,7 +4784,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Otcdesks",
@@ -4801,7 +4801,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "owl1.fun",
@@ -4818,7 +4818,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Padcore",
@@ -4835,7 +4835,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Pepeinhood",
@@ -4852,7 +4852,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "perpme.fun",
@@ -4869,7 +4869,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Podsfamily",
@@ -4886,7 +4886,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ponsbot",
@@ -4903,7 +4903,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "ponsfam.xyz",
@@ -4920,7 +4920,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ponsfees",
@@ -4937,7 +4937,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ponsion",
@@ -4954,7 +4954,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ponsliquid",
@@ -4971,7 +4971,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ponsvault",
@@ -4988,7 +4988,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Ponszi",
@@ -5005,7 +5005,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "poolsperps.trade",
@@ -5022,7 +5022,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Poolsstock",
@@ -5039,7 +5039,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "poolsv2.fun",
@@ -5056,7 +5056,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Pork",
@@ -5073,7 +5073,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "prsm.fun",
@@ -5090,7 +5090,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Pumpit",
@@ -5107,7 +5107,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Pumpnuts",
@@ -5124,7 +5124,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "quokkameme.xyz",
@@ -5141,7 +5141,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "rew.fun",
@@ -5158,7 +5158,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "robacha.fun",
@@ -5175,7 +5175,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "robidrop.xyz",
@@ -5192,7 +5192,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Robininfinity",
@@ -5209,7 +5209,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "robinpad.app",
@@ -5226,7 +5226,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "robthedog.xyz",
@@ -5243,7 +5243,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Rubhub",
@@ -5260,7 +5260,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "S500",
@@ -5277,7 +5277,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "sat0shi.fun",
@@ -5294,7 +5294,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Shards",
@@ -5311,7 +5311,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "sigmahound.xyz",
@@ -5328,7 +5328,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "sprk.gg",
@@ -5345,7 +5345,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "stockminers.xyz",
@@ -5362,7 +5362,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Stocky",
@@ -5379,7 +5379,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "stonky.xyz",
@@ -5396,7 +5396,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Striker",
@@ -5413,7 +5413,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Thebasket",
@@ -5430,7 +5430,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Thefloor",
@@ -5447,7 +5447,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "thememechain.fun",
@@ -5464,7 +5464,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Thestonks",
@@ -5481,7 +5481,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "tradework.fun",
@@ -5498,7 +5498,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Trydroplet",
@@ -5515,7 +5515,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "ubi-sol.xyz",
@@ -5532,7 +5532,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Unicreators",
@@ -5549,7 +5549,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Upcatpump",
@@ -5566,7 +5566,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Usebind",
@@ -5583,7 +5583,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Usetwin",
@@ -5600,7 +5600,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Verbo",
@@ -5617,7 +5617,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Vowfi",
@@ -5634,7 +5634,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "wankopad.fun",
@@ -5651,7 +5651,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Wikipedia",
@@ -5668,7 +5668,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "worldisflat.fun",
@@ -5685,7 +5685,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Wzec",
@@ -5702,7 +5702,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Xmoney",
@@ -5719,7 +5719,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "urufulabs.xyz",
@@ -5736,7 +5736,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "adexto.xyz",
@@ -5753,7 +5753,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "anewone.xyz",
@@ -5770,7 +5770,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "noctis.zone",
@@ -5787,7 +5787,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Tsukipad",
@@ -5804,7 +5804,7 @@
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     },
     {
       "name": "Pools.trade",
@@ -5822,7 +5822,7 @@
       "detectedBy": "Known platform",
       "scannerVersion": 5,
       "pinned": true,
-      "lastConfirmed": "2026-09-01"
+      "lastConfirmed": "2026-09-02"
     }
   ]
 }
