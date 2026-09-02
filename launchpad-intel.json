@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T04:42:54Z",
+  "updatedAt": "2026-09-02T09:38:47Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -1059,6 +1059,23 @@
       "lastConfirmed": "2026-09-02"
     },
     {
+      "name": "Chromedino",
+      "status": "LIVE",
+      "chain": "Robinhood Chain, Ethereum, Arbitrum",
+      "firstSeen": "2026-09-02",
+      "confidence": 73,
+      "description": "Search, go Incognito, scan QR codes, or play Dino—Chrome widgets make iPhone & iPad browsing dino-mite!",
+      "website": "https://www.chromedino.site",
+      "x": "https://x.com/chromedinox",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xdd03bf5b62ce42ec7edbdfe53a43d5bf24983f55",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-02"
+    },
+    {
       "name": "Coinmarketcap",
       "status": "RUMOR",
       "chain": "Solana, Ethereum, Polygon",
@@ -2028,6 +2045,23 @@
       "lastConfirmed": "2026-09-02"
     },
     {
+      "name": "Ponshare",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-09-02",
+      "confidence": 73,
+      "description": "Ponshare new on-chain candidate.",
+      "website": "https://ponshare.com/",
+      "x": "https://x.com/ponsharecom",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xd0b0307c2160d1196bc31f9f55b48c123b0221a1",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-02"
+    },
+    {
       "name": "Ponsion",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -2549,6 +2583,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/2aaeftvjyh6ekkb9h2a9vzspjawfn8bk2ehm1x6zpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-02"
+    },
+    {
+      "name": "theretail.xyz",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain, Ethereum",
+      "firstSeen": "2026-09-02",
+      "confidence": 73,
+      "description": "Every wallet that ever traded on Robinhood Chain gets $RETAIL airdropped. Powering the retail.",
+      "website": "https://theretail.xyz",
+      "x": "https://x.com/retailevm",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xe766b582fb90511c923bb28f1c9574170bcb2ac4",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -3971,6 +4022,23 @@
       "lastConfirmed": "2026-09-02"
     },
     {
+      "name": "Chromedino",
+      "status": "LIVE",
+      "chain": "Robinhood Chain, Ethereum, Arbitrum",
+      "firstSeen": "2026-09-02",
+      "confidence": 73,
+      "description": "Search, go Incognito, scan QR codes, or play Dino—Chrome widgets make iPhone & iPad browsing dino-mite!",
+      "website": "https://www.chromedino.site",
+      "x": "https://x.com/chromedinox",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xdd03bf5b62ce42ec7edbdfe53a43d5bf24983f55",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-02"
+    },
+    {
       "name": "Coinmarketcap",
       "status": "RUMOR",
       "chain": "Solana, Ethereum, Polygon",
@@ -4940,6 +5008,23 @@
       "lastConfirmed": "2026-09-02"
     },
     {
+      "name": "Ponshare",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-09-02",
+      "confidence": 73,
+      "description": "Ponshare new on-chain candidate.",
+      "website": "https://ponshare.com/",
+      "x": "https://x.com/ponsharecom",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xd0b0307c2160d1196bc31f9f55b48c123b0221a1",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-02"
+    },
+    {
       "name": "Ponsion",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -5461,6 +5546,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/2aaeftvjyh6ekkb9h2a9vzspjawfn8bk2ehm1x6zpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-02"
+    },
+    {
+      "name": "theretail.xyz",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain, Ethereum",
+      "firstSeen": "2026-09-02",
+      "confidence": 73,
+      "description": "Every wallet that ever traded on Robinhood Chain gets $RETAIL airdropped. Powering the retail.",
+      "website": "https://theretail.xyz",
+      "x": "https://x.com/retailevm",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xe766b582fb90511c923bb28f1c9574170bcb2ac4",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
