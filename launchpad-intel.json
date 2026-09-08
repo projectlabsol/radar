@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T18:41:34Z",
+  "updatedAt": "2026-09-08T21:52:20Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -902,6 +902,23 @@
       "source": "https://github.com/lightchain-protocol/lightchain-launchpad",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-08"
+    },
+    {
+      "name": "402Node",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-09-08",
+      "confidence": 73,
+      "description": "Token utility for the agent economy. Building on Robinhood with x402.",
+      "website": "https://402node.tech/",
+      "x": "https://x.com/n402node",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xe60022be6aed21a5452d6002895e43d6cc1b4c99",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
       "lastConfirmed": "2026-09-08"
     },
@@ -4392,6 +4409,23 @@
       "source": "https://github.com/lightchain-protocol/lightchain-launchpad",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-08"
+    },
+    {
+      "name": "402Node",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-09-08",
+      "confidence": 73,
+      "description": "Token utility for the agent economy. Building on Robinhood with x402.",
+      "website": "https://402node.tech/",
+      "x": "https://x.com/n402node",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xe60022be6aed21a5452d6002895e43d6cc1b4c99",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
       "lastConfirmed": "2026-09-08"
     },
