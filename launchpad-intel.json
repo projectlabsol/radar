@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T14:27:26Z",
+  "updatedAt": "2026-09-10T18:29:46Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -2470,6 +2470,23 @@
       "lastConfirmed": "2026-09-10"
     },
     {
+      "name": "perpstock.fun",
+      "status": "LIVE",
+      "chain": "Robinhood Chain, Ethereum, Tron",
+      "firstSeen": "2026-09-10",
+      "confidence": 73,
+      "description": "Launch tokens backed by perps, built on Pons.",
+      "website": "https://perpstock.fun/",
+      "x": "https://x.com/perpstockfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xa21e5a3202ef67a99b0dfe7c5b7b27a7e8795e1a",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-10"
+    },
+    {
       "name": "Podsfamily",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -2821,6 +2838,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/2kpqs7xxbd57jjvm48ra1vxpjc7sqtwyrp4xfrtk57in",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-10"
+    },
+    {
+      "name": "Purps",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-09-10",
+      "confidence": 73,
+      "description": "Hold $DRANK, earn $PURPS: $DRANK is the first memecoin to be paired with $PURPS. 3% tax, fees go into a 40x long BTC, 10x long HYPE, with profits taken to buy $PURPS & airdrop them to $DRANK holders",
+      "website": "https://purps.lol/c/5GU3VELVxiQVu83AtMvHmQyWPVkhCM721DLPiLnVBoKc",
+      "x": "https://x.com/buypurps",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/5gu3velvxiqvu83atmvhmqywpvkhcm721dlpilnvbokc",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -6147,6 +6181,23 @@
       "lastConfirmed": "2026-09-10"
     },
     {
+      "name": "perpstock.fun",
+      "status": "LIVE",
+      "chain": "Robinhood Chain, Ethereum, Tron",
+      "firstSeen": "2026-09-10",
+      "confidence": 73,
+      "description": "Launch tokens backed by perps, built on Pons.",
+      "website": "https://perpstock.fun/",
+      "x": "https://x.com/perpstockfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xa21e5a3202ef67a99b0dfe7c5b7b27a7e8795e1a",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-10"
+    },
+    {
       "name": "Podsfamily",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -6498,6 +6549,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/2kpqs7xxbd57jjvm48ra1vxpjc7sqtwyrp4xfrtk57in",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-10"
+    },
+    {
+      "name": "Purps",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-09-10",
+      "confidence": 73,
+      "description": "Hold $DRANK, earn $PURPS: $DRANK is the first memecoin to be paired with $PURPS. 3% tax, fees go into a 40x long BTC, 10x long HYPE, with profits taken to buy $PURPS & airdrop them to $DRANK holders",
+      "website": "https://purps.lol/c/5GU3VELVxiQVu83AtMvHmQyWPVkhCM721DLPiLnVBoKc",
+      "x": "https://x.com/buypurps",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/5gu3velvxiqvu83atmvhmqywpvkhcm721dlpilnvbokc",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
