@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T06:11:45Z",
+  "updatedAt": "2026-09-13T11:54:40Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -2776,6 +2776,23 @@
       "lastConfirmed": "2026-09-13"
     },
     {
+      "name": "Pearit",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-09-13",
+      "confidence": 73,
+      "description": "Pearit new on-chain candidate.",
+      "website": "https://pearit.now/",
+      "x": "https://x.com/Pearitnow",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/dk8mihuztz1zspscm9pjnnmjtfdl5dy9jaatkwpspump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-13"
+    },
+    {
       "name": "Pepeinhood",
       "status": "RUMOR",
       "chain": "Robinhood Chain",
@@ -4028,6 +4045,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/6yzj92lfxhvq3qpxm7bqspponr5bgp9wsrizv7xwpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-13"
+    },
+    {
+      "name": "Xlaunch",
+      "status": "LIVE",
+      "chain": "Robinhood Chain, Ethereum",
+      "firstSeen": "2026-09-13",
+      "confidence": 73,
+      "description": "Launch a market for any X handle.",
+      "website": "https://xlaunch.dev/",
+      "x": "https://x.com/XLAUNCHDEV",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x59bf1b57e582d0705857f939e6fecd03934ce15d",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -6929,6 +6963,23 @@
       "lastConfirmed": "2026-09-13"
     },
     {
+      "name": "Pearit",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-09-13",
+      "confidence": 73,
+      "description": "Pearit new on-chain candidate.",
+      "website": "https://pearit.now/",
+      "x": "https://x.com/Pearitnow",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/dk8mihuztz1zspscm9pjnnmjtfdl5dy9jaatkwpspump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-13"
+    },
+    {
       "name": "Pepeinhood",
       "status": "RUMOR",
       "chain": "Robinhood Chain",
@@ -8181,6 +8232,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/6yzj92lfxhvq3qpxm7bqspponr5bgp9wsrizv7xwpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-13"
+    },
+    {
+      "name": "Xlaunch",
+      "status": "LIVE",
+      "chain": "Robinhood Chain, Ethereum",
+      "firstSeen": "2026-09-13",
+      "confidence": 73,
+      "description": "Launch a market for any X handle.",
+      "website": "https://xlaunch.dev/",
+      "x": "https://x.com/XLAUNCHDEV",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x59bf1b57e582d0705857f939e6fecd03934ce15d",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
