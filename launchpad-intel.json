@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T01:26:38Z",
+  "updatedAt": "2026-09-17T07:41:23Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -1773,23 +1773,6 @@
       "lastConfirmed": "2026-09-17"
     },
     {
-      "name": "Cave",
-      "status": "RUMOR",
-      "chain": "Robinhood Chain, Solana, BNB Chain",
-      "firstSeen": "2026-08-14",
-      "confidence": 73,
-      "description": "CaveWatch provides smart money trading intelligence. Track & Copy Trade Elite wallets. Hold at least 100K $CW for revenue share daily stock rewards. Mine $ORIX for passive ETH earnings + hit Motherlode for jackpots. Solana + Robinhood LIVE.",
-      "website": "https://cave.watch",
-      "x": "https://x.com/CaveWatch",
-      "discord": "",
-      "github": "",
-      "source": "https://dexscreener.com/robinhood/0x76715de09dd31e7374309cb3dffb399a237a0102",
-      "radarTier": "WATCHLIST",
-      "detectedBy": "DEX Screener + Website",
-      "scannerVersion": 5,
-      "lastConfirmed": "2026-09-17"
-    },
-    {
       "name": "centralbank.fun",
       "status": "RUMOR",
       "chain": "Solana",
@@ -2345,23 +2328,6 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x393bba0cfdb32ac24a84c33645b77784bff1e4b8",
-      "radarTier": "WATCHLIST",
-      "detectedBy": "DEX Screener + Website",
-      "scannerVersion": 5,
-      "lastConfirmed": "2026-09-17"
-    },
-    {
-      "name": "Froth",
-      "status": "RUMOR",
-      "chain": "Robinhood Chain",
-      "firstSeen": "2026-08-29",
-      "confidence": 73,
-      "description": "The blue ball of the Froth launchpad.",
-      "website": "https://froth.meme/board",
-      "x": "https://x.com/froth_meme",
-      "discord": "",
-      "github": "",
-      "source": "https://dexscreener.com/base/0x0caaf1a19b739d9e85fc7e6a05ec522cc1670eca",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -6572,23 +6538,6 @@
       "lastConfirmed": "2026-09-17"
     },
     {
-      "name": "Cave",
-      "status": "RUMOR",
-      "chain": "Robinhood Chain, Solana, BNB Chain",
-      "firstSeen": "2026-08-14",
-      "confidence": 73,
-      "description": "CaveWatch provides smart money trading intelligence. Track & Copy Trade Elite wallets. Hold at least 100K $CW for revenue share daily stock rewards. Mine $ORIX for passive ETH earnings + hit Motherlode for jackpots. Solana + Robinhood LIVE.",
-      "website": "https://cave.watch",
-      "x": "https://x.com/CaveWatch",
-      "discord": "",
-      "github": "",
-      "source": "https://dexscreener.com/robinhood/0x76715de09dd31e7374309cb3dffb399a237a0102",
-      "radarTier": "WATCHLIST",
-      "detectedBy": "DEX Screener + Website",
-      "scannerVersion": 5,
-      "lastConfirmed": "2026-09-17"
-    },
-    {
       "name": "centralbank.fun",
       "status": "RUMOR",
       "chain": "Solana",
@@ -7144,23 +7093,6 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x393bba0cfdb32ac24a84c33645b77784bff1e4b8",
-      "radarTier": "WATCHLIST",
-      "detectedBy": "DEX Screener + Website",
-      "scannerVersion": 5,
-      "lastConfirmed": "2026-09-17"
-    },
-    {
-      "name": "Froth",
-      "status": "RUMOR",
-      "chain": "Robinhood Chain",
-      "firstSeen": "2026-08-29",
-      "confidence": 73,
-      "description": "The blue ball of the Froth launchpad.",
-      "website": "https://froth.meme/board",
-      "x": "https://x.com/froth_meme",
-      "discord": "",
-      "github": "",
-      "source": "https://dexscreener.com/base/0x0caaf1a19b739d9e85fc7e6a05ec522cc1670eca",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
