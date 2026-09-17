@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T13:29:12Z",
+  "updatedAt": "2026-09-17T18:15:10Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -4170,6 +4170,23 @@
       "lastConfirmed": "2026-09-17"
     },
     {
+      "name": "stripemoney.xyz",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-09-17",
+      "confidence": 73,
+      "description": "Launch coins and direct fees to any creator, charity or company on Stripe. Pair any Pons token to a Stripe account to start sending them fiat.",
+      "website": "https://www.stripemoney.xyz/",
+      "x": "https://x.com/stripedotmoney",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x0026111925bee5e698555e5c77020c676e09f852",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-17"
+    },
+    {
       "name": "Surrogate",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -4708,6 +4725,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/4f8p2x9jsq1rtm3dszeqeyzgsmz5uyvndmiycfwtpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-17"
+    },
+    {
+      "name": "youtip.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-17",
+      "confidence": 73,
+      "description": "youtip.fun new on-chain candidate.",
+      "website": "https://www.youtip.fun/",
+      "x": "https://x.com/user/status/",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/hswzqawswfkgdbqukfvodxppdacvpoueukq7i7hdyout",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -8986,6 +9020,23 @@
       "lastConfirmed": "2026-09-17"
     },
     {
+      "name": "stripemoney.xyz",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-09-17",
+      "confidence": 73,
+      "description": "Launch coins and direct fees to any creator, charity or company on Stripe. Pair any Pons token to a Stripe account to start sending them fiat.",
+      "website": "https://www.stripemoney.xyz/",
+      "x": "https://x.com/stripedotmoney",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x0026111925bee5e698555e5c77020c676e09f852",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-17"
+    },
+    {
       "name": "Surrogate",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -9524,6 +9575,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/4f8p2x9jsq1rtm3dszeqeyzgsmz5uyvndmiycfwtpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-17"
+    },
+    {
+      "name": "youtip.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-17",
+      "confidence": 73,
+      "description": "youtip.fun new on-chain candidate.",
+      "website": "https://www.youtip.fun/",
+      "x": "https://x.com/user/status/",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/hswzqawswfkgdbqukfvodxppdacvpoueukq7i7hdyout",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
