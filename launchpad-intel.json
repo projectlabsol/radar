@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T18:15:10Z",
+  "updatedAt": "2026-09-17T21:27:23Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -241,6 +241,23 @@
       "lastConfirmed": "2026-09-17"
     },
     {
+      "name": "Synthra Launchpad",
+      "status": "NEW",
+      "chain": "",
+      "firstSeen": "2026-09-17",
+      "confidence": 93,
+      "description": "Synthra is the chain-abstracted trading layer: spot, liquidity and perpetual markets with CEX-like UX and on-chain settlement.",
+      "website": "https://app.synthra.org",
+      "x": "https://x.com/synthra_finance",
+      "discord": "",
+      "github": "",
+      "source": "https://defillama.com/protocol/synthra-launchpad",
+      "radarTier": "VERIFIED",
+      "detectedBy": "DefiLlama + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-17"
+    },
+    {
       "name": "token.select",
       "status": "NEW",
       "chain": "",
@@ -458,6 +475,23 @@
       "discord": "",
       "github": "https://github.com/gibiswap/",
       "source": "https://dexscreener.com/ethereum/0xb6cd7fee2daa8a2e7e4c0e194468af0f08be527d",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-17"
+    },
+    {
+      "name": "Lateprint",
+      "status": "TESTNET",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-09-17",
+      "confidence": 82,
+      "description": "Deposit once. Every trade after that executes from one shared vault, so nothing on-chain ties a position to you. Close it and the receipt publishes on your own timer. Withdrawals only ever return to the address that funded them. $PRINT",
+      "website": "https://lateprint.report",
+      "x": "https://x.com/lateprint",
+      "discord": "",
+      "github": "https://github.com/lateprint",
+      "source": "https://dexscreener.com/robinhood/0x381a48c372cdf7abc03991bc5821f1f9bd4feb8c",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -5093,6 +5127,23 @@
       "lastConfirmed": "2026-09-17"
     },
     {
+      "name": "Synthra Launchpad",
+      "status": "NEW",
+      "chain": "",
+      "firstSeen": "2026-09-17",
+      "confidence": 93,
+      "description": "Synthra is the chain-abstracted trading layer: spot, liquidity and perpetual markets with CEX-like UX and on-chain settlement.",
+      "website": "https://app.synthra.org",
+      "x": "https://x.com/synthra_finance",
+      "discord": "",
+      "github": "",
+      "source": "https://defillama.com/protocol/synthra-launchpad",
+      "radarTier": "VERIFIED",
+      "detectedBy": "DefiLlama + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-17"
+    },
+    {
       "name": "token.select",
       "status": "NEW",
       "chain": "",
@@ -5308,6 +5359,23 @@
       "discord": "",
       "github": "https://github.com/gibiswap/",
       "source": "https://dexscreener.com/ethereum/0xb6cd7fee2daa8a2e7e4c0e194468af0f08be527d",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-17"
+    },
+    {
+      "name": "Lateprint",
+      "status": "TESTNET",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-09-17",
+      "confidence": 82,
+      "description": "Deposit once. Every trade after that executes from one shared vault, so nothing on-chain ties a position to you. Close it and the receipt publishes on your own timer. Withdrawals only ever return to the address that funded them. $PRINT",
+      "website": "https://lateprint.report",
+      "x": "https://x.com/lateprint",
+      "discord": "",
+      "github": "https://github.com/lateprint",
+      "source": "https://dexscreener.com/robinhood/0x381a48c372cdf7abc03991bc5821f1f9bd4feb8c",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
