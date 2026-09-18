@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T19:37:26Z",
+  "updatedAt": "2026-09-18T22:34:55Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -2453,6 +2453,23 @@
       "lastConfirmed": "2026-09-18"
     },
     {
+      "name": "fonepad.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-18",
+      "confidence": 73,
+      "description": "fonepad.fun new on-chain candidate.",
+      "website": "https://fonepad.fun/",
+      "x": "https://x.com/launchonfone",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/ahovznjafjqchj2lfbdpyjy3zvkkefjdqlhzchhhpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-18"
+    },
+    {
       "name": "Forgood",
       "status": "RUMOR",
       "chain": "Robinhood Chain",
@@ -3337,6 +3354,23 @@
       "lastConfirmed": "2026-09-18"
     },
     {
+      "name": "onlytipspump.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-18",
+      "confidence": 73,
+      "description": "Donate to your favorite only fans creators using OnlyTip!",
+      "website": "https://onlytipspump.fun",
+      "x": "https://x.com/onlytipspump",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/4shxskp2uz4k8fqb9wth1fbrtk8fougsssjwfddfpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-18"
+    },
+    {
       "name": "Otcdesks",
       "status": "RUMOR",
       "chain": "solana",
@@ -3399,6 +3433,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x972d93a9c0567fea943ff233fb9d4293247bedcb",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-18"
+    },
+    {
+      "name": "Paylinkrh",
+      "status": "LIVE",
+      "chain": "Solana, Ethereum, Tron",
+      "firstSeen": "2026-09-18",
+      "confidence": 73,
+      "description": "Onchain fees. A real-world destination. Stripe Money collects creator fees in USDG and routes them to a website that accepts Stripe with payouts to its bank account, Stripe account, or USDC wallet. Collected → Sending → Delivered.",
+      "website": "https://www.paylinkrh.lol/",
+      "x": "https://x.com/PayLinkRH",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xa952adb07a6da2e196d04e6928eca3377340ce19",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -7507,6 +7558,23 @@
       "lastConfirmed": "2026-09-18"
     },
     {
+      "name": "fonepad.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-18",
+      "confidence": 73,
+      "description": "fonepad.fun new on-chain candidate.",
+      "website": "https://fonepad.fun/",
+      "x": "https://x.com/launchonfone",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/ahovznjafjqchj2lfbdpyjy3zvkkefjdqlhzchhhpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-18"
+    },
+    {
       "name": "Forgood",
       "status": "RUMOR",
       "chain": "Robinhood Chain",
@@ -8391,6 +8459,23 @@
       "lastConfirmed": "2026-09-18"
     },
     {
+      "name": "onlytipspump.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-18",
+      "confidence": 73,
+      "description": "Donate to your favorite only fans creators using OnlyTip!",
+      "website": "https://onlytipspump.fun",
+      "x": "https://x.com/onlytipspump",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/4shxskp2uz4k8fqb9wth1fbrtk8fougsssjwfddfpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-18"
+    },
+    {
       "name": "Otcdesks",
       "status": "RUMOR",
       "chain": "solana",
@@ -8453,6 +8538,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x972d93a9c0567fea943ff233fb9d4293247bedcb",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-18"
+    },
+    {
+      "name": "Paylinkrh",
+      "status": "LIVE",
+      "chain": "Solana, Ethereum, Tron",
+      "firstSeen": "2026-09-18",
+      "confidence": 73,
+      "description": "Onchain fees. A real-world destination. Stripe Money collects creator fees in USDG and routes them to a website that accepts Stripe with payouts to its bank account, Stripe account, or USDC wallet. Collected → Sending → Delivered.",
+      "website": "https://www.paylinkrh.lol/",
+      "x": "https://x.com/PayLinkRH",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xa952adb07a6da2e196d04e6928eca3377340ce19",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
