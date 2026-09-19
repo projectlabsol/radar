@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19T14:26:16Z",
+  "updatedAt": "2026-09-19T18:02:01Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -3473,6 +3473,23 @@
       "lastConfirmed": "2026-09-19"
     },
     {
+      "name": "pawpad.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-19",
+      "confidence": 73,
+      "description": "pawpad.fun new on-chain candidate.",
+      "website": "https://www.pawpad.fun/",
+      "x": "https://x.com/name",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/6wnz8r6fsdgv9kyqaswnqx7yh4nsznw2hguwugpyetvx",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-19"
+    },
+    {
       "name": "Paylinkrh",
       "status": "LIVE",
       "chain": "Solana, Ethereum, Tron",
@@ -4697,6 +4714,23 @@
       "lastConfirmed": "2026-09-19"
     },
     {
+      "name": "twitchpad.xyz",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-09-19",
+      "confidence": 73,
+      "description": "Direct token fees to Twitch streamers through live donations. Pair any pump fun token with a channel to start sending them fiat while they’re live",
+      "website": "https://www.twitchpad.xyz/",
+      "x": "https://x.com/TwitchPadxyz",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/9zjgp7dhrztgcw7vebbajtugmuqy5gnuyuakzop1pump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-19"
+    },
+    {
       "name": "twitchpay.fun",
       "status": "LIVE",
       "chain": "Solana",
@@ -4861,6 +4895,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/ewkn3lkbnavbz3ufmbtru6fwzshqcetci5yhr7duuzpy",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-19"
+    },
+    {
+      "name": "usetipped.app",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-09-19",
+      "confidence": 73,
+      "description": "usetipped.app new on-chain candidate.",
+      "website": "https://usetipped.app/",
+      "x": "https://x.com/trytipped",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/4buatxldvgzhjcespyyezwwq1ubmjhthjhwvt1h95dmw",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -8663,6 +8714,23 @@
       "lastConfirmed": "2026-09-19"
     },
     {
+      "name": "pawpad.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-19",
+      "confidence": 73,
+      "description": "pawpad.fun new on-chain candidate.",
+      "website": "https://www.pawpad.fun/",
+      "x": "https://x.com/name",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/6wnz8r6fsdgv9kyqaswnqx7yh4nsznw2hguwugpyetvx",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-19"
+    },
+    {
       "name": "Paylinkrh",
       "status": "LIVE",
       "chain": "Solana, Ethereum, Tron",
@@ -9887,6 +9955,23 @@
       "lastConfirmed": "2026-09-19"
     },
     {
+      "name": "twitchpad.xyz",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-09-19",
+      "confidence": 73,
+      "description": "Direct token fees to Twitch streamers through live donations. Pair any pump fun token with a channel to start sending them fiat while they’re live",
+      "website": "https://www.twitchpad.xyz/",
+      "x": "https://x.com/TwitchPadxyz",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/9zjgp7dhrztgcw7vebbajtugmuqy5gnuyuakzop1pump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-19"
+    },
+    {
       "name": "twitchpay.fun",
       "status": "LIVE",
       "chain": "Solana",
@@ -10051,6 +10136,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/ewkn3lkbnavbz3ufmbtru6fwzshqcetci5yhr7duuzpy",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-19"
+    },
+    {
+      "name": "usetipped.app",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-09-19",
+      "confidence": 73,
+      "description": "usetipped.app new on-chain candidate.",
+      "website": "https://usetipped.app/",
+      "x": "https://x.com/trytipped",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/4buatxldvgzhjcespyyezwwq1ubmjhthjhwvt1h95dmw",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
