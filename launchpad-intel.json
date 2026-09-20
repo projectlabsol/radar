@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T19:27:26Z",
+  "updatedAt": "2026-09-20T22:27:07Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -3541,6 +3541,23 @@
       "lastConfirmed": "2026-09-20"
     },
     {
+      "name": "onlypad.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-09-20",
+      "confidence": 73,
+      "description": "Route pumpfun creator fees to OnlyFans models - paid in USDC through Onlypad",
+      "website": "https://onlypad.fun/",
+      "x": "https://x.com/useonlypad",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/9kxrnjeaxnzem5f3bktceztfr3673xgwgmnrqddjpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-20"
+    },
+    {
       "name": "onlytipspump.fun",
       "status": "LIVE",
       "chain": "Solana",
@@ -4521,6 +4538,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0xd608804c64acc9cbaf1f4fb77a81c8c7dac3c24c",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-20"
+    },
+    {
+      "name": "Socialpad",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-09-20",
+      "confidence": 73,
+      "description": "Socialpad new on-chain candidate.",
+      "website": "https://socialpad.org/",
+      "x": "https://x.com/socialpaddotorg",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/3ik4e5v7vixy6ysgz7vcghhhj6dhygi9dcnbze25pump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -8969,6 +9003,23 @@
       "lastConfirmed": "2026-09-20"
     },
     {
+      "name": "onlypad.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-09-20",
+      "confidence": 73,
+      "description": "Route pumpfun creator fees to OnlyFans models - paid in USDC through Onlypad",
+      "website": "https://onlypad.fun/",
+      "x": "https://x.com/useonlypad",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/9kxrnjeaxnzem5f3bktceztfr3673xgwgmnrqddjpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-20"
+    },
+    {
       "name": "onlytipspump.fun",
       "status": "LIVE",
       "chain": "Solana",
@@ -9949,6 +10000,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0xd608804c64acc9cbaf1f4fb77a81c8c7dac3c24c",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-20"
+    },
+    {
+      "name": "Socialpad",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-09-20",
+      "confidence": 73,
+      "description": "Socialpad new on-chain candidate.",
+      "website": "https://socialpad.org/",
+      "x": "https://x.com/socialpaddotorg",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/3ik4e5v7vixy6ysgz7vcghhhj6dhygi9dcnbze25pump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
