@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T06:18:27Z",
+  "updatedAt": "2026-09-20T12:23:25Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -1008,6 +1008,23 @@
       "lastConfirmed": "2026-09-20"
     },
     {
+      "name": "nfs.fun",
+      "status": "ANNOUNCED",
+      "chain": "robinhood",
+      "firstSeen": "2026-09-20",
+      "confidence": 78,
+      "description": "Welcome to the first NFT Launchpad of it's kind - Non-Fungible Slop (NFS). Create and generate entire NFT Collections on Robinhood with just a prompt, then graduate them to the public.",
+      "website": "https://nfs.fun",
+      "x": "https://x.com/nfsfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xfa1ffcb2e4a54db8150eb79c9e6ed7d4ff5d9905",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-20"
+    },
+    {
       "name": "Openarc",
       "status": "COMING SOON",
       "chain": "arc",
@@ -1274,6 +1291,23 @@
       "discord": "",
       "github": "https://github.com/callpaid",
       "source": "https://dexscreener.com/robinhood/0x749c409e89bc627c532a629429a0d7f35813f525",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-20"
+    },
+    {
+      "name": "Fomo",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-09-20",
+      "confidence": 77,
+      "description": "Launch on pumpfun. Route creator fees to any FOMO username. Claim in one tap. Non-custodial.",
+      "website": "https://fomo.claims/",
+      "x": "https://x.com/claimFOMO",
+      "discord": "",
+      "github": "https://github.com/pump-fun/pump-public-docs/blob/main/docs/instructions/CREATOR_FEE_SHARING.md",
+      "source": "https://dexscreener.com/solana/d5wfpvcvdw3qw5yf8jqytymkpbqtw9ut9ty4k42lvx3w",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -6351,6 +6385,23 @@
       "lastConfirmed": "2026-09-20"
     },
     {
+      "name": "nfs.fun",
+      "status": "ANNOUNCED",
+      "chain": "robinhood",
+      "firstSeen": "2026-09-20",
+      "confidence": 78,
+      "description": "Welcome to the first NFT Launchpad of it's kind - Non-Fungible Slop (NFS). Create and generate entire NFT Collections on Robinhood with just a prompt, then graduate them to the public.",
+      "website": "https://nfs.fun",
+      "x": "https://x.com/nfsfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xfa1ffcb2e4a54db8150eb79c9e6ed7d4ff5d9905",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-20"
+    },
+    {
       "name": "Openarc",
       "status": "COMING SOON",
       "chain": "arc",
@@ -6617,6 +6668,23 @@
       "discord": "",
       "github": "https://github.com/callpaid",
       "source": "https://dexscreener.com/robinhood/0x749c409e89bc627c532a629429a0d7f35813f525",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-20"
+    },
+    {
+      "name": "Fomo",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-09-20",
+      "confidence": 77,
+      "description": "Launch on pumpfun. Route creator fees to any FOMO username. Claim in one tap. Non-custodial.",
+      "website": "https://fomo.claims/",
+      "x": "https://x.com/claimFOMO",
+      "discord": "",
+      "github": "https://github.com/pump-fun/pump-public-docs/blob/main/docs/instructions/CREATOR_FEE_SHARING.md",
+      "source": "https://dexscreener.com/solana/d5wfpvcvdw3qw5yf8jqytymkpbqtw9ut9ty4k42lvx3w",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
