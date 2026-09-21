@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T06:22:54Z",
+  "updatedAt": "2026-09-21T14:10:37Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -1739,6 +1739,23 @@
       "lastConfirmed": "2026-09-21"
     },
     {
+      "name": "awarded.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-09-21",
+      "confidence": 73,
+      "description": "awarded.fun new on-chain candidate.",
+      "website": "https://www.awarded.fun/",
+      "x": "https://x.com/getawarded",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/5wzde8f5ukhbvahayz84lgz7xefakcpvcwowyarcrfn",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-21"
+    },
+    {
       "name": "basestreet.fun",
       "status": "RUMOR",
       "chain": "base",
@@ -3025,6 +3042,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x8734f2f2f38647933761f003f166ab0b853c020c",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-21"
+    },
+    {
+      "name": "jevball.xyz",
+      "status": "LIVE",
+      "chain": "BNB Chain",
+      "firstSeen": "2026-09-21",
+      "confidence": 73,
+      "description": "Jev is the dev on BSC | Fees in. Jev decides | Launchpad Buybacks out. Everything burns.",
+      "website": "https://www.jevball.xyz/",
+      "x": "https://x.com/JevBallAgent",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/bsc/0x8cc3663773fab78b941e6342519a4c4ab1a07777",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -7252,6 +7286,23 @@
       "lastConfirmed": "2026-09-21"
     },
     {
+      "name": "awarded.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-09-21",
+      "confidence": 73,
+      "description": "awarded.fun new on-chain candidate.",
+      "website": "https://www.awarded.fun/",
+      "x": "https://x.com/getawarded",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/5wzde8f5ukhbvahayz84lgz7xefakcpvcwowyarcrfn",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-21"
+    },
+    {
       "name": "basestreet.fun",
       "status": "RUMOR",
       "chain": "base",
@@ -8538,6 +8589,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x8734f2f2f38647933761f003f166ab0b853c020c",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-21"
+    },
+    {
+      "name": "jevball.xyz",
+      "status": "LIVE",
+      "chain": "BNB Chain",
+      "firstSeen": "2026-09-21",
+      "confidence": 73,
+      "description": "Jev is the dev on BSC | Fees in. Jev decides | Launchpad Buybacks out. Everything burns.",
+      "website": "https://www.jevball.xyz/",
+      "x": "https://x.com/JevBallAgent",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/bsc/0x8cc3663773fab78b941e6342519a4c4ab1a07777",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
