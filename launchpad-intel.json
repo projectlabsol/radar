@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T18:55:36Z",
+  "updatedAt": "2026-09-22T22:10:14Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -3796,6 +3796,23 @@
       "lastConfirmed": "2026-09-22"
     },
     {
+      "name": "Onlypump",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-22",
+      "confidence": 73,
+      "description": "Route your @pumpfun token fees directly to an @OnlyFans creator through OF tips. No claiming required. Launches are paired $HIMS.",
+      "website": "https://onlypump.fans/",
+      "x": "https://x.com/onlypump_solana",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/hnzrpbjegeusudqtu4flk5hsae7rn8jr88rsexwkpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-22"
+    },
+    {
       "name": "onlytipspump.fun",
       "status": "LIVE",
       "chain": "Solana",
@@ -5252,6 +5269,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0xe03b79c80650da68604908c935f46a6196c45b38",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-22"
+    },
+    {
+      "name": "uniqticker.fun",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-09-22",
+      "confidence": 73,
+      "description": "ONE TICKER. ONE TOKEN. NO COPYCAT! The first ANTI-VAMP + ANTI-SNIPER launchpad is officially LIVE on Robinhood Chain. UniqTicker is here.",
+      "website": "https://uniqticker.fun/",
+      "x": "https://x.com/uniqticker",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x6e642928473f5cc9b0c8e7c7b3309aeada34135d",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -9598,6 +9632,23 @@
       "lastConfirmed": "2026-09-22"
     },
     {
+      "name": "Onlypump",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-22",
+      "confidence": 73,
+      "description": "Route your @pumpfun token fees directly to an @OnlyFans creator through OF tips. No claiming required. Launches are paired $HIMS.",
+      "website": "https://onlypump.fans/",
+      "x": "https://x.com/onlypump_solana",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/hnzrpbjegeusudqtu4flk5hsae7rn8jr88rsexwkpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-22"
+    },
+    {
       "name": "onlytipspump.fun",
       "status": "LIVE",
       "chain": "Solana",
@@ -11054,6 +11105,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0xe03b79c80650da68604908c935f46a6196c45b38",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-22"
+    },
+    {
+      "name": "uniqticker.fun",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-09-22",
+      "confidence": 73,
+      "description": "ONE TICKER. ONE TOKEN. NO COPYCAT! The first ANTI-VAMP + ANTI-SNIPER launchpad is officially LIVE on Robinhood Chain. UniqTicker is here.",
+      "website": "https://uniqticker.fun/",
+      "x": "https://x.com/uniqticker",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x6e642928473f5cc9b0c8e7c7b3309aeada34135d",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
