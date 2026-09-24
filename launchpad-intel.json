@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T04:53:11Z",
+  "updatedAt": "2026-09-24T10:02:32Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -1586,6 +1586,23 @@
       "lastConfirmed": "2026-09-24"
     },
     {
+      "name": "vise.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-24",
+      "confidence": 77,
+      "description": "vise.fun new on-chain candidate.",
+      "website": "https://vise.fun/",
+      "x": "https://x.com/visedotfun",
+      "discord": "",
+      "github": "https://github.com/pump-fun/pump-public-docs",
+      "source": "https://dexscreener.com/solana/4vxjmbft6rcxnhohy2e4upxgsv8eypwrzmeqtqi6urdg",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-24"
+    },
+    {
       "name": "Archliquid",
       "status": "TESTNET",
       "chain": "Robinhood Chain, Ethereum",
@@ -2039,6 +2056,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/cgfvax2g5azfx1lt2wnspescuvc9rdqcoiryiwfgymbx",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-24"
+    },
+    {
+      "name": "Blotprotocol",
+      "status": "LIVE",
+      "chain": "ink",
+      "firstSeen": "2026-09-24",
+      "confidence": 73,
+      "description": "Every 3 minutes, fees hit the chart. Buyback. Burn. Repeat. Every coin feeds $BLOT. Built on @Inkonchain",
+      "website": "https://blotprotocol.ink/",
+      "x": "https://x.com/blot_ink",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/ink/0xeb90c1bee4fd69cad9ddd3aae741d2fa47322308",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -7626,6 +7660,23 @@
       "lastConfirmed": "2026-09-24"
     },
     {
+      "name": "vise.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-24",
+      "confidence": 77,
+      "description": "vise.fun new on-chain candidate.",
+      "website": "https://vise.fun/",
+      "x": "https://x.com/visedotfun",
+      "discord": "",
+      "github": "https://github.com/pump-fun/pump-public-docs",
+      "source": "https://dexscreener.com/solana/4vxjmbft6rcxnhohy2e4upxgsv8eypwrzmeqtqi6urdg",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-24"
+    },
+    {
       "name": "Archliquid",
       "status": "TESTNET",
       "chain": "Robinhood Chain, Ethereum",
@@ -8079,6 +8130,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/cgfvax2g5azfx1lt2wnspescuvc9rdqcoiryiwfgymbx",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-24"
+    },
+    {
+      "name": "Blotprotocol",
+      "status": "LIVE",
+      "chain": "ink",
+      "firstSeen": "2026-09-24",
+      "confidence": 73,
+      "description": "Every 3 minutes, fees hit the chart. Buyback. Burn. Repeat. Every coin feeds $BLOT. Built on @Inkonchain",
+      "website": "https://blotprotocol.ink/",
+      "x": "https://x.com/blot_ink",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/ink/0xeb90c1bee4fd69cad9ddd3aae741d2fa47322308",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
