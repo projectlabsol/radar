@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T07:50:23Z",
+  "updatedAt": "2026-09-25T13:49:01Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -4238,6 +4238,23 @@
       "lastConfirmed": "2026-09-25"
     },
     {
+      "name": "pearonrbh.fun",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-09-25",
+      "confidence": 73,
+      "description": "pearonrbh.fun new on-chain candidate.",
+      "website": "https://pearonrbh.fun",
+      "x": "https://x.com/PearOnRBH",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x7a57c98834251a45a708613952b88ba0a3168797",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-25"
+    },
+    {
       "name": "Pepeinhood",
       "status": "RUMOR",
       "chain": "Robinhood Chain",
@@ -5235,6 +5252,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x2854cf9f6c3df1eedca72cd141e282ac167d1e6a",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-25"
+    },
+    {
+      "name": "stockdrip.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-09-25",
+      "confidence": 73,
+      "description": "stockdrip.fun new on-chain candidate.",
+      "website": "https://stockdrip.fun/",
+      "x": "https://x.com/Stockdripfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/hztwvwv7vktqfhy5s9rvtvi3elmqkwgebbvrarzdpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -10516,6 +10550,23 @@
       "lastConfirmed": "2026-09-25"
     },
     {
+      "name": "pearonrbh.fun",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-09-25",
+      "confidence": 73,
+      "description": "pearonrbh.fun new on-chain candidate.",
+      "website": "https://pearonrbh.fun",
+      "x": "https://x.com/PearOnRBH",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x7a57c98834251a45a708613952b88ba0a3168797",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-25"
+    },
+    {
       "name": "Pepeinhood",
       "status": "RUMOR",
       "chain": "Robinhood Chain",
@@ -11513,6 +11564,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x2854cf9f6c3df1eedca72cd141e282ac167d1e6a",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-25"
+    },
+    {
+      "name": "stockdrip.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-09-25",
+      "confidence": 73,
+      "description": "stockdrip.fun new on-chain candidate.",
+      "website": "https://stockdrip.fun/",
+      "x": "https://x.com/Stockdripfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/hztwvwv7vktqfhy5s9rvtvi3elmqkwgebbvrarzdpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
