@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T19:52:31Z",
+  "updatedAt": "2026-09-26T22:52:58Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -2810,6 +2810,23 @@
       "lastConfirmed": "2026-09-26"
     },
     {
+      "name": "Copiumcatcoin",
+      "status": "RUMOR",
+      "chain": "Solana, Tron",
+      "firstSeen": "2026-09-26",
+      "confidence": 73,
+      "description": "The only cat that understands your portfolio's pain. Grab a mask, take a hit, and let's go to the moon—or at least feel better about the dip.",
+      "website": "https://copiumcatcoin.live",
+      "x": "https://x.com/CopiumCat_onSOL",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/7amyuaf1xf2mmvrrsngrbanqgut2wjxsgrbutmt1pump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-26"
+    },
+    {
       "name": "Creo",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -5547,6 +5564,23 @@
       "lastConfirmed": "2026-09-26"
     },
     {
+      "name": "socialhandle.app",
+      "status": "RUMOR",
+      "chain": "Solana",
+      "firstSeen": "2026-09-26",
+      "confidence": 73,
+      "description": "socialhandle.app new on-chain candidate.",
+      "website": "https://socialhandle.app/",
+      "x": "https://x.com/SocialHandleApp",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/j2tyzdwe7pxaw6vevkdegax6keeofvcmuk5pzbpdpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-26"
+    },
+    {
       "name": "Socialpad",
       "status": "RUMOR",
       "chain": "solana",
@@ -6159,6 +6193,23 @@
       "lastConfirmed": "2026-09-26"
     },
     {
+      "name": "Usechat",
+      "status": "RUMOR",
+      "chain": "Solana",
+      "firstSeen": "2026-09-26",
+      "confidence": 73,
+      "description": "The first launchpad directing creator fees at your favorite Kick/Twitch streamers, with new crypto tipping economy",
+      "website": "https://usechat.live/",
+      "x": "https://x.com/usechatlive",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/abhpv5uentrbbemneebkhnnbvgwjbzvr3dikryczpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-26"
+    },
+    {
       "name": "usecofee.xyz",
       "status": "RUMOR",
       "chain": "Robinhood Chain, Solana",
@@ -6323,6 +6374,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/4buatxldvgzhjcespyyezwwq1ubmjhthjhwvt1h95dmw",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-26"
+    },
+    {
+      "name": "usetiptok.app",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-09-26",
+      "confidence": 73,
+      "description": "usetiptok.app new on-chain candidate.",
+      "website": "https://www.usetiptok.app/",
+      "x": "https://x.com/usetiptokapp",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/tip2egew8iz6olmvhylufphj8el24zlaehhctjvbkj2",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -9581,6 +9649,23 @@
       "lastConfirmed": "2026-09-26"
     },
     {
+      "name": "Copiumcatcoin",
+      "status": "RUMOR",
+      "chain": "Solana, Tron",
+      "firstSeen": "2026-09-26",
+      "confidence": 73,
+      "description": "The only cat that understands your portfolio's pain. Grab a mask, take a hit, and let's go to the moon—or at least feel better about the dip.",
+      "website": "https://copiumcatcoin.live",
+      "x": "https://x.com/CopiumCat_onSOL",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/7amyuaf1xf2mmvrrsngrbanqgut2wjxsgrbutmt1pump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-26"
+    },
+    {
       "name": "Creo",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -12318,6 +12403,23 @@
       "lastConfirmed": "2026-09-26"
     },
     {
+      "name": "socialhandle.app",
+      "status": "RUMOR",
+      "chain": "Solana",
+      "firstSeen": "2026-09-26",
+      "confidence": 73,
+      "description": "socialhandle.app new on-chain candidate.",
+      "website": "https://socialhandle.app/",
+      "x": "https://x.com/SocialHandleApp",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/j2tyzdwe7pxaw6vevkdegax6keeofvcmuk5pzbpdpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-26"
+    },
+    {
       "name": "Socialpad",
       "status": "RUMOR",
       "chain": "solana",
@@ -12930,6 +13032,23 @@
       "lastConfirmed": "2026-09-26"
     },
     {
+      "name": "Usechat",
+      "status": "RUMOR",
+      "chain": "Solana",
+      "firstSeen": "2026-09-26",
+      "confidence": 73,
+      "description": "The first launchpad directing creator fees at your favorite Kick/Twitch streamers, with new crypto tipping economy",
+      "website": "https://usechat.live/",
+      "x": "https://x.com/usechatlive",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/abhpv5uentrbbemneebkhnnbvgwjbzvr3dikryczpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-26"
+    },
+    {
       "name": "usecofee.xyz",
       "status": "RUMOR",
       "chain": "Robinhood Chain, Solana",
@@ -13094,6 +13213,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/4buatxldvgzhjcespyyezwwq1ubmjhthjhwvt1h95dmw",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-26"
+    },
+    {
+      "name": "usetiptok.app",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-09-26",
+      "confidence": 73,
+      "description": "usetiptok.app new on-chain candidate.",
+      "website": "https://www.usetiptok.app/",
+      "x": "https://x.com/usetiptokapp",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/tip2egew8iz6olmvhylufphj8el24zlaehhctjvbkj2",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
