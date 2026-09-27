@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T01:28:22Z",
+  "updatedAt": "2026-09-27T08:12:13Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -4289,6 +4289,23 @@
       "lastConfirmed": "2026-09-27"
     },
     {
+      "name": "Nokey",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-27",
+      "confidence": 73,
+      "description": "Launch a Solana token. The LP key is destroyed on launch - liquidity locked forever, provably on-chain. No curve. No graduation. No withdraw button.",
+      "website": "https://nokey.uk/",
+      "x": "https://x.com/nokeyfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/8dnd58zamw9dk6bpljz1kqkjy2nphfre6fzlu4zhpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-27"
+    },
+    {
       "name": "nomadpad.fun",
       "status": "LIVE",
       "chain": "Monad",
@@ -5751,6 +5768,23 @@
       "lastConfirmed": "2026-09-27"
     },
     {
+      "name": "Stoxpad",
+      "status": "RUMOR",
+      "chain": "Solana",
+      "firstSeen": "2026-09-27",
+      "confidence": 73,
+      "description": "Stoxpad new on-chain candidate.",
+      "website": "https://stoxpad.com",
+      "x": "https://x.com/StoxPad",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/hxy2ls6sv2gmvhjwgshghahyzz2fgutizvgycgxstox",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-27"
+    },
+    {
       "name": "strawberrypad.fun",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -6799,6 +6833,23 @@
       "discord": "",
       "github": "https://github.com/cookiechain/superteam-hackathon-submissions",
       "source": "https://github.com/cookiechain/superteam-hackathon-submissions",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "GitHub + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-27"
+    },
+    {
+      "name": "loongfamily.app",
+      "status": "TESTNET",
+      "chain": "BNB Chain",
+      "firstSeen": "2026-09-27",
+      "confidence": 67,
+      "description": "Loong memecoin launchpad on BNB Smart Chain: factory, bonding curve, PancakeSwap Infinity hook, BNB routers and $LOONG buyback-burner.",
+      "website": "https://loongfamily.app",
+      "x": "https://x.com/loongfam",
+      "discord": "",
+      "github": "https://github.com/2100x/loong-contracts",
+      "source": "https://github.com/2100x/loong-contracts",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
@@ -11179,6 +11230,23 @@
       "lastConfirmed": "2026-09-27"
     },
     {
+      "name": "Nokey",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-27",
+      "confidence": 73,
+      "description": "Launch a Solana token. The LP key is destroyed on launch - liquidity locked forever, provably on-chain. No curve. No graduation. No withdraw button.",
+      "website": "https://nokey.uk/",
+      "x": "https://x.com/nokeyfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/8dnd58zamw9dk6bpljz1kqkjy2nphfre6fzlu4zhpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-27"
+    },
+    {
       "name": "nomadpad.fun",
       "status": "LIVE",
       "chain": "Monad",
@@ -12641,6 +12709,23 @@
       "lastConfirmed": "2026-09-27"
     },
     {
+      "name": "Stoxpad",
+      "status": "RUMOR",
+      "chain": "Solana",
+      "firstSeen": "2026-09-27",
+      "confidence": 73,
+      "description": "Stoxpad new on-chain candidate.",
+      "website": "https://stoxpad.com",
+      "x": "https://x.com/StoxPad",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/hxy2ls6sv2gmvhjwgshghahyzz2fgutizvgycgxstox",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-27"
+    },
+    {
       "name": "strawberrypad.fun",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -13689,6 +13774,23 @@
       "discord": "",
       "github": "https://github.com/cookiechain/superteam-hackathon-submissions",
       "source": "https://github.com/cookiechain/superteam-hackathon-submissions",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "GitHub + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-27"
+    },
+    {
+      "name": "loongfamily.app",
+      "status": "TESTNET",
+      "chain": "BNB Chain",
+      "firstSeen": "2026-09-27",
+      "confidence": 67,
+      "description": "Loong memecoin launchpad on BNB Smart Chain: factory, bonding curve, PancakeSwap Infinity hook, BNB routers and $LOONG buyback-burner.",
+      "website": "https://loongfamily.app",
+      "x": "https://x.com/loongfam",
+      "discord": "",
+      "github": "https://github.com/2100x/loong-contracts",
+      "source": "https://github.com/2100x/loong-contracts",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
