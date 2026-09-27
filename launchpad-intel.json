@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T18:25:26Z",
+  "updatedAt": "2026-09-27T22:12:49Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -2793,6 +2793,23 @@
       "lastConfirmed": "2026-09-27"
     },
     {
+      "name": "Clowd",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-27",
+      "confidence": 73,
+      "description": "Clowd new on-chain candidate.",
+      "website": "https://clowd.world/",
+      "x": "https://x.com/LaunchOnClowd",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/ddidzcbax8an2dlrqku5jzjz8m1p6qfpxppmszc3pump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-27"
+    },
+    {
       "name": "Clubytech",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -3348,6 +3365,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x393bba0cfdb32ac24a84c33645b77784bff1e4b8",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-27"
+    },
+    {
+      "name": "fundation.fun",
+      "status": "LIVE",
+      "chain": "robinhood",
+      "firstSeen": "2026-09-27",
+      "confidence": 73,
+      "description": "Charity Launchpad built on Pons.",
+      "website": "https://fundation.fun/",
+      "x": "https://x.com/fundationdotfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x308b58ccdec829637849ff6e33f1ef83746ba366",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -9802,6 +9836,23 @@
       "lastConfirmed": "2026-09-27"
     },
     {
+      "name": "Clowd",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-09-27",
+      "confidence": 73,
+      "description": "Clowd new on-chain candidate.",
+      "website": "https://clowd.world/",
+      "x": "https://x.com/LaunchOnClowd",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/ddidzcbax8an2dlrqku5jzjz8m1p6qfpxppmszc3pump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-27"
+    },
+    {
       "name": "Clubytech",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -10357,6 +10408,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x393bba0cfdb32ac24a84c33645b77784bff1e4b8",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-27"
+    },
+    {
+      "name": "fundation.fun",
+      "status": "LIVE",
+      "chain": "robinhood",
+      "firstSeen": "2026-09-27",
+      "confidence": 73,
+      "description": "Charity Launchpad built on Pons.",
+      "website": "https://fundation.fun/",
+      "x": "https://x.com/fundationdotfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x308b58ccdec829637849ff6e33f1ef83746ba366",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
