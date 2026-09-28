@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T15:29:52Z",
+  "updatedAt": "2026-09-28T22:02:08Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -2266,6 +2266,23 @@
       "lastConfirmed": "2026-09-28"
     },
     {
+      "name": "Basisprotocol",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain, Ethereum",
+      "firstSeen": "2026-09-28",
+      "confidence": 73,
+      "description": "Hold one token, earn from trading fees and lending yield. Paid hourly in WETH and USDG.",
+      "website": "https://basisprotocol.org/",
+      "x": "https://x.com/BasisProtocols",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x9fc648ec2b44b022a169adbf49e5577fe4b72439",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-28"
+    },
+    {
       "name": "basketrwa.fun",
       "status": "LIVE",
       "chain": "solana",
@@ -3320,6 +3337,23 @@
       "lastConfirmed": "2026-09-28"
     },
     {
+      "name": "flea.trade",
+      "status": "LIVE",
+      "chain": "robinhood",
+      "firstSeen": "2026-09-28",
+      "confidence": 73,
+      "description": "The first platform bringing simple liquidity deposits to every pool on Robinhood.",
+      "website": "https://flea.trade/",
+      "x": "https://x.com/useFlea",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xe02a04b0df535b54e8cb06d3338620efa123c77b",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-28"
+    },
+    {
       "name": "Flypad",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -3586,6 +3620,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/ton/eqae71rlq8xdjj-8hes3mosi3r2dp_hbhkksffebpp9g0iam",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-28"
+    },
+    {
+      "name": "Gweistation",
+      "status": "RUMOR",
+      "chain": "Ethereum",
+      "firstSeen": "2026-09-28",
+      "confidence": 73,
+      "description": "The gas station for tokens on Ethereum. Pair yours with a stock, ETH or a meme, and pick where every fee goes. Open 24/7. ⛽",
+      "website": "https://gweistation.family/",
+      "x": "https://x.com/gweistationeth",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/ethereum/0xedcbb7d2338c5ff9c2c7355aa70792927833e9a5",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -9411,6 +9462,23 @@
       "lastConfirmed": "2026-09-28"
     },
     {
+      "name": "Basisprotocol",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain, Ethereum",
+      "firstSeen": "2026-09-28",
+      "confidence": 73,
+      "description": "Hold one token, earn from trading fees and lending yield. Paid hourly in WETH and USDG.",
+      "website": "https://basisprotocol.org/",
+      "x": "https://x.com/BasisProtocols",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x9fc648ec2b44b022a169adbf49e5577fe4b72439",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-28"
+    },
+    {
       "name": "basketrwa.fun",
       "status": "LIVE",
       "chain": "solana",
@@ -10465,6 +10533,23 @@
       "lastConfirmed": "2026-09-28"
     },
     {
+      "name": "flea.trade",
+      "status": "LIVE",
+      "chain": "robinhood",
+      "firstSeen": "2026-09-28",
+      "confidence": 73,
+      "description": "The first platform bringing simple liquidity deposits to every pool on Robinhood.",
+      "website": "https://flea.trade/",
+      "x": "https://x.com/useFlea",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xe02a04b0df535b54e8cb06d3338620efa123c77b",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-28"
+    },
+    {
       "name": "Flypad",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -10731,6 +10816,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/ton/eqae71rlq8xdjj-8hes3mosi3r2dp_hbhkksffebpp9g0iam",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-28"
+    },
+    {
+      "name": "Gweistation",
+      "status": "RUMOR",
+      "chain": "Ethereum",
+      "firstSeen": "2026-09-28",
+      "confidence": 73,
+      "description": "The gas station for tokens on Ethereum. Pair yours with a stock, ETH or a meme, and pick where every fee goes. Open 24/7. ⛽",
+      "website": "https://gweistation.family/",
+      "x": "https://x.com/gweistationeth",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/ethereum/0xedcbb7d2338c5ff9c2c7355aa70792927833e9a5",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
