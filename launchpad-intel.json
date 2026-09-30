@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T19:21:39Z",
+  "updatedAt": "2026-09-30T23:51:30Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -6737,6 +6737,23 @@
       "lastConfirmed": "2026-09-30"
     },
     {
+      "name": "useblastpad.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-09-30",
+      "confidence": 73,
+      "description": "Get rewarded for buying the top. Every token launched here sends 2% of its volume to holders in loss, every 15 minutes. Paired with BTC",
+      "website": "https://useblastpad.fun/",
+      "x": "https://x.com/useblastpad",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/bb6bynrcxapjrxmxwcf9dvxvyq6zekk2ngy8apktrpjx",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-30"
+    },
+    {
       "name": "Usechat",
       "status": "RUMOR",
       "chain": "Solana",
@@ -7292,23 +7309,6 @@
       "discord": "https://discord.gg/urufugemu",
       "github": "https://github.com/urufu-labs/urufu-launchpad",
       "source": "https://github.com/urufu-labs/urufu-launchpad",
-      "radarTier": "WATCHLIST",
-      "detectedBy": "GitHub + Website",
-      "scannerVersion": 5,
-      "lastConfirmed": "2026-09-30"
-    },
-    {
-      "name": "adexto.xyz",
-      "status": "TESTNET",
-      "chain": "Ethereum, Arbitrum, Monad",
-      "firstSeen": "2026-08-31",
-      "confidence": 67,
-      "description": "ADEXTO Protocol: 1-Click Atomic Orchestrator for ERC-8004 Tokens, Uniswap v4 Sovereign Hooks, 0G TEE Agents & Cloudflare x402 Edge Monetization.",
-      "website": "https://adexto.xyz",
-      "x": "https://x.com/adexto_",
-      "discord": "",
-      "github": "https://github.com/0xcuy/adexto",
-      "source": "https://github.com/0xcuy/adexto",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
@@ -14222,6 +14222,23 @@
       "lastConfirmed": "2026-09-30"
     },
     {
+      "name": "useblastpad.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-09-30",
+      "confidence": 73,
+      "description": "Get rewarded for buying the top. Every token launched here sends 2% of its volume to holders in loss, every 15 minutes. Paired with BTC",
+      "website": "https://useblastpad.fun/",
+      "x": "https://x.com/useblastpad",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/bb6bynrcxapjrxmxwcf9dvxvyq6zekk2ngy8apktrpjx",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-09-30"
+    },
+    {
       "name": "Usechat",
       "status": "RUMOR",
       "chain": "Solana",
@@ -14777,23 +14794,6 @@
       "discord": "https://discord.gg/urufugemu",
       "github": "https://github.com/urufu-labs/urufu-launchpad",
       "source": "https://github.com/urufu-labs/urufu-launchpad",
-      "radarTier": "WATCHLIST",
-      "detectedBy": "GitHub + Website",
-      "scannerVersion": 5,
-      "lastConfirmed": "2026-09-30"
-    },
-    {
-      "name": "adexto.xyz",
-      "status": "TESTNET",
-      "chain": "Ethereum, Arbitrum, Monad",
-      "firstSeen": "2026-08-31",
-      "confidence": 67,
-      "description": "ADEXTO Protocol: 1-Click Atomic Orchestrator for ERC-8004 Tokens, Uniswap v4 Sovereign Hooks, 0G TEE Agents & Cloudflare x402 Edge Monetization.",
-      "website": "https://adexto.xyz",
-      "x": "https://x.com/adexto_",
-      "discord": "",
-      "github": "https://github.com/0xcuy/adexto",
-      "source": "https://github.com/0xcuy/adexto",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
