@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T18:25:35Z",
+  "updatedAt": "2026-10-02T22:58:29Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -3541,6 +3541,23 @@
       "lastConfirmed": "2026-10-02"
     },
     {
+      "name": "fiat.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-10-02",
+      "confidence": 73,
+      "description": "Launch a coin where you choose the fiat currency your coin trades against, out of 157+ options.",
+      "website": "https://fiat.fun/",
+      "x": "https://x.com/fiatdotfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/gcutsrnz8taham3v515ixbztri1pbbzmwa92et9ncw8w",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-02"
+    },
+    {
       "name": "Finchcrew",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -4776,6 +4793,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/ethereum/0xd170c5828abfbdeeb17da3acaebfcd53cb37867c",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-02"
+    },
+    {
+      "name": "Moonfun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-10-02",
+      "confidence": 73,
+      "description": "Moon Fun brings bold ideas, playful memes, and passionate communities together in a launchpad built for creativity and cosmic adventures.",
+      "website": "https://moonfun.lol",
+      "x": "https://x.com/moonfun_sol",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/9zu66qtlkcezsfifm7woeovjzw82recitu5s4i2npump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -11315,6 +11349,23 @@
       "lastConfirmed": "2026-10-02"
     },
     {
+      "name": "fiat.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-10-02",
+      "confidence": 73,
+      "description": "Launch a coin where you choose the fiat currency your coin trades against, out of 157+ options.",
+      "website": "https://fiat.fun/",
+      "x": "https://x.com/fiatdotfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/gcutsrnz8taham3v515ixbztri1pbbzmwa92et9ncw8w",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-02"
+    },
+    {
       "name": "Finchcrew",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -12550,6 +12601,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/ethereum/0xd170c5828abfbdeeb17da3acaebfcd53cb37867c",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-02"
+    },
+    {
+      "name": "Moonfun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-10-02",
+      "confidence": 73,
+      "description": "Moon Fun brings bold ideas, playful memes, and passionate communities together in a launchpad built for creativity and cosmic adventures.",
+      "website": "https://moonfun.lol",
+      "x": "https://x.com/moonfun_sol",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/9zu66qtlkcezsfifm7woeovjzw82recitu5s4i2npump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
