@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T17:57:22Z",
+  "updatedAt": "2026-10-03T21:17:19Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -6329,6 +6329,23 @@
       "lastConfirmed": "2026-10-03"
     },
     {
+      "name": "shortpad.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-10-03",
+      "confidence": 73,
+      "description": "Launch a shortable token on @Pumpfun. Fees pay winners. Losers fund buybacks.",
+      "website": "https://shortpad.fun/",
+      "x": "https://x.com/shortpadfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/8jgc9vfikdoukujgxnssqjeptpqwk5i68zyhnnhspad",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-03"
+    },
+    {
       "name": "sigmahound.xyz",
       "status": "RUMOR",
       "chain": "Solana",
@@ -6476,6 +6493,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x2854cf9f6c3df1eedca72cd141e282ac167d1e6a",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-03"
+    },
+    {
+      "name": "stock.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-10-03",
+      "confidence": 73,
+      "description": "the launchpad for stock pairs build ontop of pumpfun",
+      "website": "https://stock.fun/",
+      "x": "https://x.com/stockxfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/dyqgvsca6oyt1fpqnlynpfkdrjdtxempdhya8kprajmu",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -14239,6 +14273,23 @@
       "lastConfirmed": "2026-10-03"
     },
     {
+      "name": "shortpad.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-10-03",
+      "confidence": 73,
+      "description": "Launch a shortable token on @Pumpfun. Fees pay winners. Losers fund buybacks.",
+      "website": "https://shortpad.fun/",
+      "x": "https://x.com/shortpadfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/8jgc9vfikdoukujgxnssqjeptpqwk5i68zyhnnhspad",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-03"
+    },
+    {
       "name": "sigmahound.xyz",
       "status": "RUMOR",
       "chain": "Solana",
@@ -14386,6 +14437,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x2854cf9f6c3df1eedca72cd141e282ac167d1e6a",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-03"
+    },
+    {
+      "name": "stock.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-10-03",
+      "confidence": 73,
+      "description": "the launchpad for stock pairs build ontop of pumpfun",
+      "website": "https://stock.fun/",
+      "x": "https://x.com/stockxfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/dyqgvsca6oyt1fpqnlynpfkdrjdtxempdhya8kprajmu",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
