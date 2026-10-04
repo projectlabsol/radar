@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T06:50:06Z",
+  "updatedAt": "2026-10-04T13:12:25Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -4544,6 +4544,23 @@
       "lastConfirmed": "2026-10-04"
     },
     {
+      "name": "launchroute.fun",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-10-04",
+      "confidence": 73,
+      "description": "Launch a pumpfun token with programmable rules built around its fees.",
+      "website": "https://launchroute.fun/",
+      "x": "https://x.com/launchonroute",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/2t7sm2k2rud5p4nlr5b8jarhpusgr5fzejpqokuopump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-04"
+    },
+    {
       "name": "launchy.gg",
       "status": "LIVE",
       "chain": "Solana",
@@ -7581,6 +7598,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0xa3af67f714d846ed825b0556d617446cd273880f",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-04"
+    },
+    {
+      "name": "virtualz.app",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-10-04",
+      "confidence": 73,
+      "description": "tokenized influencers. create an AI influencer, launch its token, and creator rewards keep it alive.",
+      "website": "https://virtualz.app/",
+      "x": "https://x.com/VirtualzApp",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/fvetxytgk6uxgkvcheth3ocvdqbqfgldupf8rzcnpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -12573,6 +12607,23 @@
       "lastConfirmed": "2026-10-04"
     },
     {
+      "name": "launchroute.fun",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-10-04",
+      "confidence": 73,
+      "description": "Launch a pumpfun token with programmable rules built around its fees.",
+      "website": "https://launchroute.fun/",
+      "x": "https://x.com/launchonroute",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/2t7sm2k2rud5p4nlr5b8jarhpusgr5fzejpqokuopump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-04"
+    },
+    {
       "name": "launchy.gg",
       "status": "LIVE",
       "chain": "Solana",
@@ -15610,6 +15661,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0xa3af67f714d846ed825b0556d617446cd273880f",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-04"
+    },
+    {
+      "name": "virtualz.app",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-10-04",
+      "confidence": 73,
+      "description": "tokenized influencers. create an AI influencer, launch its token, and creator rewards keep it alive.",
+      "website": "https://virtualz.app/",
+      "x": "https://x.com/VirtualzApp",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/fvetxytgk6uxgkvcheth3ocvdqbqfgldupf8rzcnpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
