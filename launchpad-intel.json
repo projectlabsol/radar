@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T16:02:02Z",
+  "updatedAt": "2026-10-05T22:38:29Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -4068,6 +4068,23 @@
       "lastConfirmed": "2026-10-05"
     },
     {
+      "name": "fourbit.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-10-05",
+      "confidence": 73,
+      "description": "fourbit.fun new on-chain candidate.",
+      "website": "https://fourbit.fun",
+      "x": "https://x.com/fourbit",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/cz1pjk2zvz8dwvmqf8eqegzqsn9jbtgag4hqmphppump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-05"
+    },
+    {
       "name": "Fourpad",
       "status": "LIVE",
       "chain": "Robinhood Chain, Solana, BNB Chain",
@@ -5643,6 +5660,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/ethereum/0xa94dbe28fdcb4bafee773ae6daaef7656bf07554",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-05"
+    },
+    {
+      "name": "Pairstonks",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-10-05",
+      "confidence": 73,
+      "description": "Pairstonks new on-chain candidate.",
+      "website": "https://pairstonks.com/",
+      "x": "https://x.com/PairStonks",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/4gwezzdlrszmnyurwfk5wqjmvi5jhxnfgry4at6uosnj",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -12556,6 +12590,23 @@
       "lastConfirmed": "2026-10-05"
     },
     {
+      "name": "fourbit.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-10-05",
+      "confidence": 73,
+      "description": "fourbit.fun new on-chain candidate.",
+      "website": "https://fourbit.fun",
+      "x": "https://x.com/fourbit",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/cz1pjk2zvz8dwvmqf8eqegzqsn9jbtgag4hqmphppump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-05"
+    },
+    {
       "name": "Fourpad",
       "status": "LIVE",
       "chain": "Robinhood Chain, Solana, BNB Chain",
@@ -14131,6 +14182,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/ethereum/0xa94dbe28fdcb4bafee773ae6daaef7656bf07554",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-05"
+    },
+    {
+      "name": "Pairstonks",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-10-05",
+      "confidence": 73,
+      "description": "Pairstonks new on-chain candidate.",
+      "website": "https://pairstonks.com/",
+      "x": "https://x.com/PairStonks",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/4gwezzdlrszmnyurwfk5wqjmvi5jhxnfgry4at6uosnj",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
