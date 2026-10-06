@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T10:20:16Z",
+  "updatedAt": "2026-10-06T17:12:00Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -4221,6 +4221,23 @@
       "lastConfirmed": "2026-10-06"
     },
     {
+      "name": "Givestonks",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-10-06",
+      "confidence": 73,
+      "description": "Givestonks new on-chain candidate.",
+      "website": "https://givestonks.com/",
+      "x": "https://x.com/GiveStonks_",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/hkh2m4mgvy8rp7npoyvqvyzd8wdbjixhepmrn15e3y3g",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-06"
+    },
+    {
       "name": "Goblinstonk",
       "status": "RUMOR",
       "chain": "Solana",
@@ -5989,6 +6006,23 @@
       "lastConfirmed": "2026-10-06"
     },
     {
+      "name": "plaguepad.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-10-06",
+      "confidence": 73,
+      "description": "Meet $PLAGUE LAUNCH YOUR VIRUS Your prompt. Your agent. Your virus memecoin. Every outbreak starts with an idea. A sleep deprived airport pigeon. A cursed coffee cult. A mutant cat with an identity crisis. PLAGUE LAUNCHPAD turns those ideas into fictional virus themed memecoin concepts and puts them into a world domina",
+      "website": "https://plaguepad.fun/",
+      "x": "https://x.com/playplaguepad",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/3ewedgcj9xxwwobrxjcjyj9bbtmspj1bhxmystbspump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-06"
+    },
+    {
       "name": "Podsfamily",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -7400,6 +7434,23 @@
       "lastConfirmed": "2026-10-06"
     },
     {
+      "name": "tokrbot.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-10-06",
+      "confidence": 73,
+      "description": "TikTok comments → onchain tokens. Mention @TokrBot with a name + $ticker. We launch it on pumpfun. Creator earns the fees.",
+      "website": "https://tokrbot.fun/",
+      "x": "https://x.com/TokrBot",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/a5zmche1xkvdleqmg7njfhfptnnvevl7z6ehwzaapump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-06"
+    },
+    {
       "name": "tokyofuturo.xyz",
       "status": "LIVE",
       "chain": "Robinhood Chain, Tron",
@@ -8516,6 +8567,23 @@
       "discord": "",
       "github": "https://github.com/tsukipadofficial/TSUKIPAD",
       "source": "https://github.com/tsukipadofficial/TSUKIPAD",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "GitHub + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-06"
+    },
+    {
+      "name": "Volleyfun",
+      "status": "TESTNET",
+      "chain": "Robinhood Chain, Ethereum",
+      "firstSeen": "2026-10-06",
+      "confidence": 67,
+      "description": "Fair-launch token launchpad on Robinhood Chain, built on Uniswap v4.",
+      "website": "https://volleyfun.org",
+      "x": "https://x.com/_volleyFun",
+      "discord": "",
+      "github": "https://github.com/volleyfun3/volley",
+      "source": "https://github.com/volleyfun3/volley",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
@@ -12777,6 +12845,23 @@
       "lastConfirmed": "2026-10-06"
     },
     {
+      "name": "Givestonks",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-10-06",
+      "confidence": 73,
+      "description": "Givestonks new on-chain candidate.",
+      "website": "https://givestonks.com/",
+      "x": "https://x.com/GiveStonks_",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/hkh2m4mgvy8rp7npoyvqvyzd8wdbjixhepmrn15e3y3g",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-06"
+    },
+    {
       "name": "Goblinstonk",
       "status": "RUMOR",
       "chain": "Solana",
@@ -14545,6 +14630,23 @@
       "lastConfirmed": "2026-10-06"
     },
     {
+      "name": "plaguepad.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-10-06",
+      "confidence": 73,
+      "description": "Meet $PLAGUE LAUNCH YOUR VIRUS Your prompt. Your agent. Your virus memecoin. Every outbreak starts with an idea. A sleep deprived airport pigeon. A cursed coffee cult. A mutant cat with an identity crisis. PLAGUE LAUNCHPAD turns those ideas into fictional virus themed memecoin concepts and puts them into a world domina",
+      "website": "https://plaguepad.fun/",
+      "x": "https://x.com/playplaguepad",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/3ewedgcj9xxwwobrxjcjyj9bbtmspj1bhxmystbspump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-06"
+    },
+    {
       "name": "Podsfamily",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -15956,6 +16058,23 @@
       "lastConfirmed": "2026-10-06"
     },
     {
+      "name": "tokrbot.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-10-06",
+      "confidence": 73,
+      "description": "TikTok comments → onchain tokens. Mention @TokrBot with a name + $ticker. We launch it on pumpfun. Creator earns the fees.",
+      "website": "https://tokrbot.fun/",
+      "x": "https://x.com/TokrBot",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/a5zmche1xkvdleqmg7njfhfptnnvevl7z6ehwzaapump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-06"
+    },
+    {
       "name": "tokyofuturo.xyz",
       "status": "LIVE",
       "chain": "Robinhood Chain, Tron",
@@ -17072,6 +17191,23 @@
       "discord": "",
       "github": "https://github.com/tsukipadofficial/TSUKIPAD",
       "source": "https://github.com/tsukipadofficial/TSUKIPAD",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "GitHub + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-06"
+    },
+    {
+      "name": "Volleyfun",
+      "status": "TESTNET",
+      "chain": "Robinhood Chain, Ethereum",
+      "firstSeen": "2026-10-06",
+      "confidence": 67,
+      "description": "Fair-launch token launchpad on Robinhood Chain, built on Uniswap v4.",
+      "website": "https://volleyfun.org",
+      "x": "https://x.com/_volleyFun",
+      "discord": "",
+      "github": "https://github.com/volleyfun3/volley",
+      "source": "https://github.com/volleyfun3/volley",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
