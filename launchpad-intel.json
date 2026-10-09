@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T16:14:05Z",
+  "updatedAt": "2026-10-09T20:57:18Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -3847,6 +3847,23 @@
       "lastConfirmed": "2026-10-09"
     },
     {
+      "name": "doshout.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-10-09",
+      "confidence": 73,
+      "description": "doshout.fun new on-chain candidate.",
+      "website": "https://doshout.fun/",
+      "x": "https://x.com/doshoutfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/8kgqnybshpzkqykcjwjekmhhktsmjx5gmd5zmcskpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-09"
+    },
+    {
       "name": "Dotsol",
       "status": "LIVE",
       "chain": "solana",
@@ -4538,6 +4555,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/9tv8cs2ezwb4ovc7aelzqvytycgfvpjwxantj7tupump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-09"
+    },
+    {
+      "name": "grvty.fun",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-10-09",
+      "confidence": 73,
+      "description": "A new token ecosystem built on PumpFun custom pairs. Every launch orbits $GRAVITY.",
+      "website": "https://grvty.fun/",
+      "x": "https://x.com/grvtydotfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/e4wciynflbv6mfydtxdkjd8thzwrikumckte2uorpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -12811,6 +12845,23 @@
       "lastConfirmed": "2026-10-09"
     },
     {
+      "name": "doshout.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-10-09",
+      "confidence": 73,
+      "description": "doshout.fun new on-chain candidate.",
+      "website": "https://doshout.fun/",
+      "x": "https://x.com/doshoutfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/8kgqnybshpzkqykcjwjekmhhktsmjx5gmd5zmcskpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-09"
+    },
+    {
       "name": "Dotsol",
       "status": "LIVE",
       "chain": "solana",
@@ -13502,6 +13553,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/9tv8cs2ezwb4ovc7aelzqvytycgfvpjwxantj7tupump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-09"
+    },
+    {
+      "name": "grvty.fun",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-10-09",
+      "confidence": 73,
+      "description": "A new token ecosystem built on PumpFun custom pairs. Every launch orbits $GRAVITY.",
+      "website": "https://grvty.fun/",
+      "x": "https://x.com/grvtydotfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/e4wciynflbv6mfydtxdkjd8thzwrikumckte2uorpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
