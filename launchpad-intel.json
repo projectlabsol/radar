@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T00:52:45Z",
+  "updatedAt": "2026-10-10T07:09:39Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -1195,6 +1195,23 @@
       "lastConfirmed": "2026-10-10"
     },
     {
+      "name": "commies.fun",
+      "status": "COMING SOON",
+      "chain": "solana",
+      "firstSeen": "2026-10-10",
+      "confidence": 78,
+      "description": "Commies is a Solana launchpad where 100% of every coin’s creator fees fill its own on-chain treasury, giving holders a published floor they can burn to redeem. Every coin also gets a token-gated community with feeds, stickers and arena games, where every burn lifts the floor for the holders left.",
+      "website": "https://commies.fun/",
+      "x": "https://x.com/CommiesFun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/2gpjrduykuojchnlbuzjjo9sssdwqe57nfb3zjiapump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-10"
+    },
+    {
       "name": "Crawlrr",
       "status": "COMING SOON",
       "chain": "Robinhood Chain, Solana, Tron",
@@ -1665,6 +1682,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x82245aabb8775d3ff4ee56fdcfba972940de2211",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-10"
+    },
+    {
+      "name": "oramarket.xyz",
+      "status": "ANNOUNCED",
+      "chain": "solana",
+      "firstSeen": "2026-10-10",
+      "confidence": 78,
+      "description": "two sides. one winner. prediction markets, as coins.",
+      "website": "https://oramarket.xyz/",
+      "x": "https://x.com/oramarket",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/3ykfyfuelhrwnekdkqf7tqm4touz4rcucywhhulxpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -10210,6 +10244,23 @@
       "lastConfirmed": "2026-10-10"
     },
     {
+      "name": "commies.fun",
+      "status": "COMING SOON",
+      "chain": "solana",
+      "firstSeen": "2026-10-10",
+      "confidence": 78,
+      "description": "Commies is a Solana launchpad where 100% of every coin’s creator fees fill its own on-chain treasury, giving holders a published floor they can burn to redeem. Every coin also gets a token-gated community with feeds, stickers and arena games, where every burn lifts the floor for the holders left.",
+      "website": "https://commies.fun/",
+      "x": "https://x.com/CommiesFun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/2gpjrduykuojchnlbuzjjo9sssdwqe57nfb3zjiapump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-10"
+    },
+    {
       "name": "Crawlrr",
       "status": "COMING SOON",
       "chain": "Robinhood Chain, Solana, Tron",
@@ -10680,6 +10731,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x82245aabb8775d3ff4ee56fdcfba972940de2211",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-10"
+    },
+    {
+      "name": "oramarket.xyz",
+      "status": "ANNOUNCED",
+      "chain": "solana",
+      "firstSeen": "2026-10-10",
+      "confidence": 78,
+      "description": "two sides. one winner. prediction markets, as coins.",
+      "website": "https://oramarket.xyz/",
+      "x": "https://x.com/oramarket",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/3ykfyfuelhrwnekdkqf7tqm4touz4rcucywhhulxpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
