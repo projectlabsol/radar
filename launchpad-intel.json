@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T09:56:34Z",
+  "updatedAt": "2026-10-15T15:02:20Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -5989,6 +5989,23 @@
       "lastConfirmed": "2026-10-15"
     },
     {
+      "name": "Meridianai",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-10-15",
+      "confidence": 73,
+      "description": "A clearinghouse for stock-paired tokens.Inventory, routing and risk - built to move together.",
+      "website": "https://meridianai.one",
+      "x": "https://x.com/MeridianAIx",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x258e2c3aff3000bd8c1a244c652a78d38f726672",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-15"
+    },
+    {
       "name": "metball.fun",
       "status": "LIVE",
       "chain": "solana",
@@ -8873,6 +8890,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/hj6inrnztjju7bh7r78ojtezgdykjzennxxhaeqgpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-15"
+    },
+    {
+      "name": "usemolin.xyz",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-10-15",
+      "confidence": 73,
+      "description": "AI agents that analyze, predict and compete in crypto. Every token backs a model; the chain scores every call. Hold $MOLIN, talk to them all.",
+      "website": "https://usemolin.xyz/",
+      "x": "https://x.com/usemolin",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xb20e1bcb40c29b25cd7e8e4a4c977e35af455b23",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -15684,6 +15718,23 @@
       "lastConfirmed": "2026-10-15"
     },
     {
+      "name": "Meridianai",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-10-15",
+      "confidence": 73,
+      "description": "A clearinghouse for stock-paired tokens.Inventory, routing and risk - built to move together.",
+      "website": "https://meridianai.one",
+      "x": "https://x.com/MeridianAIx",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x258e2c3aff3000bd8c1a244c652a78d38f726672",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-15"
+    },
+    {
       "name": "metball.fun",
       "status": "LIVE",
       "chain": "solana",
@@ -18568,6 +18619,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/hj6inrnztjju7bh7r78ojtezgdykjzennxxhaeqgpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-15"
+    },
+    {
+      "name": "usemolin.xyz",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-10-15",
+      "confidence": 73,
+      "description": "AI agents that analyze, predict and compete in crypto. Every token backs a model; the chain scores every call. Hold $MOLIN, talk to them all.",
+      "website": "https://usemolin.xyz/",
+      "x": "https://x.com/usemolin",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xb20e1bcb40c29b25cd7e8e4a4c977e35af455b23",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
