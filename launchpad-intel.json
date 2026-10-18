@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T11:07:57Z",
+  "updatedAt": "2026-10-18T14:35:30Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -2436,6 +2436,23 @@
       "lastConfirmed": "2026-10-18"
     },
     {
+      "name": "hybirdex.app",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-10-18",
+      "confidence": 77,
+      "description": "Every buy and sell of $HYBRID pays a fee into a vault with no owner and no withdraw button. The vault can only buy NVDA and SPY stock tokens on Robinhood Chain. Burn your coins and it hands you your slice. Every trade adds to what is left.",
+      "website": "https://hybirdex.app",
+      "x": "https://x.com/hybirdex",
+      "discord": "",
+      "github": "https://github.com/hybirdex",
+      "source": "https://dexscreener.com/robinhood/0x0305af012971bf4122fba0e40ceb07c47231ad70",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-18"
+    },
+    {
       "name": "hypeit.fun",
       "status": "RUMOR",
       "chain": "HyperEVM",
@@ -2872,6 +2889,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/f3av7jndcuxpppk9tkyfjvf1xvkmucu1haxjuu2mnall",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-18"
+    },
+    {
+      "name": "amm-engine.fun",
+      "status": "RUMOR",
+      "chain": "Solana",
+      "firstSeen": "2026-10-18",
+      "confidence": 73,
+      "description": "Launch a coin. Appoint its market maker. Creator fees fund autonomous bots that market-make your coin around the clock.",
+      "website": "https://amm-engine.fun/",
+      "x": "https://x.com/ammengine",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/j6jspdbprvprqxf1v8csojmrmjvpcuazydryvyrmpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -12590,6 +12624,23 @@
       "lastConfirmed": "2026-10-18"
     },
     {
+      "name": "hybirdex.app",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-10-18",
+      "confidence": 77,
+      "description": "Every buy and sell of $HYBRID pays a fee into a vault with no owner and no withdraw button. The vault can only buy NVDA and SPY stock tokens on Robinhood Chain. Burn your coins and it hands you your slice. Every trade adds to what is left.",
+      "website": "https://hybirdex.app",
+      "x": "https://x.com/hybirdex",
+      "discord": "",
+      "github": "https://github.com/hybirdex",
+      "source": "https://dexscreener.com/robinhood/0x0305af012971bf4122fba0e40ceb07c47231ad70",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-18"
+    },
+    {
       "name": "hypeit.fun",
       "status": "RUMOR",
       "chain": "HyperEVM",
@@ -13026,6 +13077,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/f3av7jndcuxpppk9tkyfjvf1xvkmucu1haxjuu2mnall",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-18"
+    },
+    {
+      "name": "amm-engine.fun",
+      "status": "RUMOR",
+      "chain": "Solana",
+      "firstSeen": "2026-10-18",
+      "confidence": 73,
+      "description": "Launch a coin. Appoint its market maker. Creator fees fund autonomous bots that market-make your coin around the clock.",
+      "website": "https://amm-engine.fun/",
+      "x": "https://x.com/ammengine",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/j6jspdbprvprqxf1v8csojmrmjvpcuazydryvyrmpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
