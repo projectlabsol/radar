@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T05:55:36Z",
+  "updatedAt": "2026-10-18T11:07:57Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -4068,6 +4068,23 @@
       "lastConfirmed": "2026-10-18"
     },
     {
+      "name": "crewagents.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-10-18",
+      "confidence": 73,
+      "description": "crewagents.fun new on-chain candidate.",
+      "website": "https://crewagents.fun/",
+      "x": "https://x.com/crewagentspf",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/t8qthbhq7s5uvjbfv8f5z9xbhwtvqs4nnyn2iexpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-18"
+    },
+    {
       "name": "Croakbullfrog",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -4827,6 +4844,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x308b58ccdec829637849ff6e33f1ef83746ba366",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-18"
+    },
+    {
+      "name": "Funfields",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-10-18",
+      "confidence": 73,
+      "description": "Plant, harvest, trade & own in a cozy farming MMO on Robinhood Chain.",
+      "website": "https://funfields.pw/",
+      "x": "https://x.com/PlayFunfields",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x505126622b76b48e491c3b483f07223176efd649",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -14188,6 +14222,23 @@
       "lastConfirmed": "2026-10-18"
     },
     {
+      "name": "crewagents.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-10-18",
+      "confidence": 73,
+      "description": "crewagents.fun new on-chain candidate.",
+      "website": "https://crewagents.fun/",
+      "x": "https://x.com/crewagentspf",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/t8qthbhq7s5uvjbfv8f5z9xbhwtvqs4nnyn2iexpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-18"
+    },
+    {
       "name": "Croakbullfrog",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -14947,6 +14998,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x308b58ccdec829637849ff6e33f1ef83746ba366",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-18"
+    },
+    {
+      "name": "Funfields",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-10-18",
+      "confidence": 73,
+      "description": "Plant, harvest, trade & own in a cozy farming MMO on Robinhood Chain.",
+      "website": "https://funfields.pw/",
+      "x": "https://x.com/PlayFunfields",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x505126622b76b48e491c3b483f07223176efd649",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
