@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T10:12:41Z",
+  "updatedAt": "2026-10-22T15:18:06Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -2908,6 +2908,23 @@
       "source": "https://github.com/lobstercove/lichen",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-22"
+    },
+    {
+      "name": "0xagent.fun",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-10-22",
+      "confidence": 73,
+      "description": "0xagent.fun new on-chain candidate.",
+      "website": "https://0xagent.fun",
+      "x": "https://x.com/0xAgent__",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/3kammrxdfffwx5idrrzp5bmiz7yuziogdeghahs2pump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
       "lastConfirmed": "2026-10-22"
     },
@@ -13742,6 +13759,23 @@
       "source": "https://github.com/lobstercove/lichen",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-22"
+    },
+    {
+      "name": "0xagent.fun",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-10-22",
+      "confidence": 73,
+      "description": "0xagent.fun new on-chain candidate.",
+      "website": "https://0xagent.fun",
+      "x": "https://x.com/0xAgent__",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/3kammrxdfffwx5idrrzp5bmiz7yuziogdeghahs2pump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
       "lastConfirmed": "2026-10-22"
     },
