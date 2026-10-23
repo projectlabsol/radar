@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T10:05:09Z",
+  "updatedAt": "2026-10-23T15:05:37Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -2300,6 +2300,23 @@
       "lastConfirmed": "2026-10-23"
     },
     {
+      "name": "Torchpad",
+      "status": "COMING SOON",
+      "chain": "Robinhood Chain, Solana, BNB Chain",
+      "firstSeen": "2026-10-23",
+      "confidence": 78,
+      "description": "The ultimate trade & token launchpad. Launch, trade, earn.",
+      "website": "https://torchpad.site",
+      "x": "https://x.com/torchpadsite",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/ethereum/0x385f3ab74e8d7ec8b8c763ce8032e680138c1e8d",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-23"
+    },
+    {
       "name": "Trendtrader",
       "status": "ANNOUNCED",
       "chain": "Solana",
@@ -2753,6 +2770,23 @@
       "discord": "",
       "github": "https://github.com/pootcoinxyz",
       "source": "https://dexscreener.com/solana/6catkna3ejeisxyrs4dkgmqbpj8apepbc65xtejhpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-23"
+    },
+    {
+      "name": "Protocol",
+      "status": "RUMOR",
+      "chain": "robinhood",
+      "firstSeen": "2026-10-23",
+      "confidence": 77,
+      "description": "A non-custodial multichain hub under one roof.",
+      "website": "https://protocol.casa/",
+      "x": "https://x.com/casa_protocol",
+      "discord": "",
+      "github": "https://github.com/protocolcasa",
+      "source": "https://dexscreener.com/robinhood/0xa6142d211e8c5421c3cfeddf11abdef6d838ebe7",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -13270,6 +13304,23 @@
       "lastConfirmed": "2026-10-23"
     },
     {
+      "name": "Torchpad",
+      "status": "COMING SOON",
+      "chain": "Robinhood Chain, Solana, BNB Chain",
+      "firstSeen": "2026-10-23",
+      "confidence": 78,
+      "description": "The ultimate trade & token launchpad. Launch, trade, earn.",
+      "website": "https://torchpad.site",
+      "x": "https://x.com/torchpadsite",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/ethereum/0x385f3ab74e8d7ec8b8c763ce8032e680138c1e8d",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-23"
+    },
+    {
       "name": "Trendtrader",
       "status": "ANNOUNCED",
       "chain": "Solana",
@@ -13723,6 +13774,23 @@
       "discord": "",
       "github": "https://github.com/pootcoinxyz",
       "source": "https://dexscreener.com/solana/6catkna3ejeisxyrs4dkgmqbpj8apepbc65xtejhpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-23"
+    },
+    {
+      "name": "Protocol",
+      "status": "RUMOR",
+      "chain": "robinhood",
+      "firstSeen": "2026-10-23",
+      "confidence": 77,
+      "description": "A non-custodial multichain hub under one roof.",
+      "website": "https://protocol.casa/",
+      "x": "https://x.com/casa_protocol",
+      "discord": "",
+      "github": "https://github.com/protocolcasa",
+      "source": "https://dexscreener.com/robinhood/0xa6142d211e8c5421c3cfeddf11abdef6d838ebe7",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
