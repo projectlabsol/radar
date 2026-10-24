@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T14:34:07Z",
+  "updatedAt": "2026-10-24T18:10:03Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -2334,6 +2334,23 @@
       "lastConfirmed": "2026-10-24"
     },
     {
+      "name": "toolspump.fun",
+      "status": "ANNOUNCED",
+      "chain": "Solana",
+      "firstSeen": "2026-10-24",
+      "confidence": 78,
+      "description": "Launch Solana tools in minutes. Your own launchpad, tokens, sites, buy pages, bots and AI agents. Connect Phantom, go live.",
+      "website": "https://toolspump.fun/",
+      "x": "https://x.com/Toolspumpfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/7otf9rwfpyfhxhpgnqk2bj4mnsulnfrjheinbpvdpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-24"
+    },
+    {
       "name": "Torchpad",
       "status": "COMING SOON",
       "chain": "Robinhood Chain, Solana, BNB Chain",
@@ -2736,6 +2753,23 @@
       "discord": "",
       "github": "https://github.com/you/your-plugin",
       "source": "https://dexscreener.com/solana/dvbyfeazcaljg1srjyf4m6npj1b3mvvh4ue8gmwbpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-24"
+    },
+    {
+      "name": "Okiro",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-10-24",
+      "confidence": 77,
+      "description": "Every $OKIRO trade feeds an AI agent. The creator fee lands in Okiro's endowment, a contract that lends it and can never pay it out, so its interest buys Okiro thinking time for good. Fans top it up with USDG they keep.",
+      "website": "https://okiro.cc",
+      "x": "https://x.com/OkiroCC",
+      "discord": "",
+      "github": "https://github.com/okirocc",
+      "source": "https://dexscreener.com/robinhood/0x36bf147915b6389c4390d59ec41e1f3146bf837c",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -13440,6 +13474,23 @@
       "lastConfirmed": "2026-10-24"
     },
     {
+      "name": "toolspump.fun",
+      "status": "ANNOUNCED",
+      "chain": "Solana",
+      "firstSeen": "2026-10-24",
+      "confidence": 78,
+      "description": "Launch Solana tools in minutes. Your own launchpad, tokens, sites, buy pages, bots and AI agents. Connect Phantom, go live.",
+      "website": "https://toolspump.fun/",
+      "x": "https://x.com/Toolspumpfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/7otf9rwfpyfhxhpgnqk2bj4mnsulnfrjheinbpvdpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-24"
+    },
+    {
       "name": "Torchpad",
       "status": "COMING SOON",
       "chain": "Robinhood Chain, Solana, BNB Chain",
@@ -13842,6 +13893,23 @@
       "discord": "",
       "github": "https://github.com/you/your-plugin",
       "source": "https://dexscreener.com/solana/dvbyfeazcaljg1srjyf4m6npj1b3mvvh4ue8gmwbpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-24"
+    },
+    {
+      "name": "Okiro",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-10-24",
+      "confidence": 77,
+      "description": "Every $OKIRO trade feeds an AI agent. The creator fee lands in Okiro's endowment, a contract that lends it and can never pay it out, so its interest buys Okiro thinking time for good. Fans top it up with USDG they keep.",
+      "website": "https://okiro.cc",
+      "x": "https://x.com/OkiroCC",
+      "discord": "",
+      "github": "https://github.com/okirocc",
+      "source": "https://dexscreener.com/robinhood/0x36bf147915b6389c4390d59ec41e1f3146bf837c",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
