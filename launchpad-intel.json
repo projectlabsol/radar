@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T06:15:28Z",
+  "updatedAt": "2026-10-25T11:42:47Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -2369,7 +2369,7 @@
     },
     {
       "name": "toolspump.fun",
-      "status": "ANNOUNCED",
+      "status": "COMING SOON",
       "chain": "Solana",
       "firstSeen": "2026-10-24",
       "confidence": 78,
@@ -2787,6 +2787,23 @@
       "discord": "",
       "github": "https://github.com/you/your-plugin",
       "source": "https://dexscreener.com/solana/dvbyfeazcaljg1srjyf4m6npj1b3mvvh4ue8gmwbpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-25"
+    },
+    {
+      "name": "Nutz",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain, Ethereum",
+      "firstSeen": "2026-10-25",
+      "confidence": 77,
+      "description": "🐿️ The squirrel that pays you. Hold $NUTZ. Every hour the squirrel drops tokenized stocks (SPY, NVDA, MU, SPCX) and USDG cash straight into your wallet. No staking. No claiming. No team cut. 98% of every trading fee goes to holders. 2% pays the system's own gas. Zero team allocation. Fixed 1B supply, no mint, liquidity",
+      "website": "https://nutz.wtf",
+      "x": "https://x.com/nutzwtf",
+      "discord": "",
+      "github": "https://github.com/nutzwtf",
+      "source": "https://dexscreener.com/robinhood/0x5a8e6bb390b51978b0cea029a070cfcdd495138e",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -13543,7 +13560,7 @@
     },
     {
       "name": "toolspump.fun",
-      "status": "ANNOUNCED",
+      "status": "COMING SOON",
       "chain": "Solana",
       "firstSeen": "2026-10-24",
       "confidence": 78,
@@ -13961,6 +13978,23 @@
       "discord": "",
       "github": "https://github.com/you/your-plugin",
       "source": "https://dexscreener.com/solana/dvbyfeazcaljg1srjyf4m6npj1b3mvvh4ue8gmwbpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-25"
+    },
+    {
+      "name": "Nutz",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain, Ethereum",
+      "firstSeen": "2026-10-25",
+      "confidence": 77,
+      "description": "🐿️ The squirrel that pays you. Hold $NUTZ. Every hour the squirrel drops tokenized stocks (SPY, NVDA, MU, SPCX) and USDG cash straight into your wallet. No staking. No claiming. No team cut. 98% of every trading fee goes to holders. 2% pays the system's own gas. Zero team allocation. Fixed 1B supply, no mint, liquidity",
+      "website": "https://nutz.wtf",
+      "x": "https://x.com/nutzwtf",
+      "discord": "",
+      "github": "https://github.com/nutzwtf",
+      "source": "https://dexscreener.com/robinhood/0x5a8e6bb390b51978b0cea029a070cfcdd495138e",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
