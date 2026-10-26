@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T19:23:27Z",
+  "updatedAt": "2026-10-26T23:54:15Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -9780,6 +9780,23 @@
       "lastConfirmed": "2026-10-26"
     },
     {
+      "name": "Tminus",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-10-26",
+      "confidence": 73,
+      "description": "T-minus is a no-code Solana launchpad built on Meteora. Customize your bonding curve, trading fees, anti-sniper settings, fee splits, liquidity locks and vesting. Launch and manage your token from one place, with public settings and every transaction signed in your own wallet.",
+      "website": "https://tminus.si/",
+      "x": "https://x.com/tminus_si",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/6zekapj5o5sqr5xmg4xg1qou2w8tmeaq1q46zgqttxph",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-26"
+    },
+    {
       "name": "tokrbot.fun",
       "status": "LIVE",
       "chain": "Solana",
@@ -11134,23 +11151,6 @@
       "discord": "",
       "github": "https://github.com/h100envy/crawl-hive",
       "source": "https://github.com/h100envy/crawl-hive",
-      "radarTier": "WATCHLIST",
-      "detectedBy": "GitHub + Website",
-      "scannerVersion": 5,
-      "lastConfirmed": "2026-10-26"
-    },
-    {
-      "name": "Github",
-      "status": "TESTNET",
-      "chain": "Monad",
-      "firstSeen": "2026-10-13",
-      "confidence": 67,
-      "description": "Config files for my GitHub profile.",
-      "website": "https://github.com/urmaliyadivyanshu31",
-      "x": "https://x.com/Divyanshueth",
-      "discord": "",
-      "github": "https://github.com/urmaliyadivyanshu31/urmaliyadivyanshu31",
-      "source": "https://github.com/urmaliyadivyanshu31/urmaliyadivyanshu31",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
@@ -21124,6 +21124,23 @@
       "lastConfirmed": "2026-10-26"
     },
     {
+      "name": "Tminus",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-10-26",
+      "confidence": 73,
+      "description": "T-minus is a no-code Solana launchpad built on Meteora. Customize your bonding curve, trading fees, anti-sniper settings, fee splits, liquidity locks and vesting. Launch and manage your token from one place, with public settings and every transaction signed in your own wallet.",
+      "website": "https://tminus.si/",
+      "x": "https://x.com/tminus_si",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/6zekapj5o5sqr5xmg4xg1qou2w8tmeaq1q46zgqttxph",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-26"
+    },
+    {
       "name": "tokrbot.fun",
       "status": "LIVE",
       "chain": "Solana",
@@ -22478,23 +22495,6 @@
       "discord": "",
       "github": "https://github.com/h100envy/crawl-hive",
       "source": "https://github.com/h100envy/crawl-hive",
-      "radarTier": "WATCHLIST",
-      "detectedBy": "GitHub + Website",
-      "scannerVersion": 5,
-      "lastConfirmed": "2026-10-26"
-    },
-    {
-      "name": "Github",
-      "status": "TESTNET",
-      "chain": "Monad",
-      "firstSeen": "2026-10-13",
-      "confidence": 67,
-      "description": "Config files for my GitHub profile.",
-      "website": "https://github.com/urmaliyadivyanshu31",
-      "x": "https://x.com/Divyanshueth",
-      "discord": "",
-      "github": "https://github.com/urmaliyadivyanshu31/urmaliyadivyanshu31",
-      "source": "https://github.com/urmaliyadivyanshu31/urmaliyadivyanshu31",
       "radarTier": "WATCHLIST",
       "detectedBy": "GitHub + Website",
       "scannerVersion": 5,
