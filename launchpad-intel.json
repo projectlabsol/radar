@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T08:35:00Z",
+  "updatedAt": "2026-10-28T16:04:40Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -5564,6 +5564,23 @@
       "lastConfirmed": "2026-10-28"
     },
     {
+      "name": "Flowpons",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-10-28",
+      "confidence": 73,
+      "description": "Flowpons new on-chain candidate.",
+      "website": "https://flowpons.com",
+      "x": "https://x.com/…",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x10aaba00619d13beacb5dc3c4a20e39140fba41f",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-28"
+    },
+    {
       "name": "fluencer.fun",
       "status": "LIVE",
       "chain": "solana",
@@ -8278,6 +8295,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/5lo4mh6pijbqn4pm2c3u3s6rnks5yjrwu8rjvzdapink",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-28"
+    },
+    {
+      "name": "Pintara",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-10-28",
+      "confidence": 73,
+      "description": "Pin your ad. Own the moment. Advertising infrastructure on Robinhood Chain.",
+      "website": "https://pintara.cloud/",
+      "x": "https://x.com/pintaracloud",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xe573f018d8507d78b63001c1a487ed1467f8ab98",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -17078,6 +17112,23 @@
       "lastConfirmed": "2026-10-28"
     },
     {
+      "name": "Flowpons",
+      "status": "LIVE",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-10-28",
+      "confidence": 73,
+      "description": "Flowpons new on-chain candidate.",
+      "website": "https://flowpons.com",
+      "x": "https://x.com/…",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0x10aaba00619d13beacb5dc3c4a20e39140fba41f",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-28"
+    },
+    {
       "name": "fluencer.fun",
       "status": "LIVE",
       "chain": "solana",
@@ -19792,6 +19843,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/5lo4mh6pijbqn4pm2c3u3s6rnks5yjrwu8rjvzdapink",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-28"
+    },
+    {
+      "name": "Pintara",
+      "status": "RUMOR",
+      "chain": "Robinhood Chain",
+      "firstSeen": "2026-10-28",
+      "confidence": 73,
+      "description": "Pin your ad. Own the moment. Advertising infrastructure on Robinhood Chain.",
+      "website": "https://pintara.cloud/",
+      "x": "https://x.com/pintaracloud",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xe573f018d8507d78b63001c1a487ed1467f8ab98",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
