@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T14:21:40Z",
+  "updatedAt": "2026-10-29T20:18:51Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -84,6 +84,23 @@
       "source": "https://github.com/lightchain-protocol/lightchain-launchpad",
       "radarTier": "VERIFIED",
       "detectedBy": "GitHub + Website + DEX Screener",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-29"
+    },
+    {
+      "name": "Otcdesks",
+      "status": "NEW",
+      "chain": "solana",
+      "firstSeen": "2026-09-01",
+      "confidence": 100,
+      "description": "ASSDAQ paired with QQQ",
+      "website": "https://otcdesks.cash/coin/bttFLQwpfrkk7y3GXLLPkTxuCQtFuH6cuKGWPysi8sn",
+      "x": "https://x.com/OTCDesks",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/bttflqwpfrkk7y3gxllpktxucqtfuh6cukgwpysi8sn",
+      "radarTier": "VERIFIED",
+      "detectedBy": "DEX Screener + Website + DefiLlama",
       "scannerVersion": 5,
       "lastConfirmed": "2026-10-29"
     },
@@ -1909,6 +1926,23 @@
       "lastConfirmed": "2026-10-29"
     },
     {
+      "name": "launchoninsta.fun",
+      "status": "COMING SOON",
+      "chain": "solana",
+      "firstSeen": "2026-10-29",
+      "confidence": 78,
+      "description": "Launch a token for any instagram handle and the fees are only claimable by that instagram account.",
+      "website": "https://launchoninsta.fun/",
+      "x": "https://x.com/instadotfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/annxaekjnflx3h4gxpohatv2ibtosfkk7fzwxpxzdrmi",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-29"
+    },
+    {
       "name": "luckereum.fun",
       "status": "ANNOUNCED",
       "chain": "Ethereum",
@@ -3237,7 +3271,7 @@
     {
       "name": "Cymetica",
       "status": "COMING SOON",
-      "chain": "",
+      "chain": "Base, Ethereum, Tron",
       "firstSeen": "2026-09-22",
       "confidence": 75,
       "description": "Cymetica (Berkeley, California; founded November 2025 by Kasian Franks) is the company behind EventTrader, an AI-native perpetual prediction market and hybrid CEX-DEX exchange: a central limit order book with 500+ pairs, EVCDX event-card index markets, clonable AI trading agent species, AI-managed funds and a token lau",
@@ -6210,6 +6244,23 @@
       "lastConfirmed": "2026-10-29"
     },
     {
+      "name": "Gtalaunch",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-10-29",
+      "confidence": 73,
+      "description": "The GTA token launchpad",
+      "website": "https://gtalaunch.com/",
+      "x": "https://x.com/gta_launchpad",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/7rckryjavhwmjs3qpkb1dybr8hagdb5kjb9xrkfshz9k",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-29"
+    },
+    {
       "name": "Gweistation",
       "status": "RUMOR",
       "chain": "Ethereum",
@@ -7904,23 +7955,6 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/4shxskp2uz4k8fqb9wth1fbrtk8fougsssjwfddfpump",
-      "radarTier": "WATCHLIST",
-      "detectedBy": "DEX Screener + Website",
-      "scannerVersion": 5,
-      "lastConfirmed": "2026-10-29"
-    },
-    {
-      "name": "Otcdesks",
-      "status": "RUMOR",
-      "chain": "solana",
-      "firstSeen": "2026-09-01",
-      "confidence": 73,
-      "description": "ASSDAQ paired with QQQ",
-      "website": "https://otcdesks.cash/coin/bttFLQwpfrkk7y3GXLLPkTxuCQtFuH6cuKGWPysi8sn",
-      "x": "https://x.com/OTCDesks",
-      "discord": "",
-      "github": "",
-      "source": "https://dexscreener.com/solana/bttflqwpfrkk7y3gxllpktxucqtfuh6cukgwpysi8sn",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -11842,6 +11876,23 @@
       "lastConfirmed": "2026-10-29"
     },
     {
+      "name": "Otcdesks",
+      "status": "NEW",
+      "chain": "solana",
+      "firstSeen": "2026-09-01",
+      "confidence": 100,
+      "description": "ASSDAQ paired with QQQ",
+      "website": "https://otcdesks.cash/coin/bttFLQwpfrkk7y3GXLLPkTxuCQtFuH6cuKGWPysi8sn",
+      "x": "https://x.com/OTCDesks",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/bttflqwpfrkk7y3gxllpktxucqtfuh6cukgwpysi8sn",
+      "radarTier": "VERIFIED",
+      "detectedBy": "DEX Screener + Website + DefiLlama",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-29"
+    },
+    {
       "name": "Sapling",
       "status": "LIVE",
       "chain": "Solana",
@@ -13661,6 +13712,23 @@
       "lastConfirmed": "2026-10-29"
     },
     {
+      "name": "launchoninsta.fun",
+      "status": "COMING SOON",
+      "chain": "solana",
+      "firstSeen": "2026-10-29",
+      "confidence": 78,
+      "description": "Launch a token for any instagram handle and the fees are only claimable by that instagram account.",
+      "website": "https://launchoninsta.fun/",
+      "x": "https://x.com/instadotfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/annxaekjnflx3h4gxpohatv2ibtosfkk7fzwxpxzdrmi",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-29"
+    },
+    {
       "name": "luckereum.fun",
       "status": "ANNOUNCED",
       "chain": "Ethereum",
@@ -14989,7 +15057,7 @@
     {
       "name": "Cymetica",
       "status": "COMING SOON",
-      "chain": "",
+      "chain": "Base, Ethereum, Tron",
       "firstSeen": "2026-09-22",
       "confidence": 75,
       "description": "Cymetica (Berkeley, California; founded November 2025 by Kasian Franks) is the company behind EventTrader, an AI-native perpetual prediction market and hybrid CEX-DEX exchange: a central limit order book with 500+ pairs, EVCDX event-card index markets, clonable AI trading agent species, AI-managed funds and a token lau",
@@ -17962,6 +18030,23 @@
       "lastConfirmed": "2026-10-29"
     },
     {
+      "name": "Gtalaunch",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-10-29",
+      "confidence": 73,
+      "description": "The GTA token launchpad",
+      "website": "https://gtalaunch.com/",
+      "x": "https://x.com/gta_launchpad",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/7rckryjavhwmjs3qpkb1dybr8hagdb5kjb9xrkfshz9k",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-10-29"
+    },
+    {
       "name": "Gweistation",
       "status": "RUMOR",
       "chain": "Ethereum",
@@ -19656,23 +19741,6 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/4shxskp2uz4k8fqb9wth1fbrtk8fougsssjwfddfpump",
-      "radarTier": "WATCHLIST",
-      "detectedBy": "DEX Screener + Website",
-      "scannerVersion": 5,
-      "lastConfirmed": "2026-10-29"
-    },
-    {
-      "name": "Otcdesks",
-      "status": "RUMOR",
-      "chain": "solana",
-      "firstSeen": "2026-09-01",
-      "confidence": 73,
-      "description": "ASSDAQ paired with QQQ",
-      "website": "https://otcdesks.cash/coin/bttFLQwpfrkk7y3GXLLPkTxuCQtFuH6cuKGWPysi8sn",
-      "x": "https://x.com/OTCDesks",
-      "discord": "",
-      "github": "",
-      "source": "https://dexscreener.com/solana/bttflqwpfrkk7y3gxllpktxucqtfuh6cukgwpysi8sn",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
