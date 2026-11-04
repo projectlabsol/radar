@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T17:18:52Z",
+  "updatedAt": "2026-11-04T23:40:50Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -4935,6 +4935,23 @@
       "lastConfirmed": "2026-11-04"
     },
     {
+      "name": "clankdexer.fun",
+      "status": "RUMOR",
+      "chain": "Base",
+      "firstSeen": "2026-11-04",
+      "confidence": 73,
+      "description": "Hold one - Earn three - Rewards in your Wallet | Vote for next basket",
+      "website": "https://clankdexer.fun/",
+      "x": "https://x.com/clankdexer",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/base/0x134ba967d5973baafcd5abbf459b91eff34e0b07",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-04"
+    },
+    {
       "name": "Clarustheappledog",
       "status": "RUMOR",
       "chain": "robinhood",
@@ -7054,6 +7071,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x8734f2f2f38647933761f003f166ab0b853c020c",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-04"
+    },
+    {
+      "name": "Jeet",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-11-04",
+      "confidence": 73,
+      "description": "The launchpad that taxes bundlers and jeets. Sell into ATH or buy block 0, pay 10%. Every tax buys back and adds to LP.",
+      "website": "https://jeet.tax/",
+      "x": "https://x.com/jeetdottax",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/cs415d6xwfs2nwivknylvdm8nsbsbapcbj6njz6rvfuh",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -17418,6 +17452,23 @@
       "lastConfirmed": "2026-11-04"
     },
     {
+      "name": "clankdexer.fun",
+      "status": "RUMOR",
+      "chain": "Base",
+      "firstSeen": "2026-11-04",
+      "confidence": 73,
+      "description": "Hold one - Earn three - Rewards in your Wallet | Vote for next basket",
+      "website": "https://clankdexer.fun/",
+      "x": "https://x.com/clankdexer",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/base/0x134ba967d5973baafcd5abbf459b91eff34e0b07",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-04"
+    },
+    {
       "name": "Clarustheappledog",
       "status": "RUMOR",
       "chain": "robinhood",
@@ -19537,6 +19588,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x8734f2f2f38647933761f003f166ab0b853c020c",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-04"
+    },
+    {
+      "name": "Jeet",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-11-04",
+      "confidence": 73,
+      "description": "The launchpad that taxes bundlers and jeets. Sell into ATH or buy block 0, pay 10%. Every tax buys back and adds to LP.",
+      "website": "https://jeet.tax/",
+      "x": "https://x.com/jeetdottax",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/cs415d6xwfs2nwivknylvdm8nsbsbapcbj6njz6rvfuh",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
