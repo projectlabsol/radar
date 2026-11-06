@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T17:58:18Z",
+  "updatedAt": "2026-11-06T23:09:56Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -3133,6 +3133,23 @@
       "lastConfirmed": "2026-11-06"
     },
     {
+      "name": "hatchmind.fun",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-11-06",
+      "confidence": 77,
+      "description": "Imagine bringing a token to life with a real job, like turning an unfinished GitHub game into one people can play. Hatch brings Solana tokens to life. AI agents tackle unfinished GitHub projects, creator fees fund developers, and Hatch emails invites automatically. We see a ceiling well above Agency’s $30M ATH. Take a ",
+      "website": "https://hatchmind.fun/",
+      "x": "https://x.com/Hatch_Mind_",
+      "discord": "",
+      "github": "https://github.com/Block-O2/adaptive-traction-mpc#readme",
+      "source": "https://dexscreener.com/solana/46r5vjsk4vzwvu4robxoqyobze8d4nmn3b6wra6gpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-06"
+    },
+    {
       "name": "Hodl",
       "status": "RUMOR",
       "chain": "BNB Chain",
@@ -5541,6 +5558,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/6rjq9rm2eoxzvndk5jucfdsywfkf68fatrynjgdapump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-06"
+    },
+    {
+      "name": "Deployr",
+      "status": "LIVE",
+      "chain": "Robinhood Chain, Solana",
+      "firstSeen": "2026-11-06",
+      "confidence": 73,
+      "description": "Deployr is the launchpad that lives on X. Tag @HeyDeployr with a name and ticker and your token goes live, with its trading fees going to you. $DEPLOYR is the token behind it. Holding it lowers what you pay on the Deployr card, a virtual card you top up with crypto and spend with Apple Pay and Google Pay, and top holde",
+      "website": "https://deployr.money",
+      "x": "https://x.com/HeyDeployr",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xa01f353b72ef6557359f2c110ab7c738dfd8405d",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -15752,6 +15786,23 @@
       "lastConfirmed": "2026-11-06"
     },
     {
+      "name": "hatchmind.fun",
+      "status": "LIVE",
+      "chain": "solana",
+      "firstSeen": "2026-11-06",
+      "confidence": 77,
+      "description": "Imagine bringing a token to life with a real job, like turning an unfinished GitHub game into one people can play. Hatch brings Solana tokens to life. AI agents tackle unfinished GitHub projects, creator fees fund developers, and Hatch emails invites automatically. We see a ceiling well above Agency’s $30M ATH. Take a ",
+      "website": "https://hatchmind.fun/",
+      "x": "https://x.com/Hatch_Mind_",
+      "discord": "",
+      "github": "https://github.com/Block-O2/adaptive-traction-mpc#readme",
+      "source": "https://dexscreener.com/solana/46r5vjsk4vzwvu4robxoqyobze8d4nmn3b6wra6gpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-06"
+    },
+    {
       "name": "Hodl",
       "status": "RUMOR",
       "chain": "BNB Chain",
@@ -18160,6 +18211,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/6rjq9rm2eoxzvndk5jucfdsywfkf68fatrynjgdapump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-06"
+    },
+    {
+      "name": "Deployr",
+      "status": "LIVE",
+      "chain": "Robinhood Chain, Solana",
+      "firstSeen": "2026-11-06",
+      "confidence": 73,
+      "description": "Deployr is the launchpad that lives on X. Tag @HeyDeployr with a name and ticker and your token goes live, with its trading fees going to you. $DEPLOYR is the token behind it. Holding it lowers what you pay on the Deployr card, a virtual card you top up with crypto and spend with Apple Pay and Google Pay, and top holde",
+      "website": "https://deployr.money",
+      "x": "https://x.com/HeyDeployr",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/robinhood/0xa01f353b72ef6557359f2c110ab7c738dfd8405d",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
