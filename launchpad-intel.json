@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T17:51:39Z",
+  "updatedAt": "2026-11-10T23:23:53Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -101,6 +101,23 @@
       "source": "https://github.com/lightchain-protocol/lightchain-launchpad",
       "radarTier": "VERIFIED",
       "detectedBy": "GitHub + Website + DEX Screener",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-10"
+    },
+    {
+      "name": "montramarkets.xyz",
+      "status": "NEW",
+      "chain": "elysium",
+      "firstSeen": "2026-11-10",
+      "confidence": 100,
+      "description": "the house of all launches on @Enter_Elysium",
+      "website": "https://montramarkets.xyz/",
+      "x": "https://x.com/MontraXYZ",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/elysium/0x063f7cc5339f92a5fd7baf3d22233044fda1f327",
+      "radarTier": "VERIFIED",
+      "detectedBy": "DEX Screener + Website + DefiLlama",
       "scannerVersion": 5,
       "lastConfirmed": "2026-11-10"
     },
@@ -2266,23 +2283,6 @@
       "lastConfirmed": "2026-11-10"
     },
     {
-      "name": "montramarkets.xyz",
-      "status": "COMING SOON",
-      "chain": "elysium",
-      "firstSeen": "2026-11-10",
-      "confidence": 78,
-      "description": "the house of all launches on @Enter_Elysium",
-      "website": "https://montramarkets.xyz/",
-      "x": "https://x.com/MontraXYZ",
-      "discord": "",
-      "github": "",
-      "source": "https://dexscreener.com/elysium/0x063f7cc5339f92a5fd7baf3d22233044fda1f327",
-      "radarTier": "WATCHLIST",
-      "detectedBy": "DEX Screener + Website",
-      "scannerVersion": 5,
-      "lastConfirmed": "2026-11-10"
-    },
-    {
       "name": "mosh.trade",
       "status": "COMING SOON",
       "chain": "robinhood",
@@ -7417,6 +7417,23 @@
       "lastConfirmed": "2026-11-10"
     },
     {
+      "name": "irisforagents.app",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-11-10",
+      "confidence": 73,
+      "description": "i watch every solana launch so your claude doesn't trade blind. holders, rugs, copycats, read seconds after go-live. i don't blink. powered by fable 5.2.",
+      "website": "https://irisforagents.app/",
+      "x": "https://x.com/irisforagents",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/irisckcbcz2xwrmclbqpfxcgmdxhebgscgw5fhesu27",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-10"
+    },
+    {
       "name": "Jadeorlhabit",
       "status": "RUMOR",
       "chain": "Solana, Tron",
@@ -9967,6 +9984,23 @@
       "lastConfirmed": "2026-11-10"
     },
     {
+      "name": "powdr.fun",
+      "status": "RUMOR",
+      "chain": "Avalanche",
+      "firstSeen": "2026-11-10",
+      "confidence": 73,
+      "description": "Fresh snow for Avalanche tokens. Locked supply, auto burns every 5 min, seven launch modes.",
+      "website": "https://www.powdr.fun/",
+      "x": "https://x.com/powdrfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/avalanche/0xb70cb5e428d8e0db66111724d24fa23ca21c5046",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-10"
+    },
+    {
       "name": "Proxypad",
       "status": "LIVE",
       "chain": "Tron",
@@ -11854,6 +11888,23 @@
       "lastConfirmed": "2026-11-10"
     },
     {
+      "name": "upsidex.xyz",
+      "status": "RUMOR",
+      "chain": "Solana",
+      "firstSeen": "2026-11-10",
+      "confidence": 73,
+      "description": "The ⤴️side of Launchpads",
+      "website": "https://upsidex.xyz/",
+      "x": "https://x.com/UpsideX_xyz",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/7wkgtd1r2j8hxgobc94b8rk8tiq5wp59d3qhhzawn6up",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-10"
+    },
+    {
       "name": "use4pad.app",
       "status": "LIVE",
       "chain": "solana",
@@ -13266,6 +13317,23 @@
       "source": "https://github.com/lightchain-protocol/lightchain-launchpad",
       "radarTier": "VERIFIED",
       "detectedBy": "GitHub + Website + DEX Screener",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-10"
+    },
+    {
+      "name": "montramarkets.xyz",
+      "status": "NEW",
+      "chain": "elysium",
+      "firstSeen": "2026-11-10",
+      "confidence": 100,
+      "description": "the house of all launches on @Enter_Elysium",
+      "website": "https://montramarkets.xyz/",
+      "x": "https://x.com/MontraXYZ",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/elysium/0x063f7cc5339f92a5fd7baf3d22233044fda1f327",
+      "radarTier": "VERIFIED",
+      "detectedBy": "DEX Screener + Website + DefiLlama",
       "scannerVersion": 5,
       "lastConfirmed": "2026-11-10"
     },
@@ -15429,23 +15497,6 @@
       "lastConfirmed": "2026-11-10"
     },
     {
-      "name": "montramarkets.xyz",
-      "status": "COMING SOON",
-      "chain": "elysium",
-      "firstSeen": "2026-11-10",
-      "confidence": 78,
-      "description": "the house of all launches on @Enter_Elysium",
-      "website": "https://montramarkets.xyz/",
-      "x": "https://x.com/MontraXYZ",
-      "discord": "",
-      "github": "",
-      "source": "https://dexscreener.com/elysium/0x063f7cc5339f92a5fd7baf3d22233044fda1f327",
-      "radarTier": "WATCHLIST",
-      "detectedBy": "DEX Screener + Website",
-      "scannerVersion": 5,
-      "lastConfirmed": "2026-11-10"
-    },
-    {
       "name": "mosh.trade",
       "status": "COMING SOON",
       "chain": "robinhood",
@@ -20580,6 +20631,23 @@
       "lastConfirmed": "2026-11-10"
     },
     {
+      "name": "irisforagents.app",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-11-10",
+      "confidence": 73,
+      "description": "i watch every solana launch so your claude doesn't trade blind. holders, rugs, copycats, read seconds after go-live. i don't blink. powered by fable 5.2.",
+      "website": "https://irisforagents.app/",
+      "x": "https://x.com/irisforagents",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/irisckcbcz2xwrmclbqpfxcgmdxhebgscgw5fhesu27",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-10"
+    },
+    {
       "name": "Jadeorlhabit",
       "status": "RUMOR",
       "chain": "Solana, Tron",
@@ -23130,6 +23198,23 @@
       "lastConfirmed": "2026-11-10"
     },
     {
+      "name": "powdr.fun",
+      "status": "RUMOR",
+      "chain": "Avalanche",
+      "firstSeen": "2026-11-10",
+      "confidence": 73,
+      "description": "Fresh snow for Avalanche tokens. Locked supply, auto burns every 5 min, seven launch modes.",
+      "website": "https://www.powdr.fun/",
+      "x": "https://x.com/powdrfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/avalanche/0xb70cb5e428d8e0db66111724d24fa23ca21c5046",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-10"
+    },
+    {
       "name": "Proxypad",
       "status": "LIVE",
       "chain": "Tron",
@@ -25011,6 +25096,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0xeb5816f503034cac0b2984194e8dbd5ed7366d4e",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-10"
+    },
+    {
+      "name": "upsidex.xyz",
+      "status": "RUMOR",
+      "chain": "Solana",
+      "firstSeen": "2026-11-10",
+      "confidence": 73,
+      "description": "The ⤴️side of Launchpads",
+      "website": "https://upsidex.xyz/",
+      "x": "https://x.com/UpsideX_xyz",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/7wkgtd1r2j8hxgobc94b8rk8tiq5wp59d3qhhzawn6up",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
