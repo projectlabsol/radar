@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T15:14:08Z",
+  "updatedAt": "2026-11-11T21:59:30Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -7264,6 +7264,23 @@
       "lastConfirmed": "2026-11-11"
     },
     {
+      "name": "Hookmindeth",
+      "status": "RUMOR",
+      "chain": "ethereum",
+      "firstSeen": "2026-11-11",
+      "confidence": 73,
+      "description": "Hookmindeth new on-chain candidate.",
+      "website": "https://hookmindeth.com/",
+      "x": "https://x.com/hookmind_eth",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/ethereum/0xbdeb9a0e513d549073e0877521e6baac191fd84b",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-11"
+    },
+    {
       "name": "hookp.xyz",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -10675,6 +10692,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/2xuqnyq1q3otjpl9j4pfhv1aeqcz6hq2pzpzuxaasend",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-11"
+    },
+    {
+      "name": "Sentmoney",
+      "status": "LIVE",
+      "chain": "elysium",
+      "firstSeen": "2026-11-11",
+      "confidence": 73,
+      "description": "Token fees. Sent to creators",
+      "website": "https://www.sentmoney.pro",
+      "x": "https://x.com/sentfamilymoney",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/elysium/0xe7b2859687d10fdc36f7c129af265634326fe2f0",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -20546,6 +20580,23 @@
       "lastConfirmed": "2026-11-11"
     },
     {
+      "name": "Hookmindeth",
+      "status": "RUMOR",
+      "chain": "ethereum",
+      "firstSeen": "2026-11-11",
+      "confidence": 73,
+      "description": "Hookmindeth new on-chain candidate.",
+      "website": "https://hookmindeth.com/",
+      "x": "https://x.com/hookmind_eth",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/ethereum/0xbdeb9a0e513d549073e0877521e6baac191fd84b",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-11"
+    },
+    {
       "name": "hookp.xyz",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -23957,6 +24008,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/2xuqnyq1q3otjpl9j4pfhv1aeqcz6hq2pzpzuxaasend",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-11"
+    },
+    {
+      "name": "Sentmoney",
+      "status": "LIVE",
+      "chain": "elysium",
+      "firstSeen": "2026-11-11",
+      "confidence": 73,
+      "description": "Token fees. Sent to creators",
+      "website": "https://www.sentmoney.pro",
+      "x": "https://x.com/sentfamilymoney",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/elysium/0xe7b2859687d10fdc36f7c129af265634326fe2f0",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
