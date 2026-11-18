@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T13:59:48Z",
+  "updatedAt": "2026-11-18T21:57:46Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -8267,6 +8267,23 @@
       "lastConfirmed": "2026-11-18"
     },
     {
+      "name": "Launchongta6",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-11-18",
+      "confidence": 73,
+      "description": "Launch memecoins directly inside GTA VI.",
+      "website": "https://launchongta6.com/",
+      "x": "https://x.com/LaunchOnGTA6",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/pp6suteifuohjtxbdduiukja1sbbchg9ohrt7ukpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-18"
+    },
+    {
       "name": "Launchonmontra",
       "status": "LIVE",
       "chain": "elysium",
@@ -13157,6 +13174,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/2dqprasdp7x8nesk5erdaq5vc6uglgcbs6tdw9ubqahv",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-18"
+    },
+    {
+      "name": "Vicepads",
+      "status": "LIVE",
+      "chain": "Tron",
+      "firstSeen": "2026-11-18",
+      "confidence": 73,
+      "description": "We build GTA 6 into launchpad. Launch from any location inside of the GTA 6 map.",
+      "website": "https://vicepads.com/",
+      "x": "https://x.com/vicepadmap",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/9kxcwuj4kqnf88miu74xbb2paamdoxfij8jynsdnpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -22161,6 +22195,23 @@
       "lastConfirmed": "2026-11-18"
     },
     {
+      "name": "Launchongta6",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-11-18",
+      "confidence": 73,
+      "description": "Launch memecoins directly inside GTA VI.",
+      "website": "https://launchongta6.com/",
+      "x": "https://x.com/LaunchOnGTA6",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/pp6suteifuohjtxbdduiukja1sbbchg9ohrt7ukpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-18"
+    },
+    {
       "name": "Launchonmontra",
       "status": "LIVE",
       "chain": "elysium",
@@ -27051,6 +27102,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/2dqprasdp7x8nesk5erdaq5vc6uglgcbs6tdw9ubqahv",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-18"
+    },
+    {
+      "name": "Vicepads",
+      "status": "LIVE",
+      "chain": "Tron",
+      "firstSeen": "2026-11-18",
+      "confidence": 73,
+      "description": "We build GTA 6 into launchpad. Launch from any location inside of the GTA 6 map.",
+      "website": "https://vicepads.com/",
+      "x": "https://x.com/vicepadmap",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/9kxcwuj4kqnf88miu74xbb2paamdoxfij8jynsdnpump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
