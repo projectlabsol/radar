@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T02:46:45Z",
+  "updatedAt": "2026-11-23T12:46:26Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -10120,6 +10120,23 @@
       "lastConfirmed": "2026-11-23"
     },
     {
+      "name": "percentshares.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-11-23",
+      "confidence": 73,
+      "description": "Every coin has 100 shares. A share is an NFT that collects 1% of the coin's creator fees in SOL. Launch a coin, mint a share, or buy one. On Solana.",
+      "website": "https://percentshares.fun",
+      "x": "https://x.com/percentshares",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/4ixcjhzsd9gm1fq4yqpseeqrlypveh9hw86e2asmvcnz",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-23"
+    },
+    {
       "name": "perchapp.fun",
       "status": "LIVE",
       "chain": "Solana",
@@ -10726,6 +10743,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/56h3rsryptrncrhyvstqk7dsg6ff4tjwycx8vptcpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-23"
+    },
+    {
+      "name": "privacycash.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-11-23",
+      "confidence": 73,
+      "description": "Launch a token on a Meteora bonding curve and hold it in an encrypted balance from the first block. Your balances and transfers run through Solana Privacy Rings. The trading fee is fixed at launch, 2%, 3% or 4%, and it is the same after graduation.",
+      "website": "http://privacycash.fun",
+      "x": "https://x.com/privacycashfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/gkg5rfhucvprxsyeswpnznuzrwd5mcmjeg1eb1lejyzp",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -24354,6 +24388,23 @@
       "lastConfirmed": "2026-11-23"
     },
     {
+      "name": "percentshares.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-11-23",
+      "confidence": 73,
+      "description": "Every coin has 100 shares. A share is an NFT that collects 1% of the coin's creator fees in SOL. Launch a coin, mint a share, or buy one. On Solana.",
+      "website": "https://percentshares.fun",
+      "x": "https://x.com/percentshares",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/4ixcjhzsd9gm1fq4yqpseeqrlypveh9hw86e2asmvcnz",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-23"
+    },
+    {
       "name": "perchapp.fun",
       "status": "LIVE",
       "chain": "Solana",
@@ -24960,6 +25011,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/solana/56h3rsryptrncrhyvstqk7dsg6ff4tjwycx8vptcpump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-23"
+    },
+    {
+      "name": "privacycash.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-11-23",
+      "confidence": 73,
+      "description": "Launch a token on a Meteora bonding curve and hold it in an encrypted balance from the first block. Your balances and transfers run through Solana Privacy Rings. The trading fee is fixed at launch, 2%, 3% or 4%, and it is the same after graduation.",
+      "website": "http://privacycash.fun",
+      "x": "https://x.com/privacycashfun",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/gkg5rfhucvprxsyeswpnznuzrwd5mcmjeg1eb1lejyzp",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
