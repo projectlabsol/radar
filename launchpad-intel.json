@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T04:13:46Z",
+  "updatedAt": "2026-11-25T14:28:32Z",
   "scannerVersion": 5,
   "verified": [
     {
@@ -6142,6 +6142,23 @@
       "lastConfirmed": "2026-11-25"
     },
     {
+      "name": "developeruniversity.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-11-25",
+      "confidence": 73,
+      "description": "Practise the launch. Keep the SOL.",
+      "website": "https://developeruniversity.fun",
+      "x": "https://x.com/DEVUNIsol",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/5mwwfaef5elehsauzhciekiwiypugwenqfpbqmz4pump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-25"
+    },
+    {
       "name": "Dibs",
       "status": "RUMOR",
       "chain": "Solana, Tron",
@@ -7587,6 +7604,23 @@
       "lastConfirmed": "2026-11-25"
     },
     {
+      "name": "hashrings.app",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-11-25",
+      "confidence": 73,
+      "description": "hashrings.app new on-chain candidate.",
+      "website": "https://hashrings.app/",
+      "x": "https://x.com/…",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/7gnzawds4p6fndykmu1cf13be1qmsjlhep34nunepump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-25"
+    },
+    {
       "name": "Heed",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -8261,6 +8295,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x61c0b8e7cbcdc2d023d577b6190ac2fb7b6f719e",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-25"
+    },
+    {
+      "name": "knowyourmemepad.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-11-25",
+      "confidence": 73,
+      "description": "knowyourmemepad.fun new on-chain candidate.",
+      "website": "https://knowyourmemepad.fun/",
+      "x": "https://x.com/KnowY0urMemepad\\",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/hvi9xtj6vwcypxezh3mcbis9ywshex8lyyadbt7epump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
@@ -20529,6 +20580,23 @@
       "lastConfirmed": "2026-11-25"
     },
     {
+      "name": "developeruniversity.fun",
+      "status": "RUMOR",
+      "chain": "solana",
+      "firstSeen": "2026-11-25",
+      "confidence": 73,
+      "description": "Practise the launch. Keep the SOL.",
+      "website": "https://developeruniversity.fun",
+      "x": "https://x.com/DEVUNIsol",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/5mwwfaef5elehsauzhciekiwiypugwenqfpbqmz4pump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-25"
+    },
+    {
       "name": "Dibs",
       "status": "RUMOR",
       "chain": "Solana, Tron",
@@ -21974,6 +22042,23 @@
       "lastConfirmed": "2026-11-25"
     },
     {
+      "name": "hashrings.app",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-11-25",
+      "confidence": 73,
+      "description": "hashrings.app new on-chain candidate.",
+      "website": "https://hashrings.app/",
+      "x": "https://x.com/…",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/7gnzawds4p6fndykmu1cf13be1qmsjlhep34nunepump",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-25"
+    },
+    {
       "name": "Heed",
       "status": "LIVE",
       "chain": "Robinhood Chain",
@@ -22648,6 +22733,23 @@
       "discord": "",
       "github": "",
       "source": "https://dexscreener.com/robinhood/0x61c0b8e7cbcdc2d023d577b6190ac2fb7b6f719e",
+      "radarTier": "WATCHLIST",
+      "detectedBy": "DEX Screener + Website",
+      "scannerVersion": 5,
+      "lastConfirmed": "2026-11-25"
+    },
+    {
+      "name": "knowyourmemepad.fun",
+      "status": "LIVE",
+      "chain": "Solana",
+      "firstSeen": "2026-11-25",
+      "confidence": 73,
+      "description": "knowyourmemepad.fun new on-chain candidate.",
+      "website": "https://knowyourmemepad.fun/",
+      "x": "https://x.com/KnowY0urMemepad\\",
+      "discord": "",
+      "github": "",
+      "source": "https://dexscreener.com/solana/hvi9xtj6vwcypxezh3mcbis9ywshex8lyyadbt7epump",
       "radarTier": "WATCHLIST",
       "detectedBy": "DEX Screener + Website",
       "scannerVersion": 5,
